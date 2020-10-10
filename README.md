@@ -5,6 +5,9 @@ Wow!
 <p>
   <img alt="Golang" src="https://img.shields.io/badge/-Golang-00ADD8?style=flat-square&logo=Go&logoColor=white" />
   <img alt="PHP" src="https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=PHP&logoColor=white" />
+  <img alt="Vue.js" src="https://img.shields.io/badge/-Vue.js-4fc08d?style=flat-square&logo=vue.js&logoColor=white" />
+  <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-e2470f?style=flat-square&logo=html5&logoColor=white" />
+  <img alt="C Programming Language" src="https://img.shields.io/badge/-C%20Programming%20Language-9f62a5?style=flat-square&logo=C&logoColor=white" />
 </p>
 
 ### Tools

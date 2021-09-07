@@ -13,6 +13,8 @@ Wow!
   <img alt="C Programming Language" src="https://img.shields.io/badge/-C%20Programming%20Language-9f62a5?style=flat-square&logo=C&logoColor=white" />
 </p>
 
+<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=nexmoe&langs_count=20&hide=XSLT,Hack&layout=compact&role=OWNER,ORGANIZATION_MEMBER">
+
 ### Tools
 
 <p>

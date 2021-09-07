@@ -13,15 +13,13 @@ Wow!
   <img alt="C Programming Language" src="https://img.shields.io/badge/-C%20Programming%20Language-9f62a5?style=flat&logo=C&logoColor=white" />
 </p>
 
-<img src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=nexmoe&langs_count=20&hide=XSLT,Hack&layout=compact&role=OWNER,ORGANIZATION_MEMBER">
-
 ### Tools
 
 <p>
-  <img alt="JetBrains" src="https://img.shields.io/badge/-JetBrains-000000?style=flat-square&logo=JetBrains&logoColor=white" />
-  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual Studio Code-007ACC?style=flat-square&logo=Visual%20Studio%20Code&logoColor=white" />
-  <img alt="Microsoft Edge" src="https://img.shields.io/badge/-Edge-0078D7?style=flat-square&logo=Microsoft%20Edge&logoColor=white" />
-  <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=Git&logoColor=white" />
+  <img alt="JetBrains" src="https://img.shields.io/badge/-JetBrains-000000?style=flat&logo=JetBrains&logoColor=white" />
+  <img alt="Visual Studio Code" src="https://img.shields.io/badge/-Visual Studio Code-007ACC?style=flat&logo=Visual%20Studio%20Code&logoColor=white" />
+  <img alt="Microsoft Edge" src="https://img.shields.io/badge/-Edge-0078D7?style=flat&logo=Microsoft%20Edge&logoColor=white" />
+  <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=Git&logoColor=white" />
 </p>
 
 

@@ -19,3 +19,7 @@ Wow!
   <img alt="Microsoft Edge" src="https://img.shields.io/badge/-Edge-0078D7?style=flat-square&logo=Microsoft%20Edge&logoColor=white" />
   <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=Git&logoColor=white" />
 </p>
+
+### Analysis
+
+<img src="https://github-readme-stats-one-bice.vercel.app/api?username=nexmoe&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER">

@@ -2,7 +2,7 @@ Wow!
 
 <img align="right" width="480px" src="https://github-readme-stats-one-bice.vercel.app/api?username=nexmoe&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER">
 
-### Languages I use
+### I use
 
 <p>
   <img alt="Golang" src="https://img.shields.io/badge/-Golang-00ADD8?style=flat&logo=Go&logoColor=white" />

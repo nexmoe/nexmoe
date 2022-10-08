@@ -1,6 +1,6 @@
 Wow!
 
-<img align="right" width="480px" src="https://github-readme-stats-one-bice.vercel.app/api?username=nexmoe&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER">
+<img align="right" width="450px" src="https://github-readme-stats-one-bice.vercel.app/api?username=nexmoe&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER">
 
 ### I use
 

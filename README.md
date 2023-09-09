@@ -1,4 +1,7 @@
-Wow!
+### Hi I'm Nexmoe 👋
+
+Here is my GitHub page, 
+if you want to know more about me, see: https://i.nexmoe.com/
 
 <img align="right" width="450px" src="https://github-readme-stats-one-bice.vercel.app/api?username=nexmoe&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER">
 

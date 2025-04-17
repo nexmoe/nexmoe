@@ -1,7 +1,8 @@
 ### Hi I'm Nexmoe 👋
 
 Here is my GitHub page, 
-if you want to know more about me, see: https://bonjour.bio/zh/nexmoe
+
+算了么 http://suanleme.cn / 共绩算力 http://gongjiyun.com 产品经理，致力于打造最好的弹性算力 / 业余创造 VideoLingo&小舒同学
 
 <img align="right" width="450px" src="https://github-readme-stats-one-bice.vercel.app/api?username=nexmoe&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR">
 

@@ -56,10 +56,6 @@ type CurrentUserInfo = {
 type OutputPayload = {
   generated_at: string;
   last_updated: string;
-  external: {
-    weex_ui: RepoStats;
-    x_render: RepoStats;
-  };
   totals: {
     followers: number;
     stars: number;
@@ -200,7 +196,7 @@ async function fetchUserOrganizations(login: string) {
   while (true) {
     let batch: Org[] = [];
     try {
-      batch = await ghFetchPublic<Org[]>(`/users/${encodedLogin}/orgs?per_page=100&page=${page}`);
+      batch = await ghFetch<Org[]>(`/users/${encodedLogin}/orgs?per_page=100&page=${page}`);
     } catch (error) {
       console.error(`Error fetching organizations from /users/${login}/orgs:`, error);
       break;
@@ -225,6 +221,9 @@ async function fetchOrgRepos(org: string): Promise<Repo[]> {
     try {
       batch = await ghFetch<Repo[]>(path);
     } catch (error) {
+      if (token) {
+        throw error;
+      }
       batch = await ghFetchPublic<Repo[]>(path);
     }
     repos.push(...batch.filter((repo) => !repo.fork));
@@ -286,18 +285,6 @@ async function fetchCurrentUserInfo(currentFollowers: number): Promise<CurrentUs
       followers: currentFollowers,
       createdAt: new Date(),
     };
-  }
-}
-
-async function fetchExternalRepoStats(owner: string, repo: string) {
-  try {
-    const data = await ghFetch<{ stargazers_count: number; forks_count: number }>(
-      `/repos/${owner}/${repo}`,
-    );
-    return { stars: data.stargazers_count, forks: data.forks_count };
-  } catch (error) {
-    console.error(`Error fetching ${owner}/${repo} stats:`, error);
-    return { stars: 0, forks: 0 };
   }
 }
 
@@ -627,9 +614,7 @@ function buildInlineBarList(items: ChartItem[], width = 18) {
 }
 
 function buildChartsMarkdown(input: {
-  followers: number;
-  totalStars: number;
-  totalForks: number;
+  starSources: ChartItem[];
   activity: ActivityStats;
 }) {
   const activityItems: ChartItem[] = [
@@ -638,11 +623,16 @@ function buildChartsMarkdown(input: {
     { label: "Issues", value: input.activity.issues },
   ];
 
+  const starSourceItems = input.starSources;
+
   return [
     "### Stats Charts",
     "",
     "#### Activity Mix",
     buildInlineBarList(activityItems),
+    "",
+    "#### Star Sources",
+    buildInlineBarList(starSourceItems),
   ].join("\n");
 }
 
@@ -709,16 +699,34 @@ async function main() {
   }
 
   const ownedStats = repoStatsFromRepos(ownedRepos);
-  const memberStats = repoStatsFromRepos(memberRepos);
+  const ownedRepoSet = new Set(ownedRepos.map((repo) => repo.full_name));
+  const memberRepoSet = new Set(memberRepos.map((repo) => repo.full_name));
+  const memberOnlyRepos = dedupeReposByFullName(
+    memberRepos.filter((repo) => !ownedRepoSet.has(repo.full_name)),
+  );
+  const memberStats = repoStatsFromRepos(memberOnlyRepos);
+  const dedupedExtraOrgRepos = dedupeReposByFullName(extraOrgRepos);
+  const orgBuckets = new Map<string, Repo[]>();
+  for (const repo of dedupedExtraOrgRepos) {
+    if (ownedRepoSet.has(repo.full_name) || memberRepoSet.has(repo.full_name)) {
+      continue;
+    }
+    const org = repo.full_name.split("/")[0];
+    const bucket = orgBuckets.get(org) ?? [];
+    bucket.push(repo);
+    orgBuckets.set(org, bucket);
+  }
+  const orgSourceItems = [...orgBuckets.entries()]
+    .map(([org, repos]) => ({ label: `Org: ${org}`, value: repoStatsFromRepos(repos).stars }))
+    .filter((item) => item.value > 0)
+    .sort((a, b) => b.value - a.value);
   const followers = userInfo.followers;
-  const weexUiStats = await fetchExternalRepoStats("apache", "incubator-weex-ui");
-  const xRenderStats = await fetchExternalRepoStats("alibaba", "x-render");
   const activity = await fetchActivityStats(userInfo.login, userInfo.createdAt);
 
   const mergedRepos = dedupeReposByFullName([...ownedRepos, ...memberRepos, ...extraOrgRepos]);
   const mergedStats = repoStatsFromRepos(mergedRepos);
-  const totalStars = mergedStats.stars + weexUiStats.stars + xRenderStats.stars;
-  const totalForks = mergedStats.forks + weexUiStats.forks + xRenderStats.forks;
+  const totalStars = mergedStats.stars;
+  const totalForks = mergedStats.forks;
 
   const mergedRankingText = buildRepoRankingMarkdown(mergedRepos);
   const baseStatsText =
@@ -727,9 +735,11 @@ async function main() {
     `💻 ${activity.commits.toLocaleString()} commits · 🔀 ${activity.prs.toLocaleString()} PRs · 🐛 ${activity.issues.toLocaleString()} issues · 👤 ${activity.contributed_to.toLocaleString()} repos contributed`;
   const githubStatsText = `${baseStatsText}<br>${activityText}`;
   const chartsMarkdown = buildChartsMarkdown({
-    followers,
-    totalStars,
-    totalForks,
+    starSources: [
+      { label: "Owned", value: ownedStats.stars },
+      { label: "Member only", value: memberStats.stars },
+      ...orgSourceItems,
+    ],
     activity,
   });
 
@@ -743,10 +753,6 @@ async function main() {
     JSON.stringify(
       {
         generated_at: new Date().toISOString(),
-        external: {
-          weex_ui: weexUiStats,
-          x_render: xRenderStats,
-        },
         totals: {
           followers,
           stars: totalStars,

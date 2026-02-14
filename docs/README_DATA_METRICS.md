@@ -15,8 +15,8 @@ Run `build_readme.ts` and it will update:
 ### Basic Stats
 
 - `followers`: your current GitHub follower count
-- `stars`: total stars of repositories included in this project (plus 2 configured external repos)
-- `forks`: total forks of repositories included in this project (plus 2 configured external repos)
+- `stars`: total stars of repositories included in this project
+- `forks`: total forks of repositories included in this project
 
 ### Activity Stats
 
@@ -28,6 +28,10 @@ Run `build_readme.ts` and it will update:
 ### Charts in README
 
 - `Activity Mix` (inline bars): split of commits / PRs / issues
+- `Star Sources`:
+  - `Owned`: owned repos star total
+  - `Member only`: member repos that are not owned
+  - `Org: <org>`: organization repos by org name (from membership + `GH_EXTRA_ORGS`) that are not owned/member
 
 Note:
 

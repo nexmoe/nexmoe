@@ -553,7 +553,7 @@ async function fetchActivityStats(login: string, createdAt: Date): Promise<Activ
 
 function sortReposByStars(repos: Repo[]) {
   return [...repos]
-    .filter((repo) => repo.stargazers_count > 10)
+    .filter((repo) => repo.stargazers_count >= 50)
     .sort((a, b) => b.stargazers_count - a.stargazers_count);
 }
 
@@ -561,7 +561,7 @@ function buildRepoRankingMarkdown(repos: Repo[]) {
   return sortReposByStars(repos)
     .map(
       (repo) =>
-        `• [${repo.name}](${repo.html_url}) - ⭐ ${repo.stargazers_count.toLocaleString()} / 🍴 ${repo.forks_count.toLocaleString()}${repo.description ? ` - ${repo.description}` : ""}`,
+        `• ⭐ ${repo.stargazers_count.toLocaleString()} · [${repo.name}](${repo.html_url})${repo.description ? ` - ${repo.description}` : ""}`,
     )
     .join("<br>");
 }
@@ -658,10 +658,11 @@ async function main() {
   const totalForks = mergedStats.forks + weexUiStats.forks + xRenderStats.forks;
 
   const mergedRankingText = buildRepoRankingMarkdown(mergedRepos);
+  const baseStatsText =
+    `👥 ${followers.toLocaleString()} followers · ⭐ ${totalStars.toLocaleString()} stars · 🍴 ${totalForks.toLocaleString()} forks`;
   const activityText =
-    `💻 ${activity.commits.toLocaleString()} commits · 🔀 ${activity.prs.toLocaleString()} PRs · 🐛 ${activity.issues.toLocaleString()} issues · 👤 ${activity.contributed_to.toLocaleString()} contributed`;
-  const githubStatsText =
-    `👥 ${followers.toLocaleString()} followers · ⭐ ${totalStars.toLocaleString()} stars · 🍴 ${totalForks.toLocaleString()} forks · ${activityText}`;
+    `💻 ${activity.commits.toLocaleString()} commits · 🔀 ${activity.prs.toLocaleString()} PRs · 🐛 ${activity.issues.toLocaleString()} issues · 👤 ${activity.contributed_to.toLocaleString()} repos contributed`;
+  const githubStatsText = `${baseStatsText}<br>${activityText}`;
 
   rewritten = replaceChunk(rewritten, "github_stats", githubStatsText, true);
   rewritten = replaceChunk(rewritten, "repo_rankings", mergedRankingText);

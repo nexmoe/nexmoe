@@ -9,19 +9,19 @@ See more: https://nexmoe.com
 
 <!-- github_charts starts -->
 #### Activity Mix
-`██████████████████` Commits: 11,542
-`█░░░░░░░░░░░░░░░░░` PRs: 278
+`██████████████████` Commits: 11,542<br>
+`█░░░░░░░░░░░░░░░░░` PRs: 278<br>
 `█░░░░░░░░░░░░░░░░░` Issues: 320
 
 #### Star Sources
-`████████░░░░░░░░░░` Owned: 7,174
-`██████████████████` Member: 15,998
-`██████░░░░░░░░░░░░` Org: 5,492
-`██░░░░░░░░░░░░░░░░` Org theme-nexmoe: 2,204
-`██░░░░░░░░░░░░░░░░` Org typecho-fans: 2,117
-`█░░░░░░░░░░░░░░░░░` Org hitokoto-osc: 1,043
-`█░░░░░░░░░░░░░░░░░` Org slmnb-lab: 74
-`█░░░░░░░░░░░░░░░░░` Org mixcm: 51
+`████████░░░░░░░░░░` Owned: 7,174<br>
+`██████████████████` Member: 15,998<br>
+`██████░░░░░░░░░░░░` Org: 5,492<br>
+`██░░░░░░░░░░░░░░░░` Org theme-nexmoe: 2,204<br>
+`██░░░░░░░░░░░░░░░░` Org typecho-fans: 2,117<br>
+`█░░░░░░░░░░░░░░░░░` Org hitokoto-osc: 1,043<br>
+`█░░░░░░░░░░░░░░░░░` Org slmnb-lab: 74<br>
+`█░░░░░░░░░░░░░░░░░` Org mixcm: 51<br>
 `█░░░░░░░░░░░░░░░░░` Org ComNergy: 3
 <!-- github_charts ends -->
 

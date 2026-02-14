@@ -615,7 +615,7 @@ function buildInlineBarList(items: ChartItem[], width = 18) {
       (item) =>
         `\`${buildAsciiBar(item.value, maxValue, width)}\` ${item.label}: ${item.value.toLocaleString()}`,
     )
-    .join("\n");
+    .join("<br>\n");
 }
 
 function buildChartsMarkdown(input: {

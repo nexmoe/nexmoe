@@ -222,9 +222,14 @@ async function fetchOrgRepos(org: string): Promise<Repo[]> {
       batch = await ghFetch<Repo[]>(path);
     } catch (error) {
       if (token) {
+        try {
+          batch = await ghFetchPublic<Repo[]>(path);
+        } catch (fallbackError) {
+          throw error;
+        }
+      } else {
         throw error;
       }
-      batch = await ghFetchPublic<Repo[]>(path);
     }
     repos.push(...batch.filter((repo) => !repo.fork));
     if (batch.length < 100) break;
@@ -608,7 +613,7 @@ function buildInlineBarList(items: ChartItem[], width = 18) {
   return normalized
     .map(
       (item) =>
-        `- ${item.label}: \`${buildAsciiBar(item.value, maxValue, width)}\` ${item.value.toLocaleString()}`,
+        `- \`${buildAsciiBar(item.value, maxValue, width)}\` ${item.label}: ${item.value.toLocaleString()}`,
     )
     .join("\n");
 }
@@ -626,8 +631,6 @@ function buildChartsMarkdown(input: {
   const starSourceItems = input.starSources;
 
   return [
-    "### Stats Charts",
-    "",
     "#### Activity Mix",
     buildInlineBarList(activityItems),
     "",
@@ -717,7 +720,7 @@ async function main() {
     orgBuckets.set(org, bucket);
   }
   const orgSourceItems = [...orgBuckets.entries()]
-    .map(([org, repos]) => ({ label: `Org: ${org}`, value: repoStatsFromRepos(repos).stars }))
+    .map(([org, repos]) => ({ label: `Org ${org}`, value: repoStatsFromRepos(repos).stars }))
     .filter((item) => item.value > 0)
     .sort((a, b) => b.value - a.value);
   const followers = userInfo.followers;
@@ -737,7 +740,10 @@ async function main() {
   const chartsMarkdown = buildChartsMarkdown({
     starSources: [
       { label: "Owned", value: ownedStats.stars },
-      { label: "Member only", value: memberStats.stars },
+      { label: "Member", value: memberStats.stars },
+      ...(orgSourceItems.length > 0
+        ? [{ label: "Org", value: orgSourceItems.reduce((sum, item) => sum + item.value, 0) }]
+        : []),
       ...orgSourceItems,
     ],
     activity,

@@ -31,7 +31,8 @@ Run `build_readme.ts` and it will update:
 - `Star Sources`:
   - `Owned`: owned repos star total
   - `Member only`: member repos that are not owned
-  - `Org: <org>`: organization repos by org name (from membership + `GH_EXTRA_ORGS`) that are not owned/member
+  - `Org only`: sum of org repos that are not owned/member
+  - `Org <org>`: organization repos by org name (from membership + `GH_EXTRA_ORGS`) that are not owned/member
 
 Note:
 

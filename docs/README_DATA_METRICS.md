@@ -8,6 +8,7 @@ Run `build_readme.ts` and it will update:
 
 - `README.md` (stats, releases, top repositories, update time)
 - `github_overview.json` (same data in JSON format)
+- README chart blocks (`github_charts` marker)
 
 ## What Each Number Means
 
@@ -24,6 +25,10 @@ Run `build_readme.ts` and it will update:
 - `issues`: issues created by you
 - `repos contributed`: how many repositories you contributed to
 
+### Charts in README
+
+- `Activity Mix` (inline bars): split of commits / PRs / issues
+
 Note:
 
 - These are profile-level overview numbers, not a perfect audit report.
@@ -39,7 +44,8 @@ Note:
 
 - Sorted by stars (high to low)
 - Shows only repositories with `stars >= 50`
-- Does not show fork count in this list
+- Rendered as a markdown list (not a table)
+- Each repo line starts with an inline star progress bar (normalized to max star in list)
 
 ## Which Repositories Are Included
 
@@ -99,4 +105,4 @@ Required secret:
 - Numbers look too small:
   - confirm `GH_TOKEN` is valid and loaded in runtime
 - README not updating:
-  - make sure README markers are still present
+  - make sure README markers are still present (`github_stats`, `github_charts`, `recent_releases`, `repo_rankings`, `last_updated`)

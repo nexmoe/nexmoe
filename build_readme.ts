@@ -75,6 +75,7 @@ type OutputPayload = {
   markdown: {
     recent_releases: string;
     github_stats: string;
+    charts: string;
     rankings: string;
   };
 };
@@ -132,7 +133,7 @@ async function ghFetchPublic<T>(path: string): Promise<T> {
 
 function extractCurrentStats(readmeContent: string) {
   const match = readmeContent.match(
-    /(\d{1,3}(?:,\d{3})*) followers, (\d{1,3}(?:,\d{3})*) stars, (\d{1,3}(?:,\d{3})*) forks/,
+    /(\d{1,3}(?:,\d{3})*) followers\s*(?:,|·)\s*(\d{1,3}(?:,\d{3})*) stars\s*(?:,|·)\s*(\d{1,3}(?:,\d{3})*) forks/,
   );
   if (match) {
     return {
@@ -557,12 +558,22 @@ function sortReposByStars(repos: Repo[]) {
     .sort((a, b) => b.stargazers_count - a.stargazers_count);
 }
 
+function buildAsciiBar(value: number, maxValue: number, width = 18) {
+  if (maxValue <= 0 || value <= 0) {
+    return "░".repeat(width);
+  }
+  const ratio = Math.min(1, value / maxValue);
+  const filled = Math.max(1, Math.round(ratio * width));
+  return `${"█".repeat(filled)}${"░".repeat(Math.max(0, width - filled))}`;
+}
+
 function buildRepoRankingMarkdown(repos: Repo[]) {
-  return sortReposByStars(repos)
-    .map(
-      (repo) =>
-        `• ⭐ ${repo.stargazers_count.toLocaleString()} · [${repo.name}](${repo.html_url})${repo.description ? ` - ${repo.description}` : ""}`,
-    )
+  const ranked = sortReposByStars(repos);
+  const maxStars = ranked.reduce((max, repo) => Math.max(max, repo.stargazers_count), 0);
+  return ranked
+    .map((repo) => {
+      return `• \`${buildAsciiBar(repo.stargazers_count, maxStars)}\` [${repo.name}](${repo.html_url}) ⭐ ${repo.stargazers_count.toLocaleString()}${repo.description ? ` - ${repo.description}` : ""}`;
+    })
     .join("<br>");
 }
 
@@ -581,6 +592,58 @@ function dedupeReposByFullName(repos: Repo[]) {
   return repos.filter(
     (repo, index, list) => index === list.findIndex((item) => item.full_name === repo.full_name),
   );
+}
+
+type ChartItem = {
+  label: string;
+  value: number;
+};
+
+function sanitizeChartItems(items: ChartItem[]) {
+  const normalized = items.map((item) => ({
+    label: item.label,
+    value: Number.isFinite(item.value) ? Math.max(0, Math.round(item.value)) : 0,
+  }));
+
+  if (normalized.some((item) => item.value > 0)) {
+    return normalized;
+  }
+
+  return normalized.map((item, index) => ({
+    label: item.label,
+    value: index === 0 ? 1 : 0,
+  }));
+}
+
+function buildInlineBarList(items: ChartItem[], width = 18) {
+  const normalized = sanitizeChartItems(items);
+  const maxValue = normalized.reduce((max, item) => Math.max(max, item.value), 0);
+  return normalized
+    .map(
+      (item) =>
+        `- ${item.label}: \`${buildAsciiBar(item.value, maxValue, width)}\` ${item.value.toLocaleString()}`,
+    )
+    .join("\n");
+}
+
+function buildChartsMarkdown(input: {
+  followers: number;
+  totalStars: number;
+  totalForks: number;
+  activity: ActivityStats;
+}) {
+  const activityItems: ChartItem[] = [
+    { label: "Commits", value: input.activity.commits },
+    { label: "PRs", value: input.activity.prs },
+    { label: "Issues", value: input.activity.issues },
+  ];
+
+  return [
+    "### Stats Charts",
+    "",
+    "#### Activity Mix",
+    buildInlineBarList(activityItems),
+  ].join("\n");
 }
 
 async function main() {
@@ -663,8 +726,15 @@ async function main() {
   const activityText =
     `💻 ${activity.commits.toLocaleString()} commits · 🔀 ${activity.prs.toLocaleString()} PRs · 🐛 ${activity.issues.toLocaleString()} issues · 👤 ${activity.contributed_to.toLocaleString()} repos contributed`;
   const githubStatsText = `${baseStatsText}<br>${activityText}`;
+  const chartsMarkdown = buildChartsMarkdown({
+    followers,
+    totalStars,
+    totalForks,
+    activity,
+  });
 
   rewritten = replaceChunk(rewritten, "github_stats", githubStatsText, true);
+  rewritten = replaceChunk(rewritten, "github_charts", chartsMarkdown);
   rewritten = replaceChunk(rewritten, "repo_rankings", mergedRankingText);
   rewritten = replaceChunk(rewritten, "last_updated", lastUpdated, true);
 
@@ -705,6 +775,7 @@ async function main() {
         markdown: {
           recent_releases: recentReleasesText,
           github_stats: githubStatsText,
+          charts: chartsMarkdown,
           rankings: mergedRankingText,
         },
       } satisfies OutputPayload,

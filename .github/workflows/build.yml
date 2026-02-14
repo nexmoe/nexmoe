@@ -1,0 +1,33 @@
+name: Build README
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 */6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Set up Bun
+      uses: oven-sh/setup-bun@v2
+      with:
+        bun-version: latest
+    - name: Update README
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |-
+        bun run build_readme.ts
+        cat README.md
+    - name: Commit and push if changed
+      run: |-
+        git diff
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git pull
+        git add -A
+        git commit -m "Updated content" || exit 0
+        git push

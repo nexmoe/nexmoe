@@ -613,7 +613,7 @@ function buildInlineBarList(items: ChartItem[], width = 18) {
   return normalized
     .map(
       (item) =>
-        `- \`${buildAsciiBar(item.value, maxValue, width)}\` ${item.label}: ${item.value.toLocaleString()}`,
+        `\`${buildAsciiBar(item.value, maxValue, width)}\` ${item.label}: ${item.value.toLocaleString()}`,
     )
     .join("\n");
 }

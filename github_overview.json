@@ -1,0 +1,271 @@
+{
+  "generated_at": "2026-02-14T14:42:57.621Z",
+  "totals": {
+    "followers": 503,
+    "stars": 28664,
+    "forks": 3446
+  },
+  "scopes": {
+    "owned": {
+      "stars": 7174,
+      "forks": 545,
+      "count": 51,
+      "repos": [
+        {
+          "name": "VidBee",
+          "full_name": "nexmoe/VidBee",
+          "html_url": "https://github.com/nexmoe/VidBee",
+          "description": "Download videos from almost any website worldwide",
+          "stargazers_count": 6297,
+          "forks_count": 425
+        },
+        {
+          "name": "vscode-monitor-pro",
+          "full_name": "nexmoe/vscode-monitor-pro",
+          "html_url": "https://github.com/nexmoe/vscode-monitor-pro",
+          "description": "Monitor all the resources you care about. Be the coolest plugin.",
+          "stargazers_count": 200,
+          "forks_count": 9
+        },
+        {
+          "name": "serverless-comfyui",
+          "full_name": "nexmoe/serverless-comfyui",
+          "html_url": "https://github.com/nexmoe/serverless-comfyui",
+          "description": "一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。",
+          "stargazers_count": 102,
+          "forks_count": 10
+        },
+        {
+          "name": "lm-speed",
+          "full_name": "nexmoe/lm-speed",
+          "html_url": "https://github.com/nexmoe/lm-speed",
+          "description": "Help developers optimize AI application performance through comprehensive speed testing and analysis",
+          "stargazers_count": 78,
+          "forks_count": 8
+        },
+        {
+          "name": "nexmoe.css",
+          "full_name": "nexmoe/nexmoe.css",
+          "html_url": "https://github.com/nexmoe/nexmoe.css",
+          "description": "Use only HTML to write modern websites with smooth animations and beautiful interfaces.",
+          "stargazers_count": 73,
+          "forks_count": 4
+        },
+        {
+          "name": "hexo-theme-yet-the-books",
+          "full_name": "nexmoe/hexo-theme-yet-the-books",
+          "html_url": "https://github.com/nexmoe/hexo-theme-yet-the-books",
+          "description": "还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。",
+          "stargazers_count": 70,
+          "forks_count": 19
+        },
+        {
+          "name": "wall-public",
+          "full_name": "nexmoe/wall-public",
+          "html_url": "https://github.com/nexmoe/wall-public",
+          "description": "一个基于 Vue.js 的匿名表白墙轻量级小程序",
+          "stargazers_count": 67,
+          "forks_count": 12
+        },
+        {
+          "name": "saladict-skin",
+          "full_name": "nexmoe/saladict-skin",
+          "html_url": "https://github.com/nexmoe/saladict-skin",
+          "description": "沙拉查词很好用，但是查词面板作为一个经常使用的交互界面，还是需要点颜值的",
+          "stargazers_count": 52,
+          "forks_count": 7
+        }
+      ]
+    },
+    "member": {
+      "stars": 15998,
+      "forks": 1644,
+      "count": 5,
+      "repos": [
+        {
+          "name": "VideoLingo",
+          "full_name": "Huanshere/VideoLingo",
+          "html_url": "https://github.com/Huanshere/VideoLingo",
+          "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
+          "stargazers_count": 15964,
+          "forks_count": 1642
+        }
+      ]
+    },
+    "merged": {
+      "stars": 28664,
+      "forks": 3446,
+      "count": 128,
+      "repos": [
+        {
+          "name": "VideoLingo",
+          "full_name": "Huanshere/VideoLingo",
+          "html_url": "https://github.com/Huanshere/VideoLingo",
+          "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
+          "stargazers_count": 15964,
+          "forks_count": 1642
+        },
+        {
+          "name": "VidBee",
+          "full_name": "nexmoe/VidBee",
+          "html_url": "https://github.com/nexmoe/VidBee",
+          "description": "Download videos from almost any website worldwide",
+          "stargazers_count": 6297,
+          "forks_count": 425
+        },
+        {
+          "name": "plugins",
+          "full_name": "typecho-fans/plugins",
+          "html_url": "https://github.com/typecho-fans/plugins",
+          "description": "Typecho Fans插件作品目录",
+          "stargazers_count": 1881,
+          "forks_count": 601
+        },
+        {
+          "name": "hexo-theme-nexmoe",
+          "full_name": "theme-nexmoe/hexo-theme-nexmoe",
+          "html_url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
+          "description": "🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.",
+          "stargazers_count": 1746,
+          "forks_count": 261
+        },
+        {
+          "name": "hitokoto-api",
+          "full_name": "hitokoto-osc/hitokoto-api",
+          "html_url": "https://github.com/hitokoto-osc/hitokoto-api",
+          "description": "版本：1，现行的 API 运行框架。",
+          "stargazers_count": 554,
+          "forks_count": 82
+        },
+        {
+          "name": "sentences-bundle",
+          "full_name": "hitokoto-osc/sentences-bundle",
+          "html_url": "https://github.com/hitokoto-osc/sentences-bundle",
+          "description": "一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。",
+          "stargazers_count": 412,
+          "forks_count": 87
+        },
+        {
+          "name": "typecho-theme-nexmoe",
+          "full_name": "theme-nexmoe/typecho-theme-nexmoe",
+          "html_url": "https://github.com/theme-nexmoe/typecho-theme-nexmoe",
+          "description": "🔥 一个特别的 Typecho 主题",
+          "stargazers_count": 410,
+          "forks_count": 60
+        },
+        {
+          "name": "themes",
+          "full_name": "typecho-fans/themes",
+          "html_url": "https://github.com/typecho-fans/themes",
+          "description": "Typecho Fans主题作品目录",
+          "stargazers_count": 226,
+          "forks_count": 33
+        },
+        {
+          "name": "vscode-monitor-pro",
+          "full_name": "nexmoe/vscode-monitor-pro",
+          "html_url": "https://github.com/nexmoe/vscode-monitor-pro",
+          "description": "Monitor all the resources you care about. Be the coolest plugin.",
+          "stargazers_count": 200,
+          "forks_count": 9
+        },
+        {
+          "name": "serverless-comfyui",
+          "full_name": "nexmoe/serverless-comfyui",
+          "html_url": "https://github.com/nexmoe/serverless-comfyui",
+          "description": "一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。",
+          "stargazers_count": 102,
+          "forks_count": 10
+        },
+        {
+          "name": "lm-speed",
+          "full_name": "nexmoe/lm-speed",
+          "html_url": "https://github.com/nexmoe/lm-speed",
+          "description": "Help developers optimize AI application performance through comprehensive speed testing and analysis",
+          "stargazers_count": 78,
+          "forks_count": 8
+        },
+        {
+          "name": "nexmoe.css",
+          "full_name": "nexmoe/nexmoe.css",
+          "html_url": "https://github.com/nexmoe/nexmoe.css",
+          "description": "Use only HTML to write modern websites with smooth animations and beautiful interfaces.",
+          "stargazers_count": 73,
+          "forks_count": 4
+        },
+        {
+          "name": "hexo-theme-yet-the-books",
+          "full_name": "nexmoe/hexo-theme-yet-the-books",
+          "html_url": "https://github.com/nexmoe/hexo-theme-yet-the-books",
+          "description": "还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。",
+          "stargazers_count": 70,
+          "forks_count": 19
+        },
+        {
+          "name": "wall-public",
+          "full_name": "nexmoe/wall-public",
+          "html_url": "https://github.com/nexmoe/wall-public",
+          "description": "一个基于 Vue.js 的匿名表白墙轻量级小程序",
+          "stargazers_count": 67,
+          "forks_count": 12
+        },
+        {
+          "name": "FluxEz",
+          "full_name": "slmnb-lab/FluxEz",
+          "html_url": "https://github.com/slmnb-lab/FluxEz",
+          "description": "基于Next.js和Comfyui的Flux AI图像生成网站",
+          "stargazers_count": 61,
+          "forks_count": 10
+        },
+        {
+          "name": "saladict-skin",
+          "full_name": "nexmoe/saladict-skin",
+          "html_url": "https://github.com/nexmoe/saladict-skin",
+          "description": "沙拉查词很好用，但是查词面板作为一个经常使用的交互界面，还是需要点颜值的",
+          "stargazers_count": 52,
+          "forks_count": 7
+        }
+      ]
+    }
+  },
+  "activity": {
+    "commits": 11540,
+    "prs": 278,
+    "issues": 320,
+    "total": 12138,
+    "contributed_to": 102
+  },
+  "recent_releases": [
+    {
+      "repo": "VidBee",
+      "repo_url": "https://github.com/nexmoe/VidBee",
+      "description": "Download videos from almost any website worldwide",
+      "release": "v1.2.4",
+      "published_at": "2026-01-24",
+      "url": "https://github.com/nexmoe/VidBee/releases/tag/v1.2.4"
+    },
+    {
+      "repo": "vscode-monitor-pro",
+      "repo_url": "https://github.com/nexmoe/vscode-monitor-pro",
+      "description": "Monitor all the resources you care about. Be the coolest plugin.",
+      "release": "0.6.0",
+      "published_at": "2024-09-12",
+      "url": "https://github.com/nexmoe/vscode-monitor-pro/releases/tag/0.6.0"
+    },
+    {
+      "repo": "userscript",
+      "repo_url": "https://github.com/nexmoe/userscript",
+      "description": "",
+      "release": "",
+      "published_at": "2023-10-13",
+      "url": "https://github.com/nexmoe/userscript/releases/tag/1.0"
+    }
+  ],
+  "last_updated": "Feb 14, 2026 at 10:42:04 PM",
+  "markdown": {
+    "recent_releases": "• [VidBee v1.2.4](https://github.com/nexmoe/VidBee/releases/tag/v1.2.4) - 2026-01-24<br>• [vscode-monitor-pro 0.6.0](https://github.com/nexmoe/vscode-monitor-pro/releases/tag/0.6.0) - 2024-09-12<br>• [userscript ](https://github.com/nexmoe/userscript/releases/tag/1.0) - 2023-10-13",
+    "github_stats": "👥 503 followers · ⭐ 28,664 stars · 🍴 3,446 forks<br>💻 11,540 commits · 🔀 278 PRs · 🐛 320 issues · 👤 102 repos contributed",
+    "charts": "#### Activity Mix\n- `██████████████████` Commits: 11,540\n- `█░░░░░░░░░░░░░░░░░` PRs: 278\n- `█░░░░░░░░░░░░░░░░░` Issues: 320\n\n#### Star Sources\n- `████████░░░░░░░░░░` Owned: 7,174\n- `██████████████████` Member only: 15,998\n- `██████░░░░░░░░░░░░` Org only: 5,492\n- `██░░░░░░░░░░░░░░░░` Org theme-nexmoe: 2,204\n- `██░░░░░░░░░░░░░░░░` Org typecho-fans: 2,117\n- `█░░░░░░░░░░░░░░░░░` Org hitokoto-osc: 1,043\n- `█░░░░░░░░░░░░░░░░░` Org slmnb-lab: 74\n- `█░░░░░░░░░░░░░░░░░` Org mixcm: 51\n- `█░░░░░░░░░░░░░░░░░` Org ComNergy: 3",
+    "rankings": "• `██████████████████` [VideoLingo](https://github.com/Huanshere/VideoLingo) ⭐ 15,964 - Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组<br>• `███████░░░░░░░░░░░` [VidBee](https://github.com/nexmoe/VidBee) ⭐ 6,297 - Download videos from almost any website worldwide<br>• `██░░░░░░░░░░░░░░░░` [plugins](https://github.com/typecho-fans/plugins) ⭐ 1,881 - Typecho Fans插件作品目录<br>• `██░░░░░░░░░░░░░░░░` [hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe) ⭐ 1,746 - 🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.<br>• `█░░░░░░░░░░░░░░░░░` [hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api) ⭐ 554 - 版本：1，现行的 API 运行框架。<br>• `█░░░░░░░░░░░░░░░░░` [sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle) ⭐ 412 - 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。<br>• `█░░░░░░░░░░░░░░░░░` [typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe) ⭐ 410 - 🔥 一个特别的 Typecho 主题<br>• `█░░░░░░░░░░░░░░░░░` [themes](https://github.com/typecho-fans/themes) ⭐ 226 - Typecho Fans主题作品目录<br>• `█░░░░░░░░░░░░░░░░░` [vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro) ⭐ 200 - Monitor all the resources you care about. Be the coolest plugin.<br>• `█░░░░░░░░░░░░░░░░░` [serverless-comfyui](https://github.com/nexmoe/serverless-comfyui) ⭐ 102 - 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。<br>• `█░░░░░░░░░░░░░░░░░` [lm-speed](https://github.com/nexmoe/lm-speed) ⭐ 78 - Help developers optimize AI application performance through comprehensive speed testing and analysis<br>• `█░░░░░░░░░░░░░░░░░` [nexmoe.css](https://github.com/nexmoe/nexmoe.css) ⭐ 73 - Use only HTML to write modern websites with smooth animations and beautiful interfaces.<br>• `█░░░░░░░░░░░░░░░░░` [hexo-theme-yet-the-books](https://github.com/nexmoe/hexo-theme-yet-the-books) ⭐ 70 - 还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。<br>• `█░░░░░░░░░░░░░░░░░` [wall-public](https://github.com/nexmoe/wall-public) ⭐ 67 - 一个基于 Vue.js 的匿名表白墙轻量级小程序<br>• `█░░░░░░░░░░░░░░░░░` [FluxEz](https://github.com/slmnb-lab/FluxEz) ⭐ 61 - 基于Next.js和Comfyui的Flux AI图像生成网站<br>• `█░░░░░░░░░░░░░░░░░` [saladict-skin](https://github.com/nexmoe/saladict-skin) ⭐ 52 - 沙拉查词很好用，但是查词面板作为一个经常使用的交互界面，还是需要点颜值的"
+  }
+}

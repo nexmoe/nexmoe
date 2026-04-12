@@ -11,27 +11,11 @@ type Repo = {
   forks_count: number;
 };
 
-type Release = {
-  name?: string | null;
-  tag_name?: string | null;
-  published_at?: string | null;
-  html_url: string;
-};
-
 type Scope = "owned" | "member";
 
 type RepoStats = {
   stars: number;
   forks: number;
-};
-
-type ReleaseItem = {
-  repo: string;
-  repo_url: string;
-  description: string;
-  release: string;
-  published_at: string;
-  url: string;
 };
 
 type RankedRepo = Pick<
@@ -67,9 +51,7 @@ type OutputPayload = {
     merged: RepoStats & { count: number; repos: RankedRepo[] };
   };
   activity: ActivityStats;
-  recent_releases: ReleaseItem[];
   markdown: {
-    recent_releases: string;
     github_stats: string;
     charts: string;
     rankings: string;
@@ -236,32 +218,6 @@ async function fetchOrgRepos(org: string): Promise<Repo[]> {
     page += 1;
   }
   return repos;
-}
-
-async function fetchReleases(repos: Repo[]) {
-  const releases: ReleaseItem[] = [];
-  for (const repo of repos) {
-    try {
-      const repoReleases = await ghFetch<Release[]>(
-        `/repos/${repo.full_name}/releases?per_page=10&page=1`,
-      );
-      for (const release of repoReleases.slice(0, 10)) {
-        if (!release.published_at) continue;
-        const title = (release.name ?? release.tag_name ?? "").replace(repo.name, "").trim();
-        releases.push({
-          repo: repo.name,
-          repo_url: repo.html_url,
-          description: repo.description ?? "",
-          release: title,
-          published_at: release.published_at.slice(0, 10),
-          url: release.html_url,
-        });
-      }
-    } catch (error) {
-      console.error(`Error fetching releases for ${repo.name}:`, error);
-    }
-  }
-  return releases;
 }
 
 function repoStatsFromRepos(repos: Repo[]): RepoStats {
@@ -561,10 +517,9 @@ function buildAsciiBar(value: number, maxValue: number, width = 18) {
 
 function buildRepoRankingMarkdown(repos: Repo[]) {
   const ranked = sortReposByStars(repos);
-  const maxStars = ranked.reduce((max, repo) => Math.max(max, repo.stargazers_count), 0);
   return ranked
     .map((repo) => {
-      return `• \`${buildAsciiBar(repo.stargazers_count, maxStars)}\` [${repo.name}](${repo.html_url}) ⭐ ${repo.stargazers_count.toLocaleString()}${repo.description ? ` - ${repo.description}` : ""}`;
+      return `• [${repo.name}](${repo.html_url}) ⭐ ${repo.stargazers_count.toLocaleString()}${repo.description ? ` - ${repo.description}` : ""}`;
     })
     .join("<br>");
 }
@@ -652,26 +607,7 @@ async function main() {
     console.error("Error fetching owned repositories:", error);
   }
 
-  let releases: ReleaseItem[] = [];
-  try {
-    releases = await fetchReleases(ownedRepos);
-  } catch (error) {
-    console.error("Error fetching releases:", error);
-  }
-
-  releases.sort((a, b) => (a.published_at < b.published_at ? 1 : -1));
-  const seenRepos = new Set<string>();
-  const uniqueReleases = releases.filter((release) => {
-    if (seenRepos.has(release.repo)) return false;
-    seenRepos.add(release.repo);
-    return true;
-  });
-
-  const recentReleasesText = uniqueReleases
-    .slice(0, 3)
-    .map((release) => `• [${release.repo} ${release.release}](${release.url}) - ${release.published_at}`)
-    .join("<br>");
-  let rewritten = replaceChunk(readmeContents, "recent_releases", recentReleasesText);
+  let rewritten = readmeContents;
 
   let memberRepos: Repo[] = [];
   try {
@@ -782,10 +718,8 @@ async function main() {
           },
         },
         activity,
-        recent_releases: uniqueReleases.slice(0, 3),
         last_updated: lastUpdated,
         markdown: {
-          recent_releases: recentReleasesText,
           github_stats: githubStatsText,
           charts: chartsMarkdown,
           rankings: mergedRankingText,

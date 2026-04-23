@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-23T02:26:31.537Z",
+  "generated_at": "2026-04-23T07:47:45.235Z",
   "totals": {
     "followers": 576,
-    "stars": 32401,
-    "forks": 3877
+    "stars": 32419,
+    "forks": 3881
   },
   "scopes": {
     "owned": {
-      "stars": 9960,
-      "forks": 792,
+      "stars": 9974,
+      "forks": 795,
       "count": 56,
       "repos": [
         {
@@ -16,8 +16,8 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download videos from almost any website worldwide",
-          "stargazers_count": 8683,
-          "forks_count": 631
+          "stargazers_count": 8697,
+          "forks_count": 634
         },
         {
           "name": "eve",
@@ -86,8 +86,8 @@
       ]
     },
     "member": {
-      "stars": 16901,
-      "forks": 1821,
+      "stars": 16905,
+      "forks": 1822,
       "count": 5,
       "repos": [
         {
@@ -95,14 +95,14 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 16867,
-          "forks_count": 1819
+          "stargazers_count": 16870,
+          "forks_count": 1820
         }
       ]
     },
     "merged": {
-      "stars": 32401,
-      "forks": 3877,
+      "stars": 32419,
+      "forks": 3881,
       "count": 133,
       "repos": [
         {
@@ -110,16 +110,16 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 16867,
-          "forks_count": 1819
+          "stargazers_count": 16870,
+          "forks_count": 1820
         },
         {
           "name": "VidBee",
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download videos from almost any website worldwide",
-          "stargazers_count": 8683,
-          "forks_count": 631
+          "stargazers_count": 8697,
+          "forks_count": 634
         },
         {
           "name": "plugins",
@@ -245,16 +245,16 @@
     }
   },
   "activity": {
-    "commits": 12290,
+    "commits": 12291,
     "prs": 298,
     "issues": 359,
-    "total": 12947,
+    "total": 12948,
     "contributed_to": 111
   },
-  "last_updated": "Apr 23, 2026, 10:26:18 AM",
+  "last_updated": "Apr 23, 2026, 3:47:30 PM",
   "markdown": {
-    "github_stats": "👥 576 followers · ⭐ 32,401 stars · 🍴 3,877 forks<br>💻 12,290 commits · 🔀 298 PRs · 🐛 359 issues · 👤 111 repos contributed",
-    "charts": "#### Activity Mix\n`██████████████████` Commits: 12,290<br>\n`█░░░░░░░░░░░░░░░░░` PRs: 298<br>\n`█░░░░░░░░░░░░░░░░░` Issues: 359\n\n#### Star Sources\n`███████████░░░░░░░` Owned: 9,960<br>\n`██████████████████` Member: 16,901<br>\n`██████░░░░░░░░░░░░` Org: 5,540<br>\n`██░░░░░░░░░░░░░░░░` Org theme-nexmoe: 2,204<br>\n`██░░░░░░░░░░░░░░░░` Org typecho-fans: 2,129<br>\n`█░░░░░░░░░░░░░░░░░` Org hitokoto-osc: 1,073<br>\n`█░░░░░░░░░░░░░░░░░` Org slmnb-lab: 78<br>\n`█░░░░░░░░░░░░░░░░░` Org mixcm: 53<br>\n`█░░░░░░░░░░░░░░░░░` Org ComNergy: 3",
-    "rankings": "• [VideoLingo](https://github.com/Huanshere/VideoLingo) ⭐ 16,867 - Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组<br>• [VidBee](https://github.com/nexmoe/VidBee) ⭐ 8,683 - Download videos from almost any website worldwide<br>• [plugins](https://github.com/typecho-fans/plugins) ⭐ 1,893 - Typecho Fans插件作品目录<br>• [hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe) ⭐ 1,748 - 🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.<br>• [hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api) ⭐ 566 - 版本：1，现行的 API 运行框架。<br>• [sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle) ⭐ 430 - 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。<br>• [typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe) ⭐ 409 - 🔥 一个特别的 Typecho 主题<br>• [eve](https://github.com/nexmoe/eve) ⭐ 356 - Eve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks. <br>• [themes](https://github.com/typecho-fans/themes) ⭐ 226 - Typecho Fans主题作品目录<br>• [vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro) ⭐ 205 - Monitor all the resources you care about. Be the coolest plugin.<br>• [serverless-comfyui](https://github.com/nexmoe/serverless-comfyui) ⭐ 103 - 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。<br>• [lm-speed](https://github.com/nexmoe/lm-speed) ⭐ 86 - Help developers optimize AI application performance through comprehensive speed testing and analysis<br>• [nexmoe.css](https://github.com/nexmoe/nexmoe.css) ⭐ 74 - Use only HTML to write modern websites with smooth animations and beautiful interfaces.<br>• [hexo-theme-yet-the-books](https://github.com/nexmoe/hexo-theme-yet-the-books) ⭐ 72 - 还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。<br>• [wall-public](https://github.com/nexmoe/wall-public) ⭐ 67 - 一个基于 Vue.js 的匿名表白墙轻量级小程序<br>• [FluxEz](https://github.com/slmnb-lab/FluxEz) ⭐ 61 - 基于Next.js和Comfyui的Flux AI图像生成网站<br>• [saladict-skin](https://github.com/nexmoe/saladict-skin) ⭐ 52 - 沙拉查词很好用，但是查词面板作为一个经常使用的交互界面，还是需要点颜值的"
+    "github_stats": "👥 576 followers · ⭐ 32,419 stars · 🍴 3,881 forks<br>💻 12,291 commits · 🔀 298 PRs · 🐛 359 issues · 👤 111 repos contributed",
+    "charts": "#### Activity Mix\n`██████████████████` Commits: 12,291<br>\n`█░░░░░░░░░░░░░░░░░` PRs: 298<br>\n`█░░░░░░░░░░░░░░░░░` Issues: 359\n\n#### Star Sources\n`███████████░░░░░░░` Owned: 9,974<br>\n`██████████████████` Member: 16,905<br>\n`██████░░░░░░░░░░░░` Org: 5,540<br>\n`██░░░░░░░░░░░░░░░░` Org theme-nexmoe: 2,204<br>\n`██░░░░░░░░░░░░░░░░` Org typecho-fans: 2,129<br>\n`█░░░░░░░░░░░░░░░░░` Org hitokoto-osc: 1,073<br>\n`█░░░░░░░░░░░░░░░░░` Org slmnb-lab: 78<br>\n`█░░░░░░░░░░░░░░░░░` Org mixcm: 53<br>\n`█░░░░░░░░░░░░░░░░░` Org ComNergy: 3",
+    "rankings": "• [VideoLingo](https://github.com/Huanshere/VideoLingo) ⭐ 16,870 - Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组<br>• [VidBee](https://github.com/nexmoe/VidBee) ⭐ 8,697 - Download videos from almost any website worldwide<br>• [plugins](https://github.com/typecho-fans/plugins) ⭐ 1,893 - Typecho Fans插件作品目录<br>• [hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe) ⭐ 1,748 - 🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.<br>• [hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api) ⭐ 566 - 版本：1，现行的 API 运行框架。<br>• [sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle) ⭐ 430 - 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。<br>• [typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe) ⭐ 409 - 🔥 一个特别的 Typecho 主题<br>• [eve](https://github.com/nexmoe/eve) ⭐ 356 - Eve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks. <br>• [themes](https://github.com/typecho-fans/themes) ⭐ 226 - Typecho Fans主题作品目录<br>• [vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro) ⭐ 205 - Monitor all the resources you care about. Be the coolest plugin.<br>• [serverless-comfyui](https://github.com/nexmoe/serverless-comfyui) ⭐ 103 - 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。<br>• [lm-speed](https://github.com/nexmoe/lm-speed) ⭐ 86 - Help developers optimize AI application performance through comprehensive speed testing and analysis<br>• [nexmoe.css](https://github.com/nexmoe/nexmoe.css) ⭐ 74 - Use only HTML to write modern websites with smooth animations and beautiful interfaces.<br>• [hexo-theme-yet-the-books](https://github.com/nexmoe/hexo-theme-yet-the-books) ⭐ 72 - 还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。<br>• [wall-public](https://github.com/nexmoe/wall-public) ⭐ 67 - 一个基于 Vue.js 的匿名表白墙轻量级小程序<br>• [FluxEz](https://github.com/slmnb-lab/FluxEz) ⭐ 61 - 基于Next.js和Comfyui的Flux AI图像生成网站<br>• [saladict-skin](https://github.com/nexmoe/saladict-skin) ⭐ 52 - 沙拉查词很好用，但是查词面板作为一个经常使用的交互界面，还是需要点颜值的"
   }
 }

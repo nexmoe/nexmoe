@@ -3,23 +3,23 @@
 See more: https://nexmoe.com
 
 
-<!-- github_stats starts -->👥 612 followers · ⭐ 34,823 stars · 🍴 4,152 forks<br>💻 15,142 commits · 🔀 298 PRs · 🐛 383 issues · 👤 113 repos contributed<!-- github_stats ends -->
+<!-- github_stats starts -->👥 612 followers · ⭐ 34,831 stars · 🍴 4,153 forks<br>💻 15,171 commits · 🔀 298 PRs · 🐛 383 issues · 👤 113 repos contributed<!-- github_stats ends -->
 
 ## Stats Charts
 
 <!-- github_charts starts -->
 #### Activity Mix
-`██████████████████` Commits: 15,142<br>
+`██████████████████` Commits: 15,171<br>
 `█░░░░░░░░░░░░░░░░░` PRs: 298<br>
 `█░░░░░░░░░░░░░░░░░` Issues: 383
 
 #### Star Sources
-`███████████░░░░░░░` Owned: 11,333<br>
-`██████████████████` Member: 17,908<br>
-`██████░░░░░░░░░░░░` Org: 5,582<br>
+`███████████░░░░░░░` Owned: 11,338<br>
+`██████████████████` Member: 17,910<br>
+`██████░░░░░░░░░░░░` Org: 5,583<br>
 `██░░░░░░░░░░░░░░░░` Org theme-nexmoe: 2,204<br>
 `██░░░░░░░░░░░░░░░░` Org typecho-fans: 2,137<br>
-`█░░░░░░░░░░░░░░░░░` Org hitokoto-osc: 1,100<br>
+`█░░░░░░░░░░░░░░░░░` Org hitokoto-osc: 1,101<br>
 `█░░░░░░░░░░░░░░░░░` Org slmnb-lab: 85<br>
 `█░░░░░░░░░░░░░░░░░` Org mixcm: 53<br>
 `█░░░░░░░░░░░░░░░░░` Org ComNergy: 3
@@ -29,7 +29,7 @@ See more: https://nexmoe.com
 ## Top Repositories (by stars)
 
 <!-- repo_rankings starts -->
-• [VideoLingo](https://github.com/Huanshere/VideoLingo) ⭐ 17,726 - Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组<br>• [VidBee](https://github.com/nexmoe/VidBee) ⭐ 9,916 - Download videos from almost any website worldwide<br>• [plugins](https://github.com/typecho-fans/plugins) ⭐ 1,900 - Typecho Fans插件作品目录<br>• [hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe) ⭐ 1,751 - 🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.<br>• [hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api) ⭐ 574 - 版本：1，现行的 API 运行框架。<br>• [sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle) ⭐ 449 - 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。<br>• [eve](https://github.com/nexmoe/eve) ⭐ 409 - Eve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks. <br>• [typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe) ⭐ 406 - 🔥 一个特别的 Typecho 主题<br>• [themes](https://github.com/typecho-fans/themes) ⭐ 227 - Typecho Fans主题作品目录<br>• [vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro) ⭐ 219 - Monitor all the resources you care about. Be the coolest plugin.<br>• [void](https://github.com/void-sdk/void) ⭐ 147<br>• [serverless-comfyui](https://github.com/nexmoe/serverless-comfyui) ⭐ 103 - 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。<br>• [lm-speed](https://github.com/nexmoe/lm-speed) ⭐ 91 - Help developers optimize AI application performance through comprehensive speed testing and analysis<br>• [nexmoe.css](https://github.com/nexmoe/nexmoe.css) ⭐ 74 - Use only HTML to write modern websites with smooth animations and beautiful interfaces.<br>• [hexo-theme-yet-the-books](https://github.com/nexmoe/hexo-theme-yet-the-books) ⭐ 72 - 还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。<br>• [wall-public](https://github.com/nexmoe/wall-public) ⭐ 67 - 一个基于 Vue.js 的匿名表白墙轻量级小程序<br>• [opentrends](https://github.com/nexmoe/opentrends) ⭐ 62<br>• [FluxEz](https://github.com/slmnb-lab/FluxEz) ⭐ 61 - 基于Next.js和Comfyui的Flux AI图像生成网站<br>• [saladict-skin](https://github.com/nexmoe/saladict-skin) ⭐ 52 - 沙拉查词很好用，但是查词面板作为一个经常使用的交互界面，还是需要点颜值的
+• [VideoLingo](https://github.com/Huanshere/VideoLingo) ⭐ 17,728 - Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组<br>• [VidBee](https://github.com/nexmoe/VidBee) ⭐ 9,921 - Download videos from almost any website worldwide<br>• [plugins](https://github.com/typecho-fans/plugins) ⭐ 1,900 - Typecho Fans插件作品目录<br>• [hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe) ⭐ 1,751 - 🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.<br>• [hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api) ⭐ 575 - 版本：1，现行的 API 运行框架。<br>• [sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle) ⭐ 449 - 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。<br>• [eve](https://github.com/nexmoe/eve) ⭐ 409 - Eve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks. <br>• [typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe) ⭐ 406 - 🔥 一个特别的 Typecho 主题<br>• [themes](https://github.com/typecho-fans/themes) ⭐ 227 - Typecho Fans主题作品目录<br>• [vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro) ⭐ 219 - Monitor all the resources you care about. Be the coolest plugin.<br>• [void](https://github.com/void-sdk/void) ⭐ 147<br>• [serverless-comfyui](https://github.com/nexmoe/serverless-comfyui) ⭐ 103 - 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。<br>• [lm-speed](https://github.com/nexmoe/lm-speed) ⭐ 91 - Help developers optimize AI application performance through comprehensive speed testing and analysis<br>• [nexmoe.css](https://github.com/nexmoe/nexmoe.css) ⭐ 74 - Use only HTML to write modern websites with smooth animations and beautiful interfaces.<br>• [hexo-theme-yet-the-books](https://github.com/nexmoe/hexo-theme-yet-the-books) ⭐ 72 - 还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。<br>• [wall-public](https://github.com/nexmoe/wall-public) ⭐ 67 - 一个基于 Vue.js 的匿名表白墙轻量级小程序<br>• [opentrends](https://github.com/nexmoe/opentrends) ⭐ 62<br>• [FluxEz](https://github.com/slmnb-lab/FluxEz) ⭐ 61 - 基于Next.js和Comfyui的Flux AI图像生成网站<br>• [saladict-skin](https://github.com/nexmoe/saladict-skin) ⭐ 52 - 沙拉查词很好用，但是查词面板作为一个经常使用的交互界面，还是需要点颜值的
 <!-- repo_rankings ends -->
 
-<!-- last_updated starts -->Jul 14, 2026, 9:27:18 PM<!-- last_updated ends -->
+<!-- last_updated starts -->Jul 15, 2026, 3:14:33 AM<!-- last_updated ends -->

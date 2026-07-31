@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="32" viewBox="0 0 600 32" role="img" aria-label="219 stars">
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="30" viewBox="0 0 152 30" role="img" aria-label="219 stars, 1.2 percent of the top repository">
 <title>219 stars · 1.2% of the top repository</title>
 <style>
-  .count{fill:#1d1d1f;font:600 15px -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif}
-  .track{fill:#f0f0f5}.fill{fill:#007aff}
-  @media (prefers-color-scheme:dark){.count{fill:#f5f5f7}.track{fill:#2c2c2e}}
+  .count{fill:#1d1d1f;font:600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  .percent{fill:#6e6e73;font:500 10px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  .track{fill:#e5e5ea}.fill{fill:#0071e3}
+  @media (prefers-color-scheme:dark){.count{fill:#f5f5f7}.percent{fill:#a1a1a6}.track{fill:#3a3a3c}.fill{fill:#2997ff}}
 </style>
-<text class="count" x="0" y="14">219</text>
-<rect class="track" y="22" width="600" height="8" rx="4"/>
-<rect class="fill" y="22" width="7.34" height="8" rx="4"/>
+<text class="count" x="0" y="12">219 stars</text>
+<text class="percent" x="152" y="12" text-anchor="end">1.2%</text>
+<rect class="track" y="21" width="152" height="6" rx="3"/>
+<rect class="fill" y="21" width="1.86" height="6" rx="3"/>
 </svg>

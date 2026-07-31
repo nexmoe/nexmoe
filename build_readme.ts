@@ -575,22 +575,20 @@ function repositoryBarFilename(fullName: string) {
 
 function buildRepositoryBarSvg(value: number, maximum: number) {
   const ratio = maximum > 0 ? Math.min(1, Math.max(0, value / maximum)) : 0;
-  const width = value > 0 ? Math.max(1, ratio * 152) : 0;
+  const fillWidth = value > 0 ? Math.max(1, ratio * 600) : 0;
   const percent = ratio * 100;
   const count = value.toLocaleString("en-US");
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="152" height="30" viewBox="0 0 152 30" role="img" aria-label="${count} stars, ${percent.toFixed(1)} percent of the top repository">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="32" viewBox="0 0 600 32" role="img" aria-label="${count} stars">
 <title>${count} stars · ${percent.toFixed(1)}% of the top repository</title>
 <style>
-  .count{fill:#1d1d1f;font:600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-  .percent{fill:#6e6e73;font:500 10px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-  .track{fill:#e5e5ea}.fill{fill:#0071e3}
-  @media (prefers-color-scheme:dark){.count{fill:#f5f5f7}.percent{fill:#a1a1a6}.track{fill:#3a3a3c}.fill{fill:#2997ff}}
+  .count{fill:#1d1d1f;font:600 15px -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif}
+  .track{fill:#f0f0f5}.fill{fill:#007aff}
+  @media (prefers-color-scheme:dark){.count{fill:#f5f5f7}.track{fill:#2c2c2e}}
 </style>
-<text class="count" x="0" y="12">${count} stars</text>
-<text class="percent" x="152" y="12" text-anchor="end">${percent.toFixed(1)}%</text>
-<rect class="track" y="21" width="152" height="6" rx="3"/>
-<rect class="fill" y="21" width="${width.toFixed(2)}" height="6" rx="3"/>
+<text class="count" x="0" y="14">${count}</text>
+<rect class="track" y="22" width="600" height="8" rx="4"/>
+<rect class="fill" y="22" width="${fillWidth.toFixed(2)}" height="8" rx="4"/>
 </svg>`;
 }
 

@@ -599,21 +599,16 @@ function buildRepoRankingMarkdown(repos: Repo[]) {
   const maximum = Math.max(1, ...ranked.map((repo) => repo.stargazers_count));
   const rows = ranked.map((repo) => {
     const description = repo.description
-      ? escapeXml(repo.description).replace(/\s+/g, " ").trim()
+      ? repo.description.replace(/\s+/g, " ").trim()
       : "No description";
-    const percent = (repo.stargazers_count / maximum) * 100;
     const barPath = `./assets/repository-bars/${repositoryBarFilename(repo.full_name)}`;
     const stars = repo.stargazers_count.toLocaleString("en-US");
-    const alt = `${stars} stars · ${percent.toFixed(1)}% of the top repository`;
-    return `<p>
-  <a href="${escapeXml(repo.html_url)}"><strong>${escapeXml(repo.full_name)}</strong></a>
-  <img src="${barPath}" alt="${alt}" width="152" height="32" align="right">
-  <br>
-  <sub>${description}</sub>
-</p>`;
+    return `### [${repo.full_name}](${repo.html_url})
+![${stars} stars](${barPath})
+${description}`;
   });
 
-  return rows.join("\n");
+  return rows.join("\n\n");
 }
 
 function buildRankedRepos(repos: Repo[]): RankedRepo[] {

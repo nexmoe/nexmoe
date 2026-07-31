@@ -607,7 +607,7 @@ function buildRepoRankingMarkdown(repos: Repo[]) {
     const alt = `${stars} stars · ${percent.toFixed(1)}% of the top repository`;
     return `<p>
   <a href="${escapeXml(repo.html_url)}"><strong>${escapeXml(repo.full_name)}</strong></a>
-  <img src="${barPath}" alt="${alt}" width="152" height="30" align="right">
+  <img src="${barPath}" alt="${alt}" width="152" height="32" align="right">
   <br>
   <sub>${description}</sub>
 </p>`;

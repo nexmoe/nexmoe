@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="590" viewBox="0 0 900 590" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">35,150 stars, 616 followers, 4,182 forks, 15,632 commits, 298 pull requests, 389 issues, and 113 repositories contributed to.</desc>
+<desc id="overview-desc">35,150 stars, 616 followers, 4,182 forks, 15,633 commits, 298 pull requests, 389 issues, and 113 repositories contributed to.</desc>
 <style>
   .surface{fill:#f5f5f7}.frame{fill:none;stroke:#d2d2d7;stroke-width:1}.rule{stroke:#d2d2d7;stroke-width:1}
   .track{fill:#e5e5ea}.primary{fill:#0071e3}.secondary{fill:#64a8f4}.tertiary{fill:#a7cef8}
@@ -18,7 +18,7 @@
 </defs>
 <text class="title" x="40" y="39">Nexmoe</text>
 <text class="note" x="105" y="39">Open-source overview</text>
-<text class="note" x="700" y="39">31 Jul 2026 · 17:02 UTC+8</text>
+<text class="note" x="700" y="39">31 Jul 2026 · 18:10 UTC+8</text>
 <line class="rule" x1="40" y1="59" x2="860" y2="59"/>
 <text class="eyebrow" x="40" y="102">Total stars</text>
 <text class="hero" x="40" y="166">35,150</text>
@@ -36,7 +36,7 @@
 <g clip-path="url(#activity-bar)"><rect class="primary" x="40.00" y="274" width="364.00" height="14"/><rect class="secondary" x="404.00" y="274" width="6.94" height="14"/><rect class="tertiary" x="410.94" y="274" width="9.06" height="14"/></g>
 <rect class="track" x="480" y="274" width="380" height="14" rx="7"/>
 <g clip-path="url(#source-bar)"><rect class="primary" x="480.00" y="274" width="123.23" height="14"/><rect class="secondary" x="603.23" y="274" width="196.26" height="14"/><rect class="tertiary" x="799.49" y="274" width="60.51" height="14"/></g>
-<circle class="primary" cx="44.5" cy="312" r="4.5"/><text class="body" x="57" y="316">Commits</text><text class="value" x="300" y="316">15,632 · 95.8%</text><circle class="secondary" cx="44.5" cy="338" r="4.5"/><text class="body" x="57" y="342">Pull requests</text><text class="value" x="300" y="342">298 · 1.8%</text><circle class="tertiary" cx="44.5" cy="364" r="4.5"/><text class="body" x="57" y="368">Issues</text><text class="value" x="300" y="368">389 · 2.4%</text>
+<circle class="primary" cx="44.5" cy="312" r="4.5"/><text class="body" x="57" y="316">Commits</text><text class="value" x="300" y="316">15,633 · 95.8%</text><circle class="secondary" cx="44.5" cy="338" r="4.5"/><text class="body" x="57" y="342">Pull requests</text><text class="value" x="300" y="342">298 · 1.8%</text><circle class="tertiary" cx="44.5" cy="364" r="4.5"/><text class="body" x="57" y="368">Issues</text><text class="value" x="300" y="368">389 · 2.4%</text>
 <circle class="primary" cx="484.5" cy="312" r="4.5"/><text class="body" x="497" y="316">Owned repositories</text><text class="value" x="740" y="316">11,399 · 32.4%</text><circle class="secondary" cx="484.5" cy="338" r="4.5"/><text class="body" x="497" y="342">Member / collaborator</text><text class="value" x="740" y="342">18,154 · 51.6%</text><circle class="tertiary" cx="484.5" cy="364" r="4.5"/><text class="body" x="497" y="368">Organizations</text><text class="value" x="740" y="368">5,597 · 15.9%</text>
 <line class="rule" x1="40" y1="394" x2="860" y2="394"/>
 <text class="section" x="40" y="425">Organization breakdown</text>

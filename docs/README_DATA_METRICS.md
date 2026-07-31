@@ -1,113 +1,69 @@
 # README Data Guide
 
-This document explains what the numbers in `README.md` mean and how to use this project.
+`build_readme.ts` generates a visual GitHub profile overview while preserving
+the complete underlying data.
 
-## What This Script Does
+## Generated files
 
-Run `build_readme.ts` and it will update:
+- `README.md`: visual overview, accessible metric tables, and the full repository list
+- `assets/github-overview.svg`: core metrics, activity mix, star sources, and organization breakdown
+- `assets/repository-bars/*.svg`: one linear Star progress bar per ranked repository
+- `github_overview.json`: complete machine-readable data
 
-- `README.md` (stats, releases, top repositories, update time)
-- `github_overview.json` (same data in JSON format)
-- README chart blocks (`github_charts` marker)
+The workflow refreshes all four outputs together, so the SVGs and text always
+use the same snapshot.
 
-## What Each Number Means
+## Information shown
 
-### Basic Stats
+The overview contains:
 
-- `followers`: your current GitHub follower count
-- `stars`: total stars of repositories included in this project
-- `forks`: total forks of repositories included in this project
+- followers, stars, forks, and tracked repository count
+- commits, pull requests, issues, and repositories contributed to
+- stars from owned, member/collaborator, and organization repositories
+- individual organization star totals
 
-### Activity Stats
+The repository section displays every eligible repository directly in one
+compact sequence of GitHub-compatible HTML blocks with:
 
-- `commits`: your commit count (hybrid calculation to avoid obvious undercount)
-- `PRs`: pull requests created by you
-- `issues`: issues created by you
-- `repos contributed`: how many repositories you contributed to
+- full repository name, URL, and complete description grouped as one item
+- stars and relative progress combined in one right-aligned SVG
 
-### Charts in README
+Each progress bar uses a linear scale relative to the most-starred repository.
+Exact Star counts and percentages are rendered inside the same compact SVG,
+which keeps every repository item consistent. The SVGs contain their own
+light/dark CSS; the surrounding README uses only HTML attributes supported by
+GitHub's sanitizer.
 
-- `Activity Mix` (inline bars): split of commits / PRs / issues
-- `Star Sources`:
-  - `Owned`: owned repos star total
-  - `Member only`: member repos that are not owned
-  - `Org only`: sum of org repos that are not owned/member
-  - `Org <org>`: organization repos by org name (from membership + `GH_EXTRA_ORGS`) that are not owned/member
+Scope and per-repository Fork counts remain available in
+`github_overview.json`, but are intentionally omitted from the README.
 
-Note:
+## Repository scope
 
-- These are profile-level overview numbers, not a perfect audit report.
-- Different GitHub APIs have different counting rules, so script uses a combined strategy for better accuracy.
+The script combines owned repositories, member/collaborator repositories,
+GitHub organizations, and optional organizations listed in `GH_EXTRA_ORGS`.
+Forks are excluded and repositories are deduplicated by `owner/name`.
 
-### Releases
+Repositories need at least 50 stars to appear in the repository section.
+All tracked repositories still contribute to aggregate totals.
 
-- Shows latest releases from your owned repositories
-- Displays only the latest one per repository
-- Maximum 3 items in README
+## Visual conventions
 
-### Top Repositories
+- the palette uses Apple-style system blue in three restrained tonal steps
+- stronger blue represents owned repositories / commits
+- mid blue represents member repositories / pull requests
+- light blue represents organization repositories / issues
+- repository bar lengths use a linear scale; exact values are printed
+- SVG typography uses the platform system font
+- colors and contrast adapt to GitHub light and dark themes
 
-- Sorted by stars (high to low)
-- Shows only repositories with `stars >= 50`
-- Rendered as a markdown list (not a table)
-- Each repo line starts with an inline star progress bar (normalized to max star in list)
-
-## Which Repositories Are Included
-
-The script merges repositories from:
-
-- your owned repositories
-- repositories where you are member/collaborator
-- repositories in organizations you belong to
-- optional extra organizations from `GH_EXTRA_ORGS`
-
-Then it:
-
-- removes fork repositories
-- deduplicates by `owner/repo`
-
-## Quick Start
-
-1. Prepare `.env`
-
-```env
-GH_TOKEN=your_github_token
-GH_USERNAME=nexmoe
-GH_EXTRA_ORGS=theme-nexmoe
-```
-
-2. Run script
+## Run locally
 
 ```bash
-export $(cat .env)
+export GH_TOKEN=your_github_token
+export GH_USERNAME=nexmoe
+export GH_EXTRA_ORGS=theme-nexmoe
 bun run build_readme.ts
 ```
 
-3. Check outputs
-
-- `README.md` updated
-- `github_overview.json` regenerated
-
-## GitHub Actions
-
-Workflow file: `.github/workflows/build.yml`
-
-Current behavior:
-
-- triggers on push / manual run / every 6 hours
-- runs `bun run build_readme.ts`
-- commits changes automatically
-
-Required secret:
-
-- `GH_TOKEN`
-
-## Common Issues
-
-- Missing organization repos:
-  - add org names in `GH_EXTRA_ORGS`
-  - check token permission or org security policy
-- Numbers look too small:
-  - confirm `GH_TOKEN` is valid and loaded in runtime
-- README not updating:
-  - make sure README markers are still present (`github_stats`, `github_charts`, `recent_releases`, `repo_rankings`, `last_updated`)
+`.github/workflows/build.yml` runs on pushes, manual dispatches, and every six
+hours. The repository must provide a `GH_TOKEN` Actions secret.

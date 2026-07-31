@@ -728,74 +728,139 @@ function buildOverviewSvg(input: {
   organizationSources: ChartItem[];
   lastUpdated: string;
 }) {
-  const activityItems: ChartItem[] = [
-    { label: "Commits", value: input.activity.commits },
-    { label: "Pull requests", value: input.activity.prs },
-    { label: "Issues", value: input.activity.issues },
-  ];
-  const organizationItems = input.organizationSources.slice(0, 6);
-  const organizationMax = Math.max(1, ...organizationItems.map((item) => item.value));
-  const organizationBars = organizationItems
-    .map((item, index) => {
-      const column = index % 3;
-      const row = Math.floor(index / 3);
-      const x = 40 + column * 280;
-      const labelY = 456 + row * 60;
-      const barY = labelY + 11;
-      const barWidth = (item.value / organizationMax) * 238;
-      return [
-        `<text class="body" x="${x}" y="${labelY}">${escapeXml(item.label)}</text>`,
-        `<text class="value" x="${x + 180}" y="${labelY}">${item.value.toLocaleString()}</text>`,
-        `<rect class="track" x="${x}" y="${barY}" width="238" height="7" rx="3.5"/>`,
-        `<rect class="primary" x="${x}" y="${barY}" width="${barWidth.toFixed(2)}" height="7" rx="3.5"/>`,
-      ].join("");
-    })
-    .join("");
+  const activityTotal = input.activity.commits + input.activity.prs + input.activity.issues;
+  const activityCommitsWidth = activityTotal > 0 ? (input.activity.commits / activityTotal) * 380 : 0;
+  const activityPrsWidth = activityTotal > 0 ? (input.activity.prs / activityTotal) * 380 : 0;
+  const activityIssuesWidth = activityTotal > 0 ? (input.activity.issues / activityTotal) * 380 : 0;
+  const activityCommitsPercent = activityTotal > 0 ? (input.activity.commits / activityTotal) * 100 : 0;
+  const activityPrsPercent = activityTotal > 0 ? (input.activity.prs / activityTotal) * 100 : 0;
+  const activityIssuesPercent = activityTotal > 0 ? (input.activity.issues / activityTotal) * 100 : 0;
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="590" viewBox="0 0 900 590" role="img" aria-labelledby="overview-title overview-desc">
+  const starTotal = input.starSources.reduce((sum, item) => sum + item.value, 0);
+  const starSourcesData = input.starSources.map(item => ({
+    ...item,
+    width: starTotal > 0 ? (item.value / starTotal) * 380 : 0,
+    percent: starTotal > 0 ? (item.value / starTotal) * 100 : 0,
+  }));
+  let starX = 0;
+  const starBars = starSourcesData.map(item => {
+    const rect = `<rect class="${item.label === 'Owned repositories' ? 'owned' : item.label === 'Member / collaborator' ? 'collab' : 'orgs'}" x="${starX.toFixed(2)}" y="0" width="${item.width.toFixed(2)}" height="12"/>`;
+    starX += item.width;
+    return rect;
+  }).join('');
+
+  const topOrgs = input.organizationSources.slice(0, 4);
+  const orgsMarkup = topOrgs.map((org, i) => {
+    const x = i * 220;
+    return `<text class="body" x="${x}" y="24">${escapeXml(org.label)}</text><text class="value" x="${x + 180}" y="24">${org.value.toLocaleString()}</text>`;
+  }).join('');
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">${input.stars.toLocaleString()} stars, ${input.followers.toLocaleString()} followers, ${input.forks.toLocaleString()} forks, ${input.activity.commits.toLocaleString()} commits, ${input.activity.prs.toLocaleString()} pull requests, ${input.activity.issues.toLocaleString()} issues, and ${input.activity.contributed_to.toLocaleString()} repositories contributed to.</desc>
-<style>
-  .surface{fill:#f5f5f7}.frame{fill:none;stroke:#d2d2d7;stroke-width:1}.rule{stroke:#d2d2d7;stroke-width:1}
-  .track{fill:#e5e5ea}.primary{fill:#0071e3}.secondary{fill:#64a8f4}.tertiary{fill:#a7cef8}
-  text{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;font-variant-numeric:tabular-nums}
-  .title{font-size:15px;font-weight:600;letter-spacing:-.15px;fill:#1d1d1f}.eyebrow{font-size:11px;font-weight:500;letter-spacing:.1px;fill:#6e6e73}
-  .hero{font-size:52px;font-weight:600;letter-spacing:-1.8px;fill:#0071e3}.metric{font-size:31px;font-weight:600;letter-spacing:-.7px;fill:#1d1d1f}
-  .section{font-size:13px;font-weight:600;letter-spacing:-.1px;fill:#1d1d1f}.body{font-size:13px;font-weight:500;fill:#1d1d1f}.value{font-size:12px;font-weight:500;fill:#6e6e73}.note{font-size:11px;font-weight:400;fill:#6e6e73}
-  @media (prefers-color-scheme:dark){.surface{fill:#1c1c1e}.frame,.rule{stroke:#3a3a3c}.track{fill:#3a3a3c}.title,.metric,.section,.body{fill:#f5f5f7}.eyebrow,.value,.note{fill:#a1a1a6}.primary,.hero{fill:#2997ff}.secondary{fill:#64a8f4}.tertiary{fill:#9ac8f5}}
-</style>
-<rect class="surface" x="0.5" y="0.5" width="899" height="589" rx="22"/>
-<rect class="frame" x="0.5" y="0.5" width="899" height="589" rx="22"/>
+<desc id="overview-desc">${input.stars.toLocaleString()} stars, ${input.followers.toLocaleString()} followers, ${input.forks.toLocaleString()} forks, ${input.activity.commits.toLocaleString()} commits across ${input.repositoryCount} repositories</desc>
 <defs>
-  <clipPath id="activity-bar"><rect x="40" y="274" width="380" height="14" rx="7"/></clipPath>
-  <clipPath id="source-bar"><rect x="480" y="274" width="380" height="14" rx="7"/></clipPath>
+  <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
+  <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
 </defs>
-<text class="title" x="40" y="39">Nexmoe</text>
-<text class="note" x="105" y="39">Open-source overview</text>
-<text class="note" x="700" y="39">${escapeXml(input.lastUpdated)}</text>
-<line class="rule" x1="40" y1="59" x2="860" y2="59"/>
-<text class="eyebrow" x="40" y="102">Total stars</text>
-<text class="hero" x="40" y="166">${input.stars.toLocaleString()}</text>
-<text class="value" x="42" y="194">across ${input.repositoryCount.toLocaleString()} tracked repositories</text>
-<text class="eyebrow" x="480" y="108">Followers</text>
-<text class="metric" x="480" y="151">${input.followers.toLocaleString()}</text>
-<text class="eyebrow" x="625" y="108">Forks</text>
-<text class="metric" x="625" y="151">${input.forks.toLocaleString()}</text>
-<text class="eyebrow" x="745" y="108">Contributed to</text>
-<text class="metric" x="745" y="151">${input.activity.contributed_to.toLocaleString()}</text>
-<line class="rule" x1="40" y1="222" x2="860" y2="222"/>
-<text class="section" x="40" y="252">Activity</text>
-<text class="section" x="480" y="252">Star sources</text>
-<rect class="track" x="40" y="274" width="380" height="14" rx="7"/>
-${buildStackedBar(activityItems, 40, 274, 380, 14, "activity-bar")}
-<rect class="track" x="480" y="274" width="380" height="14" rx="7"/>
-${buildStackedBar(input.starSources, 480, 274, 380, 14, "source-bar")}
-${buildLegendRows(activityItems, 40, 316, 300)}
-${buildLegendRows(input.starSources, 480, 316, 740)}
-<line class="rule" x1="40" y1="394" x2="860" y2="394"/>
-<text class="section" x="40" y="425">Organization breakdown</text>
-${organizationBars || '<text class="note" x="40" y="456">No organization data available.</text>'}
-<text class="note" x="680" y="567">Generated from GitHub API data</text>
+<style>
+  text{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;font-variant-numeric:tabular-nums}
+  .hero{font-size:80px;font-weight:800;letter-spacing:-3.5px;fill:#1d1d1f}
+  .large{font-size:40px;font-weight:700;letter-spacing:-1.5px;fill:#1d1d1f}
+  .metric{font-size:24px;font-weight:600;letter-spacing:-0.8px;fill:#1d1d1f}
+  .section{font-size:15px;font-weight:600;fill:#1d1d1f}
+  .label{font-size:11px;font-weight:600;letter-spacing:0.3px;text-transform:uppercase;fill:#8e8e93}
+  .body{font-size:13px;font-weight:500;fill:#3c3c43}
+  .value{font-size:12px;font-weight:500;fill:#8e8e93}
+  .caption{font-size:11px;font-weight:400;fill:#aeaeb2}
+  .track{fill:#f0f0f5}
+  .commits{fill:#007aff}
+  .prs{fill:#34c759}
+  .issues{fill:#ff9500}
+  .owned{fill:#5856d6}
+  .collab{fill:#af52de}
+  .orgs{fill:#ff2d55}
+  @media (prefers-color-scheme:dark){
+    .hero,.large,.metric,.section,.body{fill:#f5f5f7}
+    .label,.value{fill:#98989d}
+    .caption{fill:#636366}
+    .track{fill:#2c2c2e}
+  }
+</style>
+
+<!-- Main metric -->
+<text class="hero" x="0" y="70">${input.stars.toLocaleString()}</text>
+<text class="label" x="0" y="90">Total Stars · ${input.repositoryCount} Repositories</text>
+
+<!-- Key metrics grid -->
+<g transform="translate(0, 140)">
+  <text class="large" x="0" y="0">${input.followers.toLocaleString()}</text>
+  <text class="label" x="0" y="18">Followers</text>
+</g>
+<g transform="translate(200, 140)">
+  <text class="large" x="0" y="0">${input.forks.toLocaleString()}</text>
+  <text class="label" x="0" y="18">Forks</text>
+</g>
+<g transform="translate(420, 140)">
+  <text class="large" x="0" y="0">${input.activity.contributed_to.toLocaleString()}</text>
+  <text class="label" x="0" y="18">Contributed To</text>
+</g>
+<g transform="translate(640, 140)">
+  <text class="large" x="0" y="0">${input.activity.commits.toLocaleString()}</text>
+  <text class="label" x="0" y="18">Commits</text>
+</g>
+
+<!-- Activity breakdown -->
+<g transform="translate(0, 240)">
+  <text class="section" x="0" y="0">Activity Distribution</text>
+  <g transform="translate(0, 20)">
+    <rect class="track" width="380" height="12" rx="6"/>
+    <g clip-path="url(#activity)">
+      <rect class="commits" x="0" y="0" width="${activityCommitsWidth.toFixed(2)}" height="12"/>
+      <rect class="prs" x="${activityCommitsWidth.toFixed(2)}" y="0" width="${activityPrsWidth.toFixed(2)}" height="12"/>
+      <rect class="issues" x="${(activityCommitsWidth + activityPrsWidth).toFixed(2)}" y="0" width="${activityIssuesWidth.toFixed(2)}" height="12"/>
+    </g>
+  </g>
+  <g transform="translate(0, 48)">
+    <circle class="commits" cx="6" cy="0" r="4"/>
+    <text class="body" x="18" y="4">Commits</text>
+    <text class="value" x="240" y="4">${input.activity.commits.toLocaleString()} · ${activityCommitsPercent.toFixed(1)}%</text>
+  </g>
+  <g transform="translate(0, 72)">
+    <circle class="prs" cx="6" cy="0" r="4"/>
+    <text class="body" x="18" y="4">Pull requests</text>
+    <text class="value" x="240" y="4">${input.activity.prs.toLocaleString()} · ${activityPrsPercent.toFixed(1)}%</text>
+  </g>
+  <g transform="translate(0, 96)">
+    <circle class="issues" cx="6" cy="0" r="4"/>
+    <text class="body" x="18" y="4">Issues</text>
+    <text class="value" x="240" y="4">${input.activity.issues.toLocaleString()} · ${activityIssuesPercent.toFixed(1)}%</text>
+  </g>
+</g>
+
+<!-- Star sources -->
+<g transform="translate(460, 240)">
+  <text class="section" x="0" y="0">Star Sources</text>
+  <g transform="translate(0, 20)">
+    <rect class="track" width="380" height="12" rx="6"/>
+    <g clip-path="url(#sources)">
+      ${starBars}
+    </g>
+  </g>
+  ${starSourcesData.map((item, i) => `<g transform="translate(0, ${48 + i * 24})">
+    <circle class="${item.label === 'Owned repositories' ? 'owned' : item.label === 'Member / collaborator' ? 'collab' : 'orgs'}" cx="6" cy="0" r="4"/>
+    <text class="body" x="18" y="4">${escapeXml(item.label)}</text>
+    <text class="value" x="240" y="4">${item.value.toLocaleString()} · ${item.percent.toFixed(1)}%</text>
+  </g>`).join('\n  ')}
+</g>
+
+<!-- Top organizations -->
+<g transform="translate(0, 400)">
+  <text class="section" x="0" y="0">Top Organizations</text>
+  ${orgsMarkup}
+</g>
+
+<!-- Footer -->
+<text class="caption" x="0" y="480">${escapeXml(input.lastUpdated)}</text>
 </svg>`;
 }
 

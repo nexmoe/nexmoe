@@ -603,6 +603,7 @@ function buildRepoRankingMarkdown(repos: Repo[]) {
     const stars = repo.stargazers_count.toLocaleString("en-US");
     return `### [${repo.full_name}](${repo.html_url})
 ![${stars} stars](${barPath})
+
 ${description}`;
   });
 

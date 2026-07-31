@@ -61,20 +61,10 @@ Typecho Fans主题作品目录
 
 Monitor all the resources you care about. Be the coolest plugin.
 
-### [MkSaaSHQ/mksaas-template](https://github.com/MkSaaSHQ/mksaas-template)
-![163 stars](./assets/repository-bars/mksaashq-mksaas-template.svg)
-
-MkSaaS Template: Make AI SaaS in days
-
 ### [void-sdk/void](https://github.com/void-sdk/void)
 ![147 stars](./assets/repository-bars/void-sdk-void.svg)
 
 No description
-
-### [xiaoshuapp/explorer-xiaoshu](https://github.com/xiaoshuapp/explorer-xiaoshu)
-![116 stars](./assets/repository-bars/xiaoshuapp-explorer-xiaoshu.svg)
-
-Powerful and fast sidebar search toggle tool
 
 ### [nexmoe/serverless-comfyui](https://github.com/nexmoe/serverless-comfyui)
 ![103 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)
@@ -106,20 +96,10 @@ Use only HTML to write modern websites with smooth animations and beautiful inte
 
 No description
 
-### [MkSaaSHQ/mksaas-outfit](https://github.com/MkSaaSHQ/mksaas-outfit)
-![61 stars](./assets/repository-bars/mksaashq-mksaas-outfit.svg)
-
-Try on clothes virtually using advanced AI technology
-
 ### [slmnb-lab/FluxEz](https://github.com/slmnb-lab/FluxEz)
 ![61 stars](./assets/repository-bars/slmnb-lab-fluxez.svg)
 
 基于Next.js和Comfyui的Flux AI图像生成网站
-
-### [dirstarter/dirstarter](https://github.com/dirstarter/dirstarter)
-![53 stars](./assets/repository-bars/dirstarter-dirstarter.svg)
-
-The complete solution for building profitable directory websites.
 
 ### [nexmoe/saladict-skin](https://github.com/nexmoe/saladict-skin)
 ![52 stars](./assets/repository-bars/nexmoe-saladict-skin.svg)
@@ -129,5 +109,5 @@ The complete solution for building profitable directory websites.
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->31 Jul 2026 · 19:11 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->31 Jul 2026 · 19:12 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

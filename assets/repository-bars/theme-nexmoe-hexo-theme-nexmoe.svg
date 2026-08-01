@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="32" viewBox="0 0 600 32" role="img" aria-label="1,749 stars">
-<title>1,749 stars · 9.8% of the top repository</title>
+<title>1,749 stars · 9.7% of the top repository</title>
 <style>
   .count{fill:#1d1d1f;font:600 15px -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif}
   .track{fill:#f0f0f5}.fill{fill:#007aff}
@@ -7,5 +7,5 @@
 </style>
 <text class="count" x="0" y="14">1,749</text>
 <rect class="track" y="22" width="600" height="8" rx="4"/>
-<rect class="fill" y="22" width="58.56" height="8" rx="4"/>
+<rect class="fill" y="22" width="58.50" height="8" rx="4"/>
 </svg>

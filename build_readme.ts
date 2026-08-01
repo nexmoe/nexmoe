@@ -593,7 +593,7 @@ function buildRepositoryBarSvg(value: number, maximum: number) {
 }
 
 function buildRepoRankingMarkdown(repos: Repo[]) {
-  const ranked = sortReposByStars(repos);
+  const ranked = sortReposByStars(repos).filter((repo) => repo.stargazers_count >= 100);
   const maximum = Math.max(1, ...ranked.map((repo) => repo.stargazers_count));
   const rows = ranked.map((repo) => {
     const description = repo.description
@@ -970,9 +970,10 @@ async function main() {
 
   await mkdir(assetsDir, { recursive: true });
   await mkdir(repositoryBarsDir, { recursive: true });
+  const repos100Plus = rankedRepos.filter((repo) => repo.stargazers_count >= 100);
   await Promise.all([
     Bun.write(overviewSvgPath, overviewSvg),
-    ...rankedRepos.map((repo) =>
+    ...repos100Plus.map((repo) =>
       Bun.write(
         join(repositoryBarsDir, repositoryBarFilename(repo.full_name)),
         buildRepositoryBarSvg(repo.stargazers_count, maximumRepoStars),

@@ -12,17 +12,17 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![17,939 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![17,947 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,042 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,044 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download videos from almost any website worldwide
 
 ### [typecho-fans/plugins](https://github.com/typecho-fans/plugins)
-![1,906 stars](./assets/repository-bars/typecho-fans-plugins.svg)
+![1,907 stars](./assets/repository-bars/typecho-fans-plugins.svg)
 
 Typecho Fans插件作品目录
 
@@ -70,44 +70,9 @@ No description
 ![103 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)
 
 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。
-
-### [nexmoe/lm-speed](https://github.com/nexmoe/lm-speed)
-![91 stars](./assets/repository-bars/nexmoe-lm-speed.svg)
-
-Help developers optimize AI application performance through comprehensive speed testing and analysis
-
-### [nexmoe/nexmoe.css](https://github.com/nexmoe/nexmoe.css)
-![74 stars](./assets/repository-bars/nexmoe-nexmoe.css.svg)
-
-Use only HTML to write modern websites with smooth animations and beautiful interfaces.
-
-### [nexmoe/hexo-theme-yet-the-books](https://github.com/nexmoe/hexo-theme-yet-the-books)
-![71 stars](./assets/repository-bars/nexmoe-hexo-theme-yet-the-books.svg)
-
-还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。
-
-### [nexmoe/wall-public](https://github.com/nexmoe/wall-public)
-![66 stars](./assets/repository-bars/nexmoe-wall-public.svg)
-
-一个基于 Vue.js 的匿名表白墙轻量级小程序
-
-### [IvyYang1999/opentrends](https://github.com/IvyYang1999/opentrends)
-![63 stars](./assets/repository-bars/ivyyang1999-opentrends.svg)
-
-No description
-
-### [slmnb-lab/FluxEz](https://github.com/slmnb-lab/FluxEz)
-![61 stars](./assets/repository-bars/slmnb-lab-fluxez.svg)
-
-基于Next.js和Comfyui的Flux AI图像生成网站
-
-### [nexmoe/saladict-skin](https://github.com/nexmoe/saladict-skin)
-![52 stars](./assets/repository-bars/nexmoe-saladict-skin.svg)
-
-沙拉查词很好用，但是查词面板作为一个经常使用的交互界面，还是需要点颜值的
 <!-- repo_rankings ends -->
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->01 Aug 2026 · 10:31 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->01 Aug 2026 · 12:56 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

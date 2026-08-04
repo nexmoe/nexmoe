@@ -17,7 +17,7 @@ Open-source tools for video, audio, AI, and the web.
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,087 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,085 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download videos from almost any website worldwide
 
@@ -42,7 +42,7 @@ Typecho Fans插件作品目录
 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。
 
 ### [nexmoe/eve](https://github.com/nexmoe/eve)
-![414 stars](./assets/repository-bars/nexmoe-eve.svg)
+![415 stars](./assets/repository-bars/nexmoe-eve.svg)
 
 Eve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->04 Aug 2026 · 22:02 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->05 Aug 2026 · 03:27 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

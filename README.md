@@ -12,12 +12,12 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,053 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,056 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,088 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,090 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download videos from almost any website worldwide
 
@@ -47,7 +47,7 @@ Typecho Fans插件作品目录
 Eve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.
 
 ### [theme-nexmoe/typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe)
-![406 stars](./assets/repository-bars/theme-nexmoe-typecho-theme-nexmoe.svg)
+![405 stars](./assets/repository-bars/theme-nexmoe-typecho-theme-nexmoe.svg)
 
 🔥 一个特别的 Typecho 主题
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->05 Aug 2026 · 16:29 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->05 Aug 2026 · 22:00 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

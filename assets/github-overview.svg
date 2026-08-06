@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">35,357 stars, 618 followers, 4,200 forks, 15,805 commits across 137 repositories</desc>
+<desc id="overview-desc">35,356 stars, 618 followers, 4,201 forks, 15,805 commits across 137 repositories</desc>
 <defs>
   <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
   <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
@@ -31,7 +31,7 @@
 </style>
 
 <!-- Main metric -->
-<text class="hero" x="0" y="70">35,357</text>
+<text class="hero" x="0" y="70">35,356</text>
 <text class="label" x="0" y="90">Total Stars · 137 Repositories</text>
 
 <!-- Key metrics grid -->
@@ -40,7 +40,7 @@
   <text class="label" x="0" y="18">Followers</text>
 </g>
 <g transform="translate(200, 140)">
-  <text class="large" x="0" y="0">4,200</text>
+  <text class="large" x="0" y="0">4,201</text>
   <text class="label" x="0" y="18">Forks</text>
 </g>
 <g transform="translate(420, 140)">
@@ -86,13 +86,13 @@
   <g transform="translate(0, 20)">
     <rect class="track" width="380" height="12" rx="6"/>
     <g clip-path="url(#sources)">
-      <rect class="owned" x="0.00" y="0" width="123.12" height="12"/><rect class="collab" x="123.12" y="0" width="196.71" height="12"/><rect class="orgs" x="319.84" y="0" width="60.16" height="12"/>
+      <rect class="owned" x="0.00" y="0" width="123.12" height="12"/><rect class="collab" x="123.12" y="0" width="196.72" height="12"/><rect class="orgs" x="319.83" y="0" width="60.17" height="12"/>
     </g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="owned" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Owned repositories</text>
-    <text class="value" x="240" y="4">11,456 · 32.4%</text>
+    <text class="value" x="240" y="4">11,455 · 32.4%</text>
   </g>
   <g transform="translate(0, 72)">
     <circle class="collab" cx="6" cy="0" r="4"/>
@@ -113,5 +113,5 @@
 </g>
 
 <!-- Footer -->
-<text class="caption" x="0" y="480">06 Aug 2026 · 03:24 UTC+8</text>
+<text class="caption" x="0" y="480">06 Aug 2026 · 10:17 UTC+8</text>
 </svg>

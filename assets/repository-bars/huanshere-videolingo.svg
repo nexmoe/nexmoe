@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="32" viewBox="0 0 600 32" role="img" aria-label="18,083 stars">
-<title>18,083 stars · 100.0% of the top repository</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="32" viewBox="0 0 600 32" role="img" aria-label="18,085 stars">
+<title>18,085 stars · 100.0% of the top repository</title>
 <style>
   .count{fill:#1d1d1f;font:600 15px -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif}
   .track{fill:#f0f0f5}.fill{fill:#007aff}
   @media (prefers-color-scheme:dark){.count{fill:#f5f5f7}.track{fill:#2c2c2e}}
 </style>
-<text class="count" x="0" y="14">18,083</text>
+<text class="count" x="0" y="14">18,085</text>
 <rect class="track" y="22" width="600" height="8" rx="4"/>
 <rect class="fill" y="22" width="600.00" height="8" rx="4"/>
 </svg>

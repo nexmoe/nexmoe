@@ -12,12 +12,12 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,082 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,083 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,117 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,118 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download videos from almost any website worldwide
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->08 Aug 2026 · 14:45 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->08 Aug 2026 · 20:40 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

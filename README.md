@@ -17,7 +17,7 @@ Open-source tools for video, audio, AI, and the web.
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,154 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,155 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download videos from almost any website worldwide
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->14 Aug 2026 · 02:58 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->14 Aug 2026 · 09:41 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

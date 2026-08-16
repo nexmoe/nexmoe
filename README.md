@@ -12,7 +12,7 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,153 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,152 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
@@ -27,7 +27,7 @@ Download videos from almost any website worldwide
 Typecho Fans插件作品目录
 
 ### [theme-nexmoe/hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)
-![1,746 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)
+![1,745 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)
 
 🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->16 Aug 2026 · 20:32 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->17 Aug 2026 · 02:23 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

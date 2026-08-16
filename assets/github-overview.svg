@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">35,577 stars, 628 followers, 4,216 forks, 16,340 commits across 137 repositories</desc>
+<desc id="overview-desc">35,575 stars, 630 followers, 4,215 forks, 16,375 commits across 137 repositories</desc>
 <defs>
   <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
   <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
@@ -31,16 +31,16 @@
 </style>
 
 <!-- Main metric -->
-<text class="hero" x="0" y="70">35,577</text>
+<text class="hero" x="0" y="70">35,575</text>
 <text class="label" x="0" y="90">Total Stars · 137 Repositories</text>
 
 <!-- Key metrics grid -->
 <g transform="translate(0, 140)">
-  <text class="large" x="0" y="0">628</text>
+  <text class="large" x="0" y="0">630</text>
   <text class="label" x="0" y="18">Followers</text>
 </g>
 <g transform="translate(200, 140)">
-  <text class="large" x="0" y="0">4,216</text>
+  <text class="large" x="0" y="0">4,215</text>
   <text class="label" x="0" y="18">Forks</text>
 </g>
 <g transform="translate(420, 140)">
@@ -48,7 +48,7 @@
   <text class="label" x="0" y="18">Contributed To</text>
 </g>
 <g transform="translate(640, 140)">
-  <text class="large" x="0" y="0">16,340</text>
+  <text class="large" x="0" y="0">16,375</text>
   <text class="label" x="0" y="18">Commits</text>
 </g>
 
@@ -58,15 +58,15 @@
   <g transform="translate(0, 20)">
     <rect class="track" width="380" height="12" rx="6"/>
     <g clip-path="url(#activity)">
-      <rect class="commits" x="0" y="0" width="364.37" height="12"/>
-      <rect class="prs" x="364.37" y="0" width="6.82" height="12"/>
-      <rect class="issues" x="371.19" y="0" width="8.81" height="12"/>
+      <rect class="commits" x="0" y="0" width="364.40" height="12"/>
+      <rect class="prs" x="364.40" y="0" width="6.81" height="12"/>
+      <rect class="issues" x="371.21" y="0" width="8.79" height="12"/>
     </g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="commits" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Commits</text>
-    <text class="value" x="240" y="4">16,340 · 95.9%</text>
+    <text class="value" x="240" y="4">16,375 · 95.9%</text>
   </g>
   <g transform="translate(0, 72)">
     <circle class="prs" cx="6" cy="0" r="4"/>
@@ -86,7 +86,7 @@
   <g transform="translate(0, 20)">
     <rect class="track" width="380" height="12" rx="6"/>
     <g clip-path="url(#sources)">
-      <rect class="owned" x="0.00" y="0" width="123.73" height="12"/><rect class="collab" x="123.73" y="0" width="196.50" height="12"/><rect class="orgs" x="320.23" y="0" width="59.77" height="12"/>
+      <rect class="owned" x="0.00" y="0" width="123.74" height="12"/><rect class="collab" x="123.74" y="0" width="196.50" height="12"/><rect class="orgs" x="320.24" y="0" width="59.76" height="12"/>
     </g>
   </g>
   <g transform="translate(0, 48)">
@@ -97,21 +97,21 @@
   <g transform="translate(0, 72)">
     <circle class="collab" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Member / collaborator</text>
-    <text class="value" x="240" y="4">18,397 · 51.7%</text>
+    <text class="value" x="240" y="4">18,396 · 51.7%</text>
   </g>
   <g transform="translate(0, 96)">
     <circle class="orgs" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Organizations</text>
-    <text class="value" x="240" y="4">5,596 · 15.7%</text>
+    <text class="value" x="240" y="4">5,595 · 15.7%</text>
   </g>
 </g>
 
 <!-- Top organizations -->
 <g transform="translate(0, 400)">
   <text class="section" x="0" y="0">Top Organizations</text>
-  <text class="body" x="0" y="24">theme-nexmoe</text><text class="value" x="180" y="24">2,198</text><text class="body" x="220" y="24">typecho-fans</text><text class="value" x="400" y="24">2,143</text><text class="body" x="440" y="24">hitokoto-osc</text><text class="value" x="620" y="24">1,112</text><text class="body" x="660" y="24">slmnb-lab</text><text class="value" x="840" y="24">87</text>
+  <text class="body" x="0" y="24">theme-nexmoe</text><text class="value" x="180" y="24">2,197</text><text class="body" x="220" y="24">typecho-fans</text><text class="value" x="400" y="24">2,143</text><text class="body" x="440" y="24">hitokoto-osc</text><text class="value" x="620" y="24">1,112</text><text class="body" x="660" y="24">slmnb-lab</text><text class="value" x="840" y="24">87</text>
 </g>
 
 <!-- Footer -->
-<text class="caption" x="0" y="480">16 Aug 2026 · 20:32 UTC+8</text>
+<text class="caption" x="0" y="480">17 Aug 2026 · 02:23 UTC+8</text>
 </svg>

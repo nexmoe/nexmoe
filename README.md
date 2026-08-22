@@ -19,7 +19,7 @@ Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-c
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
 ![10,258 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
-Download videos from almost any website worldwide
+Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.
 
 ### [typecho-fans/plugins](https://github.com/typecho-fans/plugins)
 ![1,907 stars](./assets/repository-bars/typecho-fans-plugins.svg)
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->22 Aug 2026 · 09:02 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->22 Aug 2026 · 14:33 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

@@ -12,12 +12,12 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,233 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,239 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,304 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,328 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.
 
@@ -42,7 +42,7 @@ Typecho Fans插件作品目录
 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。
 
 ### [nexmoe/eve](https://github.com/nexmoe/eve)
-![416 stars](./assets/repository-bars/nexmoe-eve.svg)
+![417 stars](./assets/repository-bars/nexmoe-eve.svg)
 
 Eve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->24 Aug 2026 · 09:05 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->24 Aug 2026 · 14:51 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

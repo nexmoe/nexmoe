@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">35,999 stars, 647 followers, 4,252 forks, 16,814 commits across 138 repositories</desc>
+<desc id="overview-desc">36,001 stars, 647 followers, 4,252 forks, 16,814 commits across 138 repositories</desc>
 <defs>
   <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
   <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
@@ -31,7 +31,7 @@
 </style>
 
 <!-- Main metric -->
-<text class="hero" x="0" y="70">35,999</text>
+<text class="hero" x="0" y="70">36,001</text>
 <text class="label" x="0" y="90">Total Stars · 138 Repositories</text>
 
 <!-- Key metrics grid -->
@@ -86,7 +86,7 @@
   <g transform="translate(0, 20)">
     <rect class="track" width="380" height="12" rx="6"/>
     <g clip-path="url(#sources)">
-      <rect class="owned" x="0.00" y="0" width="124.99" height="12"/><rect class="collab" x="124.99" y="0" width="195.90" height="12"/><rect class="orgs" x="320.89" y="0" width="59.11" height="12"/>
+      <rect class="owned" x="0.00" y="0" width="124.98" height="12"/><rect class="collab" x="124.98" y="0" width="195.91" height="12"/><rect class="orgs" x="320.89" y="0" width="59.11" height="12"/>
     </g>
   </g>
   <g transform="translate(0, 48)">
@@ -97,7 +97,7 @@
   <g transform="translate(0, 72)">
     <circle class="collab" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Member / collaborator</text>
-    <text class="value" x="240" y="4">18,558 · 51.6%</text>
+    <text class="value" x="240" y="4">18,560 · 51.6%</text>
   </g>
   <g transform="translate(0, 96)">
     <circle class="orgs" cx="6" cy="0" r="4"/>
@@ -113,5 +113,5 @@
 </g>
 
 <!-- Footer -->
-<text class="caption" x="0" y="480">02 Sept 2026 · 00:01 UTC+8</text>
+<text class="caption" x="0" y="480">02 Sept 2026 · 04:30 UTC+8</text>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">36,099 stars, 647 followers, 4,260 forks, 16,913 commits across 138 repositories</desc>
+<desc id="overview-desc">36,104 stars, 647 followers, 4,260 forks, 16,913 commits across 138 repositories</desc>
 <defs>
   <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
   <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
@@ -31,7 +31,7 @@
 </style>
 
 <!-- Main metric -->
-<text class="hero" x="0" y="70">36,099</text>
+<text class="hero" x="0" y="70">36,104</text>
 <text class="label" x="0" y="90">Total Stars · 138 Repositories</text>
 
 <!-- Key metrics grid -->
@@ -86,32 +86,32 @@
   <g transform="translate(0, 20)">
     <rect class="track" width="380" height="12" rx="6"/>
     <g clip-path="url(#sources)">
-      <rect class="owned" x="0.00" y="0" width="125.20" height="12"/><rect class="collab" x="125.20" y="0" width="195.84" height="12"/><rect class="orgs" x="321.04" y="0" width="58.96" height="12"/>
+      <rect class="owned" x="0.00" y="0" width="125.21" height="12"/><rect class="collab" x="125.21" y="0" width="195.82" height="12"/><rect class="orgs" x="321.03" y="0" width="58.97" height="12"/>
     </g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="owned" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Owned repositories</text>
-    <text class="value" x="240" y="4">11,894 · 32.9%</text>
+    <text class="value" x="240" y="4">11,896 · 32.9%</text>
   </g>
   <g transform="translate(0, 72)">
     <circle class="collab" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Member / collaborator</text>
-    <text class="value" x="240" y="4">18,604 · 51.5%</text>
+    <text class="value" x="240" y="4">18,605 · 51.5%</text>
   </g>
   <g transform="translate(0, 96)">
     <circle class="orgs" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Organizations</text>
-    <text class="value" x="240" y="4">5,601 · 15.5%</text>
+    <text class="value" x="240" y="4">5,603 · 15.5%</text>
   </g>
 </g>
 
 <!-- Top organizations -->
 <g transform="translate(0, 400)">
   <text class="section" x="0" y="0">Top Organizations</text>
-  <text class="body" x="0" y="24">theme-nexmoe</text><text class="value" x="180" y="24">2,198</text><text class="body" x="220" y="24">typecho-fans</text><text class="value" x="400" y="24">2,143</text><text class="body" x="440" y="24">hitokoto-osc</text><text class="value" x="620" y="24">1,116</text><text class="body" x="660" y="24">slmnb-lab</text><text class="value" x="840" y="24">88</text>
+  <text class="body" x="0" y="24">theme-nexmoe</text><text class="value" x="180" y="24">2,198</text><text class="body" x="220" y="24">typecho-fans</text><text class="value" x="400" y="24">2,143</text><text class="body" x="440" y="24">hitokoto-osc</text><text class="value" x="620" y="24">1,118</text><text class="body" x="660" y="24">slmnb-lab</text><text class="value" x="840" y="24">88</text>
 </g>
 
 <!-- Footer -->
-<text class="caption" x="0" y="480">05 Sept 2026 · 04:14 UTC+8</text>
+<text class="caption" x="0" y="480">05 Sept 2026 · 10:51 UTC+8</text>
 </svg>

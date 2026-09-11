@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-11T02:55:12.609Z",
+  "generated_at": "2026-09-11T10:33:54.485Z",
   "totals": {
     "followers": 647,
-    "stars": 36221,
-    "forks": 4272
+    "stars": 36227,
+    "forks": 4273
   },
   "scopes": {
     "owned": {
-      "stars": 11960,
-      "forks": 979,
+      "stars": 11967,
+      "forks": 981,
       "count": 57,
       "repos": [
         {
@@ -16,8 +16,8 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from  YouTube ,  TikTok ,  Twitter ,  Instagram ,  Facebook ,  Twitch ,  Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.",
-          "stargazers_count": 10595,
-          "forks_count": 811
+          "stargazers_count": 10602,
+          "forks_count": 813
         },
         {
           "name": "eve",
@@ -95,7 +95,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 18410,
+          "stargazers_count": 18411,
           "forks_count": 2026
         },
         {
@@ -111,14 +111,14 @@
           "full_name": "IvyYang1999/opentrends",
           "html_url": "https://github.com/IvyYang1999/opentrends",
           "description": null,
-          "stargazers_count": 64,
+          "stargazers_count": 63,
           "forks_count": 9
         }
       ]
     },
     "merged": {
-      "stars": 36221,
-      "forks": 4272,
+      "stars": 36227,
+      "forks": 4273,
       "count": 139,
       "repos": [
         {
@@ -126,7 +126,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 18410,
+          "stargazers_count": 18411,
           "forks_count": 2026
         },
         {
@@ -134,16 +134,16 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from  YouTube ,  TikTok ,  Twitter ,  Instagram ,  Facebook ,  Twitch ,  Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.",
-          "stargazers_count": 10595,
-          "forks_count": 811
+          "stargazers_count": 10602,
+          "forks_count": 813
         },
         {
           "name": "plugins",
           "full_name": "typecho-fans/plugins",
           "html_url": "https://github.com/typecho-fans/plugins",
           "description": "Typecho Fans插件作品目录",
-          "stargazers_count": 1906,
-          "forks_count": 592
+          "stargazers_count": 1905,
+          "forks_count": 591
         },
         {
           "name": "hexo-theme-nexmoe",
@@ -254,7 +254,7 @@
           "full_name": "IvyYang1999/opentrends",
           "html_url": "https://github.com/IvyYang1999/opentrends",
           "description": null,
-          "stargazers_count": 64,
+          "stargazers_count": 63,
           "forks_count": 9
         },
         {
@@ -277,28 +277,28 @@
     }
   },
   "activity": {
-    "commits": 17088,
-    "prs": 308,
+    "commits": 17117,
+    "prs": 309,
     "issues": 399,
-    "total": 17795,
-    "contributed_to": 114
+    "total": 17825,
+    "contributed_to": 115
   },
   "star_sources": {
-    "owned": 11960,
+    "owned": 11967,
     "member": 18657,
-    "organization": 5604,
+    "organization": 5603,
     "organizations": {
       "theme-nexmoe": 2196,
-      "typecho-fans": 2143,
+      "typecho-fans": 2142,
       "hitokoto-osc": 1120,
       "slmnb-lab": 89,
       "mixcm": 53,
       "ComNergy": 3
     }
   },
-  "last_updated": "11 Sept 2026 · 10:54 UTC+8",
+  "last_updated": "11 Sept 2026 · 18:33 UTC+8",
   "markdown": {
-    "github_stats": "### Core metrics\n\n| Metric | Value |\n|:--|--:|\n| Followers | 647 |\n| Stars | 36,221 |\n| Forks | 4,272 |\n| Tracked repositories | 139 |\n| Commits | 17,088 |\n| Pull requests | 308 |\n| Issues | 399 |\n| Repositories contributed to | 114 |\n\n### Star sources\n\n| Source | Stars |\n|:--|--:|\n| Owned repositories | 11,960 |\n| Member / collaborator | 18,657 |\n| Organizations | 5,604 |\n\n### Organizations\n\n| Organization | Stars |\n|:--|--:|\n| theme-nexmoe | 2,196 |\n| typecho-fans | 2,143 |\n| hitokoto-osc | 1,120 |\n| slmnb-lab | 89 |\n| mixcm | 53 |\n| ComNergy | 3 |",
-    "rankings": "### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)\n![18,410 stars](./assets/repository-bars/huanshere-videolingo.svg)\n\nNetflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组\n\n### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)\n![10,595 stars](./assets/repository-bars/nexmoe-vidbee.svg)\n\nDownload video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.\n\n### [typecho-fans/plugins](https://github.com/typecho-fans/plugins)\n![1,906 stars](./assets/repository-bars/typecho-fans-plugins.svg)\n\nTypecho Fans插件作品目录\n\n### [theme-nexmoe/hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)\n![1,744 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)\n\n🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.\n\n### [hitokoto-osc/hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api)\n![585 stars](./assets/repository-bars/hitokoto-osc-hitokoto-api.svg)\n\n版本：1，现行的 API 运行框架。\n\n### [hitokoto-osc/sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle)\n![458 stars](./assets/repository-bars/hitokoto-osc-sentences-bundle.svg)\n\n一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。\n\n### [nexmoe/eve](https://github.com/nexmoe/eve)\n![419 stars](./assets/repository-bars/nexmoe-eve.svg)\n\nEve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.\n\n### [theme-nexmoe/typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe)\n![405 stars](./assets/repository-bars/theme-nexmoe-typecho-theme-nexmoe.svg)\n\n🔥 一个特别的 Typecho 主题\n\n### [typecho-fans/themes](https://github.com/typecho-fans/themes)\n![227 stars](./assets/repository-bars/typecho-fans-themes.svg)\n\nTypecho Fans主题作品目录\n\n### [nexmoe/vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro)\n![220 stars](./assets/repository-bars/nexmoe-vscode-monitor-pro.svg)\n\nMonitor all the resources you care about. Be the coolest plugin.\n\n### [void-sdk/void](https://github.com/void-sdk/void)\n![147 stars](./assets/repository-bars/void-sdk-void.svg)\n\nNo description\n\n### [nexmoe/serverless-comfyui](https://github.com/nexmoe/serverless-comfyui)\n![103 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)\n\n一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。"
+    "github_stats": "### Core metrics\n\n| Metric | Value |\n|:--|--:|\n| Followers | 647 |\n| Stars | 36,227 |\n| Forks | 4,273 |\n| Tracked repositories | 139 |\n| Commits | 17,117 |\n| Pull requests | 309 |\n| Issues | 399 |\n| Repositories contributed to | 115 |\n\n### Star sources\n\n| Source | Stars |\n|:--|--:|\n| Owned repositories | 11,967 |\n| Member / collaborator | 18,657 |\n| Organizations | 5,603 |\n\n### Organizations\n\n| Organization | Stars |\n|:--|--:|\n| theme-nexmoe | 2,196 |\n| typecho-fans | 2,142 |\n| hitokoto-osc | 1,120 |\n| slmnb-lab | 89 |\n| mixcm | 53 |\n| ComNergy | 3 |",
+    "rankings": "### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)\n![18,411 stars](./assets/repository-bars/huanshere-videolingo.svg)\n\nNetflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组\n\n### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)\n![10,602 stars](./assets/repository-bars/nexmoe-vidbee.svg)\n\nDownload video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.\n\n### [typecho-fans/plugins](https://github.com/typecho-fans/plugins)\n![1,905 stars](./assets/repository-bars/typecho-fans-plugins.svg)\n\nTypecho Fans插件作品目录\n\n### [theme-nexmoe/hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)\n![1,744 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)\n\n🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.\n\n### [hitokoto-osc/hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api)\n![585 stars](./assets/repository-bars/hitokoto-osc-hitokoto-api.svg)\n\n版本：1，现行的 API 运行框架。\n\n### [hitokoto-osc/sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle)\n![458 stars](./assets/repository-bars/hitokoto-osc-sentences-bundle.svg)\n\n一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。\n\n### [nexmoe/eve](https://github.com/nexmoe/eve)\n![419 stars](./assets/repository-bars/nexmoe-eve.svg)\n\nEve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.\n\n### [theme-nexmoe/typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe)\n![405 stars](./assets/repository-bars/theme-nexmoe-typecho-theme-nexmoe.svg)\n\n🔥 一个特别的 Typecho 主题\n\n### [typecho-fans/themes](https://github.com/typecho-fans/themes)\n![227 stars](./assets/repository-bars/typecho-fans-themes.svg)\n\nTypecho Fans主题作品目录\n\n### [nexmoe/vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro)\n![220 stars](./assets/repository-bars/nexmoe-vscode-monitor-pro.svg)\n\nMonitor all the resources you care about. Be the coolest plugin.\n\n### [void-sdk/void](https://github.com/void-sdk/void)\n![147 stars](./assets/repository-bars/void-sdk-void.svg)\n\nNo description\n\n### [nexmoe/serverless-comfyui](https://github.com/nexmoe/serverless-comfyui)\n![103 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)\n\n一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。"
   }
 }

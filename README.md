@@ -12,22 +12,22 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,411 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,414 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,602 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,603 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.
 
 ### [typecho-fans/plugins](https://github.com/typecho-fans/plugins)
-![1,905 stars](./assets/repository-bars/typecho-fans-plugins.svg)
+![1,906 stars](./assets/repository-bars/typecho-fans-plugins.svg)
 
 Typecho Fans插件作品目录
 
 ### [theme-nexmoe/hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)
-![1,744 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)
+![1,743 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)
 
 🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.
 
@@ -37,7 +37,7 @@ Typecho Fans插件作品目录
 版本：1，现行的 API 运行框架。
 
 ### [hitokoto-osc/sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle)
-![458 stars](./assets/repository-bars/hitokoto-osc-sentences-bundle.svg)
+![459 stars](./assets/repository-bars/hitokoto-osc-sentences-bundle.svg)
 
 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。
 
@@ -52,7 +52,7 @@ Eve Recorder: A cross-platform long-running microphone recorder with real-time t
 🔥 一个特别的 Typecho 主题
 
 ### [typecho-fans/themes](https://github.com/typecho-fans/themes)
-![227 stars](./assets/repository-bars/typecho-fans-themes.svg)
+![228 stars](./assets/repository-bars/typecho-fans-themes.svg)
 
 Typecho Fans主题作品目录
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->11 Sept 2026 · 18:33 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->11 Sept 2026 · 23:49 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">36,298 stars, 647 followers, 4,282 forks, 17,165 commits across 139 repositories</desc>
+<desc id="overview-desc">30,696 stars, 647 followers, 3,027 forks, 17,165 commits across 65 repositories</desc>
 <defs>
   <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
   <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
@@ -31,8 +31,8 @@
 </style>
 
 <!-- Main metric -->
-<text class="hero" x="0" y="70">36,298</text>
-<text class="label" x="0" y="90">Total Stars · 139 Repositories</text>
+<text class="hero" x="0" y="70">30,696</text>
+<text class="label" x="0" y="90">Total Stars · 65 Repositories</text>
 
 <!-- Key metrics grid -->
 <g transform="translate(0, 140)">
@@ -40,7 +40,7 @@
   <text class="label" x="0" y="18">Followers</text>
 </g>
 <g transform="translate(200, 140)">
-  <text class="large" x="0" y="0">4,282</text>
+  <text class="large" x="0" y="0">3,027</text>
   <text class="label" x="0" y="18">Forks</text>
 </g>
 <g transform="translate(420, 140)">
@@ -86,32 +86,32 @@
   <g transform="translate(0, 20)">
     <rect class="track" width="380" height="12" rx="6"/>
     <g clip-path="url(#sources)">
-      <rect class="owned" x="0.00" y="0" width="125.67" height="12"/><rect class="collab" x="125.67" y="0" width="195.66" height="12"/><rect class="orgs" x="321.33" y="0" width="58.67" height="12"/>
+      <rect class="owned" x="0.00" y="0" width="148.60" height="12"/><rect class="collab" x="148.60" y="0" width="231.40" height="12"/><rect class="orgs" x="380.00" y="0" width="0.00" height="12"/>
     </g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="owned" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Owned repositories</text>
-    <text class="value" x="240" y="4">12,004 · 33.1%</text>
+    <text class="value" x="240" y="4">12,004 · 39.1%</text>
   </g>
   <g transform="translate(0, 72)">
     <circle class="collab" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Member / collaborator</text>
-    <text class="value" x="240" y="4">18,690 · 51.5%</text>
+    <text class="value" x="240" y="4">18,692 · 60.9%</text>
   </g>
   <g transform="translate(0, 96)">
     <circle class="orgs" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Organizations</text>
-    <text class="value" x="240" y="4">5,604 · 15.4%</text>
+    <text class="value" x="240" y="4">0 · 0.0%</text>
   </g>
 </g>
 
 <!-- Top organizations -->
 <g transform="translate(0, 400)">
   <text class="section" x="0" y="0">Top Organizations</text>
-  <text class="body" x="0" y="24">theme-nexmoe</text><text class="value" x="180" y="24">2,194</text><text class="body" x="220" y="24">typecho-fans</text><text class="value" x="400" y="24">2,144</text><text class="body" x="440" y="24">hitokoto-osc</text><text class="value" x="620" y="24">1,121</text><text class="body" x="660" y="24">slmnb-lab</text><text class="value" x="840" y="24">89</text>
+  
 </g>
 
 <!-- Footer -->
-<text class="caption" x="0" y="480">15 Sept 2026 · 19:00 UTC+8</text>
+<text class="caption" x="0" y="480">16 Sept 2026 · 00:11 UTC+8</text>
 </svg>

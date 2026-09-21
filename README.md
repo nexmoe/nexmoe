@@ -62,7 +62,7 @@ Typecho Fans主题作品目录
 Monitor all the resources you care about. Be the coolest plugin.
 
 ### [void-sdk/void](https://github.com/void-sdk/void)
-![149 stars](./assets/repository-bars/void-sdk-void.svg)
+![150 stars](./assets/repository-bars/void-sdk-void.svg)
 
 No description
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->22 Sept 2026 · 01:55 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->22 Sept 2026 · 05:42 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

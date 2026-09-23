@@ -12,12 +12,12 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,499 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,503 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,689 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,688 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.
 
@@ -47,7 +47,7 @@ Typecho Fans插件作品目录
 Eve Recorder: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.
 
 ### [theme-nexmoe/typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe)
-![405 stars](./assets/repository-bars/theme-nexmoe-typecho-theme-nexmoe.svg)
+![406 stars](./assets/repository-bars/theme-nexmoe-typecho-theme-nexmoe.svg)
 
 🔥 一个特别的 Typecho 主题
 
@@ -67,12 +67,12 @@ Monitor all the resources you care about. Be the coolest plugin.
 No description
 
 ### [nexmoe/serverless-comfyui](https://github.com/nexmoe/serverless-comfyui)
-![103 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)
+![102 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)
 
 一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。
 <!-- repo_rankings ends -->
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->23 Sept 2026 · 11:12 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->23 Sept 2026 · 18:43 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

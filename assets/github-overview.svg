@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">36,415 stars, 647 followers, 4,298 forks, 17,400 commits across 139 repositories</desc>
+<desc id="overview-desc">36,422 stars, 647 followers, 4,299 forks, 17,400 commits across 139 repositories</desc>
 <defs>
   <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
   <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
@@ -31,7 +31,7 @@
 </style>
 
 <!-- Main metric -->
-<text class="hero" x="0" y="70">36,415</text>
+<text class="hero" x="0" y="70">36,422</text>
 <text class="label" x="0" y="90">Total Stars · 139 Repositories</text>
 
 <!-- Key metrics grid -->
@@ -40,7 +40,7 @@
   <text class="label" x="0" y="18">Followers</text>
 </g>
 <g transform="translate(200, 140)">
-  <text class="large" x="0" y="0">4,298</text>
+  <text class="large" x="0" y="0">4,299</text>
   <text class="label" x="0" y="18">Forks</text>
 </g>
 <g transform="translate(420, 140)">
@@ -58,8 +58,8 @@
   <g transform="translate(0, 20)">
     <rect class="track" width="380" height="12" rx="6"/>
     <g clip-path="url(#activity)">
-      <rect class="commits" x="0" y="0" width="364.88" height="12"/>
-      <rect class="prs" x="364.88" y="0" width="6.73" height="12"/>
+      <rect class="commits" x="0" y="0" width="364.86" height="12"/>
+      <rect class="prs" x="364.86" y="0" width="6.75" height="12"/>
       <rect class="issues" x="371.61" y="0" width="8.39" height="12"/>
     </g>
   </g>
@@ -71,7 +71,7 @@
   <g transform="translate(0, 72)">
     <circle class="prs" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Pull requests</text>
-    <text class="value" x="240" y="4">321 · 1.8%</text>
+    <text class="value" x="240" y="4">322 · 1.8%</text>
   </g>
   <g transform="translate(0, 96)">
     <circle class="issues" cx="6" cy="0" r="4"/>
@@ -86,18 +86,18 @@
   <g transform="translate(0, 20)">
     <rect class="track" width="380" height="12" rx="6"/>
     <g clip-path="url(#sources)">
-      <rect class="owned" x="0.00" y="0" width="125.81" height="12"/><rect class="collab" x="125.81" y="0" width="195.68" height="12"/><rect class="orgs" x="321.49" y="0" width="58.51" height="12"/>
+      <rect class="owned" x="0.00" y="0" width="125.80" height="12"/><rect class="collab" x="125.80" y="0" width="195.70" height="12"/><rect class="orgs" x="321.50" y="0" width="58.50" height="12"/>
     </g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="owned" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Owned repositories</text>
-    <text class="value" x="240" y="4">12,056 · 33.1%</text>
+    <text class="value" x="240" y="4">12,058 · 33.1%</text>
   </g>
   <g transform="translate(0, 72)">
     <circle class="collab" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Member / collaborator</text>
-    <text class="value" x="240" y="4">18,752 · 51.5%</text>
+    <text class="value" x="240" y="4">18,757 · 51.5%</text>
   </g>
   <g transform="translate(0, 96)">
     <circle class="orgs" cx="6" cy="0" r="4"/>
@@ -113,5 +113,5 @@
 </g>
 
 <!-- Footer -->
-<text class="caption" x="0" y="480">23 Sept 2026 · 18:43 UTC+8</text>
+<text class="caption" x="0" y="480">24 Sept 2026 · 00:02 UTC+8</text>
 </svg>

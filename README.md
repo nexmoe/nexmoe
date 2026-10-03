@@ -12,12 +12,12 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,557 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,560 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,734 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,735 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.
 
@@ -37,7 +37,7 @@ Typecho Fans插件作品目录
 版本：1，现行的 API 运行框架。
 
 ### [hitokoto-osc/sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle)
-![462 stars](./assets/repository-bars/hitokoto-osc-sentences-bundle.svg)
+![463 stars](./assets/repository-bars/hitokoto-osc-sentences-bundle.svg)
 
 一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。
 
@@ -62,7 +62,7 @@ Typecho Fans主题作品目录
 Monitor all the resources you care about. Be the coolest plugin.
 
 ### [void-sdk/void](https://github.com/void-sdk/void)
-![153 stars](./assets/repository-bars/void-sdk-void.svg)
+![154 stars](./assets/repository-bars/void-sdk-void.svg)
 
 No description
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->03 Oct 2026 · 05:47 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->03 Oct 2026 · 11:42 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

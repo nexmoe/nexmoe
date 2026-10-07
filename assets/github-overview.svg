@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">36,615 stars, 648 followers, 4,321 forks, 17,641 commits across 139 repositories</desc>
+<desc id="overview-desc">36,618 stars, 648 followers, 4,321 forks, 17,641 commits across 139 repositories</desc>
 <defs>
   <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
   <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
@@ -31,7 +31,7 @@
 </style>
 
 <!-- Main metric -->
-<text class="hero" x="0" y="70">36,615</text>
+<text class="hero" x="0" y="70">36,618</text>
 <text class="label" x="0" y="90">Total Stars · 139 Repositories</text>
 
 <!-- Key metrics grid -->
@@ -92,12 +92,12 @@
   <g transform="translate(0, 48)">
     <circle class="owned" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Owned repositories</text>
-    <text class="value" x="240" y="4">12,138 · 33.2%</text>
+    <text class="value" x="240" y="4">12,139 · 33.2%</text>
   </g>
   <g transform="translate(0, 72)">
     <circle class="collab" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">Member / collaborator</text>
-    <text class="value" x="240" y="4">18,872 · 51.5%</text>
+    <text class="value" x="240" y="4">18,874 · 51.5%</text>
   </g>
   <g transform="translate(0, 96)">
     <circle class="orgs" cx="6" cy="0" r="4"/>
@@ -113,5 +113,5 @@
 </g>
 
 <!-- Footer -->
-<text class="caption" x="0" y="480">07 Oct 2026 · 06:17 UTC+8</text>
+<text class="caption" x="0" y="480">07 Oct 2026 · 12:11 UTC+8</text>
 </svg>

@@ -12,12 +12,12 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,718 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,723 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,798 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,800 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.
 
@@ -27,12 +27,12 @@ Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook 
 Typecho Fans插件作品目录
 
 ### [theme-nexmoe/hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)
-![1,739 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)
+![1,740 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)
 
 🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.
 
 ### [hitokoto-osc/hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api)
-![583 stars](./assets/repository-bars/hitokoto-osc-hitokoto-api.svg)
+![582 stars](./assets/repository-bars/hitokoto-osc-hitokoto-api.svg)
 
 版本：1，现行的 API 运行框架。
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->09 Oct 2026 · 20:31 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->10 Oct 2026 · 06:12 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

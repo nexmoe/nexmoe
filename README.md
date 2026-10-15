@@ -12,12 +12,12 @@ Open-source tools for video, audio, AI, and the web.
 
 <!-- repo_rankings starts -->
 ### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![18,798 stars](./assets/repository-bars/huanshere-videolingo.svg)
+![18,803 stars](./assets/repository-bars/huanshere-videolingo.svg)
 
 Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
 
 ### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![10,856 stars](./assets/repository-bars/nexmoe-vidbee.svg)
+![10,855 stars](./assets/repository-bars/nexmoe-vidbee.svg)
 
 Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.
 
@@ -57,7 +57,7 @@ Eve Recorder: A cross-platform long-running microphone recorder with real-time t
 Typecho Fans主题作品目录
 
 ### [nexmoe/vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro)
-![221 stars](./assets/repository-bars/nexmoe-vscode-monitor-pro.svg)
+![222 stars](./assets/repository-bars/nexmoe-vscode-monitor-pro.svg)
 
 Monitor all the resources you care about. Be the coolest plugin.
 
@@ -74,5 +74,5 @@ No description
 
 ---
 
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->15 Oct 2026 · 11:05 UTC+8<!-- last_updated ends --></sub>
+<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->15 Oct 2026 · 18:49 UTC+8<!-- last_updated ends --></sub>
 >>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)

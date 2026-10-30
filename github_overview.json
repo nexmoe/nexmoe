@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-29T22:24:41.409Z",
+  "generated_at": "2026-10-30T04:17:23.218Z",
   "totals": {
     "followers": 653,
-    "stars": 31612,
-    "forks": 3124
+    "stars": 37228,
+    "forks": 4380
   },
   "scopes": {
     "owned": {
-      "stars": 12416,
-      "forks": 1028,
+      "stars": 12419,
+      "forks": 1029,
       "count": 61,
       "repos": [
         {
@@ -16,15 +16,15 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from  YouTube ,  TikTok ,  Twitter ,  Instagram ,  Facebook ,  Twitch ,  Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.",
-          "stargazers_count": 11014,
-          "forks_count": 860
+          "stargazers_count": 11016,
+          "forks_count": 861
         },
         {
           "name": "DayBee",
           "full_name": "nexmoe/DayBee",
           "html_url": "https://github.com/nexmoe/DayBee",
           "description": "DayBee: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks. ",
-          "stargazers_count": 422,
+          "stargazers_count": 423,
           "forks_count": 42
         },
         {
@@ -86,8 +86,8 @@
       ]
     },
     "member": {
-      "stars": 19196,
-      "forks": 2096,
+      "stars": 19197,
+      "forks": 2097,
       "count": 7,
       "repos": [
         {
@@ -95,8 +95,8 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19001,
-          "forks_count": 2091
+          "stargazers_count": 19002,
+          "forks_count": 2092
         },
         {
           "name": "void",
@@ -109,33 +109,81 @@
       ]
     },
     "merged": {
-      "stars": 31612,
-      "forks": 3124,
-      "count": 68,
+      "stars": 37228,
+      "forks": 4380,
+      "count": 142,
       "repos": [
         {
           "name": "VideoLingo",
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19001,
-          "forks_count": 2091
+          "stargazers_count": 19002,
+          "forks_count": 2092
         },
         {
           "name": "VidBee",
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from  YouTube ,  TikTok ,  Twitter ,  Instagram ,  Facebook ,  Twitch ,  Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.",
-          "stargazers_count": 11014,
-          "forks_count": 860
+          "stargazers_count": 11016,
+          "forks_count": 861
+        },
+        {
+          "name": "plugins",
+          "full_name": "typecho-fans/plugins",
+          "html_url": "https://github.com/typecho-fans/plugins",
+          "description": "Typecho Fans插件作品目录",
+          "stargazers_count": 1907,
+          "forks_count": 590
+        },
+        {
+          "name": "hexo-theme-nexmoe",
+          "full_name": "theme-nexmoe/hexo-theme-nexmoe",
+          "html_url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
+          "description": "🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.",
+          "stargazers_count": 1740,
+          "forks_count": 253
+        },
+        {
+          "name": "hitokoto-api",
+          "full_name": "hitokoto-osc/hitokoto-api",
+          "html_url": "https://github.com/hitokoto-osc/hitokoto-api",
+          "description": "版本：1，现行的 API 运行框架。",
+          "stargazers_count": 584,
+          "forks_count": 83
+        },
+        {
+          "name": "sentences-bundle",
+          "full_name": "hitokoto-osc/sentences-bundle",
+          "html_url": "https://github.com/hitokoto-osc/sentences-bundle",
+          "description": "一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。",
+          "stargazers_count": 467,
+          "forks_count": 100
         },
         {
           "name": "DayBee",
           "full_name": "nexmoe/DayBee",
           "html_url": "https://github.com/nexmoe/DayBee",
           "description": "DayBee: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks. ",
-          "stargazers_count": 422,
+          "stargazers_count": 423,
           "forks_count": 42
+        },
+        {
+          "name": "typecho-theme-nexmoe",
+          "full_name": "theme-nexmoe/typecho-theme-nexmoe",
+          "html_url": "https://github.com/theme-nexmoe/typecho-theme-nexmoe",
+          "description": "🔥 一个特别的 Typecho 主题",
+          "stargazers_count": 404,
+          "forks_count": 59
+        },
+        {
+          "name": "themes",
+          "full_name": "typecho-fans/themes",
+          "html_url": "https://github.com/typecho-fans/themes",
+          "description": "Typecho Fans主题作品目录",
+          "stargazers_count": 228,
+          "forks_count": 34
         },
         {
           "name": "vscode-monitor-pro",
@@ -194,6 +242,14 @@
           "forks_count": 11
         },
         {
+          "name": "FluxEz",
+          "full_name": "slmnb-lab/FluxEz",
+          "html_url": "https://github.com/slmnb-lab/FluxEz",
+          "description": "基于Next.js和Comfyui的Flux AI图像生成网站",
+          "stargazers_count": 62,
+          "forks_count": 11
+        },
+        {
           "name": "saladict-skin",
           "full_name": "nexmoe/saladict-skin",
           "html_url": "https://github.com/nexmoe/saladict-skin",
@@ -212,14 +268,21 @@
     "contributed_to": 122
   },
   "star_sources": {
-    "owned": 12416,
-    "member": 19196,
-    "organization": 0,
-    "organizations": {}
+    "owned": 12419,
+    "member": 19197,
+    "organization": 5612,
+    "organizations": {
+      "theme-nexmoe": 2191,
+      "typecho-fans": 2145,
+      "hitokoto-osc": 1126,
+      "slmnb-lab": 94,
+      "mixcm": 53,
+      "ComNergy": 3
+    }
   },
-  "last_updated": "30 Oct 2026 · 06:24 UTC+8",
+  "last_updated": "30 Oct 2026 · 12:17 UTC+8",
   "markdown": {
-    "github_stats": "### Core metrics\n\n| Metric | Value |\n|:--|--:|\n| Followers | 653 |\n| Stars | 31,612 |\n| Forks | 3,124 |\n| Tracked repositories | 68 |\n| Commits | 18,317 |\n| Pull requests | 383 |\n| Issues | 408 |\n| Repositories contributed to | 122 |\n\n### Star sources\n\n| Source | Stars |\n|:--|--:|\n| Owned repositories | 12,416 |\n| Member / collaborator | 19,196 |\n| Organizations | 0 |",
-    "rankings": "### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)\n![19,001 stars](./assets/repository-bars/huanshere-videolingo.svg)\n\nNetflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组\n\n### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)\n![11,014 stars](./assets/repository-bars/nexmoe-vidbee.svg)\n\nDownload video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.\n\n### [nexmoe/DayBee](https://github.com/nexmoe/DayBee)\n![422 stars](./assets/repository-bars/nexmoe-daybee.svg)\n\nDayBee: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.\n\n### [nexmoe/vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro)\n![222 stars](./assets/repository-bars/nexmoe-vscode-monitor-pro.svg)\n\nMonitor all the resources you care about. Be the coolest plugin.\n\n### [void-sdk/void](https://github.com/void-sdk/void)\n![157 stars](./assets/repository-bars/void-sdk-void.svg)\n\nNo description\n\n### [nexmoe/serverless-comfyui](https://github.com/nexmoe/serverless-comfyui)\n![102 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)\n\n一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。"
+    "github_stats": "### Core metrics\n\n| Metric | Value |\n|:--|--:|\n| Followers | 653 |\n| Stars | 37,228 |\n| Forks | 4,380 |\n| Tracked repositories | 142 |\n| Commits | 18,317 |\n| Pull requests | 383 |\n| Issues | 408 |\n| Repositories contributed to | 122 |\n\n### Star sources\n\n| Source | Stars |\n|:--|--:|\n| Owned repositories | 12,419 |\n| Member / collaborator | 19,197 |\n| Organizations | 5,612 |\n\n### Organizations\n\n| Organization | Stars |\n|:--|--:|\n| theme-nexmoe | 2,191 |\n| typecho-fans | 2,145 |\n| hitokoto-osc | 1,126 |\n| slmnb-lab | 94 |\n| mixcm | 53 |\n| ComNergy | 3 |",
+    "rankings": "### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)\n![19,002 stars](./assets/repository-bars/huanshere-videolingo.svg)\n\nNetflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组\n\n### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)\n![11,016 stars](./assets/repository-bars/nexmoe-vidbee.svg)\n\nDownload video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.\n\n### [typecho-fans/plugins](https://github.com/typecho-fans/plugins)\n![1,907 stars](./assets/repository-bars/typecho-fans-plugins.svg)\n\nTypecho Fans插件作品目录\n\n### [theme-nexmoe/hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)\n![1,740 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)\n\n🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.\n\n### [hitokoto-osc/hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api)\n![584 stars](./assets/repository-bars/hitokoto-osc-hitokoto-api.svg)\n\n版本：1，现行的 API 运行框架。\n\n### [hitokoto-osc/sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle)\n![467 stars](./assets/repository-bars/hitokoto-osc-sentences-bundle.svg)\n\n一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。\n\n### [nexmoe/DayBee](https://github.com/nexmoe/DayBee)\n![423 stars](./assets/repository-bars/nexmoe-daybee.svg)\n\nDayBee: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.\n\n### [theme-nexmoe/typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe)\n![404 stars](./assets/repository-bars/theme-nexmoe-typecho-theme-nexmoe.svg)\n\n🔥 一个特别的 Typecho 主题\n\n### [typecho-fans/themes](https://github.com/typecho-fans/themes)\n![228 stars](./assets/repository-bars/typecho-fans-themes.svg)\n\nTypecho Fans主题作品目录\n\n### [nexmoe/vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro)\n![222 stars](./assets/repository-bars/nexmoe-vscode-monitor-pro.svg)\n\nMonitor all the resources you care about. Be the coolest plugin.\n\n### [void-sdk/void](https://github.com/void-sdk/void)\n![157 stars](./assets/repository-bars/void-sdk-void.svg)\n\nNo description\n\n### [nexmoe/serverless-comfyui](https://github.com/nexmoe/serverless-comfyui)\n![102 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)\n\n一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。"
   }
 }

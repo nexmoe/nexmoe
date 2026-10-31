@@ -2,41 +2,49 @@
   {
     "name": "Miko",
     "repository": "mikoagents/miko",
-    "description": "A self-hosted AI coding agent that takes tasks from your team tools, works in isolated Git worktrees, and reports progress back."
+    "description": "A self-hosted AI coding agent that takes tasks from your team tools, works in isolated Git worktrees, and reports progress back.",
+    "description_zh": "可自托管的 AI 编程助手。从团队协作工具接收任务，在独立的 Git 工作树中完成开发，并回报进度。"
   },
   {
     "name": "VidBee",
     "repository": "nexmoe/VidBee",
     "description": "Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.",
+    "description_zh": "从 1,000 多个网站下载视频和音频，转写、总结、翻译媒体内容，还能围绕内容与 AI 对话。",
     "images": [
       {
         "src": "./assets/vidbee/transcript-framed.webp",
         "alt": "VidBee searchable transcript with speaker labels",
+        "alt_zh": "VidBee 支持搜索和说话人识别的转写界面",
         "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/transcript-framed.webp"
       },
       {
         "src": "./assets/vidbee/ai-summary-framed.webp",
         "alt": "VidBee AI-generated transcript summary",
+        "alt_zh": "VidBee 使用 AI 生成转写内容摘要",
         "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/ai-summary-framed.webp"
       },
       {
         "src": "./assets/vidbee/downloads-framed.webp",
         "alt": "VidBee download queue with active and completed media",
+        "alt_zh": "VidBee 下载队列中的进行中和已完成任务",
         "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/downloads-framed.webp"
       },
       {
         "src": "./assets/vidbee/rss-framed.webp",
         "alt": "VidBee RSS subscriptions and automatic downloads",
+        "alt_zh": "VidBee RSS 订阅与自动下载",
         "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/rss-framed.webp"
       },
       {
         "src": "./assets/vidbee/v2-workflow-grid.webp",
         "alt": "VidBee workflow from download to local transcription, search, and AI",
+        "alt_zh": "VidBee 从下载、本地转写到搜索与 AI 问答的完整工作流",
         "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/v2-workflow-grid.webp"
       },
       {
         "src": "./assets/vidbee/v2-before-after.webp",
         "alt": "VidBee evolution from downloaded files to a searchable local media library",
+        "alt_zh": "VidBee 从文件下载器升级为可搜索的本地媒体库",
         "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/v2-before-after.webp"
       }
     ]
@@ -44,21 +52,25 @@
   {
     "name": "OpenTrends",
     "repository": "opentrends-io/opentrends",
-    "description": "Follow first-hand information across technology, AI, and developer communities with AI translation and summaries."
+    "description": "Follow first-hand information across technology, AI, and developer communities with AI translation and summaries.",
+    "description_zh": "关注科技、AI 和开发者社区的一手信息，通过 AI 翻译与摘要跨越语言障碍。"
   },
   {
     "name": "DayBee",
     "repository": "nexmoe/DayBee",
-    "description": "A cross-platform microphone recorder with real-time transcription and voice activity detection."
+    "description": "A cross-platform microphone recorder with real-time transcription and voice activity detection.",
+    "description_zh": "跨平台麦克风录音工具，支持实时转写和语音活动检测。"
   },
   {
     "name": "VideoLingo",
     "repository": "Huanshere/VideoLingo",
-    "description": "One-click AI subtitle cutting, translation, alignment, and dubbing."
+    "description": "One-click AI subtitle cutting, translation, alignment, and dubbing.",
+    "description_zh": "一键完成 AI 字幕切分、翻译、对齐与配音。"
   },
   {
     "name": "Monitor Pro",
     "repository": "nexmoe/vscode-monitor-pro",
-    "description": "Monitor the resources you care about, right inside Visual Studio Code."
+    "description": "Monitor the resources you care about, right inside Visual Studio Code.",
+    "description_zh": "直接在 Visual Studio Code 中监控你关心的系统资源。"
   }
 ]

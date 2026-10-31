@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="48" role="img" aria-labelledby="title description">
+<title id="title">Products</title>
+<desc id="description">Products</desc>
+<style>
+  text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px}
+  .section{font-size:24px;font-weight:700;fill:#2f5785}
+  .rule{stroke:#d2deec;stroke-width:1}
+  .meta{font-style:italic;fill:#4e91e6}
+  @media(prefers-color-scheme:dark){.section{fill:#a8c8ed}.rule{stroke:#34465c}.meta{fill:#7db0f2}}</style>
+<line class="rule" x1="143" y1="24" x2="100%" y2="24"/>
+<text class="section" x="0" y="32">Products</text>
+</svg>

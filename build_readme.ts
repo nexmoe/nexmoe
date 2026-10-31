@@ -90,7 +90,7 @@ export function updateReadme(content: string, repositories: string) {
   return content.replace(pattern, () => `<!-- repositories starts -->\n${repositories}\n<!-- repositories ends -->`);
 }
 
-async function renderReadmeVisuals(input: OverviewInput, content: string, repositoryStars: Record<string, number>, repositoryCreatedAt: Record<string, string>) {
+async function renderReadmeVisuals(input: OverviewInput, repositoryStars: Record<string, number>, repositoryCreatedAt: Record<string, string>) {
   // Never derive this list from API results, stars, activity, or GitHub pins.
   const repositories = validateRepositories(await Bun.file(join(root, "repositories.json")).json());
   await mkdir(join(assetsDir, "repository-dates"), { recursive: true });
@@ -99,13 +99,21 @@ async function renderReadmeVisuals(input: OverviewInput, content: string, reposi
     join(assetsDir, "repository-dates", `${repositoryAssetName(repo)}.svg`),
     buildRepositoryDateSvg(repositoryCreatedAt[repo.repository]),
   )));
-  writes.push(...["Overview", "Repositories"].map(title => Bun.write(
-    join(assetsDir, `${title.toLowerCase()}-heading.svg`),
-    buildSectionHeadingSvg(title),
-  )));
-  writes.push(Bun.write(join(assetsDir, "github-overview.svg"), buildOverviewSvg(input)));
+  const versions = [
+    { locale: "en", file: "README.md", suffix: "", overview: "Overview", repositories: "Repositories", products: "Products" },
+    { locale: "zh-CN", file: "README.zh-CN.md", suffix: ".zh-CN", overview: "开源概览", repositories: "项目", products: "产品" },
+  ] as const;
+  for (const version of versions) {
+    const path = join(root, version.file);
+    const content = await Bun.file(path).text();
+    writes.push(Bun.write(path, updateReadme(content,
+      buildRepositoryMarkup(repositories, repositoryStars, repositoryCreatedAt, version.locale))));
+    writes.push(Bun.write(join(assetsDir, `overview-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.overview)));
+    writes.push(Bun.write(join(assetsDir, `repositories-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.repositories)));
+    writes.push(Bun.write(join(assetsDir, `products-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.products)));
+    writes.push(Bun.write(join(assetsDir, `github-overview${version.suffix}.svg`), buildOverviewSvg(input, version.locale)));
+  }
   await Promise.all(writes);
-  return updateReadme(content, buildRepositoryMarkup(repositories, repositoryStars, repositoryCreatedAt));
 }
 
 async function renderSavedSnapshot() {
@@ -123,8 +131,7 @@ async function renderSavedSnapshot() {
       .map(([label, value]) => ({ label, value })).sort((a, b) => b.value - a.value),
     lastUpdated: data.last_updated,
   };
-  const rewritten = await renderReadmeVisuals(input, await Bun.file(readmePath).text(), data.curated_repository_stars ?? {}, data.curated_repository_created_at ?? {});
-  await Bun.write(readmePath, rewritten);
+  await renderReadmeVisuals(input, data.curated_repository_stars ?? {}, data.curated_repository_created_at ?? {});
 }
 
 function formatLastUpdated(date: Date) {
@@ -715,7 +722,7 @@ async function main() {
   const totalStars = mergedStats.stars;
   const totalForks = mergedStats.forks;
 
-  const rewritten = await renderReadmeVisuals({
+  await renderReadmeVisuals({
     followers,
     stars: totalStars,
     forks: totalForks,
@@ -724,7 +731,7 @@ async function main() {
     starSources,
     organizationSources,
     lastUpdated,
-  }, readmeContents, curatedRepositoryStars, curatedRepositoryCreatedAt);
+  }, curatedRepositoryStars, curatedRepositoryCreatedAt);
   await Bun.write(
     jsonPath,
     JSON.stringify(
@@ -769,7 +776,6 @@ async function main() {
       2,
     ),
   );
-  await Bun.write(readmePath, rewritten);
 }
 
 if (import.meta.main) {

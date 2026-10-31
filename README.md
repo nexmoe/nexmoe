@@ -1,4 +1,6 @@
-<div>
+<div lang="en">
+<p><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></p>
+
 <h1>Nexmoe</h1>
 
 <p><strong>Intelligence, Nerve &amp; Robots.</strong></p>
@@ -69,5 +71,17 @@
 </p>
 </div>
 <!-- repositories ends -->
+
+<div id="products">
+<img src="./assets/products-heading.svg" alt="Products" width="100%" height="48">
+<p>
+  <strong><a href="https://botab.net">BoTab</a></strong><br>
+  A tab and bookmark manager for Chrome and Edge. Save open tabs in one click and turn your bookmarks into a customizable new tab page, generated locally with native browser sync.
+</p>
+<p>
+  <strong><a href="https://viora.io/">Viora</a></strong><br>
+  A voice AI assistant for macOS. Speak to write in any app, edit selected text, ask questions in context, and hand off tasks without leaving your workflow.
+</p>
+</div>
 
 </div>

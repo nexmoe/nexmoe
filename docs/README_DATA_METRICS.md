@@ -21,6 +21,9 @@ Edit `repositories.json` to choose projects, descriptions, and their order.
 Each entry contains `name`, `repository` (`owner/name`), and `description`.
 An optional `images` array adds a thumbnail gallery below the description;
 each image has `src`, `alt`, and an optional full-size `href`.
+Use `description_zh` and image `alt_zh` for Simplified Chinese translations.
+Missing translations fall back to the English text; both languages always
+share the same repository selection, order, counts, dates, and screenshots.
 The initial six projects follow the pinned repositories on the GitHub profile.
 
 Each project shows its linked name and Star count on the left, and its GitHub
@@ -41,6 +44,14 @@ accessing GitHub:
 ```bash
 bun run build_readme.ts --render
 ```
+
+Both the offline render and scheduled refresh update `README.md` (English)
+and `README.zh-CN.md` (Simplified Chinese), plus their localized Overview and
+section-heading SVGs. Each README has a direct link to the other language.
+The Hero, navigation, and Products section are edited manually in each file
+and preserved by the generator. Products links directly to BoTab and Viora
+and does not depend on GitHub repository metadata. No language detection or
+stored preference is needed.
 
 The repository blocks between the `repositories` comment markers are generated.
 Edit their source in `repositories.json`, then run the command above.
@@ -74,10 +85,11 @@ tables. The Hero's Data notes link opens this separate guide.
 
 ## Generated files
 
-- `README.md`: only the `repositories` comment block
-- `assets/github-overview.svg`: compact metrics, activity, and star sources
-- `assets/overview-heading.svg`: responsive blue Overview heading and rule
-- `assets/repositories-heading.svg`: responsive blue Repositories heading and rule
+- `README.md`, `README.zh-CN.md`: only their `repositories` comment blocks
+- `assets/github-overview[.zh-CN].svg`: localized metrics, activity, and star sources
+- `assets/overview-heading[.zh-CN].svg`: responsive blue Overview heading and rule
+- `assets/repositories-heading[.zh-CN].svg`: responsive blue Repositories heading and rule
+- `assets/products-heading[.zh-CN].svg`: matching Products heading and rule
 - `assets/repository-dates/*.svg`: small right-aligned date labels
 - `assets/vidbee/*.webp`: original VidBee screenshots, copied unchanged from its repository
 - `github_overview.json`: statistics snapshot, updated only by a GitHub refresh

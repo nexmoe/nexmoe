@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="en" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">37,245 stars, 653 followers, 4,382 forks, 18,357 commits across 142 repositories</desc>
+<desc id="overview-desc">37,245 stars, 653 followers, 4,382 forks, 18,358 commits across 142 repositories</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#1f2328}
@@ -32,7 +32,7 @@
 <text class="label" x="640" y="47">Forks</text>
 <text class="stat" x="440" y="82">122</text>
 <text class="label" x="440" y="100">Contributed to</text>
-<text class="stat" x="640" y="82">18,357</text>
+<text class="stat" x="640" y="82">18,358</text>
 <text class="label" x="640" y="100">Commits</text>
 
 <!-- Star sources sit under the stars, contributions under the activity metrics -->
@@ -70,7 +70,7 @@
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">Commits</text>
-    <text class="body" text-anchor="end" x="330" y="0">18,357</text>
+    <text class="body" text-anchor="end" x="330" y="0">18,358</text>
     <text class="value" text-anchor="end" x="400" y="0">95.9%</text>
   </g>
   <g transform="translate(0, 74)">

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="zh-CN" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe 开源概览</title>
-<desc id="overview-desc">37,245 个 Star，653 位关注者，4,382 次复刻，142 个仓库，共 18,356 次提交</desc>
+<desc id="overview-desc">37,245 个 Star，653 位关注者，4,382 次复刻，142 个仓库，共 18,357 次提交</desc>
 <defs>
   <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
   <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
@@ -46,7 +46,7 @@
   <text class="label" x="0" y="18">参与项目</text>
 </g>
 <g transform="translate(640, 140)">
-  <text class="large" x="0" y="0">18,356</text>
+  <text class="large" x="0" y="0">18,357</text>
   <text class="label" x="0" y="18">提交</text>
 </g>
 
@@ -64,7 +64,7 @@
   <g transform="translate(0, 48)">
     <circle class="commits" cx="6" cy="0" r="4"/>
     <text class="body" x="18" y="4">提交</text>
-    <text class="value" x="240" y="4">18,356 · 95.9%</text>
+    <text class="value" x="240" y="4">18,357 · 95.9%</text>
   </g>
   <g transform="translate(0, 72)">
     <circle class="prs" cx="6" cy="0" r="4"/>

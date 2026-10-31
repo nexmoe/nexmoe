@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Miko",
+    "repository": "mikoagents/miko",
+    "description": "A self-hosted AI coding agent that takes tasks from your team tools, works in isolated Git worktrees, and reports progress back."
+  },
+  {
+    "name": "VidBee",
+    "repository": "nexmoe/VidBee",
+    "description": "Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.",
+    "images": [
+      {
+        "src": "./assets/vidbee/transcript-framed.webp",
+        "alt": "VidBee searchable transcript with speaker labels",
+        "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/transcript-framed.webp"
+      },
+      {
+        "src": "./assets/vidbee/ai-summary-framed.webp",
+        "alt": "VidBee AI-generated transcript summary",
+        "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/ai-summary-framed.webp"
+      },
+      {
+        "src": "./assets/vidbee/downloads-framed.webp",
+        "alt": "VidBee download queue with active and completed media",
+        "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/downloads-framed.webp"
+      },
+      {
+        "src": "./assets/vidbee/rss-framed.webp",
+        "alt": "VidBee RSS subscriptions and automatic downloads",
+        "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/rss-framed.webp"
+      },
+      {
+        "src": "./assets/vidbee/v2-workflow-grid.webp",
+        "alt": "VidBee workflow from download to local transcription, search, and AI",
+        "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/v2-workflow-grid.webp"
+      },
+      {
+        "src": "./assets/vidbee/v2-before-after.webp",
+        "alt": "VidBee evolution from downloaded files to a searchable local media library",
+        "href": "https://github.com/nexmoe/VidBee/blob/main/screenshots/v2-before-after.webp"
+      }
+    ]
+  },
+  {
+    "name": "OpenTrends",
+    "repository": "opentrends-io/opentrends",
+    "description": "Follow first-hand information across technology, AI, and developer communities with AI translation and summaries."
+  },
+  {
+    "name": "DayBee",
+    "repository": "nexmoe/DayBee",
+    "description": "A cross-platform microphone recorder with real-time transcription and voice activity detection."
+  },
+  {
+    "name": "VideoLingo",
+    "repository": "Huanshere/VideoLingo",
+    "description": "One-click AI subtitle cutting, translation, alignment, and dubbing."
+  },
+  {
+    "name": "Monitor Pro",
+    "repository": "nexmoe/vscode-monitor-pro",
+    "description": "Monitor the resources you care about, right inside Visual Studio Code."
+  }
+]

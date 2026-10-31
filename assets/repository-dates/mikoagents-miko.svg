@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="24" viewBox="0 0 112 24" role="img" aria-labelledby="title description">
+<title id="title">Created 2026-09-16</title>
+<desc id="description">Created 2026-09-16</desc>
+<style>
+  text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px}
+  .section{font-size:24px;font-weight:700;fill:#2f5785}
+  .rule{stroke:#d2deec;stroke-width:1}
+  .meta{font-style:italic;fill:#4e91e6}
+  @media(prefers-color-scheme:dark){.section{fill:#a8c8ed}.rule{stroke:#34465c}.meta{fill:#7db0f2}}</style>
+<text class="meta" text-anchor="end" x="110" y="18">2026-09-16</text>
+</svg>

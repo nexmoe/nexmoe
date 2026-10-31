@@ -1,78 +1,73 @@
-# Nexmoe
+<div>
+<h1>Nexmoe</h1>
 
-Open-source tools for video, audio, AI, and the web.
+<p><strong>Intelligence, Nerve &amp; Robots.</strong></p>
 
-[Website](https://nexmoe.com) · [All projects](https://github.com/nexmoe?tab=repositories) · [Data notes](docs/README_DATA_METRICS.md)
+<p>I'm Nexmoe, a Gen Z builder working across product, design, and engineering. I founded VidBee and BoTab, and co-founded Viora. I make tools for AI, video, and everyday productivity, with a goal of reaching a million users.</p>
 
-## Overview
+<p>I also enjoy building farms, cities, and Dyson spheres — in games.</p>
 
+<p>
+  <a href="https://nexmoe.com">Website</a> &nbsp; │ &nbsp;
+  <a href="https://x.com/nexmoe">X</a> &nbsp; │ &nbsp;
+  <a href="https://github.com/nexmoe?tab=repositories">All projects</a> &nbsp; │ &nbsp;
+  <a href="./docs/README_DATA_METRICS.md">Data notes</a>
+</p>
+
+<div id="overview">
+<img src="./assets/overview-heading.svg" alt="Overview" width="100%" height="48">
 <img src="./assets/github-overview.svg" alt="GitHub overview with stars, followers, forks, activity, and star sources" width="100%">
+</div>
 
-## Repositories
+<div id="repositories">
+<img src="./assets/repositories-heading.svg" alt="Repositories" width="100%" height="48">
+</div>
 
-<!-- repo_rankings starts -->
-### [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
-![19,011 stars](./assets/repository-bars/huanshere-videolingo.svg)
+<!-- Selection, descriptions, and order are maintained by hand in repositories.json. No automatic fetching or sorting. -->
+<!-- repositories starts -->
+<div>
+<p>
+  <img align="right" src="./assets/repository-dates/mikoagents-miko.svg" alt="Created 2026-09-16" width="112" height="24">
+  <strong><a href="https://github.com/mikoagents/miko">Miko</a></strong> &nbsp; <span>★&nbsp;5</span><br>
+  A self-hosted AI coding agent that takes tasks from your team tools, works in isolated Git worktrees, and reports progress back.
+</p>
+<p>
+  <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
+  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,025</span><br>
+  Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.
+</p>
+<table>
+<tr><td nowrap>
+  <sub>Scroll horizontally to explore all screenshots · Click any image to view it in full size</sub><br>
+  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/transcript-framed.webp"><img src="./assets/vidbee/transcript-framed.webp" alt="VidBee searchable transcript with speaker labels" height="200"></a>
+  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/ai-summary-framed.webp"><img src="./assets/vidbee/ai-summary-framed.webp" alt="VidBee AI-generated transcript summary" height="200"></a>
+  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/downloads-framed.webp"><img src="./assets/vidbee/downloads-framed.webp" alt="VidBee download queue with active and completed media" height="200"></a>
+  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/rss-framed.webp"><img src="./assets/vidbee/rss-framed.webp" alt="VidBee RSS subscriptions and automatic downloads" height="200"></a>
+  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/v2-workflow-grid.webp"><img src="./assets/vidbee/v2-workflow-grid.webp" alt="VidBee workflow from download to local transcription, search, and AI" height="200"></a>
+  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/v2-before-after.webp"><img src="./assets/vidbee/v2-before-after.webp" alt="VidBee evolution from downloaded files to a searchable local media library" height="200"></a>
+</td></tr>
+</table>
+<p>
+  <img align="right" src="./assets/repository-dates/opentrends-io-opentrends.svg" alt="Created 2026-05-10" width="112" height="24">
+  <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;66</span><br>
+  Follow first-hand information across technology, AI, and developer communities with AI translation and summaries.
+</p>
+<p>
+  <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="Created 2026-02-01" width="112" height="24">
+  <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;423</span><br>
+  A cross-platform microphone recorder with real-time transcription and voice activity detection.
+</p>
+<p>
+  <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
+  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,011</span><br>
+  One-click AI subtitle cutting, translation, alignment, and dubbing.
+</p>
+<p>
+  <img align="right" src="./assets/repository-dates/nexmoe-vscode-monitor-pro.svg" alt="Created 2023-10-04" width="112" height="24">
+  <strong><a href="https://github.com/nexmoe/vscode-monitor-pro">Monitor Pro</a></strong> &nbsp; <span>★&nbsp;222</span><br>
+  Monitor the resources you care about, right inside Visual Studio Code.
+</p>
+</div>
+<!-- repositories ends -->
 
-Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组
-
-### [nexmoe/VidBee](https://github.com/nexmoe/VidBee)
-![11,025 stars](./assets/repository-bars/nexmoe-vidbee.svg)
-
-Download video and audio from YouTube , TikTok , Twitter , Instagram , Facebook , Twitch , Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.
-
-### [typecho-fans/plugins](https://github.com/typecho-fans/plugins)
-![1,907 stars](./assets/repository-bars/typecho-fans-plugins.svg)
-
-Typecho Fans插件作品目录
-
-### [theme-nexmoe/hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)
-![1,739 stars](./assets/repository-bars/theme-nexmoe-hexo-theme-nexmoe.svg)
-
-🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.
-
-### [hitokoto-osc/hitokoto-api](https://github.com/hitokoto-osc/hitokoto-api)
-![584 stars](./assets/repository-bars/hitokoto-osc-hitokoto-api.svg)
-
-版本：1，现行的 API 运行框架。
-
-### [hitokoto-osc/sentences-bundle](https://github.com/hitokoto-osc/sentences-bundle)
-![467 stars](./assets/repository-bars/hitokoto-osc-sentences-bundle.svg)
-
-一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。
-
-### [nexmoe/DayBee](https://github.com/nexmoe/DayBee)
-![423 stars](./assets/repository-bars/nexmoe-daybee.svg)
-
-DayBee: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks.
-
-### [theme-nexmoe/typecho-theme-nexmoe](https://github.com/theme-nexmoe/typecho-theme-nexmoe)
-![404 stars](./assets/repository-bars/theme-nexmoe-typecho-theme-nexmoe.svg)
-
-🔥 一个特别的 Typecho 主题
-
-### [typecho-fans/themes](https://github.com/typecho-fans/themes)
-![228 stars](./assets/repository-bars/typecho-fans-themes.svg)
-
-Typecho Fans主题作品目录
-
-### [nexmoe/vscode-monitor-pro](https://github.com/nexmoe/vscode-monitor-pro)
-![222 stars](./assets/repository-bars/nexmoe-vscode-monitor-pro.svg)
-
-Monitor all the resources you care about. Be the coolest plugin.
-
-### [void-sdk/void](https://github.com/void-sdk/void)
-![157 stars](./assets/repository-bars/void-sdk-void.svg)
-
-No description
-
-### [nexmoe/serverless-comfyui](https://github.com/nexmoe/serverless-comfyui)
-![102 stars](./assets/repository-bars/nexmoe-serverless-comfyui.svg)
-
-一个基于 Docker 的 ComfyUI 弹性 Serverless 应用，提供完整的前后端分离架构和用户友好的界面。
-<!-- repo_rankings ends -->
-
----
-
-<sub>Automatically refreshed every 6 hours · Last updated <!-- last_updated starts -->31 Oct 2026 · 11:57 UTC+8<!-- last_updated ends --></sub>
->>>>>>> d7ca1a7 (Redesign README overview with Apple-inspired minimal UI)
+</div>

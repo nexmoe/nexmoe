@@ -9,9 +9,12 @@ Second-level section headings keep the custom blue 24px text with a centered
 horizontal rule. These small SVGs have percentage width, fixed 48px height,
 and no `viewBox`: only the rule stretches as the container changes width;
 the title text stays the same size.
-The Overview keeps its original metrics, typography, and colors. Its chart
-omits the timestamp and Top Organizations section, with the canvas shortened
-to remove their unused space. Organization details and refresh time remain
+The Overview uses a two-column grid: total Stars on the left, and followers,
+forks, contributed repositories, and commits in a 2 × 2 grid on the right.
+Star sources sit below the Stars and contributions below the activity metrics,
+with right-aligned counts and percentages. Bars and the Stars figure use the
+section headings' blue palette. The chart omits the timestamp and Top
+Organizations section. Organization details and refresh time remain
 available in the JSON snapshot; README shows no data-source appendix or
 refresh-status footer.
 

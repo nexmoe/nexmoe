@@ -10,9 +10,9 @@ export type CuratedRepository = {
 
 const labels = {
   en: {
-    overview: "Nexmoe open-source overview", totalStars: "Total Stars", repositories: "Repositories",
-    followers: "Followers", forks: "Forks", contributedTo: "Contributed To", commits: "Commits",
-    activity: "Activity Distribution", prs: "Pull requests", issues: "Issues", starSources: "Star Sources",
+    overview: "Nexmoe open-source overview", totalStars: "Total stars", repositories: "repositories",
+    followers: "Followers", forks: "Forks", contributedTo: "Contributed to", commits: "Commits",
+    activity: "Contributions", prs: "Pull requests", issues: "Issues", starSources: "Star sources",
     owned: "Owned repositories", member: "Member / collaborator", organizations: "Organizations",
     created: "Created", dateUnavailable: "Creation date unavailable", unavailable: "Unavailable",
     galleryHint: "Scroll horizontally to explore all screenshots · Click any image to view it in full size",
@@ -76,133 +76,90 @@ export function buildSectionHeadingSvg(title: string) {
 <text class="section" x="0" y="32">${escapeXml(title)}</text>`);
 }
 
+// Bar segments take the heading palette in order, from navy to sky blue.
+function breakdown(items: { label: string; value: number }[]) {
+  const total = items.reduce((sum, item) => sum + item.value, 0);
+  let x = 0;
+  return items.map((item, index) => {
+    const width = total > 0 ? (item.value / total) * 400 : 0;
+    const segment = { ...item, x, width, percent: total > 0 ? (item.value / total) * 100 : 0, tone: `tone${index % 3}` };
+    x += width;
+    return segment;
+  });
+}
+
 export function buildOverviewSvg(input: OverviewInput, locale: ReadmeLocale = "en") {
   const text = labels[locale];
+  const n = (value: number) => value.toLocaleString("en-US");
   const sourceLabels: Record<string, string> = {
     "Owned repositories": text.owned,
     "Member / collaborator": text.member,
     "Organizations": text.organizations,
   };
-  const activityTotal = input.activity.commits + input.activity.prs + input.activity.issues;
-  const activityCommitsWidth = activityTotal > 0 ? (input.activity.commits / activityTotal) * 380 : 0;
-  const activityPrsWidth = activityTotal > 0 ? (input.activity.prs / activityTotal) * 380 : 0;
-  const activityIssuesWidth = activityTotal > 0 ? (input.activity.issues / activityTotal) * 380 : 0;
-  const activityCommitsPercent = activityTotal > 0 ? (input.activity.commits / activityTotal) * 100 : 0;
-  const activityPrsPercent = activityTotal > 0 ? (input.activity.prs / activityTotal) * 100 : 0;
-  const activityIssuesPercent = activityTotal > 0 ? (input.activity.issues / activityTotal) * 100 : 0;
-
-  const starTotal = input.starSources.reduce((sum, item) => sum + item.value, 0);
-  const starSourcesData = input.starSources.map(item => ({
-    ...item,
-    width: starTotal > 0 ? (item.value / starTotal) * 380 : 0,
-    percent: starTotal > 0 ? (item.value / starTotal) * 100 : 0,
-  }));
-  let starX = 0;
-  const starBars = starSourcesData.map(item => {
-    const rect = `<rect class="${item.label === 'Owned repositories' ? 'owned' : item.label === 'Member / collaborator' ? 'collab' : 'orgs'}" x="${starX.toFixed(2)}" y="0" width="${item.width.toFixed(2)}" height="12"/>`;
-    starX += item.width;
-    return rect;
-  }).join('');
+  const starSegments = breakdown(input.starSources.map(item => ({ ...item, label: sourceLabels[item.label] ?? item.label })));
+  const activitySegments = breakdown([
+    { label: text.commits, value: input.activity.commits },
+    { label: text.prs, value: input.activity.prs },
+    { label: text.issues, value: input.activity.issues },
+  ]);
+  // Both bands share one grid: columns start at x=0 and x=440, and the
+  // star label shares its baseline (y=100) with the second metric row.
+  const stat = (x: number, y: number, value: number, label: string) =>
+    `<text class="stat" x="${x}" y="${y}">${n(value)}</text>\n<text class="label" x="${x}" y="${y + 18}">${label}</text>`;
+  const chart = (x: number, title: string, segments: ReturnType<typeof breakdown>) => `<g transform="translate(${x}, 148)">
+  <text class="title" x="0" y="0">${title}</text>
+  <g transform="translate(0, 14)">
+    <rect class="track" width="400" height="8" rx="4"/>
+    <g clip-path="url(#bar)">${segments.map(s => `<rect class="${s.tone}" x="${s.x.toFixed(2)}" y="0" width="${s.width.toFixed(2)}" height="8"/>`).join("")}</g>
+  </g>
+  ${segments.map((s, i) => `<g transform="translate(0, ${48 + i * 26})">
+    <circle class="${s.tone}" cx="4" cy="-5" r="4"/>
+    <text class="body" x="16" y="0">${escapeXml(s.label)}</text>
+    <text class="body" text-anchor="end" x="330" y="0">${n(s.value)}</text>
+    <text class="value" text-anchor="end" x="400" y="0">${s.percent.toFixed(1)}%</text>
+  </g>`).join("\n  ")}
+</g>`;
 
   const description = locale === "zh-CN"
-    ? `${input.stars.toLocaleString()} 个 Star，${input.followers.toLocaleString()} 位关注者，${input.forks.toLocaleString()} 次复刻，${input.repositoryCount} 个仓库，共 ${input.activity.commits.toLocaleString()} 次提交`
-    : `${input.stars.toLocaleString()} stars, ${input.followers.toLocaleString()} followers, ${input.forks.toLocaleString()} forks, ${input.activity.commits.toLocaleString()} commits across ${input.repositoryCount} repositories`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" lang="${locale}" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="overview-title overview-desc">
+    ? `${n(input.stars)} 个 Star，${n(input.followers)} 位关注者，${n(input.forks)} 次复刻，${n(input.repositoryCount)} 个仓库，共 ${n(input.activity.commits)} 次提交`
+    : `${n(input.stars)} stars, ${n(input.followers)} followers, ${n(input.forks)} forks, ${n(input.activity.commits)} commits across ${n(input.repositoryCount)} repositories`;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" lang="${locale}" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">${text.overview}</title>
 <desc id="overview-desc">${description}</desc>
-<defs>
-  <clipPath id="activity"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
-  <clipPath id="sources"><rect x="0" y="0" width="380" height="12" rx="6"/></clipPath>
-</defs>
+<defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
-  text{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;font-variant-numeric:tabular-nums}
-  .hero{font-size:80px;font-weight:800;letter-spacing:-3.5px;fill:#1d1d1f}
-  .large{font-size:40px;font-weight:700;letter-spacing:-1.5px;fill:#1d1d1f}
-  .metric{font-size:24px;font-weight:600;letter-spacing:-0.8px;fill:#1d1d1f}
-  .section{font-size:15px;font-weight:600;fill:#1d1d1f}
-  .label{font-size:11px;font-weight:600;letter-spacing:0.3px;text-transform:uppercase;fill:#8e8e93}
-  .body{font-size:13px;font-weight:500;fill:#3c3c43}
-  .value{font-size:12px;font-weight:500;fill:#8e8e93}
-  .track{fill:#f0f0f5}
-  .commits{fill:#007aff}
-  .prs{fill:#34c759}
-  .issues{fill:#ff9500}
-  .owned{fill:#5856d6}
-  .collab{fill:#af52de}
-  .orgs{fill:#ff2d55}
-  @media (prefers-color-scheme:dark){
-    .hero,.large,.metric,.section,.body{fill:#f5f5f7}
-    .label,.value{fill:#98989d}
-    .track{fill:#2c2c2e}
+  text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#1f2328}
+  .hero{font-size:80px;font-weight:800;letter-spacing:-3px;fill:#2f5785}
+  .stat{font-size:24px;font-weight:700;letter-spacing:-0.5px}
+  .title{font-size:15px;font-weight:600}
+  .label{font-size:13px;fill:#59636e}
+  .body{font-size:14px}
+  .value{font-size:14px;fill:#59636e}
+  .track{fill:#eef3f9}
+  .tone0{fill:#2f5785}
+  .tone1{fill:#4e91e6}
+  .tone2{fill:#a8c8ed}
+  @media(prefers-color-scheme:dark){
+    text{fill:#f0f6fc}
+    .hero,.tone0{fill:#a8c8ed}
+    .label,.value{fill:#9198a1}
+    .track{fill:#1c2635}
+    .tone2{fill:#34567f}
   }
 </style>
 
-<!-- Main metric -->
-<text class="hero" x="0" y="70">${input.stars.toLocaleString()}</text>
-<text class="label" x="0" y="90">${text.totalStars} · ${input.repositoryCount} ${text.repositories}</text>
+<!-- Stars on the left; four supporting metrics in a 2 × 2 grid on the right -->
+<text class="hero" x="0" y="68">${n(input.stars)}</text>
+<text class="label" x="0" y="100">${text.totalStars} · ${n(input.repositoryCount)} ${text.repositories}</text>
+${stat(440, 29, input.followers, text.followers)}
+${stat(640, 29, input.forks, text.forks)}
+${stat(440, 82, input.activity.contributed_to, text.contributedTo)}
+${stat(640, 82, input.activity.commits, text.commits)}
 
-<!-- Key metrics grid -->
-<g transform="translate(0, 140)">
-  <text class="large" x="0" y="0">${input.followers.toLocaleString()}</text>
-  <text class="label" x="0" y="18">${text.followers}</text>
-</g>
-<g transform="translate(200, 140)">
-  <text class="large" x="0" y="0">${input.forks.toLocaleString()}</text>
-  <text class="label" x="0" y="18">${text.forks}</text>
-</g>
-<g transform="translate(420, 140)">
-  <text class="large" x="0" y="0">${input.activity.contributed_to.toLocaleString()}</text>
-  <text class="label" x="0" y="18">${text.contributedTo}</text>
-</g>
-<g transform="translate(640, 140)">
-  <text class="large" x="0" y="0">${input.activity.commits.toLocaleString()}</text>
-  <text class="label" x="0" y="18">${text.commits}</text>
-</g>
-
-<!-- Activity breakdown -->
-<g transform="translate(0, 240)">
-  <text class="section" x="0" y="0">${text.activity}</text>
-  <g transform="translate(0, 20)">
-    <rect class="track" width="380" height="12" rx="6"/>
-    <g clip-path="url(#activity)">
-      <rect class="commits" x="0" y="0" width="${activityCommitsWidth.toFixed(2)}" height="12"/>
-      <rect class="prs" x="${activityCommitsWidth.toFixed(2)}" y="0" width="${activityPrsWidth.toFixed(2)}" height="12"/>
-      <rect class="issues" x="${(activityCommitsWidth + activityPrsWidth).toFixed(2)}" y="0" width="${activityIssuesWidth.toFixed(2)}" height="12"/>
-    </g>
-  </g>
-  <g transform="translate(0, 48)">
-    <circle class="commits" cx="6" cy="0" r="4"/>
-    <text class="body" x="18" y="4">${text.commits}</text>
-    <text class="value" x="240" y="4">${input.activity.commits.toLocaleString()} · ${activityCommitsPercent.toFixed(1)}%</text>
-  </g>
-  <g transform="translate(0, 72)">
-    <circle class="prs" cx="6" cy="0" r="4"/>
-    <text class="body" x="18" y="4">${text.prs}</text>
-    <text class="value" x="240" y="4">${input.activity.prs.toLocaleString()} · ${activityPrsPercent.toFixed(1)}%</text>
-  </g>
-  <g transform="translate(0, 96)">
-    <circle class="issues" cx="6" cy="0" r="4"/>
-    <text class="body" x="18" y="4">${text.issues}</text>
-    <text class="value" x="240" y="4">${input.activity.issues.toLocaleString()} · ${activityIssuesPercent.toFixed(1)}%</text>
-  </g>
-</g>
-
-<!-- Star sources -->
-<g transform="translate(460, 240)">
-  <text class="section" x="0" y="0">${text.starSources}</text>
-  <g transform="translate(0, 20)">
-    <rect class="track" width="380" height="12" rx="6"/>
-    <g clip-path="url(#sources)">
-      ${starBars}
-    </g>
-  </g>
-  ${starSourcesData.map((item, i) => `<g transform="translate(0, ${48 + i * 24})">
-    <circle class="${item.label === 'Owned repositories' ? 'owned' : item.label === 'Member / collaborator' ? 'collab' : 'orgs'}" cx="6" cy="0" r="4"/>
-    <text class="body" x="18" y="4">${escapeXml(sourceLabels[item.label] ?? item.label)}</text>
-    <text class="value" x="240" y="4">${item.value.toLocaleString()} · ${item.percent.toFixed(1)}%</text>
-  </g>`).join('\n  ')}
-</g>
-
+<!-- Star sources sit under the stars, contributions under the activity metrics -->
+${chart(0, text.starSources, starSegments)}
+${chart(440, text.activity, activitySegments)}
 </svg>`;
 }
 

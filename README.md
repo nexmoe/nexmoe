@@ -18,7 +18,7 @@
 
 <div id="overview">
 <img src="./assets/overview-heading.svg" alt="Overview" width="100%" height="48">
-<img src="./assets/github-overview.svg" alt="GitHub overview with stars, followers, forks, activity, and star sources" width="100%">
+<img src="./assets/github-overview.svg" alt="GitHub overview with stars, followers, forks, star sources, and contributions" width="100%">
 </div>
 
 <div id="repositories">

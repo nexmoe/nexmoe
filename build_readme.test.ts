@@ -40,7 +40,7 @@ test("zero activity and stars render valid statistics", () => {
   const svg = buildOverviewSvg(emptyOverview);
   expect(svg).not.toMatch(/NaN|Infinity/);
   expect(svg).toContain("0 stars, 0 followers, 0 forks, 0 commits across 0 repositories");
-  expect(svg).toContain("0 · 0.0%");
+  expect(svg).toContain(">0.0%</text>");
 });
 
 test("SVG escapes star source labels", () => {

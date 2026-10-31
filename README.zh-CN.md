@@ -18,7 +18,7 @@
 
 <div id="overview">
 <img src="./assets/overview-heading.zh-CN.svg" alt="开源概览" width="100%" height="48">
-<img src="./assets/github-overview.zh-CN.svg" alt="GitHub 开源概览：Star、关注者、复刻、贡献分布与 Star 来源" width="100%">
+<img src="./assets/github-overview.zh-CN.svg" alt="GitHub 开源概览：Star、关注者、复刻、Star 来源与贡献分布" width="100%">
 </div>
 
 <div id="repositories">

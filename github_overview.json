@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-31T11:39:35.939Z",
+  "generated_at": "2026-10-31T16:46:42.539Z",
   "curated_repository_stars": {
     "mikoagents/miko": 5,
-    "nexmoe/VidBee": 11027,
+    "nexmoe/VidBee": 11026,
     "opentrends-io/opentrends": 66,
     "nexmoe/DayBee": 423,
-    "Huanshere/VideoLingo": 19013,
+    "Huanshere/VideoLingo": 19016,
     "nexmoe/vscode-monitor-pro": 222
   },
   "curated_repository_created_at": {
@@ -18,12 +18,12 @@
   },
   "totals": {
     "followers": 653,
-    "stars": 37249,
+    "stars": 37251,
     "forks": 4383
   },
   "scopes": {
     "owned": {
-      "stars": 12430,
+      "stars": 12429,
       "forks": 1031,
       "count": 61,
       "repos": [
@@ -31,15 +31,15 @@
           "name": "VidBee",
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
-          "description": "Download video and audio from  YouTube ,  TikTok ,  Twitter ,  Instagram ,  Facebook ,  Twitch ,  Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.",
-          "stargazers_count": 11027,
+          "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
+          "stargazers_count": 11026,
           "forks_count": 863
         },
         {
           "name": "DayBee",
           "full_name": "nexmoe/DayBee",
           "html_url": "https://github.com/nexmoe/DayBee",
-          "description": "DayBee: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks. ",
+          "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
           "stargazers_count": 423,
           "forks_count": 42
         },
@@ -102,7 +102,7 @@
       ]
     },
     "member": {
-      "stars": 19208,
+      "stars": 19211,
       "forks": 2098,
       "count": 7,
       "repos": [
@@ -111,7 +111,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19013,
+          "stargazers_count": 19016,
           "forks_count": 2093
         },
         {
@@ -125,7 +125,7 @@
       ]
     },
     "merged": {
-      "stars": 37249,
+      "stars": 37251,
       "forks": 4383,
       "count": 142,
       "repos": [
@@ -134,15 +134,15 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19013,
+          "stargazers_count": 19016,
           "forks_count": 2093
         },
         {
           "name": "VidBee",
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
-          "description": "Download video and audio from  YouTube ,  TikTok ,  Twitter ,  Instagram ,  Facebook ,  Twitch ,  Bilibili , and 1000+ sites—or import local media. Create searchable transcripts on your computer, then summarize, translate, or ask questions with your preferred AI provider.",
-          "stargazers_count": 11027,
+          "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
+          "stargazers_count": 11026,
           "forks_count": 863
         },
         {
@@ -181,7 +181,7 @@
           "name": "DayBee",
           "full_name": "nexmoe/DayBee",
           "html_url": "https://github.com/nexmoe/DayBee",
-          "description": "DayBee: A cross-platform long-running microphone recorder with real-time transcription. It uses Qwen3-ASR by default. VAD keeps only speech segments and transcribes speech-only chunks. ",
+          "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
           "stargazers_count": 423,
           "forks_count": 42
         },
@@ -277,15 +277,15 @@
     }
   },
   "activity": {
-    "commits": 18359,
+    "commits": 18574,
     "prs": 384,
     "issues": 408,
-    "total": 19151,
+    "total": 19366,
     "contributed_to": 122
   },
   "star_sources": {
-    "owned": 12430,
-    "member": 19208,
+    "owned": 12429,
+    "member": 19211,
     "organization": 5611,
     "organizations": {
       "theme-nexmoe": 2190,
@@ -296,5 +296,5 @@
       "ComNergy": 3
     }
   },
-  "last_updated": "31 Oct 2026 · 19:39 UTC+8"
+  "last_updated": "01 Nov 2026 · 00:46 UTC+8"
 }

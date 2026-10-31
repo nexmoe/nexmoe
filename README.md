@@ -35,7 +35,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,027</span><br>
+  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,026</span><br>
   Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.
 </p>
 <table>
@@ -61,7 +61,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
-  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,013</span><br>
+  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,016</span><br>
   One-click AI subtitle cutting, translation, alignment, and dubbing.
 </p>
 <p>

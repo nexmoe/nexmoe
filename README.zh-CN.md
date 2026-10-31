@@ -78,10 +78,25 @@
   <strong><a href="https://botab.net">BoTab</a></strong><br>
   Chrome 和 Edge 的标签页与书签管理工具。一键保存打开的标签页，用书签生成可自定义的新标签页；页面在本地生成，数据通过浏览器原生书签同步。
 </p>
+<table>
+<tr><td nowrap>
+  <sub>左右滑动或横向滚动，浏览全部功能截图 · 点击任意图片，即可查看原始尺寸的完整截图</sub><br>
+  <a href="https://botab.net/images/home/scrnli_03znv9dx23edPR.png"><img src="./assets/products/botab-new-tab.png" alt="BoTab 新标签页中的书签分组与已保存标签页" height="200"></a>
+  <a href="https://botab.net/images/screenshot/image5.png"><img src="./assets/products/botab-themes.png" alt="BoTab 主题库与新标签页自定义设置" height="200"></a>
+</td></tr>
+</table>
 <p>
   <strong><a href="https://viora.io/">Viora</a></strong><br>
   macOS 语音 AI 助手。按住快捷键说话，即可在当前应用中输入、改写选中文字、结合上下文提问，或交办任务。
 </p>
+<table>
+<tr><td nowrap>
+  <sub>左右滑动或横向滚动，浏览全部功能截图 · 点击任意图片，即可查看原始尺寸的完整截图</sub><br>
+  <a href="https://viora.io/images/viora/features/viora-dictation-tutorial.png"><img src="./assets/products/viora-dictation.png" alt="Viora 语音输入与核心功能引导" height="200"></a>
+  <a href="https://viora.io/images/viora/features/viora-capsule-email-reply.png"><img src="./assets/products/viora-email-reply.png" alt="Viora 在 Agent Card 中起草邮件回复" height="200"></a>
+  <a href="https://viora.io/images/viora/features/viora-capsule-comparison-table.png"><img src="./assets/products/viora-comparison.png" alt="Viora 用对比表格回答问题" height="200"></a>
+</td></tr>
+</table>
 </div>
 
 </div>

@@ -78,10 +78,25 @@
   <strong><a href="https://botab.net">BoTab</a></strong><br>
   A tab and bookmark manager for Chrome and Edge. Save open tabs in one click and turn your bookmarks into a customizable new tab page, generated locally with native browser sync.
 </p>
+<table>
+<tr><td nowrap>
+  <sub>Scroll horizontally to explore all screenshots · Click any image to view it in full size</sub><br>
+  <a href="https://botab.net/images/home/scrnli_03znv9dx23edPR.png"><img src="./assets/products/botab-new-tab.png" alt="BoTab new tab page with bookmark groups and saved tabs" height="200"></a>
+  <a href="https://botab.net/images/screenshot/image5.png"><img src="./assets/products/botab-themes.png" alt="BoTab theme gallery and new tab customization" height="200"></a>
+</td></tr>
+</table>
 <p>
   <strong><a href="https://viora.io/">Viora</a></strong><br>
   A voice AI assistant for macOS. Speak to write in any app, edit selected text, ask questions in context, and hand off tasks without leaving your workflow.
 </p>
+<table>
+<tr><td nowrap>
+  <sub>Scroll horizontally to explore all screenshots · Click any image to view it in full size</sub><br>
+  <a href="https://viora.io/images/viora/features/viora-dictation-tutorial.png"><img src="./assets/products/viora-dictation.png" alt="Viora voice dictation and core features tutorial" height="200"></a>
+  <a href="https://viora.io/images/viora/features/viora-capsule-email-reply.png"><img src="./assets/products/viora-email-reply.png" alt="Viora drafting an email reply in the Agent Card" height="200"></a>
+  <a href="https://viora.io/images/viora/features/viora-capsule-comparison-table.png"><img src="./assets/products/viora-comparison.png" alt="Viora answering a question with a comparison table" height="200"></a>
+</td></tr>
+</table>
 </div>
 
 </div>

@@ -52,8 +52,10 @@ Both the offline render and scheduled refresh update `README.md` (English)
 and `README.zh-CN.md` (Simplified Chinese), plus their localized Overview and
 section-heading SVGs. Each README has a direct link to the other language.
 The Hero, navigation, and Products section are edited manually in each file
-and preserved by the generator. Products links directly to BoTab and Viora
-and does not depend on GitHub repository metadata. No language detection or
+and preserved by the generator. Products links directly to BoTab and Viora,
+with original screenshots stored in `assets/products/` and matching 200px-tall
+scrollable galleries. Image links open the full-size originals on the official
+product sites. This section does not depend on GitHub repository metadata. No language detection or
 stored preference is needed.
 
 The repository blocks between the `repositories` comment markers are generated.

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="zh-CN" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe 开源概览</title>
-<desc id="overview-desc">37,251 个 Star，653 位关注者，4,383 次复刻，142 个仓库，共 18,574 次提交</desc>
+<desc id="overview-desc">37,251 个 Star，653 位关注者，4,383 次复刻，142 个仓库，共 18,603 次提交</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#1f2328}
@@ -32,7 +32,7 @@
 <text class="label" x="640" y="47">复刻</text>
 <text class="stat" x="440" y="82">122</text>
 <text class="label" x="440" y="100">参与项目</text>
-<text class="stat" x="640" y="82">18,574</text>
+<text class="stat" x="640" y="82">18,603</text>
 <text class="label" x="640" y="100">提交</text>
 
 <!-- Star sources sit under the stars, contributions under the activity metrics -->
@@ -65,12 +65,12 @@
   <text class="title" x="0" y="0">贡献分布</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.64" height="8"/><rect class="tone1" x="383.64" y="0" width="7.93" height="8"/><rect class="tone2" x="391.57" y="0" width="8.43" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.67" height="8"/><rect class="tone1" x="383.67" y="0" width="7.92" height="8"/><rect class="tone2" x="391.59" y="0" width="8.41" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">提交</text>
-    <text class="body" text-anchor="end" x="330" y="0">18,574</text>
+    <text class="body" text-anchor="end" x="330" y="0">18,603</text>
     <text class="value" text-anchor="end" x="400" y="0">95.9%</text>
   </g>
   <g transform="translate(0, 74)">

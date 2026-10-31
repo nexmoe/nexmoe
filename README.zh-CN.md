@@ -35,7 +35,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="创建于 2025-10-22" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,026</span><br>
+  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,025</span><br>
   从 1,000 多个网站下载视频和音频，转写、总结、翻译媒体内容，还能围绕内容与 AI 对话。
 </p>
 <table>
@@ -56,7 +56,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="创建于 2026-02-01" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;423</span><br>
+  <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;424</span><br>
   跨平台麦克风录音工具，支持实时转写和语音活动检测。
 </p>
 <p>

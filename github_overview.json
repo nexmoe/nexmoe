@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-31T16:46:42.539Z",
+  "generated_at": "2026-10-31T20:57:03.272Z",
   "curated_repository_stars": {
     "mikoagents/miko": 5,
-    "nexmoe/VidBee": 11026,
+    "nexmoe/VidBee": 11025,
     "opentrends-io/opentrends": 66,
-    "nexmoe/DayBee": 423,
+    "nexmoe/DayBee": 424,
     "Huanshere/VideoLingo": 19016,
     "nexmoe/vscode-monitor-pro": 222
   },
@@ -32,7 +32,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11026,
+          "stargazers_count": 11025,
           "forks_count": 863
         },
         {
@@ -40,7 +40,7 @@
           "full_name": "nexmoe/DayBee",
           "html_url": "https://github.com/nexmoe/DayBee",
           "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
-          "stargazers_count": 423,
+          "stargazers_count": 424,
           "forks_count": 42
         },
         {
@@ -142,7 +142,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11026,
+          "stargazers_count": 11025,
           "forks_count": 863
         },
         {
@@ -182,7 +182,7 @@
           "full_name": "nexmoe/DayBee",
           "html_url": "https://github.com/nexmoe/DayBee",
           "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
-          "stargazers_count": 423,
+          "stargazers_count": 424,
           "forks_count": 42
         },
         {
@@ -277,10 +277,10 @@
     }
   },
   "activity": {
-    "commits": 18574,
+    "commits": 18603,
     "prs": 384,
     "issues": 408,
-    "total": 19366,
+    "total": 19395,
     "contributed_to": 122
   },
   "star_sources": {
@@ -296,5 +296,5 @@
       "ComNergy": 3
     }
   },
-  "last_updated": "01 Nov 2026 · 00:46 UTC+8"
+  "last_updated": "01 Nov 2026 · 04:56 UTC+8"
 }

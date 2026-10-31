@@ -34,6 +34,9 @@ Star counts and creation dates are read from GitHub for the selected repositorie
 and cached in `github_overview.json` as `curated_repository_stars` and
 `curated_repository_created_at`. Failed refreshes retain saved values.
 `--render` uses these saved values without network access.
+If an organization rejects the configured token for a selected public
+repository, metadata refresh retries without authentication before keeping
+the cached Star count and creation date.
 
 The list is always read from this file. GitHub API responses, stars, activity,
 and future pin changes never add, remove, reorder, or rewrite these projects.

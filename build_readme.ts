@@ -176,6 +176,18 @@ async function ghFetchPublic<T>(path: string): Promise<T> {
   return (await res.json()) as T;
 }
 
+export async function fetchRepositoryMetadata(repository: string) {
+  const path = `/repos/${repository}`;
+  type Metadata = { stargazers_count: number; created_at: string };
+  try {
+    return await ghFetch<Metadata>(path);
+  } catch {
+    // Public repositories may reject an otherwise valid token because of
+    // organization policy. Try unauthenticated access before keeping the cache.
+    return ghFetchPublic<Metadata>(path);
+  }
+}
+
 async function fetchCuratedRepositoryMetadata(knownRepos: Repo[]) {
   const selected = validateRepositories(await Bun.file(join(root, "repositories.json")).json());
   const saved = await Bun.file(jsonPath).json().catch(() => null) as OutputPayload | null;
@@ -190,7 +202,7 @@ async function fetchCuratedRepositoryMetadata(knownRepos: Repo[]) {
     try {
       const knownRepo = known.get(repo.repository.toLowerCase());
       const fetched = knownRepo && (knownRepo.created_at || cachedDate) ? undefined :
-        await ghFetch<{ stargazers_count: number; created_at: string }>(`/repos/${repo.repository}`);
+        await fetchRepositoryMetadata(repo.repository);
       const stars = knownRepo?.stargazers_count ?? fetched?.stargazers_count;
       if (typeof stars !== "number" || !Number.isSafeInteger(stars) || stars < 0) throw new Error("Invalid star count");
       counts[repo.repository] = stars;

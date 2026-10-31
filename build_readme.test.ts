@@ -1,5 +1,5 @@
-import { expect, test } from "bun:test";
-import { buildOverviewSvg, updateReadme } from "./build_readme";
+import { expect, spyOn, test } from "bun:test";
+import { buildOverviewSvg, fetchRepositoryMetadata, updateReadme } from "./build_readme";
 import { buildRepositoryMarkup, validateRepositories } from "./readme_ui";
 
 for (const file of ["README.md", "README.zh-CN.md"]) {
@@ -97,4 +97,31 @@ test("Chinese overview translates labels without changing the statistics or char
   expect(chinese).not.toContain(">Activity Distribution<");
   expect(chinese).toContain("0 个 Star，0 位关注者");
   expect(chinese.match(/<rect\b[^>]+>/g)).toEqual(english.match(/<rect\b[^>]+>/g));
+});
+
+test("public repository metadata refreshes when organization token policy returns 403", async () => {
+  const metadata = { stargazers_count: 67, created_at: "2026-05-10T02:57:55Z" };
+  const fetchMock = spyOn(globalThis, "fetch")
+    .mockResolvedValueOnce(Response.json({ message: "Organization forbids this token's lifetime" }, { status: 403 }))
+    .mockResolvedValueOnce(Response.json(metadata));
+  try {
+    expect(await fetchRepositoryMetadata("opentrends-io/opentrends")).toEqual(metadata);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    const fallbackHeaders = fetchMock.mock.calls[1]?.[1]?.headers;
+    expect(new Headers(fallbackHeaders).has("Authorization")).toBe(false);
+  } finally {
+    fetchMock.mockRestore();
+  }
+});
+
+test("metadata refresh still fails if the public fallback cannot access the repository", async () => {
+  const fetchMock = spyOn(globalThis, "fetch")
+    .mockResolvedValueOnce(Response.json({ message: "Forbidden" }, { status: 403 }))
+    .mockResolvedValueOnce(Response.json({ message: "Not Found" }, { status: 404 }));
+  try {
+    await expect(fetchRepositoryMetadata("owner/unavailable")).rejects.toThrow("GitHub public API error (404");
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  } finally {
+    fetchMock.mockRestore();
+  }
 });

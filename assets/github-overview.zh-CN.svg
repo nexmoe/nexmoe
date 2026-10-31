@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="zh-CN" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe 开源概览</title>
-<desc id="overview-desc">37,245 个 Star，653 位关注者，4,382 次复刻，142 个仓库，共 18,358 次提交</desc>
+<desc id="overview-desc">37,249 个 Star，653 位关注者，4,383 次复刻，142 个仓库，共 18,359 次提交</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#1f2328}
@@ -24,15 +24,15 @@
 </style>
 
 <!-- Stars on the left; four supporting metrics in a 2 × 2 grid on the right -->
-<text class="hero" x="0" y="68">37,245</text>
+<text class="hero" x="0" y="68">37,249</text>
 <text class="label" x="0" y="100">Star 总数 · 142 个仓库</text>
 <text class="stat" x="440" y="29">653</text>
 <text class="label" x="440" y="47">关注者</text>
-<text class="stat" x="640" y="29">4,382</text>
+<text class="stat" x="640" y="29">4,383</text>
 <text class="label" x="640" y="47">复刻</text>
 <text class="stat" x="440" y="82">122</text>
 <text class="label" x="440" y="100">参与项目</text>
-<text class="stat" x="640" y="82">18,358</text>
+<text class="stat" x="640" y="82">18,359</text>
 <text class="label" x="640" y="100">提交</text>
 
 <!-- Star sources sit under the stars, contributions under the activity metrics -->
@@ -40,18 +40,18 @@
   <text class="title" x="0" y="0">Star 来源</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.47" height="8"/><rect class="tone1" x="133.47" y="0" width="206.27" height="8"/><rect class="tone2" x="339.74" y="0" width="60.26" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.48" height="8"/><rect class="tone1" x="133.48" y="0" width="206.27" height="8"/><rect class="tone2" x="339.75" y="0" width="60.25" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">个人仓库</text>
-    <text class="body" text-anchor="end" x="330" y="0">12,428</text>
+    <text class="body" text-anchor="end" x="330" y="0">12,430</text>
     <text class="value" text-anchor="end" x="400" y="0">33.4%</text>
   </g>
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">成员 / 协作仓库</text>
-    <text class="body" text-anchor="end" x="330" y="0">19,206</text>
+    <text class="body" text-anchor="end" x="330" y="0">19,208</text>
     <text class="value" text-anchor="end" x="400" y="0">51.6%</text>
   </g>
   <g transform="translate(0, 100)">
@@ -65,18 +65,18 @@
   <text class="title" x="0" y="0">贡献分布</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.48" height="8"/><rect class="tone1" x="383.48" y="0" width="8.00" height="8"/><rect class="tone2" x="391.48" y="0" width="8.52" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.46" height="8"/><rect class="tone1" x="383.46" y="0" width="8.02" height="8"/><rect class="tone2" x="391.48" y="0" width="8.52" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">提交</text>
-    <text class="body" text-anchor="end" x="330" y="0">18,358</text>
+    <text class="body" text-anchor="end" x="330" y="0">18,359</text>
     <text class="value" text-anchor="end" x="400" y="0">95.9%</text>
   </g>
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">拉取请求</text>
-    <text class="body" text-anchor="end" x="330" y="0">383</text>
+    <text class="body" text-anchor="end" x="330" y="0">384</text>
     <text class="value" text-anchor="end" x="400" y="0">2.0%</text>
   </g>
   <g transform="translate(0, 100)">

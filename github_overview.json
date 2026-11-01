@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-31T20:57:03.272Z",
+  "generated_at": "2026-11-01T04:15:50.948Z",
   "curated_repository_stars": {
     "mikoagents/miko": 5,
-    "nexmoe/VidBee": 11025,
+    "nexmoe/VidBee": 11027,
     "opentrends-io/opentrends": 66,
     "nexmoe/DayBee": 424,
-    "Huanshere/VideoLingo": 19016,
-    "nexmoe/vscode-monitor-pro": 222
+    "Huanshere/VideoLingo": 19017,
+    "nexmoe/vscode-monitor-pro": 221
   },
   "curated_repository_created_at": {
     "mikoagents/miko": "2026-09-16T09:32:41Z",
@@ -18,12 +18,12 @@
   },
   "totals": {
     "followers": 653,
-    "stars": 37251,
+    "stars": 37253,
     "forks": 4383
   },
   "scopes": {
     "owned": {
-      "stars": 12429,
+      "stars": 12430,
       "forks": 1031,
       "count": 61,
       "repos": [
@@ -32,7 +32,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11025,
+          "stargazers_count": 11027,
           "forks_count": 863
         },
         {
@@ -48,7 +48,7 @@
           "full_name": "nexmoe/vscode-monitor-pro",
           "html_url": "https://github.com/nexmoe/vscode-monitor-pro",
           "description": "Monitor all the resources you care about. Be the coolest plugin.",
-          "stargazers_count": 222,
+          "stargazers_count": 221,
           "forks_count": 11
         },
         {
@@ -102,7 +102,7 @@
       ]
     },
     "member": {
-      "stars": 19211,
+      "stars": 19212,
       "forks": 2098,
       "count": 7,
       "repos": [
@@ -111,7 +111,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19016,
+          "stargazers_count": 19017,
           "forks_count": 2093
         },
         {
@@ -125,7 +125,7 @@
       ]
     },
     "merged": {
-      "stars": 37251,
+      "stars": 37253,
       "forks": 4383,
       "count": 142,
       "repos": [
@@ -134,7 +134,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19016,
+          "stargazers_count": 19017,
           "forks_count": 2093
         },
         {
@@ -142,7 +142,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11025,
+          "stargazers_count": 11027,
           "forks_count": 863
         },
         {
@@ -206,7 +206,7 @@
           "full_name": "nexmoe/vscode-monitor-pro",
           "html_url": "https://github.com/nexmoe/vscode-monitor-pro",
           "description": "Monitor all the resources you care about. Be the coolest plugin.",
-          "stargazers_count": 222,
+          "stargazers_count": 221,
           "forks_count": 11
         },
         {
@@ -284,8 +284,8 @@
     "contributed_to": 122
   },
   "star_sources": {
-    "owned": 12429,
-    "member": 19211,
+    "owned": 12430,
+    "member": 19212,
     "organization": 5611,
     "organizations": {
       "theme-nexmoe": 2190,
@@ -296,5 +296,5 @@
       "ComNergy": 3
     }
   },
-  "last_updated": "01 Nov 2026 · 04:56 UTC+8"
+  "last_updated": "01 Nov 2026 · 12:15 UTC+8"
 }

@@ -30,7 +30,7 @@
 <div>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-metribee.svg" alt="Created 2026-10-24" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;17</span><br>
+  <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;18</span><br>
   A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server.
 </p>
 <table>
@@ -46,7 +46,7 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,059</span><br>
+  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,063</span><br>
   Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.
 </p>
 <table>
@@ -67,12 +67,12 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="Created 2026-02-01" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;424</span><br>
+  <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;425</span><br>
   A cross-platform microphone recorder with real-time transcription and voice activity detection.
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
-  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,051</span><br>
+  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,055</span><br>
   One-click AI subtitle cutting, translation, alignment, and dubbing.
 </p>
 <p>

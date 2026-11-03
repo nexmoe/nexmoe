@@ -30,7 +30,7 @@
 <div>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-metribee.svg" alt="创建于 2026-10-24" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;17</span><br>
+  <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;18</span><br>
   自托管的 Google Analytics 4 数据看板，支持实时流量、漏斗、留存、Search Console 集成与内置 MCP 服务。
 </p>
 <table>
@@ -46,7 +46,7 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="创建于 2025-10-22" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,059</span><br>
+  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,063</span><br>
   从 1,000 多个网站下载视频和音频，转写、总结、翻译媒体内容，还能围绕内容与 AI 对话。
 </p>
 <table>
@@ -67,12 +67,12 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="创建于 2026-02-01" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;424</span><br>
+  <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;425</span><br>
   跨平台麦克风录音工具，支持实时转写和语音活动检测。
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="创建于 2024-08-09" width="112" height="24">
-  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,051</span><br>
+  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,055</span><br>
   一键完成 AI 字幕切分、翻译、对齐与配音。
 </p>
 <p>

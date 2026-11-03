@@ -20,14 +20,23 @@ refresh-status footer.
 
 ## Choose repositories
 
-Edit `repositories.json` to choose projects, descriptions, and their order.
+The project list and order follow the GitHub profile's pinned repositories.
+Each refresh queries GraphQL `user(login: GH_USERNAME).pinnedItems` with
+`types: REPOSITORY`, retaining the returned order without sorting by stars.
+`GH_USERNAME` defaults to `nexmoe`, independently of the token's owner.
+Changing your GitHub pins takes effect on the next successful CI refresh.
+
+Edit `repositories.json` to override project names, descriptions, and screenshots.
 Each entry contains `name`, `repository` (`owner/name`), and `description`.
 An optional `images` array adds a thumbnail gallery below the description;
 each image has `src`, `alt`, and an optional full-size `href`.
 Use `description_zh` and image `alt_zh` for Simplified Chinese translations.
 Missing translations fall back to the English text; both languages always
 share the same repository selection, order, counts, dates, and screenshots.
-The initial six projects follow the pinned repositories on the GitHub profile.
+Matching uses `owner/name` without case sensitivity. New pins without an override
+use their GitHub name and description in both languages. Repositories with no
+description simply omit that line. Unpinned overrides are kept for reuse but
+are not displayed.
 
 Each project shows its linked name and Star count on the left, and its GitHub
 creation date (`YYYY-MM-DD`, UTC) on the right. The name is a native HTML link
@@ -41,8 +50,12 @@ If an organization rejects the configured token for a selected public
 repository, metadata refresh retries without authentication before keeping
 the cached Star count and creation date.
 
-The list is always read from this file. GitHub API responses, stars, activity,
-and future pin changes never add, remove, reorder, or rewrite these projects.
+The last successful pin response, including repository metadata, is cached as
+`pinned_repositories` in `github_overview.json`. API, network, or permission
+failures keep that selection; before the first successful sync, the original
+`repositories.json` list is used as a fallback. A successful empty pin list
+clears the generated repository block. Offline `--render` uses the cached pins
+and current overrides without accessing GitHub.
 
 Regenerate the README and its images from the saved statistics, without
 accessing GitHub:
@@ -62,7 +75,8 @@ product sites. This section does not depend on GitHub repository metadata. No la
 stored preference is needed.
 
 The repository blocks between the `repositories` comment markers are generated.
-Edit their source in `repositories.json`, then run the command above.
+Change pins on GitHub to select projects, or edit `repositories.json` to update
+their presentation, then run the appropriate refresh or render command.
 
 ## Rendering
 
@@ -116,7 +130,7 @@ Forks are excluded and repositories are deduplicated by `owner/name`.
 
 All tracked repositories contribute to aggregate totals. The repository data
 in `github_overview.json` retains the existing threshold of at least 50 stars
-and is sorted by stars. This data does not select or reorder curated projects.
+and is sorted by stars. This data does not select or reorder pinned projects.
 
 ## Refresh statistics
 
@@ -129,7 +143,9 @@ bun run build_readme.ts
 
 `.github/workflows/build.yml` runs this refresh on pushes, manual dispatches,
 and every six hours. The repository must provide a `GH_TOKEN` Actions secret.
-The README statistics and SVGs use the same snapshot. Repository selection
-and descriptions still come exclusively from `repositories.json`.
+The token must support GitHub GraphQL reads for the public profile and its
+pinned repositories. The README statistics and SVGs use the same snapshot.
+Repository selection follows GitHub pins; presentation overrides come from
+`repositories.json`.
 
 Run the regression checks with `bun test`.

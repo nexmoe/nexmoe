@@ -1,5 +1,11 @@
 [
   {
+    "name": "MetriBee",
+    "repository": "nexmoe/MetriBee",
+    "description": "A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server.",
+    "description_zh": "自托管的 Google Analytics 4 数据看板，支持实时流量、漏斗、留存、Search Console 集成与内置 MCP 服务。"
+  },
+  {
     "name": "Miko",
     "repository": "mikoagents/miko",
     "description": "A self-hosted AI coding agent that takes tasks from your team tools, works in isolated Git worktrees, and reports progress back.",

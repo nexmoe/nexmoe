@@ -16,9 +16,12 @@ jobs:
       uses: oven-sh/setup-bun@v2
       with:
         bun-version: latest
+    - name: Test README generator
+      run: bun test
     - name: Update README
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_USERNAME: nexmoe
       run: |-
         bun run build_readme.ts
         cat README.md

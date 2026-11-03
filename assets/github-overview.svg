@@ -65,7 +65,7 @@
   <text class="title" x="0" y="0">Contributions</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.69" height="8"/><rect class="tone1" x="383.69" y="0" width="7.91" height="8"/><rect class="tone2" x="391.60" y="0" width="8.40" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.67" height="8"/><rect class="tone1" x="383.67" y="0" width="7.93" height="8"/><rect class="tone2" x="391.60" y="0" width="8.40" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
@@ -76,7 +76,7 @@
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">Pull requests</text>
-    <text class="body" text-anchor="end" x="330" y="0">384</text>
+    <text class="body" text-anchor="end" x="330" y="0">385</text>
     <text class="value" text-anchor="end" x="400" y="0">2.0%</text>
   </g>
   <g transform="translate(0, 100)">

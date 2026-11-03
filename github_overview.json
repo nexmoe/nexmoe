@@ -1,11 +1,55 @@
 {
-  "generated_at": "2026-11-03T13:35:27.732Z",
+  "generated_at": "2026-11-03T13:50:36.056Z",
+  "pinned_repositories": [
+    {
+      "name": "MetriBee",
+      "nameWithOwner": "nexmoe/MetriBee",
+      "description": "Self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server. Keep your existing GA4 tracking.",
+      "stargazerCount": 17,
+      "createdAt": "2026-10-24T03:40:50Z"
+    },
+    {
+      "name": "VidBee",
+      "nameWithOwner": "nexmoe/VidBee",
+      "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
+      "stargazerCount": 11059,
+      "createdAt": "2025-10-22T13:43:42Z"
+    },
+    {
+      "name": "opentrends",
+      "nameWithOwner": "opentrends-io/opentrends",
+      "description": null,
+      "stargazerCount": 67,
+      "createdAt": "2026-05-10T02:57:55Z"
+    },
+    {
+      "name": "DayBee",
+      "nameWithOwner": "nexmoe/DayBee",
+      "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
+      "stargazerCount": 424,
+      "createdAt": "2026-02-01T02:10:43Z"
+    },
+    {
+      "name": "VideoLingo",
+      "nameWithOwner": "Huanshere/VideoLingo",
+      "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
+      "stargazerCount": 19050,
+      "createdAt": "2024-08-09T11:19:52Z"
+    },
+    {
+      "name": "vscode-monitor-pro",
+      "nameWithOwner": "nexmoe/vscode-monitor-pro",
+      "description": "Monitor all the resources you care about. Be the coolest plugin.",
+      "stargazerCount": 221,
+      "createdAt": "2023-10-04T11:24:39Z"
+    }
+  ],
   "curated_repository_stars": {
     "nexmoe/MetriBee": 17,
     "nexmoe/VidBee": 11059,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 424,
-    "Huanshere/VideoLingo": 19050,
+    "Huanshere/VideoLingo": 19051,
     "nexmoe/vscode-monitor-pro": 221
   },
   "curated_repository_created_at": {
@@ -18,7 +62,7 @@
   },
   "totals": {
     "followers": 654,
-    "stars": 37315,
+    "stars": 37316,
     "forks": 4390
   },
   "scopes": {
@@ -102,7 +146,7 @@
       ]
     },
     "member": {
-      "stars": 19245,
+      "stars": 19246,
       "forks": 2102,
       "count": 7,
       "repos": [
@@ -111,7 +155,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19050,
+          "stargazers_count": 19051,
           "forks_count": 2097
         },
         {
@@ -125,7 +169,7 @@
       ]
     },
     "merged": {
-      "stars": 37315,
+      "stars": 37316,
       "forks": 4390,
       "count": 142,
       "repos": [
@@ -134,7 +178,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19050,
+          "stargazers_count": 19051,
           "forks_count": 2097
         },
         {
@@ -285,7 +329,7 @@
   },
   "star_sources": {
     "owned": 12462,
-    "member": 19245,
+    "member": 19246,
     "organization": 5608,
     "organizations": {
       "theme-nexmoe": 2188,
@@ -296,49 +340,5 @@
       "ComNergy": 3
     }
   },
-  "last_updated": "03 Nov 2026 · 21:35 UTC+8",
-  "pinned_repositories": [
-    {
-      "name": "MetriBee",
-      "nameWithOwner": "nexmoe/MetriBee",
-      "description": "Self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server. Keep your existing GA4 tracking.",
-      "stargazerCount": 17,
-      "createdAt": "2026-10-24T03:40:50Z"
-    },
-    {
-      "name": "VidBee",
-      "nameWithOwner": "nexmoe/VidBee",
-      "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-      "stargazerCount": 11059,
-      "createdAt": "2025-10-22T13:43:42Z"
-    },
-    {
-      "name": "opentrends",
-      "nameWithOwner": "opentrends-io/opentrends",
-      "description": null,
-      "stargazerCount": 67,
-      "createdAt": "2026-05-10T02:57:55Z"
-    },
-    {
-      "name": "DayBee",
-      "nameWithOwner": "nexmoe/DayBee",
-      "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
-      "stargazerCount": 424,
-      "createdAt": "2026-02-01T02:10:43Z"
-    },
-    {
-      "name": "VideoLingo",
-      "nameWithOwner": "Huanshere/VideoLingo",
-      "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-      "stargazerCount": 19050,
-      "createdAt": "2024-08-09T11:19:52Z"
-    },
-    {
-      "name": "vscode-monitor-pro",
-      "nameWithOwner": "nexmoe/vscode-monitor-pro",
-      "description": "Monitor all the resources you care about. Be the coolest plugin.",
-      "stargazerCount": 221,
-      "createdAt": "2023-10-04T11:24:39Z"
-    }
-  ]
+  "last_updated": "03 Nov 2026 · 21:50 UTC+8"
 }

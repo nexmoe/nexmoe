@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T00:27:59.390Z",
+  "generated_at": "2026-11-03T13:35:27.732Z",
   "curated_repository_stars": {
     "mikoagents/miko": 5,
-    "nexmoe/VidBee": 11053,
-    "opentrends-io/opentrends": 66,
+    "nexmoe/VidBee": 11059,
+    "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 424,
-    "Huanshere/VideoLingo": 19044,
+    "Huanshere/VideoLingo": 19050,
     "nexmoe/vscode-monitor-pro": 221
   },
   "curated_repository_created_at": {
@@ -18,13 +18,13 @@
   },
   "totals": {
     "followers": 654,
-    "stars": 37304,
-    "forks": 4388
+    "stars": 37315,
+    "forks": 4390
   },
   "scopes": {
     "owned": {
-      "stars": 12456,
-      "forks": 1034,
+      "stars": 12462,
+      "forks": 1036,
       "count": 61,
       "repos": [
         {
@@ -32,8 +32,8 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11053,
-          "forks_count": 866
+          "stargazers_count": 11059,
+          "forks_count": 868
         },
         {
           "name": "DayBee",
@@ -102,8 +102,8 @@
       ]
     },
     "member": {
-      "stars": 19239,
-      "forks": 2100,
+      "stars": 19245,
+      "forks": 2102,
       "count": 7,
       "repos": [
         {
@@ -111,8 +111,8 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19044,
-          "forks_count": 2095
+          "stargazers_count": 19050,
+          "forks_count": 2097
         },
         {
           "name": "void",
@@ -125,8 +125,8 @@
       ]
     },
     "merged": {
-      "stars": 37304,
-      "forks": 4388,
+      "stars": 37315,
+      "forks": 4390,
       "count": 142,
       "repos": [
         {
@@ -134,16 +134,16 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19044,
-          "forks_count": 2095
+          "stargazers_count": 19050,
+          "forks_count": 2097
         },
         {
           "name": "VidBee",
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11053,
-          "forks_count": 866
+          "stargazers_count": 11059,
+          "forks_count": 868
         },
         {
           "name": "plugins",
@@ -151,7 +151,7 @@
           "html_url": "https://github.com/typecho-fans/plugins",
           "description": "Typecho Fans插件作品目录",
           "stargazers_count": 1906,
-          "forks_count": 590
+          "forks_count": 589
         },
         {
           "name": "hexo-theme-nexmoe",
@@ -190,8 +190,8 @@
           "full_name": "theme-nexmoe/typecho-theme-nexmoe",
           "html_url": "https://github.com/theme-nexmoe/typecho-theme-nexmoe",
           "description": "🔥 一个特别的 Typecho 主题",
-          "stargazers_count": 404,
-          "forks_count": 59
+          "stargazers_count": 403,
+          "forks_count": 58
         },
         {
           "name": "themes",
@@ -277,18 +277,18 @@
     }
   },
   "activity": {
-    "commits": 18635,
+    "commits": 18636,
     "prs": 384,
     "issues": 408,
-    "total": 19427,
+    "total": 19428,
     "contributed_to": 122
   },
   "star_sources": {
-    "owned": 12456,
-    "member": 19239,
-    "organization": 5609,
+    "owned": 12462,
+    "member": 19245,
+    "organization": 5608,
     "organizations": {
-      "theme-nexmoe": 2189,
+      "theme-nexmoe": 2188,
       "typecho-fans": 2144,
       "hitokoto-osc": 1126,
       "slmnb-lab": 94,
@@ -296,5 +296,5 @@
       "ComNergy": 3
     }
   },
-  "last_updated": "03 Nov 2026 · 08:27 UTC+8"
+  "last_updated": "03 Nov 2026 · 21:35 UTC+8"
 }

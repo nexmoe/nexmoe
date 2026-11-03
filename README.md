@@ -35,7 +35,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,053</span><br>
+  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,059</span><br>
   Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.
 </p>
 <table>
@@ -51,7 +51,7 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/opentrends-io-opentrends.svg" alt="Created 2026-05-10" width="112" height="24">
-  <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;66</span><br>
+  <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
   Follow first-hand information across technology, AI, and developer communities with AI translation and summaries.
 </p>
 <p>
@@ -61,7 +61,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
-  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,044</span><br>
+  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,050</span><br>
   One-click AI subtitle cutting, translation, alignment, and dubbing.
 </p>
 <p>

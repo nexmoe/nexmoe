@@ -35,7 +35,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="创建于 2025-10-22" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,053</span><br>
+  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,059</span><br>
   从 1,000 多个网站下载视频和音频，转写、总结、翻译媒体内容，还能围绕内容与 AI 对话。
 </p>
 <table>
@@ -51,7 +51,7 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/opentrends-io-opentrends.svg" alt="创建于 2026-05-10" width="112" height="24">
-  <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;66</span><br>
+  <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
   关注科技、AI 和开发者社区的一手信息，通过 AI 翻译与摘要跨越语言障碍。
 </p>
 <p>
@@ -61,7 +61,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="创建于 2024-08-09" width="112" height="24">
-  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,044</span><br>
+  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,050</span><br>
   一键完成 AI 字幕切分、翻译、对齐与配音。
 </p>
 <p>

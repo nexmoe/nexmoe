@@ -223,6 +223,7 @@ export function buildRepositoryDateSvg(createdAt?: string) {
 export function buildRepositoryMarkup(repos: CuratedRepository[], stars: Record<string, number> = {}, createdAt: Record<string, string> = {}, locale: ReadmeLocale = "en") {
   const text = labels[locale];
   return `<div>\n` + repos.map(repo => {
+    const description = locale === "zh-CN" ? repo.description_zh ?? repo.description : repo.description;
     const images = repo.images ?? [];
     const imageSize = images.length === 1 ? 'width="100%"' : 'height="200"';
     // GitHub removes custom layout CSS. Its native table styles provide a
@@ -234,8 +235,7 @@ export function buildRepositoryMarkup(repos: CuratedRepository[], stars: Record<
     ).join("\n") + (images.length === 1 ? `\n</p>` : `\n</td></tr>\n</table>`) : "";
     return `<p>
   <img align="right" src="./assets/repository-dates/${repositoryAssetName(repo)}.svg" alt="${escapeXml(createdAt[repo.repository] ? `${text.created} ${createdAt[repo.repository].slice(0, 10)}` : text.dateUnavailable)}" width="112" height="24">
-  <strong><a href="https://github.com/${repo.repository}">${escapeXml(repo.name)}</a></strong> &nbsp; <span>★&nbsp;${stars[repo.repository]?.toLocaleString("en-US") ?? text.unavailable}</span><br>
-  ${escapeXml(locale === "zh-CN" ? repo.description_zh ?? repo.description : repo.description)}
+  <strong><a href="https://github.com/${repo.repository}">${escapeXml(repo.name)}</a></strong> &nbsp; <span>★&nbsp;${stars[repo.repository]?.toLocaleString("en-US") ?? text.unavailable}</span>${description ? `<br>\n  ${escapeXml(description)}` : ""}
 </p>${gallery}`;
   }).join("\n") + `\n</div>`;
 }

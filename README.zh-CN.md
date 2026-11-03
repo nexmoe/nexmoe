@@ -25,13 +25,13 @@
 <img src="./assets/repositories-heading.zh-CN.svg" alt="项目" width="100%" height="48">
 </div>
 
-<!-- 项目选择、描述与顺序由 repositories.json 手动维护，不自动选取或排序。 -->
+<!-- 项目与顺序跟随 GitHub 置顶；repositories.json 提供介绍与截图覆盖。 -->
 <!-- repositories starts -->
 <div>
 <p>
-  <img align="right" src="./assets/repository-dates/mikoagents-miko.svg" alt="创建于 2026-09-16" width="112" height="24">
-  <strong><a href="https://github.com/mikoagents/miko">Miko</a></strong> &nbsp; <span>★&nbsp;5</span><br>
-  可自托管的 AI 编程助手。从团队协作工具接收任务，在独立的 Git 工作树中完成开发，并回报进度。
+  <img align="right" src="./assets/repository-dates/nexmoe-metribee.svg" alt="创建于 2026-10-24" width="112" height="24">
+  <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;17</span><br>
+  自托管的 Google Analytics 4 数据看板，支持实时流量、漏斗、留存、Search Console 集成与内置 MCP 服务。
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="创建于 2025-10-22" width="112" height="24">
@@ -61,7 +61,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="创建于 2024-08-09" width="112" height="24">
-  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,050</span><br>
+  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,051</span><br>
   一键完成 AI 字幕切分、翻译、对齐与配音。
 </p>
 <p>

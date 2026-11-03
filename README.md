@@ -25,13 +25,13 @@
 <img src="./assets/repositories-heading.svg" alt="Repositories" width="100%" height="48">
 </div>
 
-<!-- Selection, descriptions, and order are maintained by hand in repositories.json. No automatic fetching or sorting. -->
+<!-- Repositories follow GitHub profile pins; repositories.json provides descriptions and screenshot overrides. -->
 <!-- repositories starts -->
 <div>
 <p>
-  <img align="right" src="./assets/repository-dates/mikoagents-miko.svg" alt="Created 2026-09-16" width="112" height="24">
-  <strong><a href="https://github.com/mikoagents/miko">Miko</a></strong> &nbsp; <span>★&nbsp;5</span><br>
-  A self-hosted AI coding agent that takes tasks from your team tools, works in isolated Git worktrees, and reports progress back.
+  <img align="right" src="./assets/repository-dates/nexmoe-metribee.svg" alt="Created 2026-10-24" width="112" height="24">
+  <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;17</span><br>
+  A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server.
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
@@ -61,7 +61,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
-  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,050</span><br>
+  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,051</span><br>
   One-click AI subtitle cutting, translation, alignment, and dubbing.
 </p>
 <p>

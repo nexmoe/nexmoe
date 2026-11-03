@@ -4,7 +4,7 @@ import { mkdir } from "node:fs/promises";
 import {
   buildOverviewSvg, buildSectionHeadingSvg,
   buildRepositoryDateSvg, buildRepositoryMarkup, repositoryAssetName,
-  validateRepositories, type OverviewInput,
+  validateRepositories, type CuratedRepository, type OverviewInput,
 } from "./readme_ui";
 export { buildOverviewSvg } from "./readme_ui";
 
@@ -48,9 +48,18 @@ type ChartItem = {
   value: number;
 };
 
+export type PinnedRepository = {
+  name: string;
+  nameWithOwner: string;
+  description: string | null;
+  stargazerCount: number;
+  createdAt: string;
+};
+
 type OutputPayload = {
   generated_at: string;
   last_updated: string;
+  pinned_repositories?: PinnedRepository[];
   curated_repository_stars: Record<string, number>;
   curated_repository_created_at: Record<string, string>;
   totals: {
@@ -90,9 +99,7 @@ export function updateReadme(content: string, repositories: string) {
   return content.replace(pattern, () => `<!-- repositories starts -->\n${repositories}\n<!-- repositories ends -->`);
 }
 
-async function renderReadmeVisuals(input: OverviewInput, repositoryStars: Record<string, number>, repositoryCreatedAt: Record<string, string>) {
-  // Never derive this list from API results, stars, activity, or GitHub pins.
-  const repositories = validateRepositories(await Bun.file(join(root, "repositories.json")).json());
+async function renderReadmeVisuals(input: OverviewInput, repositories: CuratedRepository[], repositoryStars: Record<string, number>, repositoryCreatedAt: Record<string, string>) {
   await mkdir(join(assetsDir, "repository-dates"), { recursive: true });
   const writes: Promise<number>[] = [];
   writes.push(...repositories.map(repo => Bun.write(
@@ -131,7 +138,65 @@ async function renderSavedSnapshot() {
       .map(([label, value]) => ({ label, value })).sort((a, b) => b.value - a.value),
     lastUpdated: data.last_updated,
   };
-  await renderReadmeVisuals(input, data.curated_repository_stars ?? {}, data.curated_repository_created_at ?? {});
+  const overrides = validateRepositories(await Bun.file(join(root, "repositories.json")).json());
+  await renderReadmeVisuals(input, selectPinnedRepositories(overrides, data.pinned_repositories),
+    data.curated_repository_stars ?? {}, data.curated_repository_created_at ?? {});
+}
+
+// Overrides enrich pinned projects, but never select or reorder them.
+// A missing snapshot bootstraps from the old configuration; [] means no pins.
+export function selectPinnedRepositories(overrides: CuratedRepository[], pinned?: PinnedRepository[]): CuratedRepository[] {
+  if (pinned === undefined) return overrides;
+  const byRepository = new Map(overrides.map(repo => [repo.repository.toLowerCase(), repo]));
+  return pinned.map(repo => ({
+    name: repo.name,
+    description: repo.description ?? "",
+    ...byRepository.get(repo.nameWithOwner.toLowerCase()),
+    repository: repo.nameWithOwner,
+  }));
+}
+
+export async function fetchPinnedRepositories(login: string): Promise<PinnedRepository[]> {
+  const response = await fetch("https://api.github.com/graphql", {
+    method: "POST",
+    signal: AbortSignal.timeout(15_000),
+    headers: { ...headers, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      query: `query($login: String!) {
+        user(login: $login) {
+          pinnedItems(first: 6, types: REPOSITORY) {
+            nodes { ... on Repository { name nameWithOwner description stargazerCount createdAt } }
+          }
+        }
+      }`,
+      variables: { login },
+    }),
+  });
+  if (!response.ok) throw new Error(`GitHub pinned repositories error (${response.status} ${response.statusText})`);
+  const payload = await response.json() as {
+    errors?: { message: string }[];
+    data?: { user?: { pinnedItems?: { nodes?: PinnedRepository[] } } | null };
+  };
+  if (payload.errors?.length) throw new Error(payload.errors.map(error => error.message).join("; "));
+  const repositories = payload.data?.user?.pinnedItems?.nodes;
+  if (!Array.isArray(repositories) || repositories.some(repo =>
+    !repo || typeof repo.name !== "string" || !repo.name.trim() ||
+    typeof repo.nameWithOwner !== "string" || !/^[a-z0-9_.-]+\/[a-z0-9_.-]+$/i.test(repo.nameWithOwner) ||
+    (repo.description !== null && typeof repo.description !== "string") ||
+    !Number.isSafeInteger(repo.stargazerCount) || repo.stargazerCount < 0 ||
+    typeof repo.createdAt !== "string" || Number.isNaN(Date.parse(repo.createdAt)))) {
+    throw new Error(`Invalid pinned repositories response for ${login}`);
+  }
+  return repositories;
+}
+
+export async function refreshPinnedRepositories(login: string, saved?: PinnedRepository[]) {
+  try {
+    return await fetchPinnedRepositories(login);
+  } catch (error) {
+    console.error("Error refreshing pinned repositories; keeping the saved selection:", error);
+    return saved;
+  }
 }
 
 function formatLastUpdated(date: Date) {
@@ -188,9 +253,7 @@ export async function fetchRepositoryMetadata(repository: string) {
   }
 }
 
-async function fetchCuratedRepositoryMetadata(knownRepos: Repo[]) {
-  const selected = validateRepositories(await Bun.file(join(root, "repositories.json")).json());
-  const saved = await Bun.file(jsonPath).json().catch(() => null) as OutputPayload | null;
+async function fetchCuratedRepositoryMetadata(selected: CuratedRepository[], knownRepos: Pick<Repo, "full_name" | "stargazers_count" | "created_at">[], saved: OutputPayload | null) {
   const counts: Record<string, number> = {};
   const dates: Record<string, string> = {};
   const known = new Map(knownRepos.map(repo => [repo.full_name.toLowerCase(), repo]));
@@ -664,6 +727,10 @@ async function main() {
   const readmeContents = await Bun.file(readmePath).text();
   const savedStats = await Bun.file(jsonPath).json().catch(() => null) as OutputPayload | null;
   const currentStats = savedStats?.totals ?? extractCurrentStats(readmeContents);
+  const profileLogin = (process.env.GH_USERNAME ?? "nexmoe").trim() || "nexmoe";
+  const pinnedRepositories = await refreshPinnedRepositories(profileLogin, savedStats?.pinned_repositories);
+  const overrides = validateRepositories(await Bun.file(join(root, "repositories.json")).json());
+  const selectedRepositories = selectPinnedRepositories(overrides, pinnedRepositories);
 
   let ownedRepos: Repo[] = [];
   try {
@@ -729,7 +796,11 @@ async function main() {
   const activity = await fetchActivityStats(userInfo.login, userInfo.createdAt);
 
   const mergedRepos = dedupeReposByFullName([...ownedRepos, ...memberRepos, ...extraOrgRepos]);
-  const { stars: curatedRepositoryStars, createdAt: curatedRepositoryCreatedAt } = await fetchCuratedRepositoryMetadata(mergedRepos);
+  const pinnedMetadata = (pinnedRepositories ?? []).map(repo => ({
+    full_name: repo.nameWithOwner, stargazers_count: repo.stargazerCount, created_at: repo.createdAt,
+  }));
+  const { stars: curatedRepositoryStars, createdAt: curatedRepositoryCreatedAt } =
+    await fetchCuratedRepositoryMetadata(selectedRepositories, [...pinnedMetadata, ...mergedRepos], savedStats);
   const mergedStats = repoStatsFromRepos(mergedRepos);
   const totalStars = mergedStats.stars;
   const totalForks = mergedStats.forks;
@@ -743,12 +814,13 @@ async function main() {
     starSources,
     organizationSources,
     lastUpdated,
-  }, curatedRepositoryStars, curatedRepositoryCreatedAt);
+  }, selectedRepositories, curatedRepositoryStars, curatedRepositoryCreatedAt);
   await Bun.write(
     jsonPath,
     JSON.stringify(
       {
         generated_at: new Date().toISOString(),
+        pinned_repositories: pinnedRepositories,
         curated_repository_stars: curatedRepositoryStars,
         curated_repository_created_at: curatedRepositoryCreatedAt,
         totals: {

@@ -33,6 +33,17 @@
   <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;17</span><br>
   自托管的 Google Analytics 4 数据看板，支持实时流量、漏斗、留存、Search Console 集成与内置 MCP 服务。
 </p>
+<table>
+<tr><td nowrap>
+  <sub>左右滑动或横向滚动，浏览全部功能截图 · 点击任意图片，即可查看原始尺寸的完整截图</sub><br>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/globe.webp"><img src="./assets/metribee/globe.webp" alt="MetriBee 实时访客地球、国家分布与事件动态" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/home.webp"><img src="./assets/metribee/home.webp" alt="MetriBee 首页展示多个 GA4 站点的流量趋势与访客数据" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/analytics.webp"><img src="./assets/metribee/analytics.webp" alt="MetriBee 数据概览中的流量趋势、访问来源与热门页面" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/funnels.webp"><img src="./assets/metribee/funnels.webp" alt="MetriBee 转化漏斗中的分步用户数、流失与转化率" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/journeys.webp"><img src="./assets/metribee/journeys.webp" alt="MetriBee 访问路径桑基图，展示访客的页面流转" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/retention.webp"><img src="./assets/metribee/retention.webp" alt="MetriBee 按周展示访客同期群的留存热力图" height="200"></a>
+</td></tr>
+</table>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="创建于 2025-10-22" width="112" height="24">
   <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,059</span><br>

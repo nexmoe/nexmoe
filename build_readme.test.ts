@@ -211,7 +211,8 @@ test("Chinese renders translated text with the same projects, counts, and galler
   expect(chinese).toContain("创建于 2025-10-22");
   expect([...chinese.matchAll(/href="([^"]+)"/g)].map(match => match[1]))
     .toEqual([...english.matchAll(/href="([^"]+)"/g)].map(match => match[1]));
-  expect([...chinese.matchAll(/height="200"/g)]).toHaveLength(6);
+  const vidbee = config.filter(repo => repo.repository === "nexmoe/VidBee");
+  expect([...buildRepositoryMarkup(vidbee, stars, dates, "zh-CN").matchAll(/height="200"/g)]).toHaveLength(6);
   expect(chinese).toContain("VidBee RSS 订阅与自动下载");
 });
 

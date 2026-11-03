@@ -3,7 +3,45 @@
     "name": "MetriBee",
     "repository": "nexmoe/MetriBee",
     "description": "A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server.",
-    "description_zh": "自托管的 Google Analytics 4 数据看板，支持实时流量、漏斗、留存、Search Console 集成与内置 MCP 服务。"
+    "description_zh": "自托管的 Google Analytics 4 数据看板，支持实时流量、漏斗、留存、Search Console 集成与内置 MCP 服务。",
+    "images": [
+      {
+        "src": "./assets/metribee/globe.webp",
+        "alt": "MetriBee live visitor globe with countries, sites, and event activity",
+        "alt_zh": "MetriBee 实时访客地球、国家分布与事件动态",
+        "href": "https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/globe.webp"
+      },
+      {
+        "src": "./assets/metribee/home.webp",
+        "alt": "MetriBee home dashboard showing traffic trends and users across GA4 properties",
+        "alt_zh": "MetriBee 首页展示多个 GA4 站点的流量趋势与访客数据",
+        "href": "https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/home.webp"
+      },
+      {
+        "src": "./assets/metribee/analytics.webp",
+        "alt": "MetriBee analytics overview with traffic trends, referral sources, and top pages",
+        "alt_zh": "MetriBee 数据概览中的流量趋势、访问来源与热门页面",
+        "href": "https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/analytics.webp"
+      },
+      {
+        "src": "./assets/metribee/funnels.webp",
+        "alt": "MetriBee conversion funnel with users, drop-off, and conversion at each step",
+        "alt_zh": "MetriBee 转化漏斗中的分步用户数、流失与转化率",
+        "href": "https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/funnels.webp"
+      },
+      {
+        "src": "./assets/metribee/journeys.webp",
+        "alt": "MetriBee user journey Sankey diagram showing page navigation paths",
+        "alt_zh": "MetriBee 访问路径桑基图，展示访客的页面流转",
+        "href": "https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/journeys.webp"
+      },
+      {
+        "src": "./assets/metribee/retention.webp",
+        "alt": "MetriBee retention heatmap showing weekly visitor cohorts",
+        "alt_zh": "MetriBee 按周展示访客同期群的留存热力图",
+        "href": "https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/retention.webp"
+      }
+    ]
   },
   {
     "name": "Miko",

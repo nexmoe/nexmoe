@@ -113,6 +113,7 @@ tables. The Hero's Data notes link opens this separate guide.
 - `assets/repositories-heading[.zh-CN].svg`: responsive blue Repositories heading and rule
 - `assets/products-heading[.zh-CN].svg`: matching Products heading and rule
 - `assets/repository-dates/*.svg`: small right-aligned date labels
+- `assets/metribee/*.webp`: original MetriBee screenshots, copied unchanged from its repository
 - `assets/vidbee/*.webp`: original VidBee screenshots, copied unchanged from its repository
 - `github_overview.json`: statistics snapshot, updated only by a GitHub refresh
 

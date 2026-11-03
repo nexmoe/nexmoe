@@ -33,6 +33,17 @@
   <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;17</span><br>
   A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server.
 </p>
+<table>
+<tr><td nowrap>
+  <sub>Scroll horizontally to explore all screenshots · Click any image to view it in full size</sub><br>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/globe.webp"><img src="./assets/metribee/globe.webp" alt="MetriBee live visitor globe with countries, sites, and event activity" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/home.webp"><img src="./assets/metribee/home.webp" alt="MetriBee home dashboard showing traffic trends and users across GA4 properties" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/analytics.webp"><img src="./assets/metribee/analytics.webp" alt="MetriBee analytics overview with traffic trends, referral sources, and top pages" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/funnels.webp"><img src="./assets/metribee/funnels.webp" alt="MetriBee conversion funnel with users, drop-off, and conversion at each step" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/journeys.webp"><img src="./assets/metribee/journeys.webp" alt="MetriBee user journey Sankey diagram showing page navigation paths" height="200"></a>
+  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/retention.webp"><img src="./assets/metribee/retention.webp" alt="MetriBee retention heatmap showing weekly visitor cohorts" height="200"></a>
+</td></tr>
+</table>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
   <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,059</span><br>

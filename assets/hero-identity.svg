@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="140" role="img" aria-labelledby="title description">
+<title id="title">NEXMOE</title>
+<desc id="description">Product, design and engineering. Intelligence, Nerve and Robots.</desc>
+<style>
+text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#1f2328}
+.name{font-size:48px;font-weight:750;letter-spacing:-1.6px}
+.role{font-size:13px;font-weight:600;letter-spacing:.8px;fill:#57606a}
+.motto{font-size:12px;fill:#57606a}
+.compact{display:none}
+@media(max-width:320px){.name{font-size:36px;letter-spacing:-1px}.wide{display:none}.compact{display:inline}.role{font-size:11px;letter-spacing:.4px}.motto{font-size:11px}}
+@media(prefers-color-scheme:dark){text{fill:#f0f6fc}.role,.motto{fill:#9198a1}}
+</style>
+<text class="name" x="0" y="48">NEXMOE</text>
+<text class="role wide" x="1" y="79">PRODUCT · DESIGN · ENGINEERING</text>
+<text class="role compact" x="1" y="76">PRODUCT · DESIGN<tspan x="1" y="94">ENGINEERING</tspan></text>
+<text class="motto wide" x="1" y="105">Intelligence, Nerve &amp; Robots.</text>
+<text class="motto compact" x="1" y="120">Intelligence, Nerve &amp; Robots.</text>
+</svg>

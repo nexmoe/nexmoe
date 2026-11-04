@@ -66,6 +66,8 @@ test("repository overrides validate identities and render in the supplied order"
   expect(links).toEqual(config.map((repo: { repository: string }) => repo.repository));
   expect(() => validateRepositories([{ name: "Bad", repository: "javascript:alert(1)", description: "Bad URL" }])).toThrow();
   expect(() => validateRepositories([...config, config[0]])).toThrow("Duplicate repository");
+  expect(() => validateRepositories([{ ...config[0], icon: "javascript:alert(1)" }])).toThrow("Invalid icon");
+  expect(() => validateRepositories([{ ...config[0], icon: "../private.png" }])).toThrow("Invalid icon");
 });
 
 const pinnedRepository: PinnedRepository = {
@@ -76,21 +78,23 @@ const pinnedRepository: PinnedRepository = {
   createdAt: "2026-10-24T03:40:50Z",
 };
 
-test("pins control additions, removals, and order while retaining localized overrides and screenshots", () => {
+test("pins control additions, removals, and order while retaining localized overrides, icons, and screenshots", () => {
   const overrides = validateRepositories([
     { name: "Unpinned", repository: "owner/old", description: "No longer selected" },
     { name: "Custom name", repository: "OWNER/Existing", description: "Custom description", description_zh: "中文介绍",
+      icon: "https://example.com/icon.png?theme=light&size=24",
       images: [{ src: "./assets/example.webp", alt: "Screenshot", alt_zh: "截图" }] },
   ]);
   const pins = [pinnedRepository, { ...pinnedRepository, nameWithOwner: "owner/existing" }];
   const selected = selectPinnedRepositories(overrides, pins);
   expect(selected.map(repo => repo.repository)).toEqual(["owner/new", "owner/existing"]);
   expect(selected[0]).toEqual({ name: "New project", repository: "owner/new", description: "GitHub description" });
-  expect(selected[1]).toMatchObject({ name: "Custom name", description: "Custom description", description_zh: "中文介绍", images: overrides[1]!.images });
+  expect(selected[1]).toMatchObject({ name: "Custom name", description: "Custom description", description_zh: "中文介绍", icon: overrides[1]!.icon, images: overrides[1]!.images });
   const chinese = buildRepositoryMarkup(selected, {}, {}, "zh-CN");
   expect(chinese).toContain("GitHub description");
   expect(chinese).toContain("中文介绍");
   expect(chinese).toContain('alt="截图"');
+  expect(chinese).toContain('src="https://example.com/icon.png?theme=light&amp;size=24"');
   expect(chinese).not.toContain("owner/old");
   expect(selectPinnedRepositories(overrides, [...pins].reverse()).map(repo => repo.repository))
     .toEqual(["owner/existing", "owner/new"]);
@@ -188,6 +192,7 @@ test("refresh persists pin metadata for offline rendering in both READMEs", asyn
       expect(links).toEqual(["owner/new", "nexmoe/VidBee"]);
       expect(content).toContain("★&nbsp;17");
       expect(content).toContain("./assets/vidbee/transcript-framed.webp");
+      expect(content).toContain('src="./assets/icons/vidbee.png"');
     }
     expect(await Bun.file(join(directory, "assets/repository-dates/owner-new.svg")).text()).toContain("2026-10-24");
     expect(await Bun.file(join(directory, "github_overview.json")).json()).toEqual(refreshed);

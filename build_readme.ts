@@ -107,14 +107,15 @@ async function renderReadmeVisuals(input: OverviewInput, repositories: CuratedRe
     buildRepositoryDateSvg(repositoryCreatedAt[repo.repository]),
   )));
   const versions = [
-    { locale: "en", file: "README.md", suffix: "", overview: "Overview", repositories: "Repositories", products: "Products" },
-    { locale: "zh-CN", file: "README.zh-CN.md", suffix: ".zh-CN", overview: "开源概览", repositories: "项目", products: "产品" },
+    { locale: "en", file: "README.md", suffix: "", about: "About me", overview: "Overview", repositories: "Repositories", products: "Products" },
+    { locale: "zh-CN", file: "README.zh-CN.md", suffix: ".zh-CN", about: "关于我", overview: "开源概览", repositories: "项目", products: "产品" },
   ] as const;
   for (const version of versions) {
     const path = join(root, version.file);
     const content = await Bun.file(path).text();
     writes.push(Bun.write(path, updateReadme(content,
       buildRepositoryMarkup(repositories, repositoryStars, repositoryCreatedAt, version.locale))));
+    writes.push(Bun.write(join(assetsDir, `about-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.about)));
     writes.push(Bun.write(join(assetsDir, `overview-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.overview)));
     writes.push(Bun.write(join(assetsDir, `repositories-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.repositories)));
     writes.push(Bun.write(join(assetsDir, `products-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.products)));

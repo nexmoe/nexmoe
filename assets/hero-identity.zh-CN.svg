@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="140" role="img" aria-labelledby="title description">
+<title id="title">NEXMOE</title>
+<desc id="description">产品、设计与开发。智慧、胆识与机器人。</desc>
+<style>
+text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#1f2328}
+.name{font-size:48px;font-weight:750;letter-spacing:-1.6px}
+.role{font-size:14px;font-weight:600;letter-spacing:1px;fill:#57606a}
+.motto{font-size:12px;fill:#57606a}
+@media(max-width:320px){.name{font-size:36px;letter-spacing:-1px}.role{font-size:12px;letter-spacing:.4px}.motto{font-size:11px}}
+@media(prefers-color-scheme:dark){text{fill:#f0f6fc}.role,.motto{fill:#9198a1}}
+</style>
+<text class="name" x="0" y="48">NEXMOE</text>
+<text class="role" x="1" y="79">产品 · 设计 · 开发</text>
+<text class="motto" x="1" y="105">智慧、胆识与机器人。</text>
+</svg>

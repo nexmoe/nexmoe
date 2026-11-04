@@ -1,20 +1,20 @@
 <div lang="en">
 <p><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></p>
 
-<h1>Nexmoe</h1>
+<p>
+  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE — Product, design &amp; engineering. Intelligence, Nerve &amp; Robots." width="55%" height="140">
+</p>
+<p align="right">
+  <img src="./assets/contact-icons/website.svg" alt="" width="14" height="14" align="absmiddle"> &nbsp; <a href="https://nexmoe.com">nexmoe.com</a><br>
+  <img src="./assets/contact-icons/x.svg" alt="" width="14" height="14" align="absmiddle"> &nbsp; <a href="https://x.com/nexmoe">@nexmoe</a>
+</p>
 
-<p><strong>Intelligence, Nerve &amp; Robots.</strong></p>
+<br clear="all">
+<img src="./assets/about-heading.svg" alt="About me" width="100%" height="48">
 
 <p>I'm Nexmoe, a Gen Z builder working across product, design, and engineering. I founded VidBee and BoTab, and co-founded Viora. I make tools for AI, video, and everyday productivity, with a goal of reaching a million users.</p>
 
 <p>I also enjoy building farms, cities, and Dyson spheres — in games.</p>
-
-<p>
-  <a href="https://nexmoe.com">Website</a> &nbsp; │ &nbsp;
-  <a href="https://x.com/nexmoe">X</a> &nbsp; │ &nbsp;
-  <a href="https://github.com/nexmoe?tab=repositories">All projects</a> &nbsp; │ &nbsp;
-  <a href="./docs/README_DATA_METRICS.md">Data notes</a>
-</p>
 
 <div id="overview">
 <img src="./assets/overview-heading.svg" alt="Overview" width="100%" height="48">
@@ -25,12 +25,12 @@
 <img src="./assets/repositories-heading.svg" alt="Repositories" width="100%" height="48">
 </div>
 
-<!-- Repositories follow GitHub profile pins; repositories.json provides descriptions and screenshot overrides. -->
+<!-- Repositories follow GitHub profile pins; repositories.json provides icons, descriptions, and screenshot overrides. -->
 <!-- repositories starts -->
 <div>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-metribee.svg" alt="Created 2026-10-24" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;18</span><br>
+  <img src="./assets/icons/metribee.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;18</span><br>
   A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server.
 </p>
 <table>
@@ -46,7 +46,7 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,062</span><br>
+  <img src="./assets/icons/vidbee.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,062</span><br>
   Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.
 </p>
 <table>
@@ -62,22 +62,22 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/opentrends-io-opentrends.svg" alt="Created 2026-05-10" width="112" height="24">
-  <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
+  <img src="./assets/icons/opentrends.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
   Follow first-hand information across technology, AI, and developer communities with AI translation and summaries.
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="Created 2026-02-01" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;425</span><br>
+  <img src="./assets/icons/daybee.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;425</span><br>
   A cross-platform microphone recorder with real-time transcription and voice activity detection.
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
-  <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,057</span><br>
+  <img src="./assets/icons/videolingo.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,057</span><br>
   One-click AI subtitle cutting, translation, alignment, and dubbing.
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vscode-monitor-pro.svg" alt="Created 2023-10-04" width="112" height="24">
-  <strong><a href="https://github.com/nexmoe/vscode-monitor-pro">Monitor Pro</a></strong> &nbsp; <span>★&nbsp;221</span><br>
+  <img src="./assets/icons/monitor-pro.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/vscode-monitor-pro">Monitor Pro</a></strong> &nbsp; <span>★&nbsp;221</span><br>
   Monitor the resources you care about, right inside Visual Studio Code.
 </p>
 </div>
@@ -86,7 +86,7 @@
 <div id="products">
 <img src="./assets/products-heading.svg" alt="Products" width="100%" height="48">
 <p>
-  <strong><a href="https://botab.net">BoTab</a></strong><br>
+  <img src="./assets/icons/botab.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://botab.net">BoTab</a></strong><br>
   A tab and bookmark manager for Chrome and Edge. Save open tabs in one click and turn your bookmarks into a customizable new tab page, generated locally with native browser sync.
 </p>
 <table>
@@ -97,7 +97,7 @@
 </td></tr>
 </table>
 <p>
-  <strong><a href="https://viora.io/">Viora</a></strong><br>
+  <img src="./assets/icons/viora.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://viora.io/">Viora</a></strong><br>
   A voice AI assistant for macOS. Speak to write in any app, edit selected text, ask questions in context, and hand off tasks without leaving your workflow.
 </p>
 <table>

@@ -5,6 +5,7 @@ export type CuratedRepository = {
   repository: string;
   description: string;
   description_zh?: string;
+  icon?: string;
   images?: { src: string; alt: string; alt_zh?: string; href?: string }[];
 };
 
@@ -43,7 +44,7 @@ export function escapeXml(value: string) {
     .replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
 }
 
-// SVG is reserved for custom heading rules and right-aligned dates.
+// Generated SVGs provide custom heading rules and right-aligned dates.
 const styles = `
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px}
   .section{font-size:24px;font-weight:700;fill:#2f5785}
@@ -193,6 +194,9 @@ export function validateRepositories(value: unknown): CuratedRepository[] {
     if (seen.has(key)) throw new Error(`Duplicate repository: ${item.repository}`);
     seen.add(key);
     const description_zh = optionalTranslation(item.description_zh, `${item.repository}.description_zh`);
+    if (item.icon !== undefined && !isImageUrl(item.icon)) {
+      throw new Error(`Invalid icon for ${item.repository}.`);
+    }
     let images: CuratedRepository["images"];
     if (item.images !== undefined) {
       if (!Array.isArray(item.images)) throw new Error(`Invalid images for ${item.repository}.`);
@@ -206,7 +210,7 @@ export function validateRepositories(value: unknown): CuratedRepository[] {
         return { src: image.src, alt: image.alt.trim(), ...(alt_zh ? { alt_zh } : {}), ...("href" in image ? { href: image.href as string } : {}) };
       });
     }
-    return { name: item.name.trim(), repository: item.repository, description: item.description.trim(), ...(description_zh ? { description_zh } : {}), ...(images ? { images } : {}) };
+    return { name: item.name.trim(), repository: item.repository, description: item.description.trim(), ...(description_zh ? { description_zh } : {}), ...(item.icon ? { icon: item.icon } : {}), ...(images ? { images } : {}) };
   });
 }
 
@@ -224,6 +228,7 @@ export function buildRepositoryMarkup(repos: CuratedRepository[], stars: Record<
   const text = labels[locale];
   return `<div>\n` + repos.map(repo => {
     const description = locale === "zh-CN" ? repo.description_zh ?? repo.description : repo.description;
+    const icon = repo.icon ? `<img src="${escapeXml(repo.icon)}" alt="" width="24" height="24" align="absmiddle"> &nbsp; ` : "";
     const images = repo.images ?? [];
     const imageSize = images.length === 1 ? 'width="100%"' : 'height="200"';
     // GitHub removes custom layout CSS. Its native table styles provide a
@@ -235,7 +240,7 @@ export function buildRepositoryMarkup(repos: CuratedRepository[], stars: Record<
     ).join("\n") + (images.length === 1 ? `\n</p>` : `\n</td></tr>\n</table>`) : "";
     return `<p>
   <img align="right" src="./assets/repository-dates/${repositoryAssetName(repo)}.svg" alt="${escapeXml(createdAt[repo.repository] ? `${text.created} ${createdAt[repo.repository].slice(0, 10)}` : text.dateUnavailable)}" width="112" height="24">
-  <strong><a href="https://github.com/${repo.repository}">${escapeXml(repo.name)}</a></strong> &nbsp; <span>★&nbsp;${stars[repo.repository]?.toLocaleString("en-US") ?? text.unavailable}</span>${description ? `<br>\n  ${escapeXml(description)}` : ""}
+  ${icon}<strong><a href="https://github.com/${repo.repository}">${escapeXml(repo.name)}</a></strong> &nbsp; <span>★&nbsp;${stars[repo.repository]?.toLocaleString("en-US") ?? text.unavailable}</span>${description ? `<br>\n  ${escapeXml(description)}` : ""}
 </p>${gallery}`;
   }).join("\n") + `\n</div>`;
 }

@@ -36,9 +36,9 @@ for repo in repos:
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="600" height="32" viewBox="0 0 600 32" role="img" aria-label="{stars_formatted} stars">
 <title>{stars_formatted} stars · {percent:.1f}% of the top repository</title>
 <style>
-  .count{{fill:#1d1d1f;font:600 15px -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif}}
-  .track{{fill:#f0f0f5}}.fill{{fill:#007aff}}
-  @media (prefers-color-scheme:dark){{.count{{fill:#f5f5f7}}.track{{fill:#2c2c2e}}}}
+  .count{{fill:#171717;font:600 15px -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif}}
+  .track{{fill:#f5f5f5}}.fill{{fill:#171717}}
+  @media (prefers-color-scheme:dark){{.count,.fill{{fill:#fafafa}}.track{{fill:#262626}}}}
 </style>
 <text class="count" x="0" y="14">{stars_formatted}</text>
 <rect class="track" y="22" width="600" height="8" rx="4"/>

@@ -3,9 +3,9 @@
 <desc id="description">Created 2026-10-24</desc>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px}
-  .section{font-size:24px;font-weight:700;fill:#2f5785}
-  .rule{stroke:#d2deec;stroke-width:1}
-  .meta{font-style:italic;fill:#4e91e6}
-  @media(prefers-color-scheme:dark){.section{fill:#a8c8ed}.rule{stroke:#34465c}.meta{fill:#7db0f2}}</style>
+  .section{font-size:24px;font-weight:700;fill:#171717}
+  .rule{stroke:#d4d4d4;stroke-width:1}
+  .meta{font-style:italic;fill:#737373}
+  @media(prefers-color-scheme:dark){.section{fill:#fafafa}.rule{stroke:#404040}.meta{fill:#a3a3a3}}</style>
 <text class="meta" text-anchor="end" x="110" y="18">2026-10-24</text>
 </svg>

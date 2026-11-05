@@ -47,10 +47,10 @@ export function escapeXml(value: string) {
 // Generated SVGs provide custom heading rules and right-aligned dates.
 const styles = `
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px}
-  .section{font-size:24px;font-weight:700;fill:#2f5785}
-  .rule{stroke:#d2deec;stroke-width:1}
-  .meta{font-style:italic;fill:#4e91e6}
-  @media(prefers-color-scheme:dark){.section{fill:#a8c8ed}.rule{stroke:#34465c}.meta{fill:#7db0f2}}`;
+  .section{font-size:24px;font-weight:700;fill:#171717}
+  .rule{stroke:#d4d4d4;stroke-width:1}
+  .meta{font-style:italic;fill:#737373}
+  @media(prefers-color-scheme:dark){.section{fill:#fafafa}.rule{stroke:#404040}.meta{fill:#a3a3a3}}`;
 
 function svg(width: number | "100%", height: number, title: string, body: string, description = title) {
   const viewBox = typeof width === "number" ? ` viewBox="0 0 ${width} ${height}"` : "";
@@ -71,13 +71,14 @@ export function buildSectionHeadingSvg(title: string) {
     /[A-Z0-9]/.test(char) ? .66 : .57
   ) * 24, 0);
   const lineStart = Math.ceil(textWidth * 1.06 + 24);
-  // Without a viewBox, the 24px text stays fixed and only the rule stretches.
-  return svg("100%", 48, title,
-    `<line class="rule" x1="${lineStart}" y1="24" x2="100%" y2="24"/>
-<text class="section" x="0" y="32">${escapeXml(title)}</text>`);
+  // The transparent canvas adds 4px above and below the heading. Without a
+  // viewBox, the 24px text stays fixed and only the rule stretches.
+  return svg("100%", 56, title,
+    `<line class="rule" x1="${lineStart}" y1="28" x2="100%" y2="28"/>
+<text class="section" x="0" y="36">${escapeXml(title)}</text>`);
 }
 
-// Bar segments take the heading palette in order, from navy to sky blue.
+// Bar segments use three distinct gray tones, inverted for the dark theme.
 function breakdown(items: { label: string; value: number }[]) {
   const total = items.reduce((sum, item) => sum + item.value, 0);
   let x = 0;
@@ -130,23 +131,23 @@ export function buildOverviewSvg(input: OverviewInput, locale: ReadmeLocale = "e
 <desc id="overview-desc">${description}</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
-  text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#1f2328}
-  .hero{font-size:80px;font-weight:800;letter-spacing:-3px;fill:#2f5785}
+  text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#171717}
+  .hero{font-size:80px;font-weight:800;letter-spacing:-3px;fill:#171717}
   .stat{font-size:24px;font-weight:700;letter-spacing:-0.5px}
   .title{font-size:15px;font-weight:600}
-  .label{font-size:13px;fill:#59636e}
+  .label{font-size:13px;fill:#737373}
   .body{font-size:14px}
-  .value{font-size:14px;fill:#59636e}
-  .track{fill:#eef3f9}
-  .tone0{fill:#2f5785}
-  .tone1{fill:#4e91e6}
-  .tone2{fill:#a8c8ed}
+  .value{font-size:14px;fill:#737373}
+  .track{fill:#f5f5f5}
+  .tone0{fill:#171717}
+  .tone1{fill:#737373}
+  .tone2{fill:#d4d4d4}
   @media(prefers-color-scheme:dark){
-    text{fill:#f0f6fc}
-    .hero,.tone0{fill:#a8c8ed}
-    .label,.value{fill:#9198a1}
-    .track{fill:#1c2635}
-    .tone2{fill:#34567f}
+    text{fill:#fafafa}
+    .hero,.tone0{fill:#fafafa}
+    .label,.value,.tone1{fill:#a3a3a3}
+    .track{fill:#262626}
+    .tone2{fill:#525252}
   }
 </style>
 
@@ -228,7 +229,7 @@ export function buildRepositoryMarkup(repos: CuratedRepository[], stars: Record<
   const text = labels[locale];
   return `<div>\n` + repos.map(repo => {
     const description = locale === "zh-CN" ? repo.description_zh ?? repo.description : repo.description;
-    const icon = repo.icon ? `<img src="${escapeXml(repo.icon)}" alt="" width="24" height="24" align="absmiddle"> &nbsp; ` : "";
+    const icon = repo.icon ? `<img src="${escapeXml(repo.icon)}" alt="" width="20" height="20" align="absmiddle"> &nbsp; ` : "";
     const images = repo.images ?? [];
     const imageSize = images.length === 1 ? 'width="100%"' : 'height="200"';
     // GitHub removes custom layout CSS. Its native table styles provide a

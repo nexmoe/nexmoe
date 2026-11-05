@@ -1,28 +1,30 @@
 <div lang="en">
-<p><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></p>
-
 <p>
-  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE — Product, design &amp; engineering. Intelligence, Nerve &amp; Robots." width="55%" height="140">
+  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE — Intelligence, Nerve &amp; Robots." width="55%" height="112">
 </p>
-<p align="right">
-  <img src="./assets/contact-icons/website.svg" alt="" width="14" height="14" align="absmiddle"> &nbsp; <a href="https://nexmoe.com">nexmoe.com</a><br>
-  <img src="./assets/contact-icons/x.svg" alt="" width="14" height="14" align="absmiddle"> &nbsp; <a href="https://x.com/nexmoe">@nexmoe</a>
+<p align="right"><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></p>
+<br clear="all">
+
+<p align="left">
+  <a href="https://nexmoe.com"><img src="./assets/contact-buttons/website.svg" alt="nexmoe.com" width="144" height="36" align="absmiddle"></a> &nbsp;
+  <a href="https://x.com/nexmoe"><img src="./assets/contact-buttons/x.svg" alt="X: @nexmoe" width="120" height="36" align="absmiddle"></a>
 </p>
+
 
 <br clear="all">
-<img src="./assets/about-heading.svg" alt="About me" width="100%" height="48">
+<img src="./assets/about-heading.svg" alt="About me" width="100%" height="56">
 
 <p>I'm Nexmoe, a Gen Z builder working across product, design, and engineering. I founded VidBee and BoTab, and co-founded Viora. I make tools for AI, video, and everyday productivity, with a goal of reaching a million users.</p>
 
 <p>I also enjoy building farms, cities, and Dyson spheres — in games.</p>
 
 <div id="overview">
-<img src="./assets/overview-heading.svg" alt="Overview" width="100%" height="48">
+<img src="./assets/overview-heading.svg" alt="Overview" width="100%" height="56">
 <img src="./assets/github-overview.svg" alt="GitHub overview with stars, followers, forks, star sources, and contributions" width="100%">
 </div>
 
 <div id="repositories">
-<img src="./assets/repositories-heading.svg" alt="Repositories" width="100%" height="48">
+<img src="./assets/repositories-heading.svg" alt="Repositories" width="100%" height="56">
 </div>
 
 <!-- Repositories follow GitHub profile pins; repositories.json provides icons, descriptions, and screenshot overrides. -->
@@ -30,7 +32,7 @@
 <div>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-metribee.svg" alt="Created 2026-10-24" width="112" height="24">
-  <img src="./assets/icons/metribee.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;18</span><br>
+  <img src="./assets/icons/metribee.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;18</span><br>
   A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server.
 </p>
 <table>
@@ -46,7 +48,7 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
-  <img src="./assets/icons/vidbee.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,071</span><br>
+  <img src="./assets/icons/vidbee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,071</span><br>
   Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.
 </p>
 <table>
@@ -62,31 +64,31 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/opentrends-io-opentrends.svg" alt="Created 2026-05-10" width="112" height="24">
-  <img src="./assets/icons/opentrends.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
+  <img src="./assets/icons/opentrends.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
   Follow first-hand information across technology, AI, and developer communities with AI translation and summaries.
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="Created 2026-02-01" width="112" height="24">
-  <img src="./assets/icons/daybee.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;428</span><br>
+  <img src="./assets/icons/daybee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;428</span><br>
   A cross-platform microphone recorder with real-time transcription and voice activity detection.
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
-  <img src="./assets/icons/videolingo.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,081</span><br>
+  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,081</span><br>
   One-click AI subtitle cutting, translation, alignment, and dubbing.
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vscode-monitor-pro.svg" alt="Created 2023-10-04" width="112" height="24">
-  <img src="./assets/icons/monitor-pro.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/vscode-monitor-pro">Monitor Pro</a></strong> &nbsp; <span>★&nbsp;221</span><br>
+  <img src="./assets/icons/monitor-pro.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/vscode-monitor-pro">Monitor Pro</a></strong> &nbsp; <span>★&nbsp;221</span><br>
   Monitor the resources you care about, right inside Visual Studio Code.
 </p>
 </div>
 <!-- repositories ends -->
 
 <div id="products">
-<img src="./assets/products-heading.svg" alt="Products" width="100%" height="48">
+<img src="./assets/products-heading.svg" alt="Products" width="100%" height="56">
 <p>
-  <img src="./assets/icons/botab.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://botab.net">BoTab</a></strong><br>
+  <img src="./assets/icons/botab.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://botab.net">BoTab</a></strong><br>
   A tab and bookmark manager for Chrome and Edge. Save open tabs in one click and turn your bookmarks into a customizable new tab page, generated locally with native browser sync.
 </p>
 <table>
@@ -97,7 +99,7 @@
 </td></tr>
 </table>
 <p>
-  <img src="./assets/icons/viora.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://viora.io/">Viora</a></strong><br>
+  <img src="./assets/icons/viora.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://viora.io/">Viora</a></strong><br>
   A voice AI assistant for macOS. Speak to write in any app, edit selected text, ask questions in context, and hand off tasks without leaving your workflow.
 </p>
 <table>

@@ -1,28 +1,27 @@
 <div lang="zh-CN">
-<p><a href="./README.md">English</a> · <strong>简体中文</strong></p>
-
 <p>
-  <img align="left" src="./assets/hero-identity.zh-CN.svg" alt="NEXMOE — 产品、设计与开发。智慧、胆识与机器人。" width="55%" height="140">
+  <img align="left" src="./assets/hero-identity.zh-CN.svg" alt="NEXMOE — 智慧、胆识与机器人。" width="55%" height="112">
 </p>
+<p align="right"><a href="./README.md">English</a> · <strong>简体中文</strong></p>
 <p align="right">
-  <img src="./assets/contact-icons/website.svg" alt="" width="14" height="14" align="absmiddle"> &nbsp; <a href="https://nexmoe.com">nexmoe.com</a><br>
-  <img src="./assets/contact-icons/x.svg" alt="" width="14" height="14" align="absmiddle"> &nbsp; <a href="https://x.com/nexmoe">@nexmoe</a>
+  <a href="https://nexmoe.com"><img src="./assets/contact-buttons/website.svg" alt="nexmoe.com" width="144" height="36" align="absmiddle"></a> &nbsp;
+  <a href="https://x.com/nexmoe"><img src="./assets/contact-buttons/x.svg" alt="X: @nexmoe" width="120" height="36" align="absmiddle"></a>
 </p>
 
 <br clear="all">
-<img src="./assets/about-heading.zh-CN.svg" alt="关于我" width="100%" height="48">
+<img src="./assets/about-heading.zh-CN.svg" alt="关于我" width="100%" height="56">
 
 <p>我是 Nexmoe，一名 Z 世代 Builder，在产品、设计与开发之间切换。我创办了 VidBee 和 BoTab，也是 Viora 的联合创始人。我围绕 AI、视频与效率打造工具，希望让一百万人用上自己做的产品。</p>
 
 <p>做产品之外，我也喜欢在游戏里种田、造城市、搭建戴森球。</p>
 
 <div id="overview">
-<img src="./assets/overview-heading.zh-CN.svg" alt="开源概览" width="100%" height="48">
+<img src="./assets/overview-heading.zh-CN.svg" alt="开源概览" width="100%" height="56">
 <img src="./assets/github-overview.zh-CN.svg" alt="GitHub 开源概览：Star、关注者、复刻、Star 来源与贡献分布" width="100%">
 </div>
 
 <div id="repositories">
-<img src="./assets/repositories-heading.zh-CN.svg" alt="项目" width="100%" height="48">
+<img src="./assets/repositories-heading.zh-CN.svg" alt="项目" width="100%" height="56">
 </div>
 
 <!-- 项目与顺序跟随 GitHub 置顶；repositories.json 提供图标、介绍与截图覆盖。 -->
@@ -30,7 +29,7 @@
 <div>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-metribee.svg" alt="创建于 2026-10-24" width="112" height="24">
-  <img src="./assets/icons/metribee.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;18</span><br>
+  <img src="./assets/icons/metribee.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;18</span><br>
   自托管的 Google Analytics 4 数据看板，支持实时流量、漏斗、留存、Search Console 集成与内置 MCP 服务。
 </p>
 <table>
@@ -46,7 +45,7 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="创建于 2025-10-22" width="112" height="24">
-  <img src="./assets/icons/vidbee.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,071</span><br>
+  <img src="./assets/icons/vidbee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,071</span><br>
   从 1,000 多个网站下载视频和音频，转写、总结、翻译媒体内容，还能围绕内容与 AI 对话。
 </p>
 <table>
@@ -62,31 +61,31 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/opentrends-io-opentrends.svg" alt="创建于 2026-05-10" width="112" height="24">
-  <img src="./assets/icons/opentrends.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
+  <img src="./assets/icons/opentrends.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
   关注科技、AI 和开发者社区的一手信息，通过 AI 翻译与摘要跨越语言障碍。
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="创建于 2026-02-01" width="112" height="24">
-  <img src="./assets/icons/daybee.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;428</span><br>
+  <img src="./assets/icons/daybee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;428</span><br>
   跨平台麦克风录音工具，支持实时转写和语音活动检测。
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="创建于 2024-08-09" width="112" height="24">
-  <img src="./assets/icons/videolingo.svg" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,081</span><br>
+  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,081</span><br>
   一键完成 AI 字幕切分、翻译、对齐与配音。
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vscode-monitor-pro.svg" alt="创建于 2023-10-04" width="112" height="24">
-  <img src="./assets/icons/monitor-pro.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/vscode-monitor-pro">Monitor Pro</a></strong> &nbsp; <span>★&nbsp;221</span><br>
+  <img src="./assets/icons/monitor-pro.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/vscode-monitor-pro">Monitor Pro</a></strong> &nbsp; <span>★&nbsp;221</span><br>
   直接在 Visual Studio Code 中监控你关心的系统资源。
 </p>
 </div>
 <!-- repositories ends -->
 
 <div id="products">
-<img src="./assets/products-heading.zh-CN.svg" alt="产品" width="100%" height="48">
+<img src="./assets/products-heading.zh-CN.svg" alt="产品" width="100%" height="56">
 <p>
-  <img src="./assets/icons/botab.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://botab.net">BoTab</a></strong><br>
+  <img src="./assets/icons/botab.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://botab.net">BoTab</a></strong><br>
   Chrome 和 Edge 的标签页与书签管理工具。一键保存打开的标签页，用书签生成可自定义的新标签页；页面在本地生成，数据通过浏览器原生书签同步。
 </p>
 <table>
@@ -97,7 +96,7 @@
 </td></tr>
 </table>
 <p>
-  <img src="./assets/icons/viora.png" alt="" width="24" height="24" align="absmiddle"> &nbsp; <strong><a href="https://viora.io/">Viora</a></strong><br>
+  <img src="./assets/icons/viora.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://viora.io/">Viora</a></strong><br>
   macOS 语音 AI 助手。按住快捷键说话，即可在当前应用中输入、改写选中文字、结合上下文提问，或交办任务。
 </p>
 <table>

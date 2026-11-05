@@ -1,29 +1,37 @@
 # README Data Guide
 
-The biography, contact links, repository links, Stars, and descriptions are
+The biography, repository links, Stars, and descriptions are
 native HTML text. They follow GitHub’s typography and natural line wrapping,
 so they can be selected, copied, and resized without image scaling.
 
-The Hero follows a resume-style layout without a layout table or borders.
-A transparent identity SVG floats left using the supported `align="left"`
-image attribute, while native links to the personal website and X align right.
-The identity occupies 55% of the width and contains the name, role, and motto,
+The Hero follows a resume-style layout without a layout table.
+The header combines a transparent identity SVG using the supported `align`
+image attribute with linked SVG outline buttons for the personal website and X.
+The language switch sits at the top right of the Hero beside the identity.
+The identity occupies 55% of the width and contains the name and motto,
 with equivalent image alternative text. The SVG has no `viewBox`, so its text
 keeps its font size instead of scaling with the whole header. Internal media
 queries use compact typography on narrow screens. `<br clear="all">` clears
 the float before the About me section heading and native biography text.
-Contact links use small decorative SVG icons from `assets/contact-icons/`,
-with colors for light and dark themes; the labels remain ordinary links.
-About me, Overview, Repositories, and Products use blue 24px SVG headings with a
+Contact buttons use transparent SVGs from `assets/contact-buttons/`, combining
+an icon, label, and rounded outline with neutral colors for light and dark themes.
+Each image is wrapped in a native link with descriptive alternative text,
+so the whole button is clickable. The 36px-tall buttons sit inline with a gap
+and wrap naturally when space is tight.
+About me, Overview, Repositories, and Products use monochrome 24px SVG headings with a
 horizontal rule extending to the right of each title. These SVGs have
-percentage width, fixed 48px height,
+percentage width, fixed 56px height (4px more space above and below the title),
 and no `viewBox`: only the rule stretches as the container changes width;
 the title text stays the same size.
 The Overview uses a two-column grid: total Stars on the left, and followers,
 forks, contributed repositories, and commits in a 2 × 2 grid on the right.
 Star sources sit below the Stars and contributions below the activity metrics,
-with right-aligned counts and percentages. Bars and the Stars figure use the
-Overview heading's blue palette. The chart omits the timestamp and Top
+with right-aligned counts and percentages. Bars use three distinct gray tones,
+and the Stars figure matches the heading's near-black or near-white text.
+The Hero, headings, date labels, buttons, and charts share a black, white,
+and gray palette that adapts to light and dark themes. Product icons and
+screenshots retain their original colors; native links follow GitHub's theme.
+The chart omits the timestamp and Top
 Organizations section. Organization details and refresh time remain
 available in the JSON snapshot; README shows no data-source appendix or
 refresh-status footer.
@@ -39,7 +47,7 @@ Changing your GitHub pins takes effect on the next successful CI refresh.
 Edit `repositories.json` to override project names, icons, descriptions, and screenshots.
 Each entry contains `name`, `repository` (`owner/name`), and `description`.
 An optional `icon` specifies an image in `./assets/` or an HTTPS image URL.
-It appears beside the project name at 24 × 24 pixels; entries without an icon
+It appears beside the project name at 20 × 20 pixels; entries without an icon
 keep the text-only heading. Icons are shared between both languages and are
 preserved when matching presentation overrides to pins.
 An optional `images` array adds a thumbnail gallery below the description;
@@ -150,13 +158,13 @@ tables. This separate guide contains implementation and data-source details.
 
 - `README.md`, `README.zh-CN.md`: only their `repositories` comment blocks
 - `assets/github-overview[.zh-CN].svg`: localized metrics, activity, and star sources
-- `assets/about-heading[.zh-CN].svg`: blue About me heading and rule matching the other sections
-- `assets/overview-heading[.zh-CN].svg`: responsive blue Overview heading and rule
-- `assets/repositories-heading[.zh-CN].svg`: responsive blue Repositories heading and rule
+- `assets/about-heading[.zh-CN].svg`: monochrome About me heading and rule matching the other sections
+- `assets/overview-heading[.zh-CN].svg`: responsive monochrome Overview heading and rule
+- `assets/repositories-heading[.zh-CN].svg`: responsive monochrome Repositories heading and rule
 - `assets/products-heading[.zh-CN].svg`: matching Products heading and rule
 - `assets/repository-dates/*.svg`: small right-aligned date labels
 - `assets/icons/*`: official project and product icons, copied unchanged from their sources
-- `assets/contact-icons/*.svg`: decorative icons for the manually maintained Hero links
+- `assets/contact-buttons/*.svg`: manually maintained Hero outline buttons with icons and labels
 - `assets/hero-identity[.zh-CN].svg`: manually maintained borderless Hero typography
 - `assets/metribee/*.webp`: original MetriBee screenshots, copied unchanged from its repository
 - `assets/vidbee/*.webp`: original VidBee screenshots, copied unchanged from its repository
@@ -168,7 +176,7 @@ identity SVG adjusts its internal typography for narrow widths.
 ### Icon sources
 
 These files are maintained locally, rather than fetched during README generation.
-Products use the same 24px icon size and HTML attributes as repositories.
+Products use the same 20px icon size and HTML attributes as repositories.
 Empty icon `alt` text avoids repeating the adjacent linked product name.
 
 | Icon | Official source |

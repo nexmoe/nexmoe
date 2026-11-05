@@ -74,7 +74,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
-  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,081</span><br>
+  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,080</span><br>
   One-click AI subtitle cutting, translation, alignment, and dubbing.
 </p>
 <p>

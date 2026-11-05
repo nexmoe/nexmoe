@@ -71,7 +71,7 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="创建于 2024-08-09" width="112" height="24">
-  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,081</span><br>
+  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,080</span><br>
   一键完成 AI 字幕切分、翻译、对齐与配音。
 </p>
 <p>

@@ -1,30 +1,28 @@
 <div lang="en">
-<p>
-  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE — Intelligence, Nerve &amp; Robots." width="55%" height="112">
+<p align="right">
+  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE — Intelligence, Nerve &amp; Robots." width="50%" height="56">
+  <small><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></small>
+  <br clear="all">
 </p>
-<p align="right"><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></p>
-<br clear="all">
 
 <p align="left">
-  <a href="https://nexmoe.com"><img src="./assets/contact-buttons/website.svg" alt="nexmoe.com" width="144" height="36" align="absmiddle"></a> &nbsp;
-  <a href="https://x.com/nexmoe"><img src="./assets/contact-buttons/x.svg" alt="X: @nexmoe" width="120" height="36" align="absmiddle"></a>
+  <a href="https://nexmoe.com"><img src="./assets/contact-buttons/website.svg" alt="nexmoe.com" width="120" height="28" align="absmiddle"></a>&nbsp;
+  <a href="https://x.com/nexmoe"><img src="./assets/contact-buttons/x.svg" alt="X: @nexmoe" width="100" height="28" align="absmiddle"></a>
 </p>
 
-
-<br clear="all">
-<img src="./assets/about-heading.svg" alt="About me" width="100%" height="56">
+<img src="./assets/about-heading.svg" alt="About me" width="100%" height="64">
 
 <p>I'm Nexmoe, a Gen Z builder working across product, design, and engineering. I founded VidBee and BoTab, and co-founded Viora. I make tools for AI, video, and everyday productivity, with a goal of reaching a million users.</p>
 
 <p>I also enjoy building farms, cities, and Dyson spheres — in games.</p>
 
 <div id="overview">
-<img src="./assets/overview-heading.svg" alt="Overview" width="100%" height="56">
+<img src="./assets/overview-heading.svg" alt="Overview" width="100%" height="64">
 <img src="./assets/github-overview.svg" alt="GitHub overview with stars, followers, forks, star sources, and contributions" width="100%">
 </div>
 
 <div id="repositories">
-<img src="./assets/repositories-heading.svg" alt="Repositories" width="100%" height="56">
+<img src="./assets/repositories-heading.svg" alt="Repositories" width="100%" height="64">
 </div>
 
 <!-- Repositories follow GitHub profile pins; repositories.json provides icons, descriptions, and screenshot overrides. -->
@@ -86,7 +84,7 @@
 <!-- repositories ends -->
 
 <div id="products">
-<img src="./assets/products-heading.svg" alt="Products" width="100%" height="56">
+<img src="./assets/products-heading.svg" alt="Products" width="100%" height="64">
 <p>
   <img src="./assets/icons/botab.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://botab.net">BoTab</a></strong><br>
   A tab and bookmark manager for Chrome and Edge. Save open tabs in one click and turn your bookmarks into a customizable new tab page, generated locally with native browser sync.

@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="112" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="56" role="img" aria-labelledby="title description">
 <title id="title">NEXMOE</title>
 <desc id="description">Intelligence, Nerve and Robots.</desc>
 <style>
 text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#171717}
-.name{font-size:48px;font-weight:750;letter-spacing:-1.6px}
+.name{font-size:40px;font-weight:750;letter-spacing:-1.2px}
 .motto{font-size:12px;fill:#737373}
-@media(max-width:320px){.name{font-size:36px;letter-spacing:-1px}.motto{font-size:11px}}
+@media(max-width:320px){.name{font-size:32px;letter-spacing:-1px}.motto{font-size:11px}}
 @media(prefers-color-scheme:dark){text{fill:#fafafa}.motto{fill:#a3a3a3}}
 </style>
-<text class="name" x="0" y="48">NEXMOE</text>
-<text class="motto" x="1" y="79">Intelligence, Nerve &amp; Robots.</text>
+<text class="name" x="0" y="2" dominant-baseline="hanging">NEXMOE</text>
+<text class="motto" x="1" y="52">Intelligence, Nerve &amp; Robots.</text>
 </svg>

@@ -1,27 +1,28 @@
 <div lang="zh-CN">
-<p>
-  <img align="left" src="./assets/hero-identity.zh-CN.svg" alt="NEXMOE — 智慧、胆识与机器人。" width="55%" height="112">
-</p>
-<p align="right"><a href="./README.md">English</a> · <strong>简体中文</strong></p>
 <p align="right">
-  <a href="https://nexmoe.com"><img src="./assets/contact-buttons/website.svg" alt="nexmoe.com" width="144" height="36" align="absmiddle"></a> &nbsp;
-  <a href="https://x.com/nexmoe"><img src="./assets/contact-buttons/x.svg" alt="X: @nexmoe" width="120" height="36" align="absmiddle"></a>
+  <img align="left" src="./assets/hero-identity.zh-CN.svg" alt="NEXMOE — 智慧、胆识与机器人。" width="50%" height="56">
+  <small><a href="./README.md">English</a> · <strong>简体中文</strong></small>
+  <br clear="all">
 </p>
 
-<br clear="all">
-<img src="./assets/about-heading.zh-CN.svg" alt="关于我" width="100%" height="56">
+<p align="left">
+  <a href="https://nexmoe.com"><img src="./assets/contact-buttons/website.svg" alt="nexmoe.com" width="120" height="28" align="absmiddle"></a>&nbsp;
+  <a href="https://x.com/nexmoe"><img src="./assets/contact-buttons/x.svg" alt="X: @nexmoe" width="100" height="28" align="absmiddle"></a>
+</p>
+
+<img src="./assets/about-heading.zh-CN.svg" alt="关于我" width="100%" height="64">
 
 <p>我是 Nexmoe，一名 Z 世代 Builder，在产品、设计与开发之间切换。我创办了 VidBee 和 BoTab，也是 Viora 的联合创始人。我围绕 AI、视频与效率打造工具，希望让一百万人用上自己做的产品。</p>
 
 <p>做产品之外，我也喜欢在游戏里种田、造城市、搭建戴森球。</p>
 
 <div id="overview">
-<img src="./assets/overview-heading.zh-CN.svg" alt="开源概览" width="100%" height="56">
+<img src="./assets/overview-heading.zh-CN.svg" alt="开源概览" width="100%" height="64">
 <img src="./assets/github-overview.zh-CN.svg" alt="GitHub 开源概览：Star、关注者、复刻、Star 来源与贡献分布" width="100%">
 </div>
 
 <div id="repositories">
-<img src="./assets/repositories-heading.zh-CN.svg" alt="项目" width="100%" height="56">
+<img src="./assets/repositories-heading.zh-CN.svg" alt="项目" width="100%" height="64">
 </div>
 
 <!-- 项目与顺序跟随 GitHub 置顶；repositories.json 提供图标、介绍与截图覆盖。 -->
@@ -83,7 +84,7 @@
 <!-- repositories ends -->
 
 <div id="products">
-<img src="./assets/products-heading.zh-CN.svg" alt="产品" width="100%" height="56">
+<img src="./assets/products-heading.zh-CN.svg" alt="产品" width="100%" height="64">
 <p>
   <img src="./assets/icons/botab.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://botab.net">BoTab</a></strong><br>
   Chrome 和 Edge 的标签页与书签管理工具。一键保存打开的标签页，用书签生成可自定义的新标签页；页面在本地生成，数据通过浏览器原生书签同步。

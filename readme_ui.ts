@@ -71,11 +71,11 @@ export function buildSectionHeadingSvg(title: string) {
     /[A-Z0-9]/.test(char) ? .66 : .57
   ) * 24, 0);
   const lineStart = Math.ceil(textWidth * 1.06 + 24);
-  // The transparent canvas adds 4px above and below the heading. Without a
+  // The transparent canvas adds 8px above and below the heading. Without a
   // viewBox, the 24px text stays fixed and only the rule stretches.
-  return svg("100%", 56, title,
-    `<line class="rule" x1="${lineStart}" y1="28" x2="100%" y2="28"/>
-<text class="section" x="0" y="36">${escapeXml(title)}</text>`);
+  return svg("100%", 64, title,
+    `<line class="rule" x1="${lineStart}" y1="32" x2="100%" y2="32"/>
+<text class="section" x="0" y="40">${escapeXml(title)}</text>`);
 }
 
 // Bar segments use three distinct gray tones, inverted for the dark theme.

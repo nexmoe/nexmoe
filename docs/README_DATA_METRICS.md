@@ -7,20 +7,26 @@ so they can be selected, copied, and resized without image scaling.
 The Hero follows a resume-style layout without a layout table.
 The header combines a transparent identity SVG using the supported `align`
 image attribute with linked SVG outline buttons for the personal website and X.
-The language switch sits at the top right of the Hero beside the identity.
-The identity occupies 55% of the width and contains the name and motto,
-with equivalent image alternative text. The SVG has no `viewBox`, so its text
+The identity image and language switch share one right-aligned paragraph, with
+the image floating left and smaller language links at the top right. The SVG name
+uses a hanging baseline near its top edge, keeping its visible top aligned with
+the language links even when the compact font size applies.
+The identity occupies 50% of the width in a compact 56px-high SVG, with a 40px
+name and 12px motto and equivalent image alternative text. The SVG has no `viewBox`, so its text
 keeps its font size instead of scaling with the whole header. Internal media
-queries use compact typography on narrow screens. `<br clear="all">` clears
-the float before the About me section heading and native biography text.
+queries reduce the name to 32px on narrow screens. A single `<br clear="all">`
+inside the Hero paragraph clears the float before the contact buttons. Both
+languages place the buttons below the identity and use GitHub's native 16px
+paragraph margins, without extra blank lines before About me.
 Contact buttons use transparent SVGs from `assets/contact-buttons/`, combining
 an icon, label, and rounded outline with neutral colors for light and dark themes.
 Each image is wrapped in a native link with descriptive alternative text,
-so the whole button is clickable. The 36px-tall buttons sit inline with a gap
+so the whole button is clickable. The 28px-tall buttons use 12px labels and 14px
+icons, sit inline with a small gap,
 and wrap naturally when space is tight.
 About me, Overview, Repositories, and Products use monochrome 24px SVG headings with a
 horizontal rule extending to the right of each title. These SVGs have
-percentage width, fixed 56px height (4px more space above and below the title),
+percentage width, fixed 64px height (8px more space above and below the title),
 and no `viewBox`: only the rule stretches as the container changes width;
 the title text stays the same size.
 The Overview uses a two-column grid: total Stars on the left, and followers,

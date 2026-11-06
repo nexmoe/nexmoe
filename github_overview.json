@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T04:59:45.386Z",
+  "generated_at": "2026-11-06T13:42:41.698Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -46,10 +46,10 @@
   ],
   "curated_repository_stars": {
     "nexmoe/MetriBee": 18,
-    "nexmoe/VidBee": 11076,
+    "nexmoe/VidBee": 11077,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 428,
-    "Huanshere/VideoLingo": 19091,
+    "Huanshere/VideoLingo": 19095,
     "nexmoe/vscode-monitor-pro": 221
   },
   "curated_repository_created_at": {
@@ -67,7 +67,7 @@
   },
   "scopes": {
     "owned": {
-      "stars": 12485,
+      "stars": 12486,
       "forks": 1040,
       "count": 62,
       "repos": [
@@ -76,7 +76,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11076,
+          "stargazers_count": 11077,
           "forks_count": 871
         },
         {
@@ -146,7 +146,7 @@
       ]
     },
     "member": {
-      "stars": 19287,
+      "stars": 19292,
       "forks": 2107,
       "count": 7,
       "repos": [
@@ -155,7 +155,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19091,
+          "stargazers_count": 19095,
           "forks_count": 2102
         },
         {
@@ -178,7 +178,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19091,
+          "stargazers_count": 19095,
           "forks_count": 2102
         },
         {
@@ -186,7 +186,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11076,
+          "stargazers_count": 11077,
           "forks_count": 871
         },
         {
@@ -194,7 +194,7 @@
           "full_name": "typecho-fans/plugins",
           "html_url": "https://github.com/typecho-fans/plugins",
           "description": "Typecho Fans插件作品目录",
-          "stargazers_count": 1905,
+          "stargazers_count": 1904,
           "forks_count": 589
         },
         {
@@ -202,7 +202,7 @@
           "full_name": "theme-nexmoe/hexo-theme-nexmoe",
           "html_url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
           "description": "🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.",
-          "stargazers_count": 1739,
+          "stargazers_count": 1738,
           "forks_count": 253
         },
         {
@@ -210,7 +210,7 @@
           "full_name": "hitokoto-osc/hitokoto-api",
           "html_url": "https://github.com/hitokoto-osc/hitokoto-api",
           "description": "版本：1，现行的 API 运行框架。",
-          "stargazers_count": 585,
+          "stargazers_count": 584,
           "forks_count": 83
         },
         {
@@ -218,7 +218,7 @@
           "full_name": "hitokoto-osc/sentences-bundle",
           "html_url": "https://github.com/hitokoto-osc/sentences-bundle",
           "description": "一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。",
-          "stargazers_count": 466,
+          "stargazers_count": 465,
           "forks_count": 100
         },
         {
@@ -234,7 +234,7 @@
           "full_name": "theme-nexmoe/typecho-theme-nexmoe",
           "html_url": "https://github.com/theme-nexmoe/typecho-theme-nexmoe",
           "description": "🔥 一个特别的 Typecho 主题",
-          "stargazers_count": 403,
+          "stargazers_count": 402,
           "forks_count": 58
         },
         {
@@ -321,24 +321,24 @@
     }
   },
   "activity": {
-    "commits": 18660,
-    "prs": 390,
+    "commits": 18661,
+    "prs": 391,
     "issues": 409,
-    "total": 19459,
+    "total": 19461,
     "contributed_to": 124
   },
   "star_sources": {
-    "owned": 12485,
-    "member": 19287,
-    "organization": 5609,
+    "owned": 12486,
+    "member": 19292,
+    "organization": 5603,
     "organizations": {
-      "theme-nexmoe": 2189,
-      "typecho-fans": 2143,
-      "hitokoto-osc": 1126,
+      "theme-nexmoe": 2187,
+      "typecho-fans": 2142,
+      "hitokoto-osc": 1123,
       "slmnb-lab": 95,
       "mixcm": 53,
       "ComNergy": 3
     }
   },
-  "last_updated": "06 Nov 2026 · 12:59 UTC+8"
+  "last_updated": "06 Nov 2026 · 21:42 UTC+8"
 }

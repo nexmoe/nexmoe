@@ -46,7 +46,7 @@
 </table>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="创建于 2025-10-22" width="112" height="24">
-  <img src="./assets/icons/vidbee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,106</span><br>
+  <img src="./assets/icons/vidbee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,109</span><br>
   从 1,000 多个网站下载视频和音频，转写、总结、翻译媒体内容，还能围绕内容与 AI 对话。
 </p>
 <table>
@@ -67,12 +67,12 @@
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="创建于 2026-02-01" width="112" height="24">
-  <img src="./assets/icons/daybee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;428</span><br>
+  <img src="./assets/icons/daybee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;430</span><br>
   跨平台麦克风录音工具，支持实时转写和语音活动检测。
 </p>
 <p>
   <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="创建于 2024-08-09" width="112" height="24">
-  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,126</span><br>
+  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,140</span><br>
   一键完成 AI 字幕切分、翻译、对齐与配音。
 </p>
 <p>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T01:08:55.993Z",
+  "generated_at": "2026-11-10T14:17:39.893Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -46,10 +46,10 @@
   ],
   "curated_repository_stars": {
     "nexmoe/MetriBee": 18,
-    "nexmoe/VidBee": 11106,
+    "nexmoe/VidBee": 11109,
     "opentrends-io/opentrends": 67,
-    "nexmoe/DayBee": 428,
-    "Huanshere/VideoLingo": 19126,
+    "nexmoe/DayBee": 430,
+    "Huanshere/VideoLingo": 19140,
     "nexmoe/vscode-monitor-pro": 221
   },
   "curated_repository_created_at": {
@@ -62,13 +62,13 @@
   },
   "totals": {
     "followers": 658,
-    "stars": 37442,
-    "forks": 4409
+    "stars": 37461,
+    "forks": 4410
   },
   "scopes": {
     "owned": {
-      "stars": 12515,
-      "forks": 1045,
+      "stars": 12519,
+      "forks": 1044,
       "count": 62,
       "repos": [
         {
@@ -76,15 +76,15 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11106,
-          "forks_count": 875
+          "stargazers_count": 11109,
+          "forks_count": 874
         },
         {
           "name": "DayBee",
           "full_name": "nexmoe/DayBee",
           "html_url": "https://github.com/nexmoe/DayBee",
           "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
-          "stargazers_count": 428,
+          "stargazers_count": 430,
           "forks_count": 44
         },
         {
@@ -124,7 +124,7 @@
           "full_name": "nexmoe/hexo-theme-yet-the-books",
           "html_url": "https://github.com/nexmoe/hexo-theme-yet-the-books",
           "description": "还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。",
-          "stargazers_count": 71,
+          "stargazers_count": 70,
           "forks_count": 16
         },
         {
@@ -146,8 +146,8 @@
       ]
     },
     "member": {
-      "stars": 19323,
-      "forks": 2116,
+      "stars": 19337,
+      "forks": 2117,
       "count": 7,
       "repos": [
         {
@@ -155,8 +155,8 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19126,
-          "forks_count": 2111
+          "stargazers_count": 19140,
+          "forks_count": 2112
         },
         {
           "name": "void",
@@ -169,8 +169,8 @@
       ]
     },
     "merged": {
-      "stars": 37442,
-      "forks": 4409,
+      "stars": 37461,
+      "forks": 4410,
       "count": 143,
       "repos": [
         {
@@ -178,16 +178,16 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19126,
-          "forks_count": 2111
+          "stargazers_count": 19140,
+          "forks_count": 2112
         },
         {
           "name": "VidBee",
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11106,
-          "forks_count": 875
+          "stargazers_count": 11109,
+          "forks_count": 874
         },
         {
           "name": "plugins",
@@ -226,7 +226,7 @@
           "full_name": "nexmoe/DayBee",
           "html_url": "https://github.com/nexmoe/DayBee",
           "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
-          "stargazers_count": 428,
+          "stargazers_count": 430,
           "forks_count": 44
         },
         {
@@ -290,7 +290,7 @@
           "full_name": "nexmoe/hexo-theme-yet-the-books",
           "html_url": "https://github.com/nexmoe/hexo-theme-yet-the-books",
           "description": "还有书籍，🌙 始于外表，忠于文字。一个献给热爱思考者的博客主题。",
-          "stargazers_count": 71,
+          "stargazers_count": 70,
           "forks_count": 16
         },
         {
@@ -328,17 +328,17 @@
     "contributed_to": 124
   },
   "star_sources": {
-    "owned": 12515,
-    "member": 19323,
-    "organization": 5604,
+    "owned": 12519,
+    "member": 19337,
+    "organization": 5605,
     "organizations": {
       "theme-nexmoe": 2187,
       "typecho-fans": 2141,
       "hitokoto-osc": 1125,
-      "slmnb-lab": 95,
+      "slmnb-lab": 96,
       "mixcm": 53,
       "ComNergy": 3
     }
   },
-  "last_updated": "10 Nov 2026 · 09:08 UTC+8"
+  "last_updated": "10 Nov 2026 · 22:17 UTC+8"
 }

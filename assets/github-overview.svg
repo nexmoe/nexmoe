@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="en" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">37,468 stars, 658 followers, 4,411 forks, 18,768 commits across 143 repositories</desc>
+<desc id="overview-desc">37,486 stars, 658 followers, 4,413 forks, 18,768 commits across 143 repositories</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#171717}
@@ -24,11 +24,11 @@
 </style>
 
 <!-- Stars on the left; four supporting metrics in a 2 × 2 grid on the right -->
-<text class="hero" x="0" y="68">37,468</text>
+<text class="hero" x="0" y="68">37,486</text>
 <text class="label" x="0" y="100">Total stars · 143 repositories</text>
 <text class="stat" x="440" y="29">658</text>
 <text class="label" x="440" y="47">Followers</text>
-<text class="stat" x="640" y="29">4,411</text>
+<text class="stat" x="640" y="29">4,413</text>
 <text class="label" x="640" y="47">Forks</text>
 <text class="stat" x="440" y="82">124</text>
 <text class="label" x="440" y="100">Contributed to</text>
@@ -40,18 +40,18 @@
   <text class="title" x="0" y="0">Star sources</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.68" height="8"/><rect class="tone1" x="133.68" y="0" width="206.48" height="8"/><rect class="tone2" x="340.16" y="0" width="59.84" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.66" height="8"/><rect class="tone1" x="133.66" y="0" width="206.53" height="8"/><rect class="tone2" x="340.19" y="0" width="59.81" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">Owned repositories</text>
-    <text class="body" text-anchor="end" x="330" y="0">12,522</text>
+    <text class="body" text-anchor="end" x="330" y="0">12,526</text>
     <text class="value" text-anchor="end" x="400" y="0">33.4%</text>
   </g>
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">Member / collaborator</text>
-    <text class="body" text-anchor="end" x="330" y="0">19,341</text>
+    <text class="body" text-anchor="end" x="330" y="0">19,355</text>
     <text class="value" text-anchor="end" x="400" y="0">51.6%</text>
   </g>
   <g transform="translate(0, 100)">

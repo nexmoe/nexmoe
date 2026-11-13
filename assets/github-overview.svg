@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="en" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">37,592 stars, 658 followers, 4,423 forks, 18,798 commits across 143 repositories</desc>
+<desc id="overview-desc">37,597 stars, 658 followers, 4,424 forks, 18,828 commits across 143 repositories</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#171717}
@@ -24,15 +24,15 @@
 </style>
 
 <!-- Stars on the left; four supporting metrics in a 2 × 2 grid on the right -->
-<text class="hero" x="0" y="68">37,592</text>
+<text class="hero" x="0" y="68">37,597</text>
 <text class="label" x="0" y="100">Total stars · 143 repositories</text>
 <text class="stat" x="440" y="29">658</text>
 <text class="label" x="440" y="47">Followers</text>
-<text class="stat" x="640" y="29">4,423</text>
+<text class="stat" x="640" y="29">4,424</text>
 <text class="label" x="640" y="47">Forks</text>
 <text class="stat" x="440" y="82">125</text>
 <text class="label" x="440" y="100">Contributed to</text>
-<text class="stat" x="640" y="82">18,798</text>
+<text class="stat" x="640" y="82">18,828</text>
 <text class="label" x="640" y="100">Commits</text>
 
 <!-- Star sources sit under the stars, contributions under the activity metrics -->
@@ -40,7 +40,7 @@
   <text class="title" x="0" y="0">Star sources</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.57" height="8"/><rect class="tone1" x="133.57" y="0" width="206.77" height="8"/><rect class="tone2" x="340.34" y="0" width="59.66" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.55" height="8"/><rect class="tone1" x="133.55" y="0" width="206.79" height="8"/><rect class="tone2" x="340.35" y="0" width="59.65" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
@@ -51,7 +51,7 @@
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">Member / collaborator</text>
-    <text class="body" text-anchor="end" x="330" y="0">19,432</text>
+    <text class="body" text-anchor="end" x="330" y="0">19,437</text>
     <text class="value" text-anchor="end" x="400" y="0">51.7%</text>
   </g>
   <g transform="translate(0, 100)">
@@ -65,12 +65,12 @@
   <text class="title" x="0" y="0">Contributions</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.55" height="8"/><rect class="tone1" x="383.55" y="0" width="8.10" height="8"/><rect class="tone2" x="391.65" y="0" width="8.35" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.58" height="8"/><rect class="tone1" x="383.58" y="0" width="8.09" height="8"/><rect class="tone2" x="391.67" y="0" width="8.33" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">Commits</text>
-    <text class="body" text-anchor="end" x="330" y="0">18,798</text>
+    <text class="body" text-anchor="end" x="330" y="0">18,828</text>
     <text class="value" text-anchor="end" x="400" y="0">95.9%</text>
   </g>
   <g transform="translate(0, 74)">

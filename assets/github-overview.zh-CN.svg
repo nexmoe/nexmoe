@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="zh-CN" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe 开源概览</title>
-<desc id="overview-desc">37,566 个 Star，658 位关注者，4,421 次复刻，143 个仓库，共 18,798 次提交</desc>
+<desc id="overview-desc">37,576 个 Star，658 位关注者，4,422 次复刻，143 个仓库，共 18,798 次提交</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#171717}
@@ -24,11 +24,11 @@
 </style>
 
 <!-- Stars on the left; four supporting metrics in a 2 × 2 grid on the right -->
-<text class="hero" x="0" y="68">37,566</text>
+<text class="hero" x="0" y="68">37,576</text>
 <text class="label" x="0" y="100">Star 总数 · 143 个仓库</text>
 <text class="stat" x="440" y="29">658</text>
 <text class="label" x="440" y="47">关注者</text>
-<text class="stat" x="640" y="29">4,421</text>
+<text class="stat" x="640" y="29">4,422</text>
 <text class="label" x="640" y="47">复刻</text>
 <text class="stat" x="440" y="82">125</text>
 <text class="label" x="440" y="100">参与项目</text>
@@ -40,24 +40,24 @@
   <text class="title" x="0" y="0">Star 来源</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.57" height="8"/><rect class="tone1" x="133.57" y="0" width="206.72" height="8"/><rect class="tone2" x="340.29" y="0" width="59.71" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.55" height="8"/><rect class="tone1" x="133.55" y="0" width="206.76" height="8"/><rect class="tone2" x="340.31" y="0" width="59.69" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">个人仓库</text>
-    <text class="body" text-anchor="end" x="330" y="0">12,544</text>
+    <text class="body" text-anchor="end" x="330" y="0">12,546</text>
     <text class="value" text-anchor="end" x="400" y="0">33.4%</text>
   </g>
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">成员 / 协作仓库</text>
-    <text class="body" text-anchor="end" x="330" y="0">19,414</text>
+    <text class="body" text-anchor="end" x="330" y="0">19,423</text>
     <text class="value" text-anchor="end" x="400" y="0">51.7%</text>
   </g>
   <g transform="translate(0, 100)">
     <circle class="tone2" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">组织仓库</text>
-    <text class="body" text-anchor="end" x="330" y="0">5,608</text>
+    <text class="body" text-anchor="end" x="330" y="0">5,607</text>
     <text class="value" text-anchor="end" x="400" y="0">14.9%</text>
   </g>
 </g>
@@ -65,7 +65,7 @@
   <text class="title" x="0" y="0">贡献分布</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.57" height="8"/><rect class="tone1" x="383.57" y="0" width="8.08" height="8"/><rect class="tone2" x="391.65" y="0" width="8.35" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.55" height="8"/><rect class="tone1" x="383.55" y="0" width="8.10" height="8"/><rect class="tone2" x="391.65" y="0" width="8.35" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
@@ -76,7 +76,7 @@
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">拉取请求</text>
-    <text class="body" text-anchor="end" x="330" y="0">396</text>
+    <text class="body" text-anchor="end" x="330" y="0">397</text>
     <text class="value" text-anchor="end" x="400" y="0">2.0%</text>
   </g>
   <g transform="translate(0, 100)">

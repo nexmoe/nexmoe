@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="zh-CN" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe 开源概览</title>
-<desc id="overview-desc">37,599 个 Star，658 位关注者，4,425 次复刻，143 个仓库，共 18,828 次提交</desc>
+<desc id="overview-desc">31,997 个 Star，658 位关注者，3,177 次复刻，69 个仓库，共 18,834 次提交</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#171717}
@@ -24,15 +24,15 @@
 </style>
 
 <!-- Stars on the left; four supporting metrics in a 2 × 2 grid on the right -->
-<text class="hero" x="0" y="68">37,599</text>
-<text class="label" x="0" y="100">Star 总数 · 143 个仓库</text>
+<text class="hero" x="0" y="68">31,997</text>
+<text class="label" x="0" y="100">Star 总数 · 69 个仓库</text>
 <text class="stat" x="440" y="29">658</text>
 <text class="label" x="440" y="47">关注者</text>
-<text class="stat" x="640" y="29">4,425</text>
+<text class="stat" x="640" y="29">3,177</text>
 <text class="label" x="640" y="47">复刻</text>
 <text class="stat" x="440" y="82">125</text>
 <text class="label" x="440" y="100">参与项目</text>
-<text class="stat" x="640" y="82">18,828</text>
+<text class="stat" x="640" y="82">18,834</text>
 <text class="label" x="640" y="100">提交</text>
 
 <!-- Star sources sit under the stars, contributions under the activity metrics -->
@@ -40,43 +40,43 @@
   <text class="title" x="0" y="0">Star 来源</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.52" height="8"/><rect class="tone1" x="133.52" y="0" width="206.82" height="8"/><rect class="tone2" x="340.35" y="0" width="59.65" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="156.94" height="8"/><rect class="tone1" x="156.94" y="0" width="243.06" height="8"/><rect class="tone2" x="400.00" y="0" width="0.00" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">个人仓库</text>
-    <text class="body" text-anchor="end" x="330" y="0">12,551</text>
-    <text class="value" text-anchor="end" x="400" y="0">33.4%</text>
+    <text class="body" text-anchor="end" x="330" y="0">12,554</text>
+    <text class="value" text-anchor="end" x="400" y="0">39.2%</text>
   </g>
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">成员 / 协作仓库</text>
-    <text class="body" text-anchor="end" x="330" y="0">19,441</text>
-    <text class="value" text-anchor="end" x="400" y="0">51.7%</text>
+    <text class="body" text-anchor="end" x="330" y="0">19,443</text>
+    <text class="value" text-anchor="end" x="400" y="0">60.8%</text>
   </g>
   <g transform="translate(0, 100)">
     <circle class="tone2" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">组织仓库</text>
-    <text class="body" text-anchor="end" x="330" y="0">5,607</text>
-    <text class="value" text-anchor="end" x="400" y="0">14.9%</text>
+    <text class="body" text-anchor="end" x="330" y="0">0</text>
+    <text class="value" text-anchor="end" x="400" y="0">0.0%</text>
   </g>
 </g>
 <g transform="translate(440, 148)">
   <text class="title" x="0" y="0">贡献分布</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.58" height="8"/><rect class="tone1" x="383.58" y="0" width="8.09" height="8"/><rect class="tone2" x="391.67" y="0" width="8.33" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.55" height="8"/><rect class="tone1" x="383.55" y="0" width="8.13" height="8"/><rect class="tone2" x="391.67" y="0" width="8.33" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">提交</text>
-    <text class="body" text-anchor="end" x="330" y="0">18,828</text>
+    <text class="body" text-anchor="end" x="330" y="0">18,834</text>
     <text class="value" text-anchor="end" x="400" y="0">95.9%</text>
   </g>
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">拉取请求</text>
-    <text class="body" text-anchor="end" x="330" y="0">397</text>
+    <text class="body" text-anchor="end" x="330" y="0">399</text>
     <text class="value" text-anchor="end" x="400" y="0">2.0%</text>
   </g>
   <g transform="translate(0, 100)">

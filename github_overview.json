@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T23:51:46.247Z",
+  "generated_at": "2026-11-19T05:50:13.373Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -46,10 +46,10 @@
   ],
   "curated_repository_stars": {
     "nexmoe/MetriBee": 19,
-    "nexmoe/VidBee": 11173,
+    "nexmoe/VidBee": 11174,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 431,
-    "Huanshere/VideoLingo": 19309,
+    "Huanshere/VideoLingo": 19312,
     "nexmoe/vscode-monitor-pro": 222
   },
   "curated_repository_created_at": {
@@ -62,13 +62,13 @@
   },
   "totals": {
     "followers": 659,
-    "stars": 37697,
-    "forks": 4427
+    "stars": 37701,
+    "forks": 4426
   },
   "scopes": {
     "owned": {
-      "stars": 12585,
-      "forks": 1046,
+      "stars": 12586,
+      "forks": 1045,
       "count": 62,
       "repos": [
         {
@@ -76,7 +76,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11173,
+          "stargazers_count": 11174,
           "forks_count": 876
         },
         {
@@ -85,7 +85,7 @@
           "html_url": "https://github.com/nexmoe/DayBee",
           "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
           "stargazers_count": 431,
-          "forks_count": 44
+          "forks_count": 43
         },
         {
           "name": "vscode-monitor-pro",
@@ -146,7 +146,7 @@
       ]
     },
     "member": {
-      "stars": 19506,
+      "stars": 19509,
       "forks": 2136,
       "count": 7,
       "repos": [
@@ -155,7 +155,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19309,
+          "stargazers_count": 19312,
           "forks_count": 2131
         },
         {
@@ -169,8 +169,8 @@
       ]
     },
     "merged": {
-      "stars": 37697,
-      "forks": 4427,
+      "stars": 37701,
+      "forks": 4426,
       "count": 143,
       "repos": [
         {
@@ -178,7 +178,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19309,
+          "stargazers_count": 19312,
           "forks_count": 2131
         },
         {
@@ -186,7 +186,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11173,
+          "stargazers_count": 11174,
           "forks_count": 876
         },
         {
@@ -227,7 +227,7 @@
           "html_url": "https://github.com/nexmoe/DayBee",
           "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
           "stargazers_count": 431,
-          "forks_count": 44
+          "forks_count": 43
         },
         {
           "name": "typecho-theme-nexmoe",
@@ -328,8 +328,8 @@
     "contributed_to": 127
   },
   "star_sources": {
-    "owned": 12585,
-    "member": 19506,
+    "owned": 12586,
+    "member": 19509,
     "organization": 5606,
     "organizations": {
       "theme-nexmoe": 2184,
@@ -340,5 +340,5 @@
       "ComNergy": 3
     }
   },
-  "last_updated": "19 Nov 2026 · 07:51 UTC+8"
+  "last_updated": "19 Nov 2026 · 13:49 UTC+8"
 }

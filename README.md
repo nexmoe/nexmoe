@@ -1,6 +1,6 @@
 <div lang="en">
 <p align="right">
-  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE" width="640">
+  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE" width="576">
   <small><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></small>
   <br clear="all">
 </p>

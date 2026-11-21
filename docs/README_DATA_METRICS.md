@@ -13,7 +13,7 @@ is outlined at 160px and cropped to its visible glyph bounds, so font bearings
 cannot add left or top padding on different platforms.
 The identity uses a 640 × 118px SVG with equivalent image alternative text. Its `viewBox`
 preserves these proportions when GitHub fits the image to a narrow container.
-The README specifies only its width so the image height adapts naturally. A single `<br clear="all">`
+The README renders it at 576px wide (90% of its intrinsic width), with no fixed height so it adapts naturally. A single `<br clear="all">`
 inside the Hero paragraph clears the float before the motto and contact buttons.
 The localized motto uses a separate 180 × 18px SVG, preserving its 12px text
 on narrow screens while the larger wordmark scales to fit. Both

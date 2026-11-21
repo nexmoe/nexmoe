@@ -32,7 +32,7 @@
   <a href="https://metribee.com"><img src="./assets/cards/nexmoe-metribee.svg" alt="MetriBee (★ 19, 2026-10-24) — A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server." width="100%"></a>
 </p>
 <p>
-  <a href="https://vidbee.org"><img src="./assets/cards/nexmoe-vidbee.svg" alt="VidBee (★ 11,184, 2025-10-22) — Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media." width="100%"></a>
+  <a href="https://vidbee.org"><img src="./assets/cards/nexmoe-vidbee.svg" alt="VidBee (★ 11,183, 2025-10-22) — Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media." width="100%"></a>
 </p>
 <p>
   <a href="https://opentrends.io"><img src="./assets/cards/opentrends-io-opentrends.svg" alt="OpenTrends (★ 67, 2026-05-10) — Follow first-hand information across technology, AI, and developer communities with AI translation and summaries." width="100%"></a>

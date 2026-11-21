@@ -32,7 +32,7 @@
   <a href="https://metribee.com"><img src="./assets/cards/nexmoe-metribee.zh-CN.svg" alt="MetriBee (★ 19, 2026-10-24) — 自托管的 Google Analytics 4 数据看板，支持实时流量、漏斗、留存、Search Console 集成与内置 MCP 服务。" width="100%"></a>
 </p>
 <p>
-  <a href="https://vidbee.org"><img src="./assets/cards/nexmoe-vidbee.zh-CN.svg" alt="VidBee (★ 11,184, 2025-10-22) — 从 1,000 多个网站下载视频和音频，转写、总结、翻译媒体内容，还能围绕内容与 AI 对话。" width="100%"></a>
+  <a href="https://vidbee.org"><img src="./assets/cards/nexmoe-vidbee.zh-CN.svg" alt="VidBee (★ 11,183, 2025-10-22) — 从 1,000 多个网站下载视频和音频，转写、总结、翻译媒体内容，还能围绕内容与 AI 对话。" width="100%"></a>
 </p>
 <p>
   <a href="https://opentrends.io"><img src="./assets/cards/opentrends-io-opentrends.zh-CN.svg" alt="OpenTrends (★ 67, 2026-05-10) — 关注科技、AI 和开发者社区的一手信息，通过 AI 翻译与摘要跨越语言障碍。" width="100%"></a>

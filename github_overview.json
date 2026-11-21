@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T05:32:32.569Z",
+  "generated_at": "2026-11-21T05:42:48.137Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -46,7 +46,7 @@
   ],
   "curated_repository_stars": {
     "nexmoe/MetriBee": 19,
-    "nexmoe/VidBee": 11184,
+    "nexmoe/VidBee": 11183,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 431,
     "Huanshere/VideoLingo": 19339,
@@ -62,12 +62,12 @@
   },
   "totals": {
     "followers": 660,
-    "stars": 32132,
-    "forks": 3183
+    "stars": 37737,
+    "forks": 4428
   },
   "scopes": {
     "owned": {
-      "stars": 12596,
+      "stars": 12595,
       "forks": 1044,
       "count": 63,
       "repos": [
@@ -76,7 +76,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11184,
+          "stargazers_count": 11183,
           "forks_count": 875
         },
         {
@@ -169,9 +169,9 @@
       ]
     },
     "merged": {
-      "stars": 32132,
-      "forks": 3183,
-      "count": 70,
+      "stars": 37737,
+      "forks": 4428,
+      "count": 144,
       "repos": [
         {
           "name": "VideoLingo",
@@ -186,8 +186,40 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11184,
+          "stargazers_count": 11183,
           "forks_count": 875
+        },
+        {
+          "name": "plugins",
+          "full_name": "typecho-fans/plugins",
+          "html_url": "https://github.com/typecho-fans/plugins",
+          "description": "Typecho Fans插件作品目录",
+          "stargazers_count": 1903,
+          "forks_count": 588
+        },
+        {
+          "name": "hexo-theme-nexmoe",
+          "full_name": "theme-nexmoe/hexo-theme-nexmoe",
+          "html_url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
+          "description": "🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.",
+          "stargazers_count": 1735,
+          "forks_count": 252
+        },
+        {
+          "name": "hitokoto-api",
+          "full_name": "hitokoto-osc/hitokoto-api",
+          "html_url": "https://github.com/hitokoto-osc/hitokoto-api",
+          "description": "版本：1，现行的 API 运行框架。",
+          "stargazers_count": 587,
+          "forks_count": 82
+        },
+        {
+          "name": "sentences-bundle",
+          "full_name": "hitokoto-osc/sentences-bundle",
+          "html_url": "https://github.com/hitokoto-osc/sentences-bundle",
+          "description": "一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。",
+          "stargazers_count": 468,
+          "forks_count": 98
         },
         {
           "name": "DayBee",
@@ -196,6 +228,22 @@
           "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
           "stargazers_count": 431,
           "forks_count": 43
+        },
+        {
+          "name": "typecho-theme-nexmoe",
+          "full_name": "theme-nexmoe/typecho-theme-nexmoe",
+          "html_url": "https://github.com/theme-nexmoe/typecho-theme-nexmoe",
+          "description": "🔥 一个特别的 Typecho 主题",
+          "stargazers_count": 402,
+          "forks_count": 58
+        },
+        {
+          "name": "themes",
+          "full_name": "typecho-fans/themes",
+          "html_url": "https://github.com/typecho-fans/themes",
+          "description": "Typecho Fans主题作品目录",
+          "stargazers_count": 228,
+          "forks_count": 34
         },
         {
           "name": "vscode-monitor-pro",
@@ -254,6 +302,14 @@
           "forks_count": 11
         },
         {
+          "name": "FluxEz",
+          "full_name": "slmnb-lab/FluxEz",
+          "html_url": "https://github.com/slmnb-lab/FluxEz",
+          "description": "基于Next.js和Comfyui的Flux AI图像生成网站",
+          "stargazers_count": 62,
+          "forks_count": 11
+        },
+        {
           "name": "saladict-skin",
           "full_name": "nexmoe/saladict-skin",
           "html_url": "https://github.com/nexmoe/saladict-skin",
@@ -265,17 +321,24 @@
     }
   },
   "activity": {
-    "commits": 19023,
+    "commits": 19025,
     "prs": 408,
     "issues": 412,
-    "total": 19843,
+    "total": 19845,
     "contributed_to": 128
   },
   "star_sources": {
-    "owned": 12596,
+    "owned": 12595,
     "member": 19536,
-    "organization": 0,
-    "organizations": {}
+    "organization": 5606,
+    "organizations": {
+      "theme-nexmoe": 2184,
+      "typecho-fans": 2141,
+      "hitokoto-osc": 1129,
+      "slmnb-lab": 96,
+      "mixcm": 53,
+      "ComNergy": 3
+    }
   },
-  "last_updated": "21 Nov 2026 · 13:32 UTC+8"
+  "last_updated": "21 Nov 2026 · 13:42 UTC+8"
 }

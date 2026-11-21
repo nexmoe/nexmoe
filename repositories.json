@@ -49,7 +49,9 @@
     "repository": "mikoagents/miko",
     "icon": "./assets/icons/miko.png",
     "description": "A self-hosted AI coding agent that takes tasks from your team tools, works in isolated Git worktrees, and reports progress back.",
-    "description_zh": "可自托管的 AI 编程助手。从团队协作工具接收任务，在独立的 Git 工作树中完成开发，并回报进度。"
+    "description_zh": "可自托管的 AI 编程助手。从团队协作工具接收任务，在独立的 Git 工作树中完成开发，并回报进度。",
+    "features": ["AI Coding Agent", "Git Worktrees", "Team Workflows"],
+    "features_zh": ["AI 编程助手", "Git Worktree", "团队协作流"]
   },
   {
     "name": "VidBee",
@@ -101,27 +103,89 @@
     "repository": "opentrends-io/opentrends",
     "icon": "./assets/icons/opentrends.svg",
     "description": "Follow first-hand information across technology, AI, and developer communities with AI translation and summaries.",
-    "description_zh": "关注科技、AI 和开发者社区的一手信息，通过 AI 翻译与摘要跨越语言障碍。"
+    "description_zh": "关注科技、AI 和开发者社区的一手信息，通过 AI 翻译与摘要跨越语言障碍。",
+    "features": ["Tech & AI Feeds", "AI Translation", "Smart Summaries"],
+    "features_zh": ["科技与 AI 动态", "AI 实时翻译", "智能内容摘要"],
+    "images": [
+      {
+        "src": "./assets/opentrends/feed.webp",
+        "alt": "OpenTrends feed with technology updates, AI summaries, and translated source material",
+        "alt_zh": "OpenTrends 信息流中的科技动态、AI 摘要与原文翻译",
+        "href": "https://github.com/opentrends-io/opentrends/blob/026668ba1b8e1556bb5eaa0a173f04bfce46e65d/apps/web/public/landing/feed.jpg"
+      },
+      {
+        "src": "./assets/opentrends/events.webp",
+        "alt": "OpenTrends event view with related news and source coverage",
+        "alt_zh": "OpenTrends 事件视图中的相关新闻与来源报道",
+        "href": "https://github.com/opentrends-io/opentrends/blob/026668ba1b8e1556bb5eaa0a173f04bfce46e65d/apps/web/public/landing/events.jpg"
+      },
+      {
+        "src": "./assets/opentrends/sources.webp",
+        "alt": "OpenTrends source columns for following first-hand AI and technology news",
+        "alt_zh": "OpenTrends 按来源分栏展示 AI 与科技一手资讯",
+        "href": "https://github.com/opentrends-io/opentrends/blob/026668ba1b8e1556bb5eaa0a173f04bfce46e65d/apps/web/public/landing/sources.jpg"
+      }
+    ]
   },
   {
     "name": "DayBee",
     "repository": "nexmoe/DayBee",
     "icon": "./assets/icons/daybee.png",
     "description": "A cross-platform microphone recorder with real-time transcription and voice activity detection.",
-    "description_zh": "跨平台麦克风录音工具，支持实时转写和语音活动检测。"
+    "description_zh": "跨平台麦克风录音工具，支持实时转写和语音活动检测。",
+    "features": ["Live Transcription", "Voice Detection", "MCP Search"],
+    "features_zh": ["实时本地转写", "语音活动检测", "MCP 语义检索"],
+    "images": [
+      {
+        "src": "./assets/daybee/home.webp",
+        "alt": "DayBee transcript timeline with microphone and system audio, app context, and search",
+        "alt_zh": "DayBee 转写时间线中的麦克风与系统音频、应用上下文和搜索",
+        "href": "https://github.com/nexmoe/DayBee/blob/8ff28dc916ae73fb1fb746e938e13ee256f868eb/apps/web/public/assets/screens/daybee-home.webp"
+      },
+      {
+        "src": "./assets/daybee/history.webp",
+        "alt": "DayBee recording history organized by day with saved recordings and transcripts",
+        "alt_zh": "DayBee 按日期整理的录音历史与已保存转写",
+        "href": "https://github.com/nexmoe/DayBee/blob/8ff28dc916ae73fb1fb746e938e13ee256f868eb/apps/web/public/assets/screens/daybee-history.webp"
+      },
+      {
+        "src": "./assets/daybee/models.webp",
+        "alt": "DayBee local speech recognition models and transcription language settings",
+        "alt_zh": "DayBee 本地语音识别模型与转写语言设置",
+        "href": "https://github.com/nexmoe/DayBee/blob/8ff28dc916ae73fb1fb746e938e13ee256f868eb/apps/web/public/assets/screens/daybee-models.webp"
+      }
+    ]
   },
   {
     "name": "VideoLingo",
     "repository": "Huanshere/VideoLingo",
     "icon": "./assets/icons/videolingo.svg",
     "description": "One-click AI subtitle cutting, translation, alignment, and dubbing.",
-    "description_zh": "一键完成 AI 字幕切分、翻译、对齐与配音。"
+    "description_zh": "一键完成 AI 字幕切分、翻译、对齐与配音。",
+    "features": ["Subtitle Cutting", "AI Translation", "Auto Dubbing"],
+    "features_zh": ["智能字幕切分", "AI 语境翻译", "一键自动配音"],
+    "images": [
+      {
+        "src": "./assets/videolingo/workflow.webp",
+        "alt": "VideoLingo interface with video upload, subtitle translation, and dubbing settings",
+        "alt_zh": "VideoLingo 视频上传、字幕翻译与配音设置界面",
+        "href": "https://github.com/Huanshere/VideoLingo/blob/d2d5a046d97526ae4950294cc5663ad520b22f52/docs/pages/docs/en_page.png"
+      },
+      {
+        "src": "./assets/videolingo/subtitles.webp",
+        "alt": "VideoLingo bilingual Chinese and English subtitles on a translated video",
+        "alt_zh": "VideoLingo 翻译视频中的中英双语字幕效果",
+        "href": "https://github.com/Huanshere/VideoLingo/blob/d2d5a046d97526ae4950294cc5663ad520b22f52/docs/public/images/demo.png"
+      }
+    ]
   },
   {
     "name": "Monitor Pro",
     "repository": "nexmoe/vscode-monitor-pro",
     "icon": "./assets/icons/monitor-pro.png",
     "description": "Monitor the resources you care about, right inside Visual Studio Code.",
-    "description_zh": "直接在 Visual Studio Code 中监控你关心的系统资源。"
+    "description_zh": "直接在 Visual Studio Code 中监控你关心的系统资源。",
+    "features": ["CPU & Memory", "Disk & Network", "VS Code Status"],
+    "features_zh": ["CPU 与内存", "磁盘与网络", "VS Code 状态栏"]
   }
 ]

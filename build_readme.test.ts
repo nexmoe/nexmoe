@@ -4,9 +4,12 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
   buildOverviewSvg, fetchPinnedRepositories, fetchRepositoryMetadata,
-  refreshPinnedRepositories, selectPinnedRepositories, updateReadme, type PinnedRepository,
+  refreshPinnedRepositories, selectPinnedRepositories, updateProductsReadme, updateReadme, type PinnedRepository,
 } from "./build_readme";
-import { buildRepositoryMarkup, validateRepositories } from "./readme_ui";
+import {
+  buildProductCardSvg, buildProductMarkup, buildRepositoryMarkup,
+  extractLogoPalette, getImageDimensions, validateProducts, validateRepositories, wrapSvgText,
+} from "./readme_ui";
 
 for (const file of ["README.md", "README.zh-CN.md"]) {
 test(`${file} rendering preserves the Hero, Overview, and surrounding content`, async () => {
@@ -62,7 +65,7 @@ test("repository overrides validate identities and render in the supplied order"
   const config = await Bun.file(new URL("./repositories.json", import.meta.url)).json();
   const repositories = validateRepositories(config);
   const markup = buildRepositoryMarkup(repositories);
-  const links = [...markup.matchAll(/<strong><a href="https:\/\/github.com\/([^"]+)">/g)].map(match => match[1]);
+  const links = [...markup.matchAll(/<a href="https:\/\/github.com\/([^"]+)">/g)].map(match => match[1]);
   expect(links).toEqual(config.map((repo: { repository: string }) => repo.repository));
   expect(() => validateRepositories([{ name: "Bad", repository: "javascript:alert(1)", description: "Bad URL" }])).toThrow();
   expect(() => validateRepositories([...config, config[0]])).toThrow("Duplicate repository");
@@ -91,10 +94,10 @@ test("pins control additions, removals, and order while retaining localized over
   expect(selected[0]).toEqual({ name: "New project", repository: "owner/new", description: "GitHub description" });
   expect(selected[1]).toMatchObject({ name: "Custom name", description: "Custom description", description_zh: "中文介绍", icon: overrides[1]!.icon, images: overrides[1]!.images });
   const chinese = buildRepositoryMarkup(selected, {}, {}, "zh-CN");
+  expect(chinese).toContain("./assets/cards/owner-new.zh-CN.svg");
+  expect(chinese).toContain("./assets/cards/owner-existing.zh-CN.svg");
   expect(chinese).toContain("GitHub description");
   expect(chinese).toContain("中文介绍");
-  expect(chinese).toContain('alt="截图"');
-  expect(chinese).toContain('src="https://example.com/icon.png?theme=light&amp;size=24"');
   expect(chinese).not.toContain("owner/old");
   expect(selectPinnedRepositories(overrides, [...pins].reverse()).map(repo => repo.repository))
     .toEqual(["owner/existing", "owner/new"]);
@@ -106,7 +109,7 @@ test("an empty pin list clears projects, and only a missing snapshot uses the or
   expect(selectPinnedRepositories(overrides)).toEqual(overrides);
   const noDescription = selectPinnedRepositories([], [{ ...pinnedRepository, description: null }]);
   expect(buildRepositoryMarkup(noDescription)).toContain("New project");
-  expect(buildRepositoryMarkup(noDescription)).not.toMatch(/null|undefined|<br>/);
+  expect(buildRepositoryMarkup(noDescription)).not.toMatch(/null|undefined/);
 });
 
 test("pin requests target the configured profile and preserve GitHub's order", async () => {
@@ -154,7 +157,7 @@ test("pin failures retain the last successful selection, including an empty sele
 test("refresh persists pin metadata for offline rendering in both READMEs", async () => {
   const directory = await mkdtemp(join(tmpdir(), "readme-pins-"));
   try {
-    for (const file of ["build_readme.ts", "readme_ui.ts", "repositories.json", "README.md", "README.zh-CN.md"]) {
+    for (const file of ["build_readme.ts", "readme_ui.ts", "repositories.json", "products.json", "README.md", "README.zh-CN.md"]) {
       await Bun.write(join(directory, file), Bun.file(new URL(`./${file}`, import.meta.url)));
     }
     const saved = await Bun.file(new URL("./github_overview.json", import.meta.url)).json();
@@ -188,12 +191,17 @@ test("refresh persists pin metadata for offline rendering in both READMEs", asyn
     expect(await render.exited, stderr).toBe(0);
     for (const file of ["README.md", "README.zh-CN.md"]) {
       const content = await Bun.file(join(directory, file)).text();
-      const links = [...content.matchAll(/<strong><a href="https:\/\/github.com\/([^"]+)">/g)].map(match => match[1]);
+      const links = [...content.matchAll(/<a href="https:\/\/github.com\/([^"]+)">/g)].map(match => match[1]);
       expect(links).toEqual(["owner/new", "nexmoe/VidBee"]);
-      expect(content).toContain("★&nbsp;17");
-      expect(content).toContain("./assets/vidbee/transcript-framed.webp");
-      expect(content).toContain('src="./assets/icons/vidbee.png"');
+      expect(content).toContain("★ 17");
+      const suffix = file === "README.zh-CN.md" ? ".zh-CN.svg" : ".svg";
+      expect(content).toContain(`./assets/cards/owner-new${suffix}`);
+      expect(content).toContain(`./assets/cards/nexmoe-vidbee${suffix}`);
+      expect(content).toContain(`./assets/cards/botab${suffix}`);
+      expect(content).toContain(`./assets/cards/viora${suffix}`);
     }
+    expect(await Bun.file(join(directory, "assets/cards/owner-new.svg")).text()).toContain("New project");
+    expect(await Bun.file(join(directory, "assets/cards/botab.zh-CN.svg")).text()).toContain("BoTab");
     expect(await Bun.file(join(directory, "assets/repository-dates/owner-new.svg")).text()).toContain("2026-10-24");
     expect(await Bun.file(join(directory, "github_overview.json")).json()).toEqual(refreshed);
   } finally {
@@ -201,7 +209,7 @@ test("refresh persists pin metadata for offline rendering in both READMEs", asyn
   }
 });
 
-test("Chinese renders translated text with the same projects, counts, and gallery", async () => {
+test("Chinese renders translated text with the same projects, counts, and cards", async () => {
   const config = validateRepositories(await Bun.file(new URL("./repositories.json", import.meta.url)).json());
   const stars = { "nexmoe/VidBee": 11025 };
   const dates = { "nexmoe/VidBee": "2025-10-22T13:43:42Z" };
@@ -212,13 +220,11 @@ test("Chinese renders translated text with the same projects, counts, and galler
     expect(chinese).toContain(repo.description_zh!);
     expect(chinese).not.toContain(repo.description);
   }
-  expect(chinese).toContain("★&nbsp;11,025");
-  expect(chinese).toContain("创建于 2025-10-22");
+  expect(chinese).toContain("★ 11,025");
+  expect(chinese).toContain("2025-10-22");
   expect([...chinese.matchAll(/href="([^"]+)"/g)].map(match => match[1]))
     .toEqual([...english.matchAll(/href="([^"]+)"/g)].map(match => match[1]));
-  const vidbee = config.filter(repo => repo.repository === "nexmoe/VidBee");
-  expect([...buildRepositoryMarkup(vidbee, stars, dates, "zh-CN").matchAll(/height="200"/g)]).toHaveLength(6);
-  expect(chinese).toContain("VidBee RSS 订阅与自动下载");
+  expect(chinese).toContain("./assets/cards/nexmoe-vidbee.zh-CN.svg");
 });
 
 test("missing translations fall back to English and translated HTML stays escaped", () => {
@@ -264,4 +270,91 @@ test("metadata refresh still fails if the public fallback cannot access the repo
   } finally {
     fetchMock.mockRestore();
   }
+});
+
+test("products.json validates and renders localized clickable card markup", async () => {
+  const config = await Bun.file(new URL("./products.json", import.meta.url)).json();
+  const products = validateProducts(config);
+  const en = buildProductMarkup(products, "en");
+  const zh = buildProductMarkup(products, "zh-CN");
+  expect(en).toContain('href="https://botab.net"');
+  expect(en).toContain('src="./assets/cards/botab.svg"');
+  expect(zh).toContain('src="./assets/cards/viora.zh-CN.svg"');
+  expect(() => validateProducts([{ id: "bad", name: "Bad", url: "javascript:alert(1)", description: "Nope" }])).toThrow();
+  expect(() => validateProducts([...config, config[0]])).toThrow("Duplicate product");
+
+  const readme = await Bun.file(new URL("./README.md", import.meta.url)).text();
+  const updated = updateProductsReadme(readme, "<p>Products</p>");
+  expect(updated).toContain("<!-- products starts -->\n<p>Products</p>\n<!-- products ends -->");
+});
+
+test("logo palette extraction derives ambient colors from PNG and SVG icons", async () => {
+  const metribee = new Uint8Array(await Bun.file(new URL("./assets/icons/metribee.svg", import.meta.url)).arrayBuffer());
+  const metribeeInfo = extractLogoPalette(metribee, "image/svg+xml");
+  expect(metribeeInfo.iconMode).toBe("inset");
+  expect(metribeeInfo.palette.primary).toMatch(/^#[0-9a-f]{6}$/);
+
+  const vidbee = new Uint8Array(await Bun.file(new URL("./assets/icons/vidbee.png", import.meta.url)).arrayBuffer());
+  const vidbeeInfo = extractLogoPalette(vidbee, "image/png");
+  expect(vidbeeInfo.iconMode).toBe("inset");
+  expect(vidbeeInfo.palette.primary).toMatch(/^#[0-9a-f]{6}$/);
+
+  const botab = new Uint8Array(await Bun.file(new URL("./assets/icons/botab.png", import.meta.url)).arrayBuffer());
+  const botabInfo = extractLogoPalette(botab, "image/png");
+  expect(botabInfo.iconMode).toBe("full");
+  expect(botabInfo.palette.primary).not.toBe(botabInfo.palette.secondary);
+
+  const miko = new Uint8Array(await Bun.file(new URL("./assets/icons/miko.png", import.meta.url)).arrayBuffer());
+  const mikoInfo = extractLogoPalette(miko, "image/png");
+  expect(mikoInfo.palette.primary).toMatch(/^#[0-9a-f]{6}$/);
+
+  const previewWebp = new Uint8Array(await Bun.file(new URL("./assets/metribee/globe.webp", import.meta.url)).arrayBuffer());
+  expect(getImageDimensions(previewWebp, "image/webp")).toEqual({ width: 1600, height: 1000 });
+});
+
+test("generic product card SVG handles screenshots, fallback visualizations, CJK wrapping, and escaping", () => {
+  const wrapped = wrapSvgText("一个支持中文与 English 混排的自动换行测试描述内容", 140, 12.5, 4);
+  expect(wrapped.length).toBeGreaterThan(1);
+  expect(wrapped.length).toBeLessThanOrEqual(4);
+
+  const withPreview = buildProductCardSvg({
+    name: "Test <App>",
+    url: "https://example.com",
+    meta: "macOS · 2 frames",
+    description: "A & B <description>",
+    glowPrimary: "#155dff",
+    glowSecondary: "#78a4ff",
+    previews: [
+      { href: "data:image/png;base64,AAAA", width: 1600, height: 1000 },
+      { href: "data:image/png;base64,BBBB", width: 1600, height: 1000 },
+    ],
+    totalFrames: 2,
+  });
+  expect(withPreview).toContain("Test &lt;App&gt;");
+  expect(withPreview).toContain("A &amp; B &lt;description&gt;");
+  expect(withPreview).toContain('stop-color="#155dff"');
+  expect(withPreview).toContain('href="data:image/png;base64,AAAA"');
+  expect(withPreview).toMatch(/@keyframes [a-z0-9]+_track-slide/);
+  expect(withPreview).toMatch(/@keyframes [a-z0-9]+_capsule-slide/);
+  expect(withPreview).toMatch(/@keyframes [a-z0-9]+_dot-shift-1/);
+  expect(withPreview).not.toContain("%%");
+
+  const withoutPreview = buildProductCardSvg({
+    name: "RepoTool",
+    url: "https://github.com/owner/repotool",
+    meta: "★ 120 · 2026-05-01",
+    description: "Fallback preview card",
+    glowPrimary: "#f85a5a",
+    glowSecondary: "#f9a576",
+    previews: [],
+    repoSlug: "owner/repotool",
+    stats: { stars: 120, forks: 14, createdAt: "2026-05-01T00:00:00Z" },
+    features: ["Feature A", "Feature B"],
+    locale: "zh-CN",
+  });
+  expect(withoutPreview).toContain("owner/repotool");
+  expect(withoutPreview).toContain(">120<");
+  expect(withoutPreview).toContain("120 · 2026-05-01");
+  expect(withoutPreview).toContain("Feature A");
+  expect(withoutPreview).toContain("项目概览");
 });

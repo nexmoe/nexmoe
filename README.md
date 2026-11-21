@@ -29,85 +29,38 @@
 <!-- repositories starts -->
 <div>
 <p>
-  <img align="right" src="./assets/repository-dates/nexmoe-metribee.svg" alt="Created 2026-10-24" width="112" height="24">
-  <img src="./assets/icons/metribee.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/MetriBee">MetriBee</a></strong> &nbsp; <span>★&nbsp;19</span><br>
-  A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server.
-</p>
-<table>
-<tr><td nowrap>
-  <sub>Scroll horizontally to explore all screenshots · Click any image to view it in full size</sub><br>
-  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/globe.webp"><img src="./assets/metribee/globe.webp" alt="MetriBee live visitor globe with countries, sites, and event activity" height="200"></a>
-  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/home.webp"><img src="./assets/metribee/home.webp" alt="MetriBee home dashboard showing traffic trends and users across GA4 properties" height="200"></a>
-  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/analytics.webp"><img src="./assets/metribee/analytics.webp" alt="MetriBee analytics overview with traffic trends, referral sources, and top pages" height="200"></a>
-  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/funnels.webp"><img src="./assets/metribee/funnels.webp" alt="MetriBee conversion funnel with users, drop-off, and conversion at each step" height="200"></a>
-  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/journeys.webp"><img src="./assets/metribee/journeys.webp" alt="MetriBee user journey Sankey diagram showing page navigation paths" height="200"></a>
-  <a href="https://github.com/nexmoe/MetriBee/blob/main/docs/screenshots/retention.webp"><img src="./assets/metribee/retention.webp" alt="MetriBee retention heatmap showing weekly visitor cohorts" height="200"></a>
-</td></tr>
-</table>
-<p>
-  <img align="right" src="./assets/repository-dates/nexmoe-vidbee.svg" alt="Created 2025-10-22" width="112" height="24">
-  <img src="./assets/icons/vidbee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/VidBee">VidBee</a></strong> &nbsp; <span>★&nbsp;11,184</span><br>
-  Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media.
-</p>
-<table>
-<tr><td nowrap>
-  <sub>Scroll horizontally to explore all screenshots · Click any image to view it in full size</sub><br>
-  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/transcript-framed.webp"><img src="./assets/vidbee/transcript-framed.webp" alt="VidBee searchable transcript with speaker labels" height="200"></a>
-  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/ai-summary-framed.webp"><img src="./assets/vidbee/ai-summary-framed.webp" alt="VidBee AI-generated transcript summary" height="200"></a>
-  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/downloads-framed.webp"><img src="./assets/vidbee/downloads-framed.webp" alt="VidBee download queue with active and completed media" height="200"></a>
-  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/rss-framed.webp"><img src="./assets/vidbee/rss-framed.webp" alt="VidBee RSS subscriptions and automatic downloads" height="200"></a>
-  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/v2-workflow-grid.webp"><img src="./assets/vidbee/v2-workflow-grid.webp" alt="VidBee workflow from download to local transcription, search, and AI" height="200"></a>
-  <a href="https://github.com/nexmoe/VidBee/blob/main/screenshots/v2-before-after.webp"><img src="./assets/vidbee/v2-before-after.webp" alt="VidBee evolution from downloaded files to a searchable local media library" height="200"></a>
-</td></tr>
-</table>
-<p>
-  <img align="right" src="./assets/repository-dates/opentrends-io-opentrends.svg" alt="Created 2026-05-10" width="112" height="24">
-  <img src="./assets/icons/opentrends.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/opentrends-io/opentrends">OpenTrends</a></strong> &nbsp; <span>★&nbsp;67</span><br>
-  Follow first-hand information across technology, AI, and developer communities with AI translation and summaries.
+  <a href="https://github.com/nexmoe/MetriBee"><img src="./assets/cards/nexmoe-metribee.svg" alt="MetriBee (★ 19, 2026-10-24) — A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server." width="100%"></a>
 </p>
 <p>
-  <img align="right" src="./assets/repository-dates/nexmoe-daybee.svg" alt="Created 2026-02-01" width="112" height="24">
-  <img src="./assets/icons/daybee.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/DayBee">DayBee</a></strong> &nbsp; <span>★&nbsp;431</span><br>
-  A cross-platform microphone recorder with real-time transcription and voice activity detection.
+  <a href="https://github.com/nexmoe/VidBee"><img src="./assets/cards/nexmoe-vidbee.svg" alt="VidBee (★ 11,184, 2025-10-22) — Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media." width="100%"></a>
 </p>
 <p>
-  <img align="right" src="./assets/repository-dates/huanshere-videolingo.svg" alt="Created 2024-08-09" width="112" height="24">
-  <img src="./assets/icons/videolingo.svg" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/Huanshere/VideoLingo">VideoLingo</a></strong> &nbsp; <span>★&nbsp;19,338</span><br>
-  One-click AI subtitle cutting, translation, alignment, and dubbing.
+  <a href="https://github.com/opentrends-io/opentrends"><img src="./assets/cards/opentrends-io-opentrends.svg" alt="OpenTrends (★ 67, 2026-05-10) — Follow first-hand information across technology, AI, and developer communities with AI translation and summaries." width="100%"></a>
 </p>
 <p>
-  <img align="right" src="./assets/repository-dates/nexmoe-vscode-monitor-pro.svg" alt="Created 2023-10-04" width="112" height="24">
-  <img src="./assets/icons/monitor-pro.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://github.com/nexmoe/vscode-monitor-pro">Monitor Pro</a></strong> &nbsp; <span>★&nbsp;222</span><br>
-  Monitor the resources you care about, right inside Visual Studio Code.
+  <a href="https://github.com/nexmoe/DayBee"><img src="./assets/cards/nexmoe-daybee.svg" alt="DayBee (★ 431, 2026-02-01) — A cross-platform microphone recorder with real-time transcription and voice activity detection." width="100%"></a>
+</p>
+<p>
+  <a href="https://github.com/Huanshere/VideoLingo"><img src="./assets/cards/huanshere-videolingo.svg" alt="VideoLingo (★ 19,338, 2024-08-09) — One-click AI subtitle cutting, translation, alignment, and dubbing." width="100%"></a>
+</p>
+<p>
+  <a href="https://github.com/nexmoe/vscode-monitor-pro"><img src="./assets/cards/nexmoe-vscode-monitor-pro.svg" alt="Monitor Pro (★ 222, 2023-10-04) — Monitor the resources you care about, right inside Visual Studio Code." width="100%"></a>
 </p>
 </div>
 <!-- repositories ends -->
 
 <div id="products">
 <img src="./assets/products-heading.svg" alt="Products" width="100%" height="64">
+<!-- products starts -->
+<div>
 <p>
-  <img src="./assets/icons/botab.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://botab.net">BoTab</a></strong><br>
-  A tab and bookmark manager for Chrome and Edge. Save open tabs in one click and turn your bookmarks into a customizable new tab page, generated locally with native browser sync.
+  <a href="https://botab.net"><img src="./assets/cards/botab.svg" alt="BoTab — A tab and bookmark manager for Chrome and Edge. Save open tabs in one click and turn your bookmarks into a customizable new tab page, generated locally with native browser sync." width="100%"></a>
 </p>
-<table>
-<tr><td nowrap>
-  <sub>Scroll horizontally to explore all screenshots · Click any image to view it in full size</sub><br>
-  <a href="https://botab.net/images/home/scrnli_03znv9dx23edPR.png"><img src="./assets/products/botab-new-tab.png" alt="BoTab new tab page with bookmark groups and saved tabs" height="200"></a>
-  <a href="https://botab.net/images/screenshot/image5.png"><img src="./assets/products/botab-themes.png" alt="BoTab theme gallery and new tab customization" height="200"></a>
-</td></tr>
-</table>
 <p>
-  <img src="./assets/icons/viora.png" alt="" width="20" height="20" align="absmiddle"> &nbsp; <strong><a href="https://viora.io/">Viora</a></strong><br>
-  A voice AI assistant for macOS. Speak to write in any app, edit selected text, ask questions in context, and hand off tasks without leaving your workflow.
+  <a href="https://viora.io/"><img src="./assets/cards/viora.svg" alt="Viora — A voice AI assistant for macOS. Speak to write in any app, edit selected text, ask questions in context, and hand off tasks without leaving your workflow." width="100%"></a>
 </p>
-<table>
-<tr><td nowrap>
-  <sub>Scroll horizontally to explore all screenshots · Click any image to view it in full size</sub><br>
-  <a href="https://viora.io/images/viora/features/viora-dictation-tutorial.png"><img src="./assets/products/viora-dictation.png" alt="Viora voice dictation and core features tutorial" height="200"></a>
-  <a href="https://viora.io/images/viora/features/viora-capsule-email-reply.png"><img src="./assets/products/viora-email-reply.png" alt="Viora drafting an email reply in the Agent Card" height="200"></a>
-  <a href="https://viora.io/images/viora/features/viora-capsule-comparison-table.png"><img src="./assets/products/viora-comparison.png" alt="Viora answering a question with a comparison table" height="200"></a>
-</td></tr>
-</table>
+</div>
+<!-- products ends -->
 </div>
 
 </div>

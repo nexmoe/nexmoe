@@ -1,0 +1,56 @@
+[
+  {
+    "id": "botab",
+    "name": "BoTab",
+    "url": "https://botab.net",
+    "meta": "Chrome & Edge",
+    "meta_zh": "Chrome & Edge",
+    "icon": "./assets/icons/botab.png",
+    "description": "A tab and bookmark manager for Chrome and Edge. Save open tabs in one click and turn your bookmarks into a customizable new tab page, generated locally with native browser sync.",
+    "description_zh": "Chrome 和 Edge 的标签页与书签管理工具。一键保存打开的标签页，用书签生成可自定义的新标签页；页面在本地生成，数据通过浏览器原生书签同步。",
+    "images": [
+      {
+        "src": "./assets/products/botab-new-tab.png",
+        "alt": "BoTab new tab page with bookmark groups and saved tabs",
+        "alt_zh": "BoTab 新标签页中的书签分组与已保存标签页",
+        "href": "https://botab.net/images/home/scrnli_03znv9dx23edPR.png"
+      },
+      {
+        "src": "./assets/products/botab-themes.png",
+        "alt": "BoTab theme gallery and new tab customization",
+        "alt_zh": "BoTab 主题库与新标签页自定义设置",
+        "href": "https://botab.net/images/screenshot/image5.png"
+      }
+    ]
+  },
+  {
+    "id": "viora",
+    "name": "Viora",
+    "url": "https://viora.io/",
+    "meta": "macOS",
+    "meta_zh": "macOS",
+    "icon": "./assets/icons/viora.png",
+    "description": "A voice AI assistant for macOS. Speak to write in any app, edit selected text, ask questions in context, and hand off tasks without leaving your workflow.",
+    "description_zh": "macOS 语音 AI 助手。按住快捷键说话，即可在当前应用中输入、改写选中文字、结合上下文提问，或交办任务。",
+    "images": [
+      {
+        "src": "./assets/products/viora-dictation.png",
+        "alt": "Viora voice dictation and core features tutorial",
+        "alt_zh": "Viora 语音输入与核心功能引导",
+        "href": "https://viora.io/images/viora/features/viora-dictation-tutorial.png"
+      },
+      {
+        "src": "./assets/products/viora-email-reply.png",
+        "alt": "Viora drafting an email reply in the Agent Card",
+        "alt_zh": "Viora 在 Agent Card 中起草邮件回复",
+        "href": "https://viora.io/images/viora/features/viora-capsule-email-reply.png"
+      },
+      {
+        "src": "./assets/products/viora-comparison.png",
+        "alt": "Viora answering a question with a comparison table",
+        "alt_zh": "Viora 用对比表格回答问题",
+        "href": "https://viora.io/images/viora/features/viora-capsule-comparison-table.png"
+      }
+    ]
+  }
+]

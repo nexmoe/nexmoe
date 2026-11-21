@@ -1,10 +1,13 @@
 import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
+import { dirname, extname, join } from "node:path";
 import { mkdir } from "node:fs/promises";
 import {
-  buildOverviewSvg, buildSectionHeadingSvg,
-  buildRepositoryDateSvg, buildRepositoryMarkup, repositoryAssetName,
-  validateRepositories, type CuratedRepository, type OverviewInput,
+  buildOverviewSvg, buildProductCardSvg, buildProductMarkup, buildSectionHeadingSvg,
+  buildRepositoryDateSvg, buildRepositoryMarkup, cardSvgFilename,
+  extractLogoPalette, getImageDimensions, productAssetName, repositoryAssetName,
+  validateProducts, validateRepositories,
+  type CardPreviewImage, type CuratedImage, type CuratedProduct, type CuratedRepository,
+  type OverviewInput, type ReadmeLocale,
 } from "./readme_ui";
 export { buildOverviewSvg } from "./readme_ui";
 
@@ -99,29 +102,183 @@ export function updateReadme(content: string, repositories: string) {
   return content.replace(pattern, () => `<!-- repositories starts -->\n${repositories}\n<!-- repositories ends -->`);
 }
 
-async function renderReadmeVisuals(input: OverviewInput, repositories: CuratedRepository[], repositoryStars: Record<string, number>, repositoryCreatedAt: Record<string, string>) {
+export function updateProductsReadme(content: string, products: string) {
+  const pattern = /<!-- products starts -->[\s\S]*<!-- products ends -->/g;
+  return content.replace(pattern, () => `<!-- products starts -->\n${products}\n<!-- products ends -->`);
+}
+
+function mimeTypeForPath(filePath: string) {
+  switch (extname(filePath).toLowerCase()) {
+    case ".png": return "image/png";
+    case ".webp": return "image/webp";
+    case ".svg": return "image/svg+xml";
+    case ".jpg":
+    case ".jpeg": return "image/jpeg";
+    case ".gif": return "image/gif";
+    default: return "application/octet-stream";
+  }
+}
+
+async function readLocalAsset(relPath: string): Promise<{ bytes: Uint8Array; mimeType: string } | null> {
+  if (!relPath.startsWith("./assets/")) return null;
+  const fullPath = join(root, relPath.slice(2));
+  const file = Bun.file(fullPath);
+  if (!(await file.exists())) return null;
+  return { bytes: new Uint8Array(await file.arrayBuffer()), mimeType: mimeTypeForPath(fullPath) };
+}
+
+async function resolveCardMedia(iconPath?: string, images: CuratedImage[] = []) {
+  let glowPrimary = "#7c8aa5";
+  let glowSecondary = "#9aa8c2";
+  let iconMode: "full" | "squircle" | "inset" = "full";
+  let iconHref: string | undefined;
+
+  if (iconPath) {
+    const origIcon = await readLocalAsset(iconPath);
+    if (origIcon) {
+      const extracted = extractLogoPalette(origIcon.bytes, origIcon.mimeType);
+      glowPrimary = extracted.palette.primary;
+      glowSecondary = extracted.palette.secondary;
+      iconMode = extracted.iconMode;
+
+      const baseSlug = iconPath.replace(/^\.\/assets\/icons\//, "").replace(/\.[^.]+$/, "");
+      const compactIcon = await readLocalAsset(`./assets/cards/media/icons-${baseSlug}.png`);
+      const embedIcon = compactIcon ?? origIcon;
+      iconHref = `data:${embedIcon.mimeType};base64,${Buffer.from(embedIcon.bytes).toString("base64")}`;
+    }
+  }
+
+  const previews: CardPreviewImage[] = [];
+  for (const image of images.slice(0, 6)) {
+    const slug = image.src.replace(/^\.\/assets\//, "").replaceAll("/", "-");
+    const compactPreview = await readLocalAsset(`./assets/cards/media/${slug}.webp`);
+    const asset = compactPreview ?? (await readLocalAsset(image.src));
+    if (!asset) continue;
+    const dims = getImageDimensions(asset.bytes, asset.mimeType);
+    if (!dims) continue;
+    previews.push({
+      href: `data:${asset.mimeType};base64,${Buffer.from(asset.bytes).toString("base64")}`,
+      width: dims.width,
+      height: dims.height,
+      alt: image.alt,
+    });
+  }
+
+  return { glowPrimary, glowSecondary, iconMode, iconHref, previews };
+}
+
+async function loadProducts(): Promise<CuratedProduct[]> {
+  const file = Bun.file(join(root, "products.json"));
+  if (!(await file.exists())) return [];
+  return validateProducts(await file.json());
+}
+
+async function renderReadmeVisuals(
+  input: OverviewInput,
+  repositories: CuratedRepository[],
+  repositoryStars: Record<string, number>,
+  repositoryCreatedAt: Record<string, string>,
+  repositoryForks: Record<string, number> = {},
+) {
   await mkdir(join(assetsDir, "repository-dates"), { recursive: true });
+  await mkdir(join(assetsDir, "cards"), { recursive: true });
+  const products = await loadProducts();
+
   const writes: Promise<number>[] = [];
   writes.push(...repositories.map(repo => Bun.write(
     join(assetsDir, "repository-dates", `${repositoryAssetName(repo)}.svg`),
     buildRepositoryDateSvg(repositoryCreatedAt[repo.repository]),
   )));
+
+  const repoMedia = await Promise.all(repositories.map(repo => resolveCardMedia(repo.icon, repo.images ?? [])));
+  const productMedia = await Promise.all(products.map(product => resolveCardMedia(product.icon, product.images ?? [])));
+
   const versions = [
     { locale: "en", file: "README.md", suffix: "", about: "About me", overview: "Overview", repositories: "Repositories", products: "Products" },
     { locale: "zh-CN", file: "README.zh-CN.md", suffix: ".zh-CN", about: "关于我", overview: "开源概览", repositories: "项目", products: "产品" },
   ] as const;
+
   for (const version of versions) {
+    const locale: ReadmeLocale = version.locale;
+    for (let i = 0; i < repositories.length; i++) {
+      const repo = repositories[i]!;
+      const media = repoMedia[i]!;
+      const stars = repositoryStars[repo.repository];
+      const created = repositoryCreatedAt[repo.repository];
+      const forks = repositoryForks[repo.repository];
+      const starLabel = stars !== undefined ? `★ ${stars.toLocaleString("en-US")}` : "★ —";
+      const dateLabel = created ? created.slice(0, 10) : "—";
+      const description = locale === "zh-CN" ? repo.description_zh ?? repo.description : repo.description;
+      const features = locale === "zh-CN" ? repo.features_zh ?? repo.features : repo.features;
+      const slug = repositoryAssetName(repo);
+      const cardSvg = buildProductCardSvg({
+        name: repo.name,
+        url: `https://github.com/${repo.repository}`,
+        meta: `${starLabel} · ${dateLabel}`,
+        description,
+        iconHref: media.iconHref,
+        iconMode: media.iconMode,
+        glowPrimary: media.glowPrimary,
+        glowSecondary: media.glowSecondary,
+        previews: media.previews,
+        totalFrames: repo.images?.length,
+        repoSlug: repo.repository,
+        stats: { stars, forks, createdAt: created },
+        features,
+        locale,
+      });
+      writes.push(Bun.write(join(assetsDir, "cards", cardSvgFilename(slug, locale)), cardSvg));
+    }
+
+    for (let i = 0; i < products.length; i++) {
+      const product = products[i]!;
+      const media = productMedia[i]!;
+      const description = locale === "zh-CN" ? product.description_zh ?? product.description : product.description;
+      const metaBase = locale === "zh-CN" ? product.meta_zh ?? product.meta : product.meta;
+      const framesCount = product.images?.length ?? 0;
+      const framesText = locale === "zh-CN" ? `${framesCount} 张预览` : `${framesCount} frames`;
+      const meta = [metaBase, framesCount > 0 ? framesText : undefined].filter(Boolean).join(" · ");
+      const features = locale === "zh-CN" ? product.features_zh ?? product.features : product.features;
+      const slug = productAssetName(product);
+      const cardSvg = buildProductCardSvg({
+        name: product.name,
+        url: product.url,
+        meta,
+        description,
+        iconHref: media.iconHref,
+        iconMode: media.iconMode,
+        glowPrimary: media.glowPrimary,
+        glowSecondary: media.glowSecondary,
+        previews: media.previews,
+        totalFrames: framesCount,
+        features,
+        locale,
+      });
+      writes.push(Bun.write(join(assetsDir, "cards", cardSvgFilename(slug, locale)), cardSvg));
+    }
+
     const path = join(root, version.file);
-    const content = await Bun.file(path).text();
-    writes.push(Bun.write(path, updateReadme(content,
-      buildRepositoryMarkup(repositories, repositoryStars, repositoryCreatedAt, version.locale))));
+    let content = await Bun.file(path).text();
+    content = updateReadme(content, buildRepositoryMarkup(repositories, repositoryStars, repositoryCreatedAt, locale));
+    if (products.length > 0) {
+      content = updateProductsReadme(content, buildProductMarkup(products, locale));
+    }
+    writes.push(Bun.write(path, content));
     writes.push(Bun.write(join(assetsDir, `about-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.about)));
     writes.push(Bun.write(join(assetsDir, `overview-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.overview)));
     writes.push(Bun.write(join(assetsDir, `repositories-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.repositories)));
     writes.push(Bun.write(join(assetsDir, `products-heading${version.suffix}.svg`), buildSectionHeadingSvg(version.products)));
-    writes.push(Bun.write(join(assetsDir, `github-overview${version.suffix}.svg`), buildOverviewSvg(input, version.locale)));
+    writes.push(Bun.write(join(assetsDir, `github-overview${version.suffix}.svg`), buildOverviewSvg(input, locale)));
   }
   await Promise.all(writes);
+}
+
+function collectForkCounts(repos: RankedRepo[]) {
+  const forks: Record<string, number> = {};
+  for (const repo of repos) {
+    forks[repo.full_name] = repo.forks_count;
+  }
+  return forks;
 }
 
 async function renderSavedSnapshot() {
@@ -140,8 +297,13 @@ async function renderSavedSnapshot() {
     lastUpdated: data.last_updated,
   };
   const overrides = validateRepositories(await Bun.file(join(root, "repositories.json")).json());
+  const repositoryForks = collectForkCounts([
+    ...(data.scopes?.merged?.repos ?? []),
+    ...(data.scopes?.owned?.repos ?? []),
+    ...(data.scopes?.member?.repos ?? []),
+  ]);
   await renderReadmeVisuals(input, selectPinnedRepositories(overrides, data.pinned_repositories),
-    data.curated_repository_stars ?? {}, data.curated_repository_created_at ?? {});
+    data.curated_repository_stars ?? {}, data.curated_repository_created_at ?? {}, repositoryForks);
 }
 
 // Overrides enrich pinned projects, but never select or reorder them.
@@ -806,6 +968,14 @@ async function main() {
   const totalStars = mergedStats.stars;
   const totalForks = mergedStats.forks;
 
+  const repositoryForks = collectForkCounts(mergedRepos.map(repo => ({
+    name: repo.name,
+    full_name: repo.full_name,
+    html_url: repo.html_url,
+    description: repo.description,
+    stargazers_count: repo.stargazers_count,
+    forks_count: repo.forks_count,
+  })));
   await renderReadmeVisuals({
     followers,
     stars: totalStars,
@@ -815,7 +985,7 @@ async function main() {
     starSources,
     organizationSources,
     lastUpdated,
-  }, selectedRepositories, curatedRepositoryStars, curatedRepositoryCreatedAt);
+  }, selectedRepositories, curatedRepositoryStars, curatedRepositoryCreatedAt, repositoryForks);
   await Bun.write(
     jsonPath,
     JSON.stringify(

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T23:39:32.616Z",
+  "generated_at": "2026-11-21T05:00:29.204Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -49,7 +49,7 @@
     "nexmoe/VidBee": 11184,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 431,
-    "Huanshere/VideoLingo": 19338,
+    "Huanshere/VideoLingo": 19339,
     "nexmoe/vscode-monitor-pro": 222
   },
   "curated_repository_created_at": {
@@ -62,13 +62,13 @@
   },
   "totals": {
     "followers": 660,
-    "stars": 37737,
-    "forks": 4431
+    "stars": 37738,
+    "forks": 4427
   },
   "scopes": {
     "owned": {
       "stars": 12596,
-      "forks": 1045,
+      "forks": 1044,
       "count": 62,
       "repos": [
         {
@@ -77,7 +77,7 @@
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
           "stargazers_count": 11184,
-          "forks_count": 876
+          "forks_count": 875
         },
         {
           "name": "DayBee",
@@ -146,8 +146,8 @@
       ]
     },
     "member": {
-      "stars": 19535,
-      "forks": 2141,
+      "stars": 19536,
+      "forks": 2138,
       "count": 7,
       "repos": [
         {
@@ -155,8 +155,8 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19338,
-          "forks_count": 2136
+          "stargazers_count": 19339,
+          "forks_count": 2133
         },
         {
           "name": "void",
@@ -169,8 +169,8 @@
       ]
     },
     "merged": {
-      "stars": 37737,
-      "forks": 4431,
+      "stars": 37738,
+      "forks": 4427,
       "count": 143,
       "repos": [
         {
@@ -178,8 +178,8 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19338,
-          "forks_count": 2136
+          "stargazers_count": 19339,
+          "forks_count": 2133
         },
         {
           "name": "VidBee",
@@ -187,7 +187,7 @@
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
           "stargazers_count": 11184,
-          "forks_count": 876
+          "forks_count": 875
         },
         {
           "name": "plugins",
@@ -321,15 +321,15 @@
     }
   },
   "activity": {
-    "commits": 19019,
+    "commits": 19020,
     "prs": 408,
     "issues": 412,
-    "total": 19839,
+    "total": 19840,
     "contributed_to": 127
   },
   "star_sources": {
     "owned": 12596,
-    "member": 19535,
+    "member": 19536,
     "organization": 5606,
     "organizations": {
       "theme-nexmoe": 2184,
@@ -340,5 +340,5 @@
       "ComNergy": 3
     }
   },
-  "last_updated": "21 Nov 2026 · 07:39 UTC+8"
+  "last_updated": "21 Nov 2026 · 13:00 UTC+8"
 }

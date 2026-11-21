@@ -41,7 +41,7 @@
   <a href="https://github.com/nexmoe/DayBee"><img src="./assets/cards/nexmoe-daybee.zh-CN.svg" alt="DayBee (★ 431, 2026-02-01) — 跨平台麦克风录音工具，支持实时转写和语音活动检测。" width="100%"></a>
 </p>
 <p>
-  <a href="https://github.com/Huanshere/VideoLingo"><img src="./assets/cards/huanshere-videolingo.zh-CN.svg" alt="VideoLingo (★ 19,338, 2024-08-09) — 一键完成 AI 字幕切分、翻译、对齐与配音。" width="100%"></a>
+  <a href="https://github.com/Huanshere/VideoLingo"><img src="./assets/cards/huanshere-videolingo.zh-CN.svg" alt="VideoLingo (★ 19,339, 2024-08-09) — 一键完成 AI 字幕切分、翻译、对齐与配音。" width="100%"></a>
 </p>
 <p>
   <a href="https://github.com/nexmoe/vscode-monitor-pro"><img src="./assets/cards/nexmoe-vscode-monitor-pro.zh-CN.svg" alt="Monitor Pro (★ 222, 2023-10-04) — 直接在 Visual Studio Code 中监控你关心的系统资源。" width="100%"></a>

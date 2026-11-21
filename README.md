@@ -10,8 +10,6 @@
   <a href="https://x.com/nexmoe"><img src="./assets/contact-buttons/x.svg" alt="X: @nexmoe" width="100" height="28" align="absmiddle"></a>
 </p>
 
-<img src="./assets/about-heading.svg" alt="About me" width="100%" height="64">
-
 <p>I'm Nexmoe, a Gen Z builder working across product, design, and engineering. I founded VidBee and BoTab, and co-founded Viora. I make tools for AI, video, and everyday productivity, with a goal of reaching a million users.</p>
 
 <p>I also enjoy building farms, cities, and Dyson spheres — in games.</p>

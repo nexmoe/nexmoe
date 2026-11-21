@@ -10,8 +10,6 @@
   <a href="https://x.com/nexmoe"><img src="./assets/contact-buttons/x.svg" alt="X: @nexmoe" width="100" height="28" align="absmiddle"></a>
 </p>
 
-<img src="./assets/about-heading.zh-CN.svg" alt="关于我" width="100%" height="64">
-
 <p>我是 Nexmoe，一名 Z 世代 Builder，在产品、设计与开发之间切换。我创办了 VidBee 和 BoTab，也是 Viora 的联合创始人。我围绕 AI、视频与效率打造工具，希望让一百万人用上自己做的产品。</p>
 
 <p>做产品之外，我也喜欢在游戏里种田、造城市、搭建戴森球。</p>

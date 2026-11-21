@@ -8,15 +8,16 @@ The Hero follows a resume-style layout without a layout table.
 The header combines a transparent identity SVG using the supported `align`
 image attribute with linked SVG outline buttons for the personal website and X.
 The identity image and language switch share one right-aligned paragraph, with
-the image floating left and smaller language links at the top right. The SVG name
-uses a hanging baseline near its top edge, keeping its visible top aligned with
-the language links even when the compact font size applies.
-The identity uses a 360 × 104px SVG, with an 80px
-name and 12px motto and equivalent image alternative text. Its `viewBox`
+the image floating left and smaller language links at the top right. The wordmark
+is outlined at 160px and cropped to its visible glyph bounds, so font bearings
+cannot add left or top padding on different platforms.
+The identity uses a 640 × 118px SVG with equivalent image alternative text. Its `viewBox`
 preserves these proportions when GitHub fits the image to a narrow container.
 The README specifies only its width so the image height adapts naturally. A single `<br clear="all">`
-inside the Hero paragraph clears the float before the contact buttons. Both
-languages place the buttons below the identity and use GitHub's native 16px
+inside the Hero paragraph clears the float before the motto and contact buttons.
+The localized motto uses a separate 180 × 18px SVG, preserving its 12px text
+on narrow screens while the larger wordmark scales to fit. Both
+languages place the motto and buttons below the identity and use GitHub's native 16px
 paragraph margins, without extra blank lines before About me.
 Contact buttons use transparent SVGs from `assets/contact-buttons/`, combining
 a label, solid and hollow circular accents, and a capsule outline with neutral colors for light and dark themes.
@@ -176,6 +177,7 @@ tables. This separate guide contains implementation and data-source details.
 - `assets/icons/*`: official project and product icons, copied unchanged from their sources
 - `assets/contact-buttons/*.svg`: manually maintained Hero capsule buttons with labels and circular accents
 - `assets/hero-identity[.zh-CN].svg`: manually maintained borderless Hero typography
+- `assets/hero-motto[.zh-CN].svg`: localized fixed-size Hero motto
 - `assets/metribee/*.webp`: original MetriBee screenshots, copied unchanged from its repository
 - `assets/vidbee/*.webp`: original VidBee screenshots, copied unchanged from its repository
 - `github_overview.json`: statistics snapshot, updated only by a GitHub refresh

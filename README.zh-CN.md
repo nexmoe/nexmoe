@@ -1,9 +1,11 @@
 <div lang="zh-CN">
 <p align="right">
-  <img align="left" src="./assets/hero-identity.zh-CN.svg" alt="NEXMOE — 智慧、胆识与机器人。" width="360">
+  <img align="left" src="./assets/hero-identity.zh-CN.svg" alt="NEXMOE" width="640">
   <small><a href="./README.md">English</a> · <strong>简体中文</strong></small>
   <br clear="all">
 </p>
+
+<p><img src="./assets/hero-motto.zh-CN.svg" alt="智慧、胆识与机器人。" width="180" height="18"></p>
 
 <p align="left">
   <a href="https://nexmoe.com"><img src="./assets/contact-buttons/website.svg" alt="nexmoe.com" width="160" height="36" align="absmiddle"></a>&nbsp;

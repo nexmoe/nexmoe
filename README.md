@@ -1,9 +1,11 @@
 <div lang="en">
 <p align="right">
-  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE — Intelligence, Nerve &amp; Robots." width="360">
+  <img align="left" src="./assets/hero-identity.svg" alt="NEXMOE" width="640">
   <small><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></small>
   <br clear="all">
 </p>
+
+<p><img src="./assets/hero-motto.svg" alt="Intelligence, Nerve &amp; Robots." width="180" height="18"></p>
 
 <p align="left">
   <a href="https://nexmoe.com"><img src="./assets/contact-buttons/website.svg" alt="nexmoe.com" width="160" height="36" align="absmiddle"></a>&nbsp;

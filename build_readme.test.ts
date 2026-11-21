@@ -65,12 +65,29 @@ test("repository overrides validate identities and render in the supplied order"
   const config = await Bun.file(new URL("./repositories.json", import.meta.url)).json();
   const repositories = validateRepositories(config);
   const markup = buildRepositoryMarkup(repositories);
-  const links = [...markup.matchAll(/<a href="https:\/\/github.com\/([^"]+)">/g)].map(match => match[1]);
-  expect(links).toEqual(config.map((repo: { repository: string }) => repo.repository));
+  const links = [...markup.matchAll(/<a href="([^"]+)">/g)].map(match => match[1]);
+  expect(links).toEqual(config.map((repo: { repository: string; url?: string }) => repo.url ?? `https://github.com/${repo.repository}`));
   expect(() => validateRepositories([{ name: "Bad", repository: "javascript:alert(1)", description: "Bad URL" }])).toThrow();
   expect(() => validateRepositories([...config, config[0]])).toThrow("Duplicate repository");
   expect(() => validateRepositories([{ ...config[0], icon: "javascript:alert(1)" }])).toThrow("Invalid icon");
   expect(() => validateRepositories([{ ...config[0], icon: "../private.png" }])).toThrow("Invalid icon");
+});
+
+test("repository cards prefer websites in both languages, escape links, and fall back to GitHub", () => {
+  const repo = { name: "Tool", repository: "owner/tool", description: "A tool" };
+  const repositories = validateRepositories([
+    { ...repo, url: "https://example.com/?a=1&b=2" },
+    { ...repo, repository: "owner/fallback" },
+  ]);
+  for (const locale of ["en", "zh-CN"] as const) {
+    const markup = buildRepositoryMarkup(repositories, {}, {}, locale);
+    expect(markup).toContain('<a href="https://example.com/?a=1&amp;b=2">');
+    expect(markup).toContain('<a href="https://github.com/owner/fallback">');
+    expect(markup).not.toContain('href="https://github.com/owner/tool"');
+  }
+  for (const url of ["javascript:alert(1)", "http://example.com", "//example.com", "", null, 42]) {
+    expect(() => validateRepositories([{ ...repo, url }])).toThrow("Invalid website");
+  }
 });
 
 const pinnedRepository: PinnedRepository = {
@@ -85,6 +102,7 @@ test("pins control additions, removals, and order while retaining localized over
   const overrides = validateRepositories([
     { name: "Unpinned", repository: "owner/old", description: "No longer selected" },
     { name: "Custom name", repository: "OWNER/Existing", description: "Custom description", description_zh: "中文介绍",
+      url: "https://example.com",
       icon: "https://example.com/icon.png?theme=light&size=24",
       images: [{ src: "./assets/example.webp", alt: "Screenshot", alt_zh: "截图" }] },
   ]);
@@ -92,7 +110,7 @@ test("pins control additions, removals, and order while retaining localized over
   const selected = selectPinnedRepositories(overrides, pins);
   expect(selected.map(repo => repo.repository)).toEqual(["owner/new", "owner/existing"]);
   expect(selected[0]).toEqual({ name: "New project", repository: "owner/new", description: "GitHub description" });
-  expect(selected[1]).toMatchObject({ name: "Custom name", description: "Custom description", description_zh: "中文介绍", icon: overrides[1]!.icon, images: overrides[1]!.images });
+  expect(selected[1]).toMatchObject({ name: "Custom name", description: "Custom description", description_zh: "中文介绍", url: "https://example.com", icon: overrides[1]!.icon, images: overrides[1]!.images });
   const chinese = buildRepositoryMarkup(selected, {}, {}, "zh-CN");
   expect(chinese).toContain("./assets/cards/owner-new.zh-CN.svg");
   expect(chinese).toContain("./assets/cards/owner-existing.zh-CN.svg");
@@ -191,14 +209,19 @@ test("refresh persists pin metadata for offline rendering in both READMEs", asyn
     expect(await render.exited, stderr).toBe(0);
     for (const file of ["README.md", "README.zh-CN.md"]) {
       const content = await Bun.file(join(directory, file)).text();
-      const links = [...content.matchAll(/<a href="https:\/\/github.com\/([^"]+)">/g)].map(match => match[1]);
-      expect(links).toEqual(["owner/new", "nexmoe/VidBee"]);
+      const repositoryBlock = content.split("<!-- repositories starts -->")[1]!.split("<!-- repositories ends -->")[0]!;
+      const links = [...repositoryBlock.matchAll(/<a href="([^"]+)">/g)].map(match => match[1]);
+      expect(links).toEqual(["https://github.com/owner/new", "https://vidbee.org"]);
       expect(content).toContain("★ 17");
       const suffix = file === "README.zh-CN.md" ? ".zh-CN.svg" : ".svg";
       expect(content).toContain(`./assets/cards/owner-new${suffix}`);
       expect(content).toContain(`./assets/cards/nexmoe-vidbee${suffix}`);
       expect(content).toContain(`./assets/cards/botab${suffix}`);
       expect(content).toContain(`./assets/cards/viora${suffix}`);
+      expect(content).toContain("BoTab (2021-08-06)");
+      expect(content).toContain("Viora (2025-09-23)");
+      expect(await Bun.file(join(directory, `assets/cards/botab${suffix}`)).text()).toContain("Chrome &amp; Edge · 2021-08-06");
+      expect(await Bun.file(join(directory, `assets/cards/viora${suffix}`)).text()).toContain("macOS · 2025-09-23");
     }
     expect(await Bun.file(join(directory, "assets/cards/owner-new.svg")).text()).toContain("New project");
     expect(await Bun.file(join(directory, "assets/cards/botab.zh-CN.svg")).text()).toContain("BoTab");
@@ -280,12 +303,24 @@ test("products.json validates and renders localized clickable card markup", asyn
   expect(en).toContain('href="https://botab.net"');
   expect(en).toContain('src="./assets/cards/botab.svg"');
   expect(zh).toContain('src="./assets/cards/viora.zh-CN.svg"');
-  expect(() => validateProducts([{ id: "bad", name: "Bad", url: "javascript:alert(1)", description: "Nope" }])).toThrow();
+  for (const markup of [en, zh]) {
+    expect(markup).toContain("BoTab (2021-08-06)");
+    expect(markup).toContain("Viora (2025-09-23)");
+  }
+  expect(() => validateProducts([{ id: "bad", name: "Bad", url: "javascript:alert(1)", created_at: "2021-08-06", description: "Nope" }])).toThrow();
   expect(() => validateProducts([...config, config[0]])).toThrow("Duplicate product");
 
   const readme = await Bun.file(new URL("./README.md", import.meta.url)).text();
   const updated = updateProductsReadme(readme, "<p>Products</p>");
   expect(updated).toContain("<!-- products starts -->\n<p>Products</p>\n<!-- products ends -->");
+});
+
+test("products require real calendar creation dates in YYYY-MM-DD format", () => {
+  const product = { id: "tool", name: "Tool", url: "https://example.com", description: "A tool" };
+  for (const created_at of [undefined, null, 2025, "2025", "2025-2-14", "2025-02-29", "2024-02-30", "2025-13-01", "2025-09-23T00:00:00Z"]) {
+    expect(() => validateProducts([{ ...product, created_at }])).toThrow("Invalid creation date");
+  }
+  expect(validateProducts([{ ...product, created_at: "2024-02-29" }])[0]!.created_at).toBe("2024-02-29");
 });
 
 test("logo palette extraction derives ambient colors from PNG and SVG icons", async () => {

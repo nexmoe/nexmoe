@@ -213,7 +213,7 @@ async function renderReadmeVisuals(
       const slug = repositoryAssetName(repo);
       const cardSvg = buildProductCardSvg({
         name: repo.name,
-        url: `https://github.com/${repo.repository}`,
+        url: repo.url ?? `https://github.com/${repo.repository}`,
         meta: `${starLabel} · ${dateLabel}`,
         description,
         iconHref: media.iconHref,
@@ -236,8 +236,7 @@ async function renderReadmeVisuals(
       const description = locale === "zh-CN" ? product.description_zh ?? product.description : product.description;
       const metaBase = locale === "zh-CN" ? product.meta_zh ?? product.meta : product.meta;
       const framesCount = product.images?.length ?? 0;
-      const framesText = locale === "zh-CN" ? `${framesCount} 张预览` : `${framesCount} frames`;
-      const meta = [metaBase, framesCount > 0 ? framesText : undefined].filter(Boolean).join(" · ");
+      const meta = [metaBase, product.created_at].filter(Boolean).join(" · ");
       const features = locale === "zh-CN" ? product.features_zh ?? product.features : product.features;
       const slug = productAssetName(product);
       const cardSvg = buildProductCardSvg({
@@ -251,6 +250,7 @@ async function renderReadmeVisuals(
         glowSecondary: media.glowSecondary,
         previews: media.previews,
         totalFrames: framesCount,
+        stats: { createdAt: product.created_at },
         features,
         locale,
       });

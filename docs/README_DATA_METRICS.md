@@ -11,18 +11,18 @@ The identity image and language switch share one right-aligned paragraph, with
 the image floating left and smaller language links at the top right. The SVG name
 uses a hanging baseline near its top edge, keeping its visible top aligned with
 the language links even when the compact font size applies.
-The identity occupies 50% of the width in a compact 56px-high SVG, with a 40px
-name and 12px motto and equivalent image alternative text. The SVG has no `viewBox`, so its text
-keeps its font size instead of scaling with the whole header. Internal media
-queries reduce the name to 32px on narrow screens. A single `<br clear="all">`
+The identity uses a 360 × 104px SVG, with an 80px
+name and 12px motto and equivalent image alternative text. Its `viewBox`
+preserves these proportions when GitHub fits the image to a narrow container.
+The README specifies only its width so the image height adapts naturally. A single `<br clear="all">`
 inside the Hero paragraph clears the float before the contact buttons. Both
 languages place the buttons below the identity and use GitHub's native 16px
 paragraph margins, without extra blank lines before About me.
 Contact buttons use transparent SVGs from `assets/contact-buttons/`, combining
-an icon, label, and rounded outline with neutral colors for light and dark themes.
+a label, solid and hollow circular accents, and a capsule outline with neutral colors for light and dark themes.
 Each image is wrapped in a native link with descriptive alternative text,
-so the whole button is clickable. The 28px-tall buttons use 12px labels and 14px
-icons, sit inline with a small gap,
+so the whole button is clickable. The 36px-tall buttons use 14px labels,
+sit inline with a small gap,
 and wrap naturally when space is tight.
 About me, Overview, Repositories, and Products use monochrome 24px SVG headings with a
 horizontal rule extending to the right of each title. These SVGs have
@@ -52,6 +52,8 @@ Changing your GitHub pins takes effect on the next successful CI refresh.
 
 Edit `repositories.json` to override project names, icons, descriptions, and screenshots.
 Each entry contains `name`, `repository` (`owner/name`), and `description`.
+An optional HTTPS `url` makes the project card open its official website;
+entries without it link to the GitHub repository. Both languages share the same destination.
 An optional `icon` specifies an image in `./assets/` or an HTTPS image URL.
 It appears beside the project name at 20 × 20 pixels; entries without an icon
 keep the text-only heading. Icons are shared between both languages and are
@@ -95,12 +97,14 @@ bun run build_readme.ts --render
 Both the offline render and scheduled refresh update `README.md` (English)
 and `README.zh-CN.md` (Simplified Chinese), plus their localized Overview and
 section-heading SVGs. Each README has a direct link to the other language.
-The Hero, navigation, and Products section are edited manually in each file
-and preserved by the generator. Products links directly to BoTab and Viora,
-with local icons in `assets/icons/`, original screenshots stored in
-`assets/products/`, and matching 200px-tall
-scrollable galleries. Image links open the full-size originals on the official
-product sites. This section does not depend on GitHub repository metadata. No language detection or
+The Hero and navigation are edited manually in each file
+and preserved by the generator. Products come from `products.json` and link directly to BoTab and Viora.
+Each product requires a `created_at` field in `YYYY-MM-DD` format.
+Use the product's original creation date, preserving it across repository migrations.
+Both languages show the same date next to the platform in the card and in its alternative text.
+Local icons are stored in `assets/icons/`, original screenshots in `assets/products/`,
+and compact card previews in `assets/cards/media/`.
+This section does not depend on GitHub repository metadata. No language detection or
 stored preference is needed.
 
 The repository blocks between the `repositories` comment markers are generated.
@@ -170,14 +174,14 @@ tables. This separate guide contains implementation and data-source details.
 - `assets/products-heading[.zh-CN].svg`: matching Products heading and rule
 - `assets/repository-dates/*.svg`: small right-aligned date labels
 - `assets/icons/*`: official project and product icons, copied unchanged from their sources
-- `assets/contact-buttons/*.svg`: manually maintained Hero outline buttons with icons and labels
+- `assets/contact-buttons/*.svg`: manually maintained Hero capsule buttons with labels and circular accents
 - `assets/hero-identity[.zh-CN].svg`: manually maintained borderless Hero typography
 - `assets/metribee/*.webp`: original MetriBee screenshots, copied unchanged from its repository
 - `assets/vidbee/*.webp`: original VidBee screenshots, copied unchanged from its repository
 - `github_overview.json`: statistics snapshot, updated only by a GitHub refresh
 
-The Hero and repository content use the same HTML at every width; only the
-identity SVG adjusts its internal typography for narrow widths.
+The Hero and repository content use the same HTML at every width; the
+identity SVG scales to fit narrow containers.
 
 ### Icon sources
 

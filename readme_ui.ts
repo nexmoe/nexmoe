@@ -12,6 +12,7 @@ export type CuratedImage = {
 export type CuratedRepository = {
   name: string;
   repository: string;
+  url?: string;
   description: string;
   description_zh?: string;
   icon?: string;
@@ -24,6 +25,7 @@ export type CuratedProduct = {
   id: string;
   name: string;
   url: string;
+  created_at: string;
   meta?: string;
   meta_zh?: string;
   icon?: string;
@@ -293,6 +295,9 @@ export function validateRepositories(value: unknown): CuratedRepository[] {
     if (seen.has(key)) throw new Error(`Duplicate repository: ${item.repository}`);
     seen.add(key);
     const description_zh = optionalTranslation(item.description_zh, `${item.repository}.description_zh`);
+    if (item.url !== undefined && !isHttpsUrl(item.url)) {
+      throw new Error(`Invalid website for ${item.repository}.`);
+    }
     if (item.icon !== undefined && !isImageUrl(item.icon)) {
       throw new Error(`Invalid icon for ${item.repository}.`);
     }
@@ -302,6 +307,7 @@ export function validateRepositories(value: unknown): CuratedRepository[] {
     return {
       name: item.name.trim(),
       repository: item.repository,
+      ...(item.url ? { url: item.url } : {}),
       description: item.description.trim(),
       ...(description_zh ? { description_zh } : {}),
       ...(item.icon ? { icon: item.icon } : {}),
@@ -325,6 +331,11 @@ export function validateProducts(value: unknown): CuratedProduct[] {
     const key = item.id.toLowerCase();
     if (seen.has(key)) throw new Error(`Duplicate product: ${item.id}`);
     seen.add(key);
+    if (typeof item.created_at !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(item.created_at) ||
+        Number.isNaN(Date.parse(item.created_at)) ||
+        new Date(item.created_at).toISOString().slice(0, 10) !== item.created_at) {
+      throw new Error(`Invalid creation date for ${item.id}; use YYYY-MM-DD.`);
+    }
     const meta = optionalTranslation(item.meta, `${item.id}.meta`);
     const meta_zh = optionalTranslation(item.meta_zh, `${item.id}.meta_zh`);
     const description_zh = optionalTranslation(item.description_zh, `${item.id}.description_zh`);
@@ -338,6 +349,7 @@ export function validateProducts(value: unknown): CuratedProduct[] {
       id: item.id.toLowerCase(),
       name: item.name.trim(),
       url: item.url,
+      created_at: item.created_at,
       ...(meta ? { meta } : {}),
       ...(meta_zh ? { meta_zh } : {}),
       description: item.description.trim(),
@@ -1125,7 +1137,7 @@ export function buildRepositoryMarkup(
     const starText = stars[repo.repository]?.toLocaleString("en-US") ?? text.unavailable;
     const dateText = createdAt[repo.repository]?.slice(0, 10) ?? text.dateUnavailable;
     const alt = `${repo.name} (★ ${starText}, ${dateText})${description ? ` — ${description}` : ""}`;
-    return `<p>\n  <a href="https://github.com/${escapeXml(repo.repository)}"><img src="./assets/cards/${escapeXml(cardFile)}" alt="${escapeXml(alt)}" width="100%"></a>\n</p>`;
+    return `<p>\n  <a href="${escapeXml(repo.url ?? `https://github.com/${repo.repository}`)}"><img src="./assets/cards/${escapeXml(cardFile)}" alt="${escapeXml(alt)}" width="100%"></a>\n</p>`;
   }).join("\n") + `\n</div>`;
 }
 
@@ -1134,7 +1146,7 @@ export function buildProductMarkup(products: CuratedProduct[], locale: ReadmeLoc
     const description = locale === "zh-CN" ? product.description_zh ?? product.description : product.description;
     const slug = productAssetName(product);
     const cardFile = cardSvgFilename(slug, locale);
-    const alt = `${product.name} — ${description}`;
+    const alt = `${product.name} (${product.created_at}) — ${description}`;
     return `<p>\n  <a href="${escapeXml(product.url)}"><img src="./assets/cards/${escapeXml(cardFile)}" alt="${escapeXml(alt)}" width="100%"></a>\n</p>`;
   }).join("\n") + `\n</div>`;
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T22:44:52.009Z",
+  "generated_at": "2026-11-22T04:58:15.829Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -46,7 +46,7 @@
   ],
   "curated_repository_stars": {
     "nexmoe/MetriBee": 19,
-    "nexmoe/VidBee": 11192,
+    "nexmoe/VidBee": 11193,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 431,
     "Huanshere/VideoLingo": 19346,
@@ -62,12 +62,12 @@
   },
   "totals": {
     "followers": 661,
-    "stars": 37753,
+    "stars": 37756,
     "forks": 4427
   },
   "scopes": {
     "owned": {
-      "stars": 12604,
+      "stars": 12606,
       "forks": 1043,
       "count": 63,
       "repos": [
@@ -76,7 +76,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11192,
+          "stargazers_count": 11193,
           "forks_count": 874
         },
         {
@@ -169,7 +169,7 @@
       ]
     },
     "merged": {
-      "stars": 37753,
+      "stars": 37756,
       "forks": 4427,
       "count": 144,
       "repos": [
@@ -186,7 +186,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11192,
+          "stargazers_count": 11193,
           "forks_count": 874
         },
         {
@@ -194,7 +194,7 @@
           "full_name": "typecho-fans/plugins",
           "html_url": "https://github.com/typecho-fans/plugins",
           "description": "Typecho Fans插件作品目录",
-          "stargazers_count": 1903,
+          "stargazers_count": 1904,
           "forks_count": 589
         },
         {
@@ -321,24 +321,24 @@
     }
   },
   "activity": {
-    "commits": 19040,
-    "prs": 408,
+    "commits": 19044,
+    "prs": 412,
     "issues": 412,
-    "total": 19860,
+    "total": 19868,
     "contributed_to": 128
   },
   "star_sources": {
-    "owned": 12604,
+    "owned": 12606,
     "member": 19543,
-    "organization": 5606,
+    "organization": 5607,
     "organizations": {
       "theme-nexmoe": 2184,
-      "typecho-fans": 2141,
+      "typecho-fans": 2142,
       "hitokoto-osc": 1129,
       "slmnb-lab": 96,
       "mixcm": 53,
       "ComNergy": 3
     }
   },
-  "last_updated": "22 Nov 2026 · 06:44 UTC+8"
+  "last_updated": "22 Nov 2026 · 12:57 UTC+8"
 }

@@ -32,7 +32,7 @@
   <a href="https://metribee.com"><img src="./assets/cards/nexmoe-metribee.svg" alt="MetriBee (★ 19, 2026-10-24) — A self-hosted Google Analytics 4 dashboard with real-time traffic, funnels, retention, Search Console integration, and a built-in MCP server." width="100%"></a>
 </p>
 <p>
-  <a href="https://vidbee.org"><img src="./assets/cards/nexmoe-vidbee.svg" alt="VidBee (★ 11,193, 2025-10-22) — Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media." width="100%"></a>
+  <a href="https://vidbee.org"><img src="./assets/cards/nexmoe-vidbee.svg" alt="VidBee (★ 11,199, 2025-10-22) — Download video and audio from 1,000+ sites. Transcribe, summarize, translate, and chat with your media." width="100%"></a>
 </p>
 <p>
   <a href="https://opentrends.io"><img src="./assets/cards/opentrends-io-opentrends.svg" alt="OpenTrends (★ 67, 2026-05-10) — Follow first-hand information across technology, AI, and developer communities with AI translation and summaries." width="100%"></a>
@@ -41,7 +41,7 @@
   <a href="https://daybee.co"><img src="./assets/cards/nexmoe-daybee.svg" alt="DayBee (★ 431, 2026-02-01) — A cross-platform microphone recorder with real-time transcription and voice activity detection." width="100%"></a>
 </p>
 <p>
-  <a href="https://github.com/Huanshere/VideoLingo"><img src="./assets/cards/huanshere-videolingo.svg" alt="VideoLingo (★ 19,346, 2024-08-09) — One-click AI subtitle cutting, translation, alignment, and dubbing." width="100%"></a>
+  <a href="https://github.com/Huanshere/VideoLingo"><img src="./assets/cards/huanshere-videolingo.svg" alt="VideoLingo (★ 19,350, 2024-08-09) — One-click AI subtitle cutting, translation, alignment, and dubbing." width="100%"></a>
 </p>
 <p>
   <a href="https://github.com/nexmoe/vscode-monitor-pro"><img src="./assets/cards/nexmoe-vscode-monitor-pro.svg" alt="Monitor Pro (★ 222, 2023-10-04) — Monitor the resources you care about, right inside Visual Studio Code." width="100%"></a>

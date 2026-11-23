@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T05:40:24.226Z",
+  "generated_at": "2026-11-23T17:19:52.405Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -49,7 +49,7 @@
     "nexmoe/VidBee": 11200,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 431,
-    "Huanshere/VideoLingo": 19356,
+    "Huanshere/VideoLingo": 19363,
     "nexmoe/vscode-monitor-pro": 222
   },
   "curated_repository_created_at": {
@@ -62,7 +62,7 @@
   },
   "totals": {
     "followers": 661,
-    "stars": 37773,
+    "stars": 37780,
     "forks": 4429
   },
   "scopes": {
@@ -146,7 +146,7 @@
       ]
     },
     "member": {
-      "stars": 19553,
+      "stars": 19560,
       "forks": 2142,
       "count": 7,
       "repos": [
@@ -155,7 +155,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19356,
+          "stargazers_count": 19363,
           "forks_count": 2137
         },
         {
@@ -169,7 +169,7 @@
       ]
     },
     "merged": {
-      "stars": 37773,
+      "stars": 37780,
       "forks": 4429,
       "count": 143,
       "repos": [
@@ -178,7 +178,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19356,
+          "stargazers_count": 19363,
           "forks_count": 2137
         },
         {
@@ -202,7 +202,7 @@
           "full_name": "theme-nexmoe/hexo-theme-nexmoe",
           "html_url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
           "description": "🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.",
-          "stargazers_count": 1735,
+          "stargazers_count": 1734,
           "forks_count": 251
         },
         {
@@ -210,7 +210,7 @@
           "full_name": "hitokoto-osc/hitokoto-api",
           "html_url": "https://github.com/hitokoto-osc/hitokoto-api",
           "description": "版本：1，现行的 API 运行框架。",
-          "stargazers_count": 587,
+          "stargazers_count": 588,
           "forks_count": 82
         },
         {
@@ -322,23 +322,23 @@
   },
   "activity": {
     "commits": 19076,
-    "prs": 420,
+    "prs": 422,
     "issues": 412,
-    "total": 19908,
+    "total": 19910,
     "contributed_to": 127
   },
   "star_sources": {
     "owned": 12614,
-    "member": 19553,
+    "member": 19560,
     "organization": 5606,
     "organizations": {
-      "theme-nexmoe": 2184,
+      "theme-nexmoe": 2183,
       "typecho-fans": 2142,
-      "hitokoto-osc": 1128,
+      "hitokoto-osc": 1129,
       "slmnb-lab": 96,
       "mixcm": 53,
       "ComNergy": 3
     }
   },
-  "last_updated": "23 Nov 2026 · 13:40 UTC+8"
+  "last_updated": "24 Nov 2026 · 01:19 UTC+8"
 }

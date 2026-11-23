@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" lang="en" width="840" height="264" viewBox="0 0 840 264" role="img" aria-labelledby="overview-title overview-desc">
 <title id="overview-title">Nexmoe open-source overview</title>
-<desc id="overview-desc">37,773 stars, 661 followers, 4,429 forks, 19,076 commits across 143 repositories</desc>
+<desc id="overview-desc">37,780 stars, 661 followers, 4,429 forks, 19,076 commits across 143 repositories</desc>
 <defs><clipPath id="bar"><rect width="400" height="8" rx="4"/></clipPath></defs>
 <style>
   text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;fill:#171717}
@@ -24,7 +24,7 @@
 </style>
 
 <!-- Stars on the left; four supporting metrics in a 2 × 2 grid on the right -->
-<text class="hero" x="0" y="68">37,773</text>
+<text class="hero" x="0" y="68">37,780</text>
 <text class="label" x="0" y="100">Total stars · 143 repositories</text>
 <text class="stat" x="440" y="29">661</text>
 <text class="label" x="440" y="47">Followers</text>
@@ -40,7 +40,7 @@
   <text class="title" x="0" y="0">Star sources</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.58" height="8"/><rect class="tone1" x="133.58" y="0" width="207.06" height="8"/><rect class="tone2" x="340.63" y="0" width="59.37" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="133.55" height="8"/><rect class="tone1" x="133.55" y="0" width="207.09" height="8"/><rect class="tone2" x="340.65" y="0" width="59.35" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
@@ -51,7 +51,7 @@
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">Member / collaborator</text>
-    <text class="body" text-anchor="end" x="330" y="0">19,553</text>
+    <text class="body" text-anchor="end" x="330" y="0">19,560</text>
     <text class="value" text-anchor="end" x="400" y="0">51.8%</text>
   </g>
   <g transform="translate(0, 100)">
@@ -65,7 +65,7 @@
   <text class="title" x="0" y="0">Contributions</text>
   <g transform="translate(0, 14)">
     <rect class="track" width="400" height="8" rx="4"/>
-    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.28" height="8"/><rect class="tone1" x="383.28" y="0" width="8.44" height="8"/><rect class="tone2" x="391.72" y="0" width="8.28" height="8"/></g>
+    <g clip-path="url(#bar)"><rect class="tone0" x="0.00" y="0" width="383.24" height="8"/><rect class="tone1" x="383.24" y="0" width="8.48" height="8"/><rect class="tone2" x="391.72" y="0" width="8.28" height="8"/></g>
   </g>
   <g transform="translate(0, 48)">
     <circle class="tone0" cx="4" cy="-5" r="4"/>
@@ -76,7 +76,7 @@
   <g transform="translate(0, 74)">
     <circle class="tone1" cx="4" cy="-5" r="4"/>
     <text class="body" x="16" y="0">Pull requests</text>
-    <text class="body" text-anchor="end" x="330" y="0">420</text>
+    <text class="body" text-anchor="end" x="330" y="0">422</text>
     <text class="value" text-anchor="end" x="400" y="0">2.1%</text>
   </g>
   <g transform="translate(0, 100)">

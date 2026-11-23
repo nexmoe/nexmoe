@@ -41,7 +41,7 @@
   <a href="https://daybee.co"><img src="./assets/cards/nexmoe-daybee.svg" alt="DayBee (★ 431, 2026-02-01) — A cross-platform microphone recorder with real-time transcription and voice activity detection." width="100%"></a>
 </p>
 <p>
-  <a href="https://github.com/Huanshere/VideoLingo"><img src="./assets/cards/huanshere-videolingo.svg" alt="VideoLingo (★ 19,356, 2024-08-09) — One-click AI subtitle cutting, translation, alignment, and dubbing." width="100%"></a>
+  <a href="https://github.com/Huanshere/VideoLingo"><img src="./assets/cards/huanshere-videolingo.svg" alt="VideoLingo (★ 19,363, 2024-08-09) — One-click AI subtitle cutting, translation, alignment, and dubbing." width="100%"></a>
 </p>
 <p>
   <a href="https://github.com/nexmoe/vscode-monitor-pro"><img src="./assets/cards/nexmoe-vscode-monitor-pro.svg" alt="Monitor Pro (★ 222, 2023-10-04) — Monitor the resources you care about, right inside Visual Studio Code." width="100%"></a>

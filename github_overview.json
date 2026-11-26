@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T16:45:23.512Z",
+  "generated_at": "2026-11-26T01:30:53.071Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -46,10 +46,10 @@
   ],
   "curated_repository_stars": {
     "nexmoe/MetriBee": 19,
-    "nexmoe/VidBee": 11209,
+    "nexmoe/VidBee": 11213,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 431,
-    "Huanshere/VideoLingo": 19390,
+    "Huanshere/VideoLingo": 19394,
     "nexmoe/vscode-monitor-pro": 222
   },
   "curated_repository_created_at": {
@@ -62,13 +62,13 @@
   },
   "totals": {
     "followers": 661,
-    "stars": 37815,
-    "forks": 4431
+    "stars": 32218,
+    "forks": 3187
   },
   "scopes": {
     "owned": {
-      "stars": 12623,
-      "forks": 1042,
+      "stars": 12627,
+      "forks": 1043,
       "count": 62,
       "repos": [
         {
@@ -76,8 +76,8 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11209,
-          "forks_count": 873
+          "stargazers_count": 11213,
+          "forks_count": 874
         },
         {
           "name": "DayBee",
@@ -146,7 +146,7 @@
       ]
     },
     "member": {
-      "stars": 19587,
+      "stars": 19591,
       "forks": 2144,
       "count": 8,
       "repos": [
@@ -155,7 +155,7 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19390,
+          "stargazers_count": 19394,
           "forks_count": 2139
         },
         {
@@ -169,16 +169,16 @@
       ]
     },
     "merged": {
-      "stars": 37815,
-      "forks": 4431,
-      "count": 144,
+      "stars": 32218,
+      "forks": 3187,
+      "count": 70,
       "repos": [
         {
           "name": "VideoLingo",
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19390,
+          "stargazers_count": 19394,
           "forks_count": 2139
         },
         {
@@ -186,40 +186,8 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11209,
-          "forks_count": 873
-        },
-        {
-          "name": "plugins",
-          "full_name": "typecho-fans/plugins",
-          "html_url": "https://github.com/typecho-fans/plugins",
-          "description": "Typecho Fans插件作品目录",
-          "stargazers_count": 1903,
-          "forks_count": 589
-        },
-        {
-          "name": "hexo-theme-nexmoe",
-          "full_name": "theme-nexmoe/hexo-theme-nexmoe",
-          "html_url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
-          "description": "🔥 A special Hexo theme focusing on pictures and images. Images tell stories, and Nexmoe makes them more vivid.",
-          "stargazers_count": 1734,
-          "forks_count": 251
-        },
-        {
-          "name": "hitokoto-api",
-          "full_name": "hitokoto-osc/hitokoto-api",
-          "html_url": "https://github.com/hitokoto-osc/hitokoto-api",
-          "description": "版本：1，现行的 API 运行框架。",
-          "stargazers_count": 588,
-          "forks_count": 82
-        },
-        {
-          "name": "sentences-bundle",
-          "full_name": "hitokoto-osc/sentences-bundle",
-          "html_url": "https://github.com/hitokoto-osc/sentences-bundle",
-          "description": "一言开源社区官方提供的语句库，系 hitokoto.cn 数据库打包集合。语句接口默认使用此库。",
-          "stargazers_count": 467,
-          "forks_count": 98
+          "stargazers_count": 11213,
+          "forks_count": 874
         },
         {
           "name": "DayBee",
@@ -228,22 +196,6 @@
           "description": "Desktop microphone recorder with real-time, on-device transcription, automatic audio segmentation, voice activity detection, and an MCP server for searching saved transcripts.",
           "stargazers_count": 431,
           "forks_count": 43
-        },
-        {
-          "name": "typecho-theme-nexmoe",
-          "full_name": "theme-nexmoe/typecho-theme-nexmoe",
-          "html_url": "https://github.com/theme-nexmoe/typecho-theme-nexmoe",
-          "description": "🔥 一个特别的 Typecho 主题",
-          "stargazers_count": 402,
-          "forks_count": 58
-        },
-        {
-          "name": "themes",
-          "full_name": "typecho-fans/themes",
-          "html_url": "https://github.com/typecho-fans/themes",
-          "description": "Typecho Fans主题作品目录",
-          "stargazers_count": 228,
-          "forks_count": 34
         },
         {
           "name": "vscode-monitor-pro",
@@ -302,14 +254,6 @@
           "forks_count": 11
         },
         {
-          "name": "FluxEz",
-          "full_name": "slmnb-lab/FluxEz",
-          "html_url": "https://github.com/slmnb-lab/FluxEz",
-          "description": "基于Next.js和Comfyui的Flux AI图像生成网站",
-          "stargazers_count": 62,
-          "forks_count": 11
-        },
-        {
           "name": "saladict-skin",
           "full_name": "nexmoe/saladict-skin",
           "html_url": "https://github.com/nexmoe/saladict-skin",
@@ -328,17 +272,10 @@
     "contributed_to": 128
   },
   "star_sources": {
-    "owned": 12623,
-    "member": 19587,
-    "organization": 5605,
-    "organizations": {
-      "theme-nexmoe": 2183,
-      "typecho-fans": 2141,
-      "hitokoto-osc": 1129,
-      "slmnb-lab": 96,
-      "mixcm": 53,
-      "ComNergy": 3
-    }
+    "owned": 12627,
+    "member": 19591,
+    "organization": 0,
+    "organizations": {}
   },
-  "last_updated": "26 Nov 2026 · 00:44 UTC+8"
+  "last_updated": "26 Nov 2026 · 09:30 UTC+8"
 }

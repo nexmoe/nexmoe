@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T16:05:16.042Z",
+  "generated_at": "2026-11-28T01:02:57.268Z",
   "pinned_repositories": [
     {
       "name": "MetriBee",
@@ -46,10 +46,10 @@
   ],
   "curated_repository_stars": {
     "nexmoe/MetriBee": 19,
-    "nexmoe/VidBee": 11223,
+    "nexmoe/VidBee": 11222,
     "opentrends-io/opentrends": 67,
     "nexmoe/DayBee": 432,
-    "Huanshere/VideoLingo": 19411,
+    "Huanshere/VideoLingo": 19416,
     "nexmoe/vscode-monitor-pro": 222
   },
   "curated_repository_created_at": {
@@ -62,12 +62,12 @@
   },
   "totals": {
     "followers": 661,
-    "stars": 37851,
-    "forks": 4434
+    "stars": 37854,
+    "forks": 4433
   },
   "scopes": {
     "owned": {
-      "stars": 12638,
+      "stars": 12637,
       "forks": 1043,
       "count": 62,
       "repos": [
@@ -76,7 +76,7 @@
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11223,
+          "stargazers_count": 11222,
           "forks_count": 874
         },
         {
@@ -146,8 +146,8 @@
       ]
     },
     "member": {
-      "stars": 19608,
-      "forks": 2146,
+      "stars": 19613,
+      "forks": 2145,
       "count": 8,
       "repos": [
         {
@@ -155,8 +155,8 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19411,
-          "forks_count": 2141
+          "stargazers_count": 19416,
+          "forks_count": 2140
         },
         {
           "name": "void",
@@ -169,8 +169,8 @@
       ]
     },
     "merged": {
-      "stars": 37851,
-      "forks": 4434,
+      "stars": 37854,
+      "forks": 4433,
       "count": 144,
       "repos": [
         {
@@ -178,15 +178,15 @@
           "full_name": "Huanshere/VideoLingo",
           "html_url": "https://github.com/Huanshere/VideoLingo",
           "description": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻译、对齐、甚至加上配音，一键全自动视频搬运AI字幕组",
-          "stargazers_count": 19411,
-          "forks_count": 2141
+          "stargazers_count": 19416,
+          "forks_count": 2140
         },
         {
           "name": "VidBee",
           "full_name": "nexmoe/VidBee",
           "html_url": "https://github.com/nexmoe/VidBee",
           "description": "Download video and audio from 1000+ sites, transcribe locally with speaker labels, and summarize, translate, or chat with your media using your preferred AI provider.",
-          "stargazers_count": 11223,
+          "stargazers_count": 11222,
           "forks_count": 874
         },
         {
@@ -210,7 +210,7 @@
           "full_name": "hitokoto-osc/hitokoto-api",
           "html_url": "https://github.com/hitokoto-osc/hitokoto-api",
           "description": "版本：1，现行的 API 运行框架。",
-          "stargazers_count": 588,
+          "stargazers_count": 587,
           "forks_count": 82
         },
         {
@@ -321,24 +321,24 @@
     }
   },
   "activity": {
-    "commits": 19163,
+    "commits": 19192,
     "prs": 424,
     "issues": 412,
-    "total": 19999,
+    "total": 20028,
     "contributed_to": 128
   },
   "star_sources": {
-    "owned": 12638,
-    "member": 19608,
-    "organization": 5605,
+    "owned": 12637,
+    "member": 19613,
+    "organization": 5604,
     "organizations": {
       "theme-nexmoe": 2183,
       "typecho-fans": 2141,
-      "hitokoto-osc": 1129,
+      "hitokoto-osc": 1128,
       "slmnb-lab": 96,
       "mixcm": 53,
       "ComNergy": 3
     }
   },
-  "last_updated": "28 Nov 2026 · 00:04 UTC+8"
+  "last_updated": "28 Nov 2026 · 09:02 UTC+8"
 }
